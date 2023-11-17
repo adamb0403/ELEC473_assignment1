@@ -1,0 +1,286 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
+
+// DATE "11/17/2023 23:37:02"
+
+// 
+// Device: Altera EP2C35F672C6 Package FBGA672
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module tx_single_pulser (
+	clk,
+	reset,
+	pulser_in,
+	pulser_out);
+input 	clk;
+input 	reset;
+input 	pulser_in;
+output 	pulser_out;
+
+// Design Ports Information
+// pulser_out	=>  Location: PIN_C11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// pulser_in	=>  Location: PIN_C13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// reset	=>  Location: PIN_D13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// clk	=>  Location: PIN_P2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \clk~combout ;
+wire \clk~clkctrl_outclk ;
+wire \reset~combout ;
+wire \pulser_in~combout ;
+wire \pulser_out~1_combout ;
+wire \current_state~regout ;
+wire \pulser_out~0_combout ;
+wire \pulser_out~reg0_regout ;
+
+
+// Location: PIN_P2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+cycloneii_io \clk~I (
+	.datain(gnd),
+	.oe(gnd),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(\clk~combout ),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(clk));
+// synopsys translate_off
+defparam \clk~I .input_async_reset = "none";
+defparam \clk~I .input_power_up = "low";
+defparam \clk~I .input_register_mode = "none";
+defparam \clk~I .input_sync_reset = "none";
+defparam \clk~I .oe_async_reset = "none";
+defparam \clk~I .oe_power_up = "low";
+defparam \clk~I .oe_register_mode = "none";
+defparam \clk~I .oe_sync_reset = "none";
+defparam \clk~I .operation_mode = "input";
+defparam \clk~I .output_async_reset = "none";
+defparam \clk~I .output_power_up = "low";
+defparam \clk~I .output_register_mode = "none";
+defparam \clk~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: CLKCTRL_G3
+cycloneii_clkctrl \clk~clkctrl (
+	.ena(vcc),
+	.inclk({gnd,gnd,gnd,\clk~combout }),
+	.clkselect(2'b00),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.outclk(\clk~clkctrl_outclk ));
+// synopsys translate_off
+defparam \clk~clkctrl .clock_type = "global clock";
+defparam \clk~clkctrl .ena_register_mode = "none";
+// synopsys translate_on
+
+// Location: PIN_D13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+cycloneii_io \reset~I (
+	.datain(gnd),
+	.oe(gnd),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(\reset~combout ),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(reset));
+// synopsys translate_off
+defparam \reset~I .input_async_reset = "none";
+defparam \reset~I .input_power_up = "low";
+defparam \reset~I .input_register_mode = "none";
+defparam \reset~I .input_sync_reset = "none";
+defparam \reset~I .oe_async_reset = "none";
+defparam \reset~I .oe_power_up = "low";
+defparam \reset~I .oe_register_mode = "none";
+defparam \reset~I .oe_sync_reset = "none";
+defparam \reset~I .operation_mode = "input";
+defparam \reset~I .output_async_reset = "none";
+defparam \reset~I .output_power_up = "low";
+defparam \reset~I .output_register_mode = "none";
+defparam \reset~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: PIN_C13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+cycloneii_io \pulser_in~I (
+	.datain(gnd),
+	.oe(gnd),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(\pulser_in~combout ),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(pulser_in));
+// synopsys translate_off
+defparam \pulser_in~I .input_async_reset = "none";
+defparam \pulser_in~I .input_power_up = "low";
+defparam \pulser_in~I .input_register_mode = "none";
+defparam \pulser_in~I .input_sync_reset = "none";
+defparam \pulser_in~I .oe_async_reset = "none";
+defparam \pulser_in~I .oe_power_up = "low";
+defparam \pulser_in~I .oe_register_mode = "none";
+defparam \pulser_in~I .oe_sync_reset = "none";
+defparam \pulser_in~I .operation_mode = "input";
+defparam \pulser_in~I .output_async_reset = "none";
+defparam \pulser_in~I .output_power_up = "low";
+defparam \pulser_in~I .output_register_mode = "none";
+defparam \pulser_in~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: LCCOMB_X30_Y35_N2
+cycloneii_lcell_comb \pulser_out~1 (
+// Equation(s):
+// \pulser_out~1_combout  = (!\pulser_in~combout  & \reset~combout )
+
+	.dataa(vcc),
+	.datab(\pulser_in~combout ),
+	.datac(vcc),
+	.datad(\reset~combout ),
+	.cin(gnd),
+	.combout(\pulser_out~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \pulser_out~1 .lut_mask = 16'h3300;
+defparam \pulser_out~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCFF_X30_Y35_N3
+cycloneii_lcell_ff current_state(
+	.clk(\clk~clkctrl_outclk ),
+	.datain(\pulser_out~1_combout ),
+	.sdata(gnd),
+	.aclr(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.regout(\current_state~regout ));
+
+// Location: LCCOMB_X30_Y35_N0
+cycloneii_lcell_comb \pulser_out~0 (
+// Equation(s):
+// \pulser_out~0_combout  = (\reset~combout  & (!\pulser_in~combout  & !\current_state~regout ))
+
+	.dataa(vcc),
+	.datab(\reset~combout ),
+	.datac(\pulser_in~combout ),
+	.datad(\current_state~regout ),
+	.cin(gnd),
+	.combout(\pulser_out~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \pulser_out~0 .lut_mask = 16'h000C;
+defparam \pulser_out~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCFF_X30_Y35_N1
+cycloneii_lcell_ff \pulser_out~reg0 (
+	.clk(\clk~clkctrl_outclk ),
+	.datain(\pulser_out~0_combout ),
+	.sdata(gnd),
+	.aclr(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.regout(\pulser_out~reg0_regout ));
+
+// Location: PIN_C11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+cycloneii_io \pulser_out~I (
+	.datain(\pulser_out~reg0_regout ),
+	.oe(vcc),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(pulser_out));
+// synopsys translate_off
+defparam \pulser_out~I .input_async_reset = "none";
+defparam \pulser_out~I .input_power_up = "low";
+defparam \pulser_out~I .input_register_mode = "none";
+defparam \pulser_out~I .input_sync_reset = "none";
+defparam \pulser_out~I .oe_async_reset = "none";
+defparam \pulser_out~I .oe_power_up = "low";
+defparam \pulser_out~I .oe_register_mode = "none";
+defparam \pulser_out~I .oe_sync_reset = "none";
+defparam \pulser_out~I .operation_mode = "output";
+defparam \pulser_out~I .output_async_reset = "none";
+defparam \pulser_out~I .output_power_up = "low";
+defparam \pulser_out~I .output_register_mode = "none";
+defparam \pulser_out~I .output_sync_reset = "none";
+// synopsys translate_on
+
+endmodule

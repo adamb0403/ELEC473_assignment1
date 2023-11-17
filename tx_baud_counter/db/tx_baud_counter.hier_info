@@ -1,0 +1,36 @@
+|tx_baud_counter
+clk => baud_output[0]~reg0.CLK
+clk => baud_output[1]~reg0.CLK
+clk => baud_output[2]~reg0.CLK
+clk => baud_output[3]~reg0.CLK
+clk => baud_output[4]~reg0.CLK
+clk => baud_output[5]~reg0.CLK
+clk => baud_output[6]~reg0.CLK
+clk => baud_output[7]~reg0.CLK
+clk => baud_output[8]~reg0.CLK
+clk => baud_output[9]~reg0.CLK
+clk => baud_output[10]~reg0.CLK
+reset => baud_output.OUTPUTSELECT
+reset => baud_output.OUTPUTSELECT
+reset => baud_output.OUTPUTSELECT
+reset => baud_output.OUTPUTSELECT
+reset => baud_output.OUTPUTSELECT
+reset => baud_output.OUTPUTSELECT
+reset => baud_output.OUTPUTSELECT
+reset => baud_output.OUTPUTSELECT
+reset => baud_output.OUTPUTSELECT
+reset => baud_output.OUTPUTSELECT
+reset => baud_output.OUTPUTSELECT
+baud_output[0] <= baud_output[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+baud_output[1] <= baud_output[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+baud_output[2] <= baud_output[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+baud_output[3] <= baud_output[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+baud_output[4] <= baud_output[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+baud_output[5] <= baud_output[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+baud_output[6] <= baud_output[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+baud_output[7] <= baud_output[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+baud_output[8] <= baud_output[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+baud_output[9] <= baud_output[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+baud_output[10] <= baud_output[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

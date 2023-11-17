@@ -1,0 +1,66 @@
+# do tx_baud_counter.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tx_baud_counter
+# 
+# Top level modules:
+# 	tx_baud_counter
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tx_baud_counter_vlg_sample_tst
+# -- Compiling module tx_baud_counter_vlg_check_tst
+# -- Compiling module tx_baud_counter_vlg_vec_tst
+# 
+# Top level modules:
+# 	tx_baud_counter_vlg_vec_tst
+# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.tx_baud_counter_vlg_vec_tst 
+# Loading work.tx_baud_counter_vlg_vec_tst
+# Loading work.tx_baud_counter
+# Loading cycloneii_ver.cycloneii_io
+# Loading cycloneii_ver.cycloneii_mux21
+# Loading cycloneii_ver.cycloneii_dffe
+# Loading cycloneii_ver.cycloneii_asynch_io
+# Loading cycloneii_ver.cycloneii_clkctrl
+# Loading cycloneii_ver.cycloneii_mux41
+# Loading cycloneii_ver.cycloneii_ena_reg
+# Loading cycloneii_ver.cycloneii_lcell_comb
+# Loading cycloneii_ver.cycloneii_lcell_ff
+# Loading work.tx_baud_counter_vlg_sample_tst
+# Loading work.tx_baud_counter_vlg_check_tst
+# Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
+# ERROR! Vector Mismatch for output port baud_output[0] :: @time = 350000.000 ps
+#      Expected value = 00000000000
+#      Real value = 00000010001
+# ERROR! Vector Mismatch for output port baud_output[4] :: @time = 350000.000 ps
+#      Expected value = 00000000000
+#      Real value = 00000010001
+# ERROR! Vector Mismatch for output port baud_output[5] :: @time = 1000000.000 ps
+#      Expected value = 00000000000
+#      Real value = 00000100000
+# ERROR! Vector Mismatch for output port baud_output[1] :: @time = 1040000.000 ps
+#      Expected value = 00000000000
+#      Real value = 00000100010
+# ERROR! Vector Mismatch for output port baud_output[2] :: @time = 1080000.000 ps
+#      Expected value = 00000000000
+#      Real value = 00000100100
+# ERROR! Vector Mismatch for output port baud_output[3] :: @time = 1160000.000 ps
+#      Expected value = 00000000000
+#      Real value = 00000101000
+# ERROR! Vector Mismatch for output port baud_output[6] :: @time = 1640000.000 ps
+#      Expected value = 00000000000
+#      Real value = 00001000000
+# ERROR! Vector Mismatch for output port baud_output[7] :: @time = 2920000.000 ps
+#      Expected value = 00000000000
+#      Real value = 00010000000
+# ERROR! Vector Mismatch for output port baud_output[8] :: @time = 5480000.000 ps
+#      Expected value = 00000000000
+#      Real value = 00100000000
+# ERROR! Vector Mismatch for output port baud_output[9] :: @time = 10600000.000 ps
+#      Expected value = 00000000000
+#      Real value = 01000000000
+# ERROR! Vector Mismatch for output port baud_output[10] :: @time = 20840000.000 ps
+#      Expected value = 00000000000
+#      Real value = 10000000000
+#          11 mismatched vectors : Simulation failed !
+# ** Note: $finish    : tx_baud_counter.vt(362)
+#    Time: 28 us  Iteration: 0  Instance: /tx_baud_counter_vlg_vec_tst/tb_out

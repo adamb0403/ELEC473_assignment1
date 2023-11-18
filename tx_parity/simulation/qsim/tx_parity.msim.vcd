@@ -1,0 +1,84 @@
+$comment
+	File created using the following command:
+		vcd file tx_parity.msim.vcd -direction
+$end
+$date
+	Sat Nov 18 17:50:35 2023
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module tx_parity_vlg_vec_tst $end
+$var reg 7 ! parity_in [6:0] $end
+$var wire 1 " parity_out [9] $end
+$var wire 1 # parity_out [8] $end
+$var wire 1 $ parity_out [7] $end
+$var wire 1 % parity_out [6] $end
+$var wire 1 & parity_out [5] $end
+$var wire 1 ' parity_out [4] $end
+$var wire 1 ( parity_out [3] $end
+$var wire 1 ) parity_out [2] $end
+$var wire 1 * parity_out [1] $end
+$var wire 1 + parity_out [0] $end
+$var wire 1 , sampler $end
+$scope module i1 $end
+$var wire 1 - gnd $end
+$var wire 1 . vcc $end
+$var wire 1 / unknown $end
+$var tri1 1 0 devclrn $end
+$var tri1 1 1 devpor $end
+$var tri1 1 2 devoe $end
+$var wire 1 3 WideXnor0~0_combout $end
+$var wire 1 4 WideXnor0~combout $end
+$var wire 1 5 parity_in~combout [6] $end
+$var wire 1 6 parity_in~combout [5] $end
+$var wire 1 7 parity_in~combout [4] $end
+$var wire 1 8 parity_in~combout [3] $end
+$var wire 1 9 parity_in~combout [2] $end
+$var wire 1 : parity_in~combout [1] $end
+$var wire 1 ; parity_in~combout [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b10111 !
+0+
+1*
+1)
+1(
+1'
+0&
+1%
+0$
+0#
+1"
+x,
+0-
+1.
+x/
+10
+11
+12
+13
+04
+1;
+1:
+19
+08
+17
+06
+05
+$end
+#500000
+b10011 !
+09
+0,
+03
+0'
+14
+0*
+#1000000

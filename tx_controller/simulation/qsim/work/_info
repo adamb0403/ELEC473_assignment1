@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dM:\ELEC473\projects\ELEC473_assignment1\tx_controller\simulation\qsim
+vtx_controller
+Z1 IP;mEbO:4L@3nO[^?J74RA3
+Z2 V85GZGLC_[>L15ZeN_6OiC1
+Z3 dM:\ELEC473\projects\ELEC473_assignment1\tx_controller\simulation\qsim
+Z4 w1700498265
+Z5 8tx_controller.vo
+Z6 Ftx_controller.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+!i10b 1
+Z9 !s100 R[JalQR[Z]]AXgmjnJ9bB3
+!s85 0
+Z10 !s108 1700498268.912000
+Z11 !s107 tx_controller.vo|
+Z12 !s90 -work|work|tx_controller.vo|
+!s101 -O0
+vtx_controller_vlg_check_tst
+!i10b 1
+!s100 lae7614kC;:2=ZX=D^o4b3
+I:;[S:a`oO1LOY]a]ZAD]B2
+VTNVXeDbXzL]^>b>2kPbGo0
+R3
+Z13 w1700498264
+Z14 8tx_controller.vt
+Z15 Ftx_controller.vt
+L0 65
+R7
+r1
+!s85 0
+31
+Z16 !s108 1700498269.100000
+Z17 !s107 tx_controller.vt|
+Z18 !s90 -work|work|tx_controller.vt|
+!s101 -O0
+R8
+vtx_controller_vlg_sample_tst
+!i10b 1
+!s100 FMo@b1;0Eh1B`o^heDCJ73
+I6c^jaUei3Jf_g:lDS>YW13
+VSb@1T4c8GGmZE[^>KL4jX1
+R3
+R13
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+vtx_controller_vlg_vec_tst
+!i10b 1
+!s100 _]KMNzd5TBnbmJbE<2zbM1
+I`cL7SAcAWkNRC]P?:M=QD3
+VzmM=a35h<=4DGC9b^]X_>2
+R3
+R13
+R14
+R15
+L0 208
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8

@@ -14,9 +14,9 @@
 
 // VENDOR "Altera"
 // PROGRAM "Quartus II 64-Bit"
-// VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
+// VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version"
 
-// DATE "11/19/2023 22:30:16"
+// DATE "11/20/2023 15:10:20"
 
 // 
 // Device: Altera EP2C35F672C6 Package FBGA672
@@ -90,8 +90,8 @@ wire \tmp_data~2_combout ;
 wire \tmp_data~0_combout ;
 wire \tx_sr_out~reg0feeder_combout ;
 wire \tx_sr_out~reg0_regout ;
-wire [9:0] \tx_sr_in~combout ;
 wire [9:0] tmp_data;
+wire [9:0] \tx_sr_in~combout ;
 
 
 // Location: PIN_D10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default

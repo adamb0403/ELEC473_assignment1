@@ -3,7 +3,7 @@ $comment
 		vcd file tx_shift_register.msim.vcd -direction
 $end
 $date
-	Sun Nov 19 22:30:17 2023
+	Mon Nov 20 15:10:23 2023
 $end
 $version
 	ModelSim Version 10.1d
@@ -45,26 +45,26 @@ $var wire 1 = tmp_data~2_combout $end
 $var wire 1 > tmp_data~0_combout $end
 $var wire 1 ? tx_sr_out~reg0feeder_combout $end
 $var wire 1 @ tx_sr_out~reg0_regout $end
-$var wire 1 A tx_sr_in~combout [9] $end
-$var wire 1 B tx_sr_in~combout [8] $end
-$var wire 1 C tx_sr_in~combout [7] $end
-$var wire 1 D tx_sr_in~combout [6] $end
-$var wire 1 E tx_sr_in~combout [5] $end
-$var wire 1 F tx_sr_in~combout [4] $end
-$var wire 1 G tx_sr_in~combout [3] $end
-$var wire 1 H tx_sr_in~combout [2] $end
-$var wire 1 I tx_sr_in~combout [1] $end
-$var wire 1 J tx_sr_in~combout [0] $end
-$var wire 1 K tmp_data [9] $end
-$var wire 1 L tmp_data [8] $end
-$var wire 1 M tmp_data [7] $end
-$var wire 1 N tmp_data [6] $end
-$var wire 1 O tmp_data [5] $end
-$var wire 1 P tmp_data [4] $end
-$var wire 1 Q tmp_data [3] $end
-$var wire 1 R tmp_data [2] $end
-$var wire 1 S tmp_data [1] $end
-$var wire 1 T tmp_data [0] $end
+$var wire 1 A tmp_data [9] $end
+$var wire 1 B tmp_data [8] $end
+$var wire 1 C tmp_data [7] $end
+$var wire 1 D tmp_data [6] $end
+$var wire 1 E tmp_data [5] $end
+$var wire 1 F tmp_data [4] $end
+$var wire 1 G tmp_data [3] $end
+$var wire 1 H tmp_data [2] $end
+$var wire 1 I tmp_data [1] $end
+$var wire 1 J tmp_data [0] $end
+$var wire 1 K tx_sr_in~combout [9] $end
+$var wire 1 L tx_sr_in~combout [8] $end
+$var wire 1 M tx_sr_in~combout [7] $end
+$var wire 1 N tx_sr_in~combout [6] $end
+$var wire 1 O tx_sr_in~combout [5] $end
+$var wire 1 P tx_sr_in~combout [4] $end
+$var wire 1 Q tx_sr_in~combout [3] $end
+$var wire 1 R tx_sr_in~combout [2] $end
+$var wire 1 S tx_sr_in~combout [1] $end
+$var wire 1 T tx_sr_in~combout [0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -102,9 +102,9 @@ x*
 0>
 0?
 0@
-1J
+0J
 0I
-1H
+0H
 0G
 0F
 0E
@@ -112,9 +112,9 @@ x*
 0C
 0B
 0A
-0T
+1T
 0S
-0R
+1R
 0Q
 0P
 0O
@@ -143,8 +143,8 @@ $end
 1.
 1/
 0'
-1T
-1R
+1J
+1H
 1?
 #40000
 0$
@@ -197,9 +197,9 @@ $end
 1.
 1/
 0'
-0T
-1S
-0R
+0J
+1I
+0H
 0?
 1>
 0=
@@ -241,8 +241,8 @@ $end
 1.
 1/
 0'
-1T
-0S
+1J
+0I
 1?
 0>
 #180000
@@ -273,7 +273,7 @@ $end
 1.
 1/
 0'
-0T
+0J
 0?
 #220000
 1"

@@ -1,18 +1,21 @@
 module tx_baud_counter (input clk,
                         input reset,
-                        output reg [10:0] baud_output);
+                        output reg baud_output);
 
+    reg [10:0] count;
 
     always @(posedge clk) begin
+        baud_output = 0;
         if (!reset) begin
-            baud_output <= 0;
+            count <= 0;
         end
         else begin
-            if (baud_output == 1301) begin
-                baud_output <= 0;
+            if (count == 1301) begin
+                count <= 0;
+                baud_output <= 1;
             end
             else begin
-                baud_output <= baud_output + 1;
+                count <= count + 1;
             end
         end
     end

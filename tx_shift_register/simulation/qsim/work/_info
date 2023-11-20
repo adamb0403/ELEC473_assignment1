@@ -4,78 +4,78 @@ K3
 cModel Technology
 Z0 dC:\Users\Adam\Documents\git-repos\ELEC473_assignment1\tx_shift_register\simulation\qsim
 vtx_shift_register
-Z1 !s100 lcgZfMTUN@iJhjFlQ3AJP3
-Z2 I9IF[FIk@`_1E?h4CB=Zod1
-Z3 V1[ZhX6N7Sa<[95CQbH`5o1
-Z4 dC:\Users\Adam\Documents\git-repos\ELEC473_assignment1\tx_shift_register\simulation\qsim
-Z5 w1700433016
-Z6 8tx_shift_register.vo
-Z7 Ftx_shift_register.vo
+Z1 IlmgLFJdA<H1bKOWHzj5YT1
+Z2 V1[ZhX6N7Sa<[95CQbH`5o1
+Z3 dM:\ELEC473\projects\ELEC473_assignment1\tx_shift_register\simulation\qsim
+Z4 w1700493020
+Z5 8tx_shift_register.vo
+Z6 Ftx_shift_register.vo
 L0 31
-Z8 OV;L;10.1d;51
+Z7 OV;L;10.1d;51
 r1
 31
-Z9 !s90 -work|work|tx_shift_register.vo|
-Z10 o-work work -O0
+Z8 !s90 -work|work|tx_shift_register.vo|
+Z9 o-work work -O0
 !i10b 1
+Z10 !s100 eE<5dD:2[Y1W39I]LA@h22
 !s85 0
-Z11 !s108 1700433016.738000
+Z11 !s108 1700493021.978000
 Z12 !s107 tx_shift_register.vo|
 !s101 -O0
 vtx_shift_register_vlg_check_tst
 !i10b 1
-!s100 QZF8jGN=[GBU=]k6M3Cb:1
-I@FbT=ezNJ;VQDGB>AG61P1
-Z13 Ve`F8>2n9iCi9G8zXYVagO0
-R4
-Z14 w1700433015
-Z15 8tx_shift_register.vt
-Z16 Ftx_shift_register.vt
+Z13 !s100 QZF8jGN=[GBU=]k6M3Cb:1
+Z14 I@FbT=ezNJ;VQDGB>AG61P1
+Z15 Ve`F8>2n9iCi9G8zXYVagO0
+R3
+Z16 w1700493019
+Z17 8tx_shift_register.vt
+Z18 Ftx_shift_register.vt
 L0 65
-R8
+R7
 r1
 !s85 0
 31
-Z17 !s108 1700433016.819000
-Z18 !s107 tx_shift_register.vt|
-Z19 !s90 -work|work|tx_shift_register.vt|
+Z19 !s108 1700493022.186000
+Z20 !s107 tx_shift_register.vt|
+Z21 !s90 -work|work|tx_shift_register.vt|
 !s101 -O0
-R10
+R9
 vtx_shift_register_vlg_sample_tst
 !i10b 1
-Z20 !s100 IVXdhR;UknYGAF[CA[R[E1
-Z21 I5MS6aSE[Y9Vo_njd]NC7;0
-Z22 VCaaLAzdg?aZ<`RKGUgi[20
-R4
-R14
-R15
+Z22 !s100 IVXdhR;UknYGAF[CA[R[E1
+Z23 I5MS6aSE[Y9Vo_njd]NC7;0
+Z24 VCaaLAzdg?aZ<`RKGUgi[20
+R3
 R16
+R17
+R18
 L0 29
-R8
+R7
 r1
 !s85 0
 31
-R17
-R18
 R19
+R20
+R21
 !s101 -O0
-R10
+R9
 vtx_shift_register_vlg_vec_tst
 !i10b 1
-!s100 IYe=:c?Y4N?Sg41:QPSX51
-I_[UWgg^QG<7JC]cVnKziI0
-Z23 V:iX9IKcbRI9ZlGdU<@PDz0
-R4
-R14
-R15
+Z25 !s100 IYe=:c?Y4N?Sg41:QPSX51
+Z26 I_[UWgg^QG<7JC]cVnKziI0
+Z27 V:iX9IKcbRI9ZlGdU<@PDz0
+R3
 R16
-Z24 L0 160
-R8
+R17
+R18
+Z28 L0 160
+R7
 r1
 !s85 0
 31
-R17
-R18
 R19
+R20
+R21
 !s101 -O0
-R10
+R9

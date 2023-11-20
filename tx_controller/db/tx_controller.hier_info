@@ -1,0 +1,13 @@
+|tx_controller
+clk => ctrl_sr_shift~reg0.CLK
+clk => ctrl_sr_load~reg0.CLK
+clk => current_state~reg0.CLK
+reset => current_state.OUTPUTSELECT
+ctrl_pulser => current_state.OUTPUTSELECT
+ctrl_baud => ~NO_FANOUT~
+ctrl_counter => ~NO_FANOUT~
+ctrl_sr_load <= ctrl_sr_load~reg0.DB_MAX_OUTPUT_PORT_TYPE
+current_state <= current_state~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ctrl_sr_shift <= ctrl_sr_shift~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

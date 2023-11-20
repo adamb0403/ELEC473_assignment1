@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Adam\Documents\git-repos\ELEC473_assignment1\tx_7segdecoder\simulation\qsim
+vtx_7segdecoder
+Z1 !s100 N3kgPkZMAoPSCN@Y@4zl@3
+Z2 IUCNX5L8RYH`PV?29^HPKS1
+Z3 Vf::QKMLDWL9ej5A;9ZI:42
+Z4 dC:\Users\Adam\Documents\git-repos\ELEC473_assignment1\tx_7segdecoder\simulation\qsim
+Z5 w1700483691
+Z6 8tx_7segdecoder.vo
+Z7 Ftx_7segdecoder.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|tx_7segdecoder.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1700483692.660000
+Z12 !s107 tx_7segdecoder.vo|
+!s101 -O0
+vtx_7segdecoder_vlg_check_tst
+!i10b 1
+Z13 !s100 3H[F:?7i;G[S7cc4Wh9FI0
+Z14 IO_;gS3l_M2GkPJR]deQ`T0
+Z15 V7d@J^XPKD`WU]Q9YQzcb@3
+R4
+R5
+Z16 8tx_7segdecoder.vt
+Z17 Ftx_7segdecoder.vt
+L0 57
+R8
+r1
+!s85 0
+31
+Z18 !s108 1700483692.748000
+Z19 !s107 tx_7segdecoder.vt|
+Z20 !s90 -work|work|tx_7segdecoder.vt|
+!s101 -O0
+R10
+vtx_7segdecoder_vlg_sample_tst
+!i10b 1
+Z21 !s100 XAjAB_oEl^<li?kWIFYMA1
+Z22 IWlAg`n?R=1[XCffzMOMPF2
+Z23 VI9ECMLF1`FWcg=TJY2d=41
+R4
+R5
+R16
+R17
+L0 29
+R8
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R10
+vtx_7segdecoder_vlg_vec_tst
+!i10b 1
+!s100 ZS]T6BT8DYi:<8bOZjHf31
+IX78@iZB7[hIcI`NPlS:;A1
+Z24 VP[<^HJ7;5QQ18iN<JFzPa3
+R4
+R5
+R16
+R17
+Z25 L0 393
+R8
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R10

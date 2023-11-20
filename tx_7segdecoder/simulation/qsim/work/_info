@@ -8,7 +8,7 @@ Z1 !s100 N3kgPkZMAoPSCN@Y@4zl@3
 Z2 IUCNX5L8RYH`PV?29^HPKS1
 Z3 Vf::QKMLDWL9ej5A;9ZI:42
 Z4 dC:\Users\Adam\Documents\git-repos\ELEC473_assignment1\tx_7segdecoder\simulation\qsim
-Z5 w1700483691
+Z5 w1700512522
 Z6 8tx_7segdecoder.vo
 Z7 Ftx_7segdecoder.vo
 L0 31
@@ -19,7 +19,7 @@ Z9 !s90 -work|work|tx_7segdecoder.vo|
 Z10 o-work work -O0
 !i10b 1
 !s85 0
-Z11 !s108 1700483692.660000
+Z11 !s108 1700512523.471000
 Z12 !s107 tx_7segdecoder.vo|
 !s101 -O0
 vtx_7segdecoder_vlg_check_tst
@@ -36,7 +36,7 @@ R8
 r1
 !s85 0
 31
-Z18 !s108 1700483692.748000
+Z18 !s108 1700512523.547000
 Z19 !s107 tx_7segdecoder.vt|
 Z20 !s90 -work|work|tx_7segdecoder.vt|
 !s101 -O0
@@ -62,14 +62,14 @@ R20
 R10
 vtx_7segdecoder_vlg_vec_tst
 !i10b 1
-!s100 ZS]T6BT8DYi:<8bOZjHf31
-IX78@iZB7[hIcI`NPlS:;A1
-Z24 VP[<^HJ7;5QQ18iN<JFzPa3
+Z24 !s100 ZS]T6BT8DYi:<8bOZjHf31
+Z25 IX78@iZB7[hIcI`NPlS:;A1
+Z26 VP[<^HJ7;5QQ18iN<JFzPa3
 R4
 R5
 R16
 R17
-Z25 L0 393
+Z27 L0 393
 R8
 r1
 !s85 0

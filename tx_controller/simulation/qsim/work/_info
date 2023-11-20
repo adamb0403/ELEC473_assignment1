@@ -2,80 +2,80 @@ m255
 K3
 13
 cModel Technology
-Z0 dM:\ELEC473\projects\ELEC473_assignment1\tx_controller\simulation\qsim
+Z0 dC:\Users\Adam\Documents\git-repos\ELEC473_assignment1\tx_controller\simulation\qsim
 vtx_controller
-Z1 IP;mEbO:4L@3nO[^?J74RA3
-Z2 V85GZGLC_[>L15ZeN_6OiC1
-Z3 dM:\ELEC473\projects\ELEC473_assignment1\tx_controller\simulation\qsim
-Z4 w1700498265
+Z1 IOJ?f?^[a:MXR38Ecm?>770
+Z2 VIe=<RM339ib[BdeS_5:`l0
+Z3 dC:\Users\Adam\Documents\git-repos\ELEC473_assignment1\tx_controller\simulation\qsim
+Z4 w1700513047
 Z5 8tx_controller.vo
 Z6 Ftx_controller.vo
 L0 31
 Z7 OV;L;10.1d;51
 r1
 31
-Z8 o-work work -O0
+Z8 !s90 -work|work|tx_controller.vo|
+Z9 o-work work -O0
 !i10b 1
-Z9 !s100 R[JalQR[Z]]AXgmjnJ9bB3
+Z10 !s100 BkJKh6=Lk9@bNDJgBG0LO3
 !s85 0
-Z10 !s108 1700498268.912000
-Z11 !s107 tx_controller.vo|
-Z12 !s90 -work|work|tx_controller.vo|
+Z11 !s108 1700513047.764000
+Z12 !s107 tx_controller.vo|
 !s101 -O0
 vtx_controller_vlg_check_tst
 !i10b 1
-!s100 lae7614kC;:2=ZX=D^o4b3
-I:;[S:a`oO1LOY]a]ZAD]B2
-VTNVXeDbXzL]^>b>2kPbGo0
+Z13 !s100 8=3TU_1OzS197EmKjkfEU3
+Z14 IKo`KMQbYJK89b8[2=zQ8f1
+Z15 VKlHS@mch>fhV?Y:Ac^dHc0
 R3
-Z13 w1700498264
-Z14 8tx_controller.vt
-Z15 Ftx_controller.vt
+Z16 w1700513046
+Z17 8tx_controller.vt
+Z18 Ftx_controller.vt
 L0 65
 R7
 r1
 !s85 0
 31
-Z16 !s108 1700498269.100000
-Z17 !s107 tx_controller.vt|
-Z18 !s90 -work|work|tx_controller.vt|
+Z19 !s108 1700513047.840000
+Z20 !s107 tx_controller.vt|
+Z21 !s90 -work|work|tx_controller.vt|
 !s101 -O0
-R8
+R9
 vtx_controller_vlg_sample_tst
 !i10b 1
-!s100 FMo@b1;0Eh1B`o^heDCJ73
-I6c^jaUei3Jf_g:lDS>YW13
-VSb@1T4c8GGmZE[^>KL4jX1
+Z22 !s100 FMo@b1;0Eh1B`o^heDCJ73
+Z23 I6c^jaUei3Jf_g:lDS>YW13
+Z24 VSb@1T4c8GGmZE[^>KL4jX1
 R3
-R13
-R14
-R15
+R16
+R17
+R18
 L0 29
 R7
 r1
 !s85 0
 31
+R19
+R20
+R21
+!s101 -O0
+R9
+vtx_controller_vlg_vec_tst
+!i10b 1
+Z25 !s100 ?P?d]N?QhiN>P@8cJ;[MU1
+Z26 I9n;;IBHXP9PEhCo^2IL?<1
+Z27 VzmM=a35h<=4DGC9b^]X_>2
+R3
 R16
 R17
 R18
-!s101 -O0
-R8
-vtx_controller_vlg_vec_tst
-!i10b 1
-!s100 _]KMNzd5TBnbmJbE<2zbM1
-I`cL7SAcAWkNRC]P?:M=QD3
-VzmM=a35h<=4DGC9b^]X_>2
-R3
-R13
-R14
-R15
-L0 208
+Z28 L0 231
 R7
 r1
 !s85 0
 31
-R16
-R17
-R18
+R19
+R20
+R21
 !s101 -O0
-R8
+R9

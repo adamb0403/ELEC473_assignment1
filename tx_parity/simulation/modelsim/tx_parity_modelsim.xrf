@@ -1,7 +1,7 @@
 vendor_name = ModelSim
-source_file = 1, M:/ELEC473/projects/ELEC473_assignment1/tx_parity/tx_parity.v
-source_file = 1, M:/ELEC473/projects/ELEC473_assignment1/tx_parity/tx_parity.vwf
-source_file = 1, M:/ELEC473/projects/ELEC473_assignment1/tx_parity/db/tx_parity.cbx.xml
+source_file = 1, C:/Users/Adam/Documents/git-repos/ELEC473_assignment1/tx_parity/tx_parity.v
+source_file = 1, C:/Users/Adam/Documents/git-repos/ELEC473_assignment1/tx_parity/tx_parity.vwf
+source_file = 1, C:/Users/Adam/Documents/git-repos/ELEC473_assignment1/tx_parity/db/tx_parity.cbx.xml
 design_name = tx_parity
 instance = comp, \parity_in[5]~I , parity_in[5], tx_parity, 1
 instance = comp, \parity_in[2]~I , parity_in[2], tx_parity, 1

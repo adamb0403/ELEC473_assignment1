@@ -10,7 +10,7 @@ module tx_counter (input clk,
         if (!reset) begin
             count <= 0;
         end
-        else if (count) begin
+        else if (count_enable) begin
             if (count == 9) begin
                 count <= 0;
                 count_out <= 1;

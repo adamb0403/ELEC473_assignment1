@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Adam\Documents\git-repos\ELEC473_assignment1\tx_uart\simulation\qsim
+vtx_uart
+Z1 IRjRd_zjmh[5]m9NaEo5Nm3
+Z2 V?I_I8UD;cJRTH>hLE0NMo1
+Z3 dC:\Users\Adam\Documents\git-repos\ELEC473_assignment1\tx_uart\simulation\qsim
+Z4 w1700520423
+Z5 8tx_uart.vo
+Z6 Ftx_uart.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|tx_uart.vo|
+Z9 o-work work -O0
+!i10b 1
+Z10 !s100 =84FzgW0Yh[RjV6O[ID[11
+!s85 0
+Z11 !s108 1700520424.472000
+Z12 !s107 tx_uart.vo|
+!s101 -O0
+vtx_uart_vlg_check_tst
+!i10b 1
+Z13 !s100 9NE<;b;B4EZb1l6Q91SLk0
+Z14 Ig6^IV^XK=zV9Q67agFb0W0
+Z15 VOh08C[O>=mXR6CG<CJCF81
+R3
+R4
+Z16 8tx_uart.vt
+Z17 Ftx_uart.vt
+L0 63
+R7
+r1
+!s85 0
+31
+Z18 !s108 1700520424.552000
+Z19 !s107 tx_uart.vt|
+Z20 !s90 -work|work|tx_uart.vt|
+!s101 -O0
+R9
+vtx_uart_vlg_sample_tst
+!i10b 1
+Z21 !s100 TDLEhln;Z?YP9g6n@KTgd2
+Z22 Ia:WDEKheOiLV65@9oITa;2
+Z23 V_ZoD<`?I9mc0SVKo535DY2
+R3
+R4
+R16
+R17
+L0 29
+R7
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R9
+vtx_uart_vlg_vec_tst
+!i10b 1
+Z24 !s100 7AL7nW]eh?NNDFXU8=8Jo1
+Z25 IfLg_<bI@6e6beb<4CDXzk3
+Z26 V1;o^oPe=aXCXZ;>QJXa8o0
+R3
+R4
+R16
+R17
+Z27 L0 426
+R7
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R9

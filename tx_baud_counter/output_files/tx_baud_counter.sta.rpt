@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for tx_baud_counter
-Fri Nov 17 22:38:32 2023
+Mon Nov 20 20:52:22 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -101,13 +101,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
 
 
-+-----------------------------------------------------------------------------------------------------------+
-; Slow Model Fmax Summary                                                                                   ;
-+------------+-----------------+------------+---------------------------------------------------------------+
-; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
-+------------+-----------------+------------+---------------------------------------------------------------+
-; 421.76 MHz ; 420.17 MHz      ; clk        ; limit due to minimum period restriction (max I/O toggle rate) ;
-+------------+-----------------+------------+---------------------------------------------------------------+
++--------------------------------------------------+
+; Slow Model Fmax Summary                          ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 413.39 MHz ; 413.39 MHz      ; clk        ;      ;
++------------+-----------------+------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
@@ -116,7 +116,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+--------+---------------+
 ; Clock ; Slack  ; End Point TNS ;
 +-------+--------+---------------+
-; clk   ; -1.371 ; -15.081       ;
+; clk   ; -1.419 ; -16.542       ;
 +-------+--------+---------------+
 
 
@@ -125,7 +125,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+-------+---------------+
 ; Clock ; Slack ; End Point TNS ;
 +-------+-------+---------------+
-; clk   ; 0.537 ; 0.000         ;
+; clk   ; 0.539 ; 0.000         ;
 +-------+-------+---------------+
 
 
@@ -146,283 +146,287 @@ No paths to report.
 +-------+--------+-----------------------+
 ; Clock ; Slack  ; End Point TNS         ;
 +-------+--------+-----------------------+
-; clk   ; -1.380 ; -12.380               ;
+; clk   ; -1.380 ; -13.380               ;
 +-------+--------+-----------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Slow Model Setup: 'clk'                                                                                                    ;
-+--------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
-; Slack  ; From Node            ; To Node              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+--------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
-; -1.371 ; baud_output[10]~reg0 ; baud_output[1]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.407      ;
-; -1.371 ; baud_output[10]~reg0 ; baud_output[2]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.407      ;
-; -1.371 ; baud_output[10]~reg0 ; baud_output[3]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.407      ;
-; -1.371 ; baud_output[10]~reg0 ; baud_output[4]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.407      ;
-; -1.371 ; baud_output[10]~reg0 ; baud_output[5]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.407      ;
-; -1.371 ; baud_output[10]~reg0 ; baud_output[6]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.407      ;
-; -1.371 ; baud_output[10]~reg0 ; baud_output[7]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.407      ;
-; -1.371 ; baud_output[10]~reg0 ; baud_output[8]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.407      ;
-; -1.371 ; baud_output[10]~reg0 ; baud_output[9]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.407      ;
-; -1.371 ; baud_output[10]~reg0 ; baud_output[10]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 2.407      ;
-; -1.371 ; baud_output[10]~reg0 ; baud_output[0]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.407      ;
-; -1.286 ; baud_output[1]~reg0  ; baud_output[1]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.322      ;
-; -1.286 ; baud_output[1]~reg0  ; baud_output[2]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.322      ;
-; -1.286 ; baud_output[1]~reg0  ; baud_output[3]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.322      ;
-; -1.286 ; baud_output[1]~reg0  ; baud_output[4]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.322      ;
-; -1.286 ; baud_output[1]~reg0  ; baud_output[5]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.322      ;
-; -1.286 ; baud_output[1]~reg0  ; baud_output[6]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.322      ;
-; -1.286 ; baud_output[1]~reg0  ; baud_output[7]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.322      ;
-; -1.286 ; baud_output[1]~reg0  ; baud_output[8]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.322      ;
-; -1.286 ; baud_output[1]~reg0  ; baud_output[9]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.322      ;
-; -1.286 ; baud_output[1]~reg0  ; baud_output[10]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 2.322      ;
-; -1.286 ; baud_output[1]~reg0  ; baud_output[0]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.322      ;
-; -1.254 ; baud_output[0]~reg0  ; baud_output[1]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.290      ;
-; -1.254 ; baud_output[0]~reg0  ; baud_output[2]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.290      ;
-; -1.254 ; baud_output[0]~reg0  ; baud_output[3]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.290      ;
-; -1.254 ; baud_output[0]~reg0  ; baud_output[4]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.290      ;
-; -1.254 ; baud_output[0]~reg0  ; baud_output[5]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.290      ;
-; -1.254 ; baud_output[0]~reg0  ; baud_output[6]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.290      ;
-; -1.254 ; baud_output[0]~reg0  ; baud_output[7]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.290      ;
-; -1.254 ; baud_output[0]~reg0  ; baud_output[8]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.290      ;
-; -1.254 ; baud_output[0]~reg0  ; baud_output[9]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.290      ;
-; -1.254 ; baud_output[0]~reg0  ; baud_output[10]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 2.290      ;
-; -1.254 ; baud_output[0]~reg0  ; baud_output[0]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.290      ;
-; -1.234 ; baud_output[8]~reg0  ; baud_output[1]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.270      ;
-; -1.234 ; baud_output[8]~reg0  ; baud_output[2]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.270      ;
-; -1.234 ; baud_output[8]~reg0  ; baud_output[3]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.270      ;
-; -1.234 ; baud_output[8]~reg0  ; baud_output[4]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.270      ;
-; -1.234 ; baud_output[8]~reg0  ; baud_output[5]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.270      ;
-; -1.234 ; baud_output[8]~reg0  ; baud_output[6]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.270      ;
-; -1.234 ; baud_output[8]~reg0  ; baud_output[7]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.270      ;
-; -1.234 ; baud_output[8]~reg0  ; baud_output[8]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.270      ;
-; -1.234 ; baud_output[8]~reg0  ; baud_output[9]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.270      ;
-; -1.234 ; baud_output[8]~reg0  ; baud_output[10]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 2.270      ;
-; -1.234 ; baud_output[8]~reg0  ; baud_output[0]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.270      ;
-; -1.160 ; baud_output[6]~reg0  ; baud_output[1]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.196      ;
-; -1.160 ; baud_output[6]~reg0  ; baud_output[2]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.196      ;
-; -1.160 ; baud_output[6]~reg0  ; baud_output[3]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.196      ;
-; -1.160 ; baud_output[6]~reg0  ; baud_output[4]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.196      ;
-; -1.160 ; baud_output[6]~reg0  ; baud_output[5]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.196      ;
-; -1.160 ; baud_output[6]~reg0  ; baud_output[6]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.196      ;
-; -1.160 ; baud_output[6]~reg0  ; baud_output[7]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.196      ;
-; -1.160 ; baud_output[6]~reg0  ; baud_output[8]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.196      ;
-; -1.160 ; baud_output[6]~reg0  ; baud_output[9]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.196      ;
-; -1.160 ; baud_output[6]~reg0  ; baud_output[10]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 2.196      ;
-; -1.160 ; baud_output[6]~reg0  ; baud_output[0]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.196      ;
-; -1.122 ; baud_output[7]~reg0  ; baud_output[1]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.158      ;
-; -1.122 ; baud_output[7]~reg0  ; baud_output[2]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.158      ;
-; -1.122 ; baud_output[7]~reg0  ; baud_output[3]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.158      ;
-; -1.122 ; baud_output[7]~reg0  ; baud_output[4]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.158      ;
-; -1.122 ; baud_output[7]~reg0  ; baud_output[5]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.158      ;
-; -1.122 ; baud_output[7]~reg0  ; baud_output[6]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.158      ;
-; -1.122 ; baud_output[7]~reg0  ; baud_output[7]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.158      ;
-; -1.122 ; baud_output[7]~reg0  ; baud_output[8]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.158      ;
-; -1.122 ; baud_output[7]~reg0  ; baud_output[9]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.158      ;
-; -1.122 ; baud_output[7]~reg0  ; baud_output[10]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 2.158      ;
-; -1.122 ; baud_output[7]~reg0  ; baud_output[0]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.158      ;
-; -1.095 ; baud_output[9]~reg0  ; baud_output[1]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.131      ;
-; -1.095 ; baud_output[9]~reg0  ; baud_output[2]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.131      ;
-; -1.095 ; baud_output[9]~reg0  ; baud_output[3]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.131      ;
-; -1.095 ; baud_output[9]~reg0  ; baud_output[4]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.131      ;
-; -1.095 ; baud_output[9]~reg0  ; baud_output[5]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.131      ;
-; -1.095 ; baud_output[9]~reg0  ; baud_output[6]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.131      ;
-; -1.095 ; baud_output[9]~reg0  ; baud_output[7]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.131      ;
-; -1.095 ; baud_output[9]~reg0  ; baud_output[8]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.131      ;
-; -1.095 ; baud_output[9]~reg0  ; baud_output[9]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.131      ;
-; -1.095 ; baud_output[9]~reg0  ; baud_output[10]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 2.131      ;
-; -1.095 ; baud_output[9]~reg0  ; baud_output[0]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.131      ;
-; -1.082 ; baud_output[3]~reg0  ; baud_output[1]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.118      ;
-; -1.082 ; baud_output[3]~reg0  ; baud_output[2]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.118      ;
-; -1.082 ; baud_output[3]~reg0  ; baud_output[3]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.118      ;
-; -1.082 ; baud_output[3]~reg0  ; baud_output[4]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.118      ;
-; -1.082 ; baud_output[3]~reg0  ; baud_output[5]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.118      ;
-; -1.082 ; baud_output[3]~reg0  ; baud_output[6]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.118      ;
-; -1.082 ; baud_output[3]~reg0  ; baud_output[7]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.118      ;
-; -1.082 ; baud_output[3]~reg0  ; baud_output[8]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.118      ;
-; -1.082 ; baud_output[3]~reg0  ; baud_output[9]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.118      ;
-; -1.082 ; baud_output[3]~reg0  ; baud_output[10]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 2.118      ;
-; -1.082 ; baud_output[3]~reg0  ; baud_output[0]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.118      ;
-; -1.050 ; baud_output[2]~reg0  ; baud_output[10]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 2.086      ;
-; -0.981 ; baud_output[4]~reg0  ; baud_output[1]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.017      ;
-; -0.981 ; baud_output[4]~reg0  ; baud_output[2]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.017      ;
-; -0.981 ; baud_output[4]~reg0  ; baud_output[3]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.017      ;
-; -0.981 ; baud_output[4]~reg0  ; baud_output[4]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.017      ;
-; -0.981 ; baud_output[4]~reg0  ; baud_output[5]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.017      ;
-; -0.981 ; baud_output[4]~reg0  ; baud_output[6]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.017      ;
-; -0.981 ; baud_output[4]~reg0  ; baud_output[7]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.017      ;
-; -0.981 ; baud_output[4]~reg0  ; baud_output[8]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.017      ;
-; -0.981 ; baud_output[4]~reg0  ; baud_output[9]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.017      ;
-; -0.981 ; baud_output[4]~reg0  ; baud_output[10]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 2.017      ;
-; -0.981 ; baud_output[4]~reg0  ; baud_output[0]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.017      ;
-+--------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
++------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'clk'                                                                              ;
++--------+-----------+-----------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node ; To Node   ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------+-----------+--------------+-------------+--------------+------------+------------+
+; -1.419 ; count[4]  ; count[0]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.455      ;
+; -1.419 ; count[4]  ; count[2]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.455      ;
+; -1.419 ; count[4]  ; count[3]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.455      ;
+; -1.419 ; count[4]  ; count[4]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.455      ;
+; -1.419 ; count[4]  ; count[5]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.455      ;
+; -1.419 ; count[4]  ; count[6]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.455      ;
+; -1.419 ; count[4]  ; count[7]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.455      ;
+; -1.419 ; count[4]  ; count[8]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.455      ;
+; -1.419 ; count[4]  ; count[9]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.455      ;
+; -1.419 ; count[4]  ; count[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 2.455      ;
+; -1.419 ; count[4]  ; count[1]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.455      ;
+; -1.387 ; count[6]  ; count[0]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.423      ;
+; -1.387 ; count[6]  ; count[2]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.423      ;
+; -1.387 ; count[6]  ; count[3]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.423      ;
+; -1.387 ; count[6]  ; count[4]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.423      ;
+; -1.387 ; count[6]  ; count[5]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.423      ;
+; -1.387 ; count[6]  ; count[6]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.423      ;
+; -1.387 ; count[6]  ; count[7]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.423      ;
+; -1.387 ; count[6]  ; count[8]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.423      ;
+; -1.387 ; count[6]  ; count[9]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.423      ;
+; -1.387 ; count[6]  ; count[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 2.423      ;
+; -1.387 ; count[6]  ; count[1]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.423      ;
+; -1.251 ; count[8]  ; count[0]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.287      ;
+; -1.251 ; count[8]  ; count[2]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.287      ;
+; -1.251 ; count[8]  ; count[3]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.287      ;
+; -1.251 ; count[8]  ; count[4]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.287      ;
+; -1.251 ; count[8]  ; count[5]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.287      ;
+; -1.251 ; count[8]  ; count[6]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.287      ;
+; -1.251 ; count[8]  ; count[7]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.287      ;
+; -1.251 ; count[8]  ; count[8]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.287      ;
+; -1.251 ; count[8]  ; count[9]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.287      ;
+; -1.251 ; count[8]  ; count[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 2.287      ;
+; -1.251 ; count[8]  ; count[1]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.287      ;
+; -1.210 ; count[7]  ; count[0]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.246      ;
+; -1.210 ; count[7]  ; count[2]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.246      ;
+; -1.210 ; count[7]  ; count[3]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.246      ;
+; -1.210 ; count[7]  ; count[4]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.246      ;
+; -1.210 ; count[7]  ; count[5]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.246      ;
+; -1.210 ; count[7]  ; count[6]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.246      ;
+; -1.210 ; count[7]  ; count[7]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.246      ;
+; -1.210 ; count[7]  ; count[8]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.246      ;
+; -1.210 ; count[7]  ; count[9]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.246      ;
+; -1.210 ; count[7]  ; count[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 2.246      ;
+; -1.210 ; count[7]  ; count[1]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.246      ;
+; -1.150 ; count[0]  ; count[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 2.186      ;
+; -1.145 ; count[2]  ; count[0]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.181      ;
+; -1.145 ; count[2]  ; count[2]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.181      ;
+; -1.145 ; count[2]  ; count[3]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.181      ;
+; -1.145 ; count[2]  ; count[4]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.181      ;
+; -1.145 ; count[2]  ; count[5]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.181      ;
+; -1.145 ; count[2]  ; count[6]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.181      ;
+; -1.145 ; count[2]  ; count[7]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.181      ;
+; -1.145 ; count[2]  ; count[8]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.181      ;
+; -1.145 ; count[2]  ; count[9]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.181      ;
+; -1.145 ; count[2]  ; count[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 2.181      ;
+; -1.145 ; count[2]  ; count[1]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.181      ;
+; -1.113 ; count[1]  ; count[0]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.149      ;
+; -1.113 ; count[1]  ; count[2]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.149      ;
+; -1.113 ; count[1]  ; count[3]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.149      ;
+; -1.113 ; count[1]  ; count[4]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.149      ;
+; -1.113 ; count[1]  ; count[5]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.149      ;
+; -1.113 ; count[1]  ; count[6]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.149      ;
+; -1.113 ; count[1]  ; count[7]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.149      ;
+; -1.113 ; count[1]  ; count[8]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.149      ;
+; -1.113 ; count[1]  ; count[9]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.149      ;
+; -1.113 ; count[1]  ; count[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 2.149      ;
+; -1.113 ; count[1]  ; count[1]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.149      ;
+; -1.110 ; count[5]  ; count[0]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.146      ;
+; -1.110 ; count[5]  ; count[2]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.146      ;
+; -1.110 ; count[5]  ; count[3]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.146      ;
+; -1.110 ; count[5]  ; count[4]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.146      ;
+; -1.110 ; count[5]  ; count[5]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.146      ;
+; -1.110 ; count[5]  ; count[6]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.146      ;
+; -1.110 ; count[5]  ; count[7]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.146      ;
+; -1.110 ; count[5]  ; count[8]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.146      ;
+; -1.110 ; count[5]  ; count[9]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.146      ;
+; -1.110 ; count[5]  ; count[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 2.146      ;
+; -1.110 ; count[5]  ; count[1]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.146      ;
+; -1.079 ; count[0]  ; count[9]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.115      ;
+; -1.079 ; count[9]  ; count[0]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.115      ;
+; -1.079 ; count[9]  ; count[2]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.115      ;
+; -1.079 ; count[9]  ; count[3]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.115      ;
+; -1.079 ; count[9]  ; count[4]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.115      ;
+; -1.079 ; count[9]  ; count[5]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.115      ;
+; -1.079 ; count[9]  ; count[6]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.115      ;
+; -1.079 ; count[9]  ; count[7]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.115      ;
+; -1.079 ; count[9]  ; count[8]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.115      ;
+; -1.079 ; count[9]  ; count[9]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.115      ;
+; -1.079 ; count[9]  ; count[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 2.115      ;
+; -1.079 ; count[9]  ; count[1]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.115      ;
+; -1.008 ; count[0]  ; count[8]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.044      ;
+; -0.976 ; count[10] ; count[0]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.012      ;
+; -0.976 ; count[10] ; count[2]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.012      ;
+; -0.976 ; count[10] ; count[3]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.012      ;
+; -0.976 ; count[10] ; count[4]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.012      ;
+; -0.976 ; count[10] ; count[5]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.012      ;
+; -0.976 ; count[10] ; count[6]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.012      ;
+; -0.976 ; count[10] ; count[7]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.012      ;
+; -0.976 ; count[10] ; count[8]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.012      ;
+; -0.976 ; count[10] ; count[9]  ; clk          ; clk         ; 1.000        ; 0.000      ; 2.012      ;
++--------+-----------+-----------+--------------+-------------+--------------+------------+------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------+
-; Slow Model Hold: 'clk'                                                                                                    ;
-+-------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
-; Slack ; From Node            ; To Node              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+-------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
-; 0.537 ; baud_output[10]~reg0 ; baud_output[10]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.803      ;
-; 0.812 ; baud_output[9]~reg0  ; baud_output[9]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.078      ;
-; 0.815 ; baud_output[5]~reg0  ; baud_output[5]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.081      ;
-; 0.816 ; baud_output[7]~reg0  ; baud_output[7]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.082      ;
-; 0.817 ; baud_output[3]~reg0  ; baud_output[3]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.083      ;
-; 0.817 ; baud_output[0]~reg0  ; baud_output[0]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.083      ;
-; 0.849 ; baud_output[1]~reg0  ; baud_output[1]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.115      ;
-; 0.849 ; baud_output[2]~reg0  ; baud_output[2]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.115      ;
-; 0.851 ; baud_output[4]~reg0  ; baud_output[4]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.117      ;
-; 0.852 ; baud_output[6]~reg0  ; baud_output[6]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.118      ;
-; 0.853 ; baud_output[8]~reg0  ; baud_output[8]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.119      ;
-; 1.195 ; baud_output[9]~reg0  ; baud_output[10]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.461      ;
-; 1.198 ; baud_output[5]~reg0  ; baud_output[6]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.464      ;
-; 1.199 ; baud_output[7]~reg0  ; baud_output[8]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.465      ;
-; 1.200 ; baud_output[0]~reg0  ; baud_output[1]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.466      ;
-; 1.235 ; baud_output[2]~reg0  ; baud_output[3]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.501      ;
-; 1.235 ; baud_output[1]~reg0  ; baud_output[2]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.501      ;
-; 1.237 ; baud_output[4]~reg0  ; baud_output[5]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.503      ;
-; 1.238 ; baud_output[6]~reg0  ; baud_output[7]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.504      ;
-; 1.239 ; baud_output[8]~reg0  ; baud_output[9]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.505      ;
-; 1.269 ; baud_output[5]~reg0  ; baud_output[7]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.535      ;
-; 1.270 ; baud_output[7]~reg0  ; baud_output[9]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.536      ;
-; 1.271 ; baud_output[0]~reg0  ; baud_output[2]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.537      ;
-; 1.292 ; baud_output[3]~reg0  ; baud_output[4]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.558      ;
-; 1.306 ; baud_output[1]~reg0  ; baud_output[3]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.572      ;
-; 1.308 ; baud_output[4]~reg0  ; baud_output[6]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.574      ;
-; 1.309 ; baud_output[6]~reg0  ; baud_output[8]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.575      ;
-; 1.310 ; baud_output[8]~reg0  ; baud_output[10]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.576      ;
-; 1.340 ; baud_output[5]~reg0  ; baud_output[8]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.606      ;
-; 1.341 ; baud_output[7]~reg0  ; baud_output[10]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.607      ;
-; 1.342 ; baud_output[0]~reg0  ; baud_output[3]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.608      ;
-; 1.363 ; baud_output[3]~reg0  ; baud_output[5]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.629      ;
-; 1.379 ; baud_output[4]~reg0  ; baud_output[7]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.645      ;
-; 1.380 ; baud_output[6]~reg0  ; baud_output[9]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.646      ;
-; 1.394 ; baud_output[2]~reg0  ; baud_output[4]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.660      ;
-; 1.411 ; baud_output[5]~reg0  ; baud_output[9]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.677      ;
-; 1.434 ; baud_output[3]~reg0  ; baud_output[6]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.700      ;
-; 1.450 ; baud_output[4]~reg0  ; baud_output[8]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.716      ;
-; 1.451 ; baud_output[6]~reg0  ; baud_output[10]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.717      ;
-; 1.465 ; baud_output[2]~reg0  ; baud_output[5]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.731      ;
-; 1.465 ; baud_output[1]~reg0  ; baud_output[4]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.731      ;
-; 1.482 ; baud_output[5]~reg0  ; baud_output[10]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.748      ;
-; 1.501 ; baud_output[0]~reg0  ; baud_output[4]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.767      ;
-; 1.505 ; baud_output[3]~reg0  ; baud_output[7]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.771      ;
-; 1.521 ; baud_output[4]~reg0  ; baud_output[9]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.787      ;
-; 1.536 ; baud_output[2]~reg0  ; baud_output[6]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.802      ;
-; 1.536 ; baud_output[1]~reg0  ; baud_output[5]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.802      ;
-; 1.572 ; baud_output[0]~reg0  ; baud_output[5]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.838      ;
-; 1.576 ; baud_output[3]~reg0  ; baud_output[8]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.842      ;
-; 1.592 ; baud_output[4]~reg0  ; baud_output[10]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.858      ;
-; 1.607 ; baud_output[2]~reg0  ; baud_output[7]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.873      ;
-; 1.607 ; baud_output[1]~reg0  ; baud_output[6]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.873      ;
-; 1.617 ; baud_output[5]~reg0  ; baud_output[1]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.883      ;
-; 1.617 ; baud_output[5]~reg0  ; baud_output[2]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.883      ;
-; 1.617 ; baud_output[5]~reg0  ; baud_output[3]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.883      ;
-; 1.617 ; baud_output[5]~reg0  ; baud_output[4]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.883      ;
-; 1.617 ; baud_output[5]~reg0  ; baud_output[0]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.883      ;
-; 1.643 ; baud_output[0]~reg0  ; baud_output[6]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.909      ;
-; 1.647 ; baud_output[3]~reg0  ; baud_output[9]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.913      ;
-; 1.678 ; baud_output[2]~reg0  ; baud_output[8]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.944      ;
-; 1.678 ; baud_output[1]~reg0  ; baud_output[7]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.944      ;
-; 1.714 ; baud_output[0]~reg0  ; baud_output[7]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.980      ;
-; 1.718 ; baud_output[3]~reg0  ; baud_output[10]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.984      ;
-; 1.749 ; baud_output[2]~reg0  ; baud_output[1]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.015      ;
-; 1.749 ; baud_output[2]~reg0  ; baud_output[9]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.015      ;
-; 1.749 ; baud_output[2]~reg0  ; baud_output[10]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 2.015      ;
-; 1.749 ; baud_output[2]~reg0  ; baud_output[0]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.015      ;
-; 1.749 ; baud_output[1]~reg0  ; baud_output[8]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.015      ;
-; 1.751 ; baud_output[4]~reg0  ; baud_output[1]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.017      ;
-; 1.751 ; baud_output[4]~reg0  ; baud_output[2]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.017      ;
-; 1.751 ; baud_output[4]~reg0  ; baud_output[3]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.017      ;
-; 1.751 ; baud_output[4]~reg0  ; baud_output[0]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.017      ;
-; 1.785 ; baud_output[0]~reg0  ; baud_output[8]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.051      ;
-; 1.820 ; baud_output[1]~reg0  ; baud_output[9]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.086      ;
-; 1.852 ; baud_output[3]~reg0  ; baud_output[1]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.118      ;
-; 1.852 ; baud_output[3]~reg0  ; baud_output[2]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.118      ;
-; 1.852 ; baud_output[3]~reg0  ; baud_output[0]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.118      ;
-; 1.856 ; baud_output[0]~reg0  ; baud_output[9]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.122      ;
-; 1.865 ; baud_output[9]~reg0  ; baud_output[1]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.131      ;
-; 1.865 ; baud_output[9]~reg0  ; baud_output[2]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.131      ;
-; 1.865 ; baud_output[9]~reg0  ; baud_output[3]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.131      ;
-; 1.865 ; baud_output[9]~reg0  ; baud_output[4]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.131      ;
-; 1.865 ; baud_output[9]~reg0  ; baud_output[5]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.131      ;
-; 1.865 ; baud_output[9]~reg0  ; baud_output[6]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.131      ;
-; 1.865 ; baud_output[9]~reg0  ; baud_output[7]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.131      ;
-; 1.865 ; baud_output[9]~reg0  ; baud_output[8]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.131      ;
-; 1.865 ; baud_output[9]~reg0  ; baud_output[0]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.131      ;
-; 1.891 ; baud_output[1]~reg0  ; baud_output[10]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 2.157      ;
-; 1.892 ; baud_output[7]~reg0  ; baud_output[1]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.158      ;
-; 1.892 ; baud_output[7]~reg0  ; baud_output[2]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.158      ;
-; 1.892 ; baud_output[7]~reg0  ; baud_output[3]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.158      ;
-; 1.892 ; baud_output[7]~reg0  ; baud_output[4]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.158      ;
-; 1.892 ; baud_output[7]~reg0  ; baud_output[5]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.158      ;
-; 1.892 ; baud_output[7]~reg0  ; baud_output[6]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.158      ;
-; 1.892 ; baud_output[7]~reg0  ; baud_output[0]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.158      ;
-; 1.927 ; baud_output[0]~reg0  ; baud_output[10]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 2.193      ;
-; 1.930 ; baud_output[6]~reg0  ; baud_output[1]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.196      ;
-; 1.930 ; baud_output[6]~reg0  ; baud_output[2]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.196      ;
-; 1.930 ; baud_output[6]~reg0  ; baud_output[3]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.196      ;
-; 1.930 ; baud_output[6]~reg0  ; baud_output[4]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.196      ;
-+-------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
++------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'clk'                                                                                     ;
++-------+-----------+------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node ; To Node          ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------+------------------+--------------+-------------+--------------+------------+------------+
+; 0.539 ; count[10] ; count[10]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.805      ;
+; 0.810 ; count[0]  ; count[0]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.076      ;
+; 0.813 ; count[8]  ; count[8]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.079      ;
+; 0.813 ; count[1]  ; count[1]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.079      ;
+; 0.814 ; count[3]  ; count[3]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.080      ;
+; 0.815 ; count[6]  ; count[6]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.081      ;
+; 0.844 ; count[7]  ; count[7]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.110      ;
+; 0.845 ; count[2]  ; count[2]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.111      ;
+; 0.846 ; count[4]  ; count[4]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.112      ;
+; 0.846 ; count[5]  ; count[5]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.112      ;
+; 0.846 ; count[9]  ; count[9]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.112      ;
+; 0.949 ; count[0]  ; baud_output~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.215      ;
+; 1.051 ; count[3]  ; baud_output~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.317      ;
+; 1.087 ; count[10] ; baud_output~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.353      ;
+; 1.190 ; count[9]  ; baud_output~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.456      ;
+; 1.193 ; count[0]  ; count[1]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.459      ;
+; 1.196 ; count[1]  ; count[2]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.462      ;
+; 1.196 ; count[8]  ; count[9]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.462      ;
+; 1.197 ; count[3]  ; count[4]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.463      ;
+; 1.224 ; count[1]  ; baud_output~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.490      ;
+; 1.230 ; count[7]  ; count[8]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.496      ;
+; 1.231 ; count[2]  ; count[3]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.497      ;
+; 1.232 ; count[9]  ; count[10]        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.498      ;
+; 1.232 ; count[5]  ; count[6]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.498      ;
+; 1.232 ; count[4]  ; count[5]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.498      ;
+; 1.256 ; count[2]  ; baud_output~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.522      ;
+; 1.264 ; count[0]  ; count[2]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.530      ;
+; 1.267 ; count[1]  ; count[3]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.533      ;
+; 1.267 ; count[8]  ; count[10]        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.533      ;
+; 1.268 ; count[3]  ; count[5]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.534      ;
+; 1.290 ; count[6]  ; count[7]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.556      ;
+; 1.301 ; count[7]  ; count[9]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.567      ;
+; 1.302 ; count[2]  ; count[4]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.568      ;
+; 1.303 ; count[4]  ; count[6]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.569      ;
+; 1.335 ; count[0]  ; count[3]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.601      ;
+; 1.338 ; count[1]  ; count[4]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.604      ;
+; 1.339 ; count[3]  ; count[6]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.605      ;
+; 1.361 ; count[6]  ; count[8]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.627      ;
+; 1.362 ; count[8]  ; baud_output~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.628      ;
+; 1.372 ; count[7]  ; count[10]        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.638      ;
+; 1.373 ; count[2]  ; count[5]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.639      ;
+; 1.391 ; count[5]  ; count[7]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.657      ;
+; 1.394 ; count[5]  ; baud_output~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.660      ;
+; 1.406 ; count[0]  ; count[4]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.672      ;
+; 1.409 ; count[1]  ; count[5]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.675      ;
+; 1.432 ; count[6]  ; count[9]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.698      ;
+; 1.444 ; count[2]  ; count[6]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.710      ;
+; 1.462 ; count[5]  ; count[8]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.728      ;
+; 1.462 ; count[4]  ; count[7]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.728      ;
+; 1.477 ; count[0]  ; count[5]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.743      ;
+; 1.480 ; count[1]  ; count[6]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.746      ;
+; 1.494 ; count[7]  ; baud_output~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.760      ;
+; 1.498 ; count[3]  ; count[7]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.764      ;
+; 1.503 ; count[6]  ; count[10]        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.769      ;
+; 1.533 ; count[5]  ; count[9]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.799      ;
+; 1.533 ; count[4]  ; count[8]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.799      ;
+; 1.548 ; count[0]  ; count[6]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.814      ;
+; 1.569 ; count[3]  ; count[8]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.835      ;
+; 1.603 ; count[2]  ; count[7]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.869      ;
+; 1.604 ; count[5]  ; count[10]        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.870      ;
+; 1.604 ; count[4]  ; count[9]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.870      ;
+; 1.608 ; count[0]  ; count[7]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.874      ;
+; 1.608 ; count[0]  ; count[8]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.874      ;
+; 1.608 ; count[0]  ; count[9]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.874      ;
+; 1.608 ; count[0]  ; count[10]        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.874      ;
+; 1.639 ; count[1]  ; count[7]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.905      ;
+; 1.640 ; count[3]  ; count[9]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.906      ;
+; 1.671 ; count[6]  ; baud_output~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.937      ;
+; 1.674 ; count[2]  ; count[8]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.940      ;
+; 1.675 ; count[4]  ; count[10]        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.941      ;
+; 1.703 ; count[4]  ; baud_output~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.969      ;
+; 1.710 ; count[3]  ; count[0]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.976      ;
+; 1.710 ; count[3]  ; count[2]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.976      ;
+; 1.710 ; count[3]  ; count[10]        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.976      ;
+; 1.710 ; count[3]  ; count[1]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.976      ;
+; 1.710 ; count[1]  ; count[8]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.976      ;
+; 1.745 ; count[2]  ; count[9]         ; clk          ; clk         ; 0.000        ; 0.000      ; 2.011      ;
+; 1.746 ; count[10] ; count[0]         ; clk          ; clk         ; 0.000        ; 0.000      ; 2.012      ;
+; 1.746 ; count[10] ; count[2]         ; clk          ; clk         ; 0.000        ; 0.000      ; 2.012      ;
+; 1.746 ; count[10] ; count[3]         ; clk          ; clk         ; 0.000        ; 0.000      ; 2.012      ;
+; 1.746 ; count[10] ; count[4]         ; clk          ; clk         ; 0.000        ; 0.000      ; 2.012      ;
+; 1.746 ; count[10] ; count[5]         ; clk          ; clk         ; 0.000        ; 0.000      ; 2.012      ;
+; 1.746 ; count[10] ; count[6]         ; clk          ; clk         ; 0.000        ; 0.000      ; 2.012      ;
+; 1.746 ; count[10] ; count[7]         ; clk          ; clk         ; 0.000        ; 0.000      ; 2.012      ;
+; 1.746 ; count[10] ; count[8]         ; clk          ; clk         ; 0.000        ; 0.000      ; 2.012      ;
+; 1.746 ; count[10] ; count[9]         ; clk          ; clk         ; 0.000        ; 0.000      ; 2.012      ;
+; 1.746 ; count[10] ; count[1]         ; clk          ; clk         ; 0.000        ; 0.000      ; 2.012      ;
+; 1.781 ; count[1]  ; count[9]         ; clk          ; clk         ; 0.000        ; 0.000      ; 2.047      ;
+; 1.816 ; count[2]  ; count[10]        ; clk          ; clk         ; 0.000        ; 0.000      ; 2.082      ;
+; 1.849 ; count[9]  ; count[0]         ; clk          ; clk         ; 0.000        ; 0.000      ; 2.115      ;
+; 1.849 ; count[9]  ; count[2]         ; clk          ; clk         ; 0.000        ; 0.000      ; 2.115      ;
+; 1.849 ; count[9]  ; count[3]         ; clk          ; clk         ; 0.000        ; 0.000      ; 2.115      ;
+; 1.849 ; count[9]  ; count[4]         ; clk          ; clk         ; 0.000        ; 0.000      ; 2.115      ;
+; 1.849 ; count[9]  ; count[5]         ; clk          ; clk         ; 0.000        ; 0.000      ; 2.115      ;
+; 1.849 ; count[9]  ; count[6]         ; clk          ; clk         ; 0.000        ; 0.000      ; 2.115      ;
+; 1.849 ; count[9]  ; count[7]         ; clk          ; clk         ; 0.000        ; 0.000      ; 2.115      ;
+; 1.849 ; count[9]  ; count[8]         ; clk          ; clk         ; 0.000        ; 0.000      ; 2.115      ;
+; 1.849 ; count[9]  ; count[1]         ; clk          ; clk         ; 0.000        ; 0.000      ; 2.115      ;
+; 1.852 ; count[1]  ; count[10]        ; clk          ; clk         ; 0.000        ; 0.000      ; 2.118      ;
+; 1.880 ; count[5]  ; count[0]         ; clk          ; clk         ; 0.000        ; 0.000      ; 2.146      ;
++-------+-----------+------------------+--------------+-------------+--------------+------------+------------+
 
 
-+-----------------------------------------------------------------------------------------------------------+
-; Slow Model Minimum Pulse Width: 'clk'                                                                     ;
-+--------+--------------+----------------+------------------+-------+------------+--------------------------+
-; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                   ;
-+--------+--------------+----------------+------------------+-------+------------+--------------------------+
-; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; clk   ; Rise       ; clk                      ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; baud_output[0]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output[0]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; baud_output[10]~reg0     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output[10]~reg0     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; baud_output[1]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output[1]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; baud_output[2]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output[2]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; baud_output[3]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output[3]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; baud_output[4]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output[4]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; baud_output[5]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output[5]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; baud_output[6]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output[6]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; baud_output[7]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output[7]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; baud_output[8]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output[8]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; baud_output[9]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output[9]~reg0      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; baud_output[0]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output[0]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; baud_output[10]~reg0|clk ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output[10]~reg0|clk ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; baud_output[1]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output[1]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; baud_output[2]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output[2]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; baud_output[3]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output[3]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; baud_output[4]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output[4]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; baud_output[5]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output[5]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; baud_output[6]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output[6]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; baud_output[7]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output[7]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; baud_output[8]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output[8]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; baud_output[9]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output[9]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk|combout              ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk|combout              ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~clkctrl|inclk[0]     ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~clkctrl|inclk[0]     ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~clkctrl|outclk       ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~clkctrl|outclk       ;
-+--------+--------------+----------------+------------------+-------+------------+--------------------------+
++-------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'clk'                                                                 ;
++--------+--------------+----------------+------------------+-------+------------+----------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target               ;
++--------+--------------+----------------+------------------+-------+------------+----------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; clk   ; Rise       ; clk                  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; baud_output~reg0     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output~reg0     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; count[0]             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; count[0]             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; count[10]            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; count[10]            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; count[1]             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; count[1]             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; count[2]             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; count[2]             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; count[3]             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; count[3]             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; count[4]             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; count[4]             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; count[5]             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; count[5]             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; count[6]             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; count[6]             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; count[7]             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; count[7]             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; count[8]             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; count[8]             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; count[9]             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; count[9]             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; baud_output~reg0|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output~reg0|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk|combout          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk|combout          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; count[0]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; count[0]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; count[10]|clk        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; count[10]|clk        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; count[1]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; count[1]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; count[2]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; count[2]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; count[3]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; count[3]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; count[4]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; count[4]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; count[5]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; count[5]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; count[6]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; count[6]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; count[7]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; count[7]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; count[8]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; count[8]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; count[9]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; count[9]|clk         ;
++--------+--------------+----------------+------------------+-------+------------+----------------------+
 
 
 +-----------------------------------------------------------------------+
@@ -430,57 +434,35 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; reset     ; clk        ; 0.782 ; 0.782 ; Rise       ; clk             ;
+; reset     ; clk        ; 0.294 ; 0.294 ; Rise       ; clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Hold Times                                                            ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; reset     ; clk        ; 0.850 ; 0.850 ; Rise       ; clk             ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
 +-------------------------------------------------------------------------+
-; Hold Times                                                              ;
-+-----------+------------+--------+--------+------------+-----------------+
-; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
-+-----------+------------+--------+--------+------------+-----------------+
-; reset     ; clk        ; -0.552 ; -0.552 ; Rise       ; clk             ;
-+-----------+------------+--------+--------+------------+-----------------+
+; Clock to Output Times                                                   ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; baud_output ; clk        ; 6.370 ; 6.370 ; Rise       ; clk             ;
++-------------+------------+-------+-------+------------+-----------------+
 
 
-+------------------------------------------------------------------------------+
-; Clock to Output Times                                                        ;
-+------------------+------------+-------+-------+------------+-----------------+
-; Data Port        ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+------------------+------------+-------+-------+------------+-----------------+
-; baud_output[*]   ; clk        ; 6.603 ; 6.603 ; Rise       ; clk             ;
-;  baud_output[0]  ; clk        ; 6.553 ; 6.553 ; Rise       ; clk             ;
-;  baud_output[1]  ; clk        ; 6.345 ; 6.345 ; Rise       ; clk             ;
-;  baud_output[2]  ; clk        ; 6.345 ; 6.345 ; Rise       ; clk             ;
-;  baud_output[3]  ; clk        ; 6.599 ; 6.599 ; Rise       ; clk             ;
-;  baud_output[4]  ; clk        ; 6.603 ; 6.603 ; Rise       ; clk             ;
-;  baud_output[5]  ; clk        ; 6.542 ; 6.542 ; Rise       ; clk             ;
-;  baud_output[6]  ; clk        ; 6.345 ; 6.345 ; Rise       ; clk             ;
-;  baud_output[7]  ; clk        ; 6.562 ; 6.562 ; Rise       ; clk             ;
-;  baud_output[8]  ; clk        ; 6.368 ; 6.368 ; Rise       ; clk             ;
-;  baud_output[9]  ; clk        ; 6.558 ; 6.558 ; Rise       ; clk             ;
-;  baud_output[10] ; clk        ; 6.355 ; 6.355 ; Rise       ; clk             ;
-+------------------+------------+-------+-------+------------+-----------------+
-
-
-+------------------------------------------------------------------------------+
-; Minimum Clock to Output Times                                                ;
-+------------------+------------+-------+-------+------------+-----------------+
-; Data Port        ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+------------------+------------+-------+-------+------------+-----------------+
-; baud_output[*]   ; clk        ; 6.345 ; 6.345 ; Rise       ; clk             ;
-;  baud_output[0]  ; clk        ; 6.553 ; 6.553 ; Rise       ; clk             ;
-;  baud_output[1]  ; clk        ; 6.345 ; 6.345 ; Rise       ; clk             ;
-;  baud_output[2]  ; clk        ; 6.345 ; 6.345 ; Rise       ; clk             ;
-;  baud_output[3]  ; clk        ; 6.599 ; 6.599 ; Rise       ; clk             ;
-;  baud_output[4]  ; clk        ; 6.603 ; 6.603 ; Rise       ; clk             ;
-;  baud_output[5]  ; clk        ; 6.542 ; 6.542 ; Rise       ; clk             ;
-;  baud_output[6]  ; clk        ; 6.345 ; 6.345 ; Rise       ; clk             ;
-;  baud_output[7]  ; clk        ; 6.562 ; 6.562 ; Rise       ; clk             ;
-;  baud_output[8]  ; clk        ; 6.368 ; 6.368 ; Rise       ; clk             ;
-;  baud_output[9]  ; clk        ; 6.558 ; 6.558 ; Rise       ; clk             ;
-;  baud_output[10] ; clk        ; 6.355 ; 6.355 ; Rise       ; clk             ;
-+------------------+------------+-------+-------+------------+-----------------+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; baud_output ; clk        ; 6.370 ; 6.370 ; Rise       ; clk             ;
++-------------+------------+-------+-------+------------+-----------------+
 
 
 +--------------------------------+
@@ -488,7 +470,7 @@ No paths to report.
 +-------+--------+---------------+
 ; Clock ; Slack  ; End Point TNS ;
 +-------+--------+---------------+
-; clk   ; -0.120 ; -1.320        ;
+; clk   ; -0.140 ; -1.540        ;
 +-------+--------+---------------+
 
 
@@ -497,7 +479,7 @@ No paths to report.
 +-------+-------+---------------+
 ; Clock ; Slack ; End Point TNS ;
 +-------+-------+---------------+
-; clk   ; 0.247 ; 0.000         ;
+; clk   ; 0.250 ; 0.000         ;
 +-------+-------+---------------+
 
 
@@ -518,292 +500,296 @@ No paths to report.
 +-------+--------+-----------------------+
 ; Clock ; Slack  ; End Point TNS         ;
 +-------+--------+-----------------------+
-; clk   ; -1.380 ; -12.380               ;
+; clk   ; -1.380 ; -13.380               ;
 +-------+--------+-----------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Fast Model Setup: 'clk'                                                                                                    ;
-+--------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
-; Slack  ; From Node            ; To Node              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+--------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
-; -0.120 ; baud_output[10]~reg0 ; baud_output[1]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.152      ;
-; -0.120 ; baud_output[10]~reg0 ; baud_output[2]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.152      ;
-; -0.120 ; baud_output[10]~reg0 ; baud_output[3]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.152      ;
-; -0.120 ; baud_output[10]~reg0 ; baud_output[4]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.152      ;
-; -0.120 ; baud_output[10]~reg0 ; baud_output[5]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.152      ;
-; -0.120 ; baud_output[10]~reg0 ; baud_output[6]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.152      ;
-; -0.120 ; baud_output[10]~reg0 ; baud_output[7]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.152      ;
-; -0.120 ; baud_output[10]~reg0 ; baud_output[8]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.152      ;
-; -0.120 ; baud_output[10]~reg0 ; baud_output[9]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.152      ;
-; -0.120 ; baud_output[10]~reg0 ; baud_output[10]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 1.152      ;
-; -0.120 ; baud_output[10]~reg0 ; baud_output[0]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.152      ;
-; -0.074 ; baud_output[1]~reg0  ; baud_output[1]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.106      ;
-; -0.074 ; baud_output[1]~reg0  ; baud_output[2]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.106      ;
-; -0.074 ; baud_output[1]~reg0  ; baud_output[3]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.106      ;
-; -0.074 ; baud_output[1]~reg0  ; baud_output[4]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.106      ;
-; -0.074 ; baud_output[1]~reg0  ; baud_output[5]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.106      ;
-; -0.074 ; baud_output[1]~reg0  ; baud_output[6]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.106      ;
-; -0.074 ; baud_output[1]~reg0  ; baud_output[7]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.106      ;
-; -0.074 ; baud_output[1]~reg0  ; baud_output[8]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.106      ;
-; -0.074 ; baud_output[1]~reg0  ; baud_output[9]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.106      ;
-; -0.074 ; baud_output[1]~reg0  ; baud_output[10]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 1.106      ;
-; -0.074 ; baud_output[1]~reg0  ; baud_output[0]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.106      ;
-; -0.063 ; baud_output[0]~reg0  ; baud_output[1]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.095      ;
-; -0.063 ; baud_output[0]~reg0  ; baud_output[2]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.095      ;
-; -0.063 ; baud_output[0]~reg0  ; baud_output[3]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.095      ;
-; -0.063 ; baud_output[0]~reg0  ; baud_output[4]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.095      ;
-; -0.063 ; baud_output[0]~reg0  ; baud_output[5]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.095      ;
-; -0.063 ; baud_output[0]~reg0  ; baud_output[6]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.095      ;
-; -0.063 ; baud_output[0]~reg0  ; baud_output[7]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.095      ;
-; -0.063 ; baud_output[0]~reg0  ; baud_output[8]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.095      ;
-; -0.063 ; baud_output[0]~reg0  ; baud_output[9]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.095      ;
-; -0.063 ; baud_output[0]~reg0  ; baud_output[10]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 1.095      ;
-; -0.063 ; baud_output[0]~reg0  ; baud_output[0]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.095      ;
-; -0.058 ; baud_output[8]~reg0  ; baud_output[1]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.090      ;
-; -0.058 ; baud_output[8]~reg0  ; baud_output[2]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.090      ;
-; -0.058 ; baud_output[8]~reg0  ; baud_output[3]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.090      ;
-; -0.058 ; baud_output[8]~reg0  ; baud_output[4]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.090      ;
-; -0.058 ; baud_output[8]~reg0  ; baud_output[5]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.090      ;
-; -0.058 ; baud_output[8]~reg0  ; baud_output[6]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.090      ;
-; -0.058 ; baud_output[8]~reg0  ; baud_output[7]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.090      ;
-; -0.058 ; baud_output[8]~reg0  ; baud_output[8]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.090      ;
-; -0.058 ; baud_output[8]~reg0  ; baud_output[9]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.090      ;
-; -0.058 ; baud_output[8]~reg0  ; baud_output[10]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 1.090      ;
-; -0.058 ; baud_output[8]~reg0  ; baud_output[0]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.090      ;
-; -0.031 ; baud_output[6]~reg0  ; baud_output[1]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.063      ;
-; -0.031 ; baud_output[6]~reg0  ; baud_output[2]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.063      ;
-; -0.031 ; baud_output[6]~reg0  ; baud_output[3]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.063      ;
-; -0.031 ; baud_output[6]~reg0  ; baud_output[4]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.063      ;
-; -0.031 ; baud_output[6]~reg0  ; baud_output[5]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.063      ;
-; -0.031 ; baud_output[6]~reg0  ; baud_output[6]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.063      ;
-; -0.031 ; baud_output[6]~reg0  ; baud_output[7]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.063      ;
-; -0.031 ; baud_output[6]~reg0  ; baud_output[8]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.063      ;
-; -0.031 ; baud_output[6]~reg0  ; baud_output[9]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.063      ;
-; -0.031 ; baud_output[6]~reg0  ; baud_output[10]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 1.063      ;
-; -0.031 ; baud_output[6]~reg0  ; baud_output[0]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.063      ;
-; -0.016 ; baud_output[7]~reg0  ; baud_output[1]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.048      ;
-; -0.016 ; baud_output[7]~reg0  ; baud_output[2]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.048      ;
-; -0.016 ; baud_output[7]~reg0  ; baud_output[3]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.048      ;
-; -0.016 ; baud_output[7]~reg0  ; baud_output[4]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.048      ;
-; -0.016 ; baud_output[7]~reg0  ; baud_output[5]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.048      ;
-; -0.016 ; baud_output[7]~reg0  ; baud_output[6]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.048      ;
-; -0.016 ; baud_output[7]~reg0  ; baud_output[7]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.048      ;
-; -0.016 ; baud_output[7]~reg0  ; baud_output[8]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.048      ;
-; -0.016 ; baud_output[7]~reg0  ; baud_output[9]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.048      ;
-; -0.016 ; baud_output[7]~reg0  ; baud_output[10]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 1.048      ;
-; -0.016 ; baud_output[7]~reg0  ; baud_output[0]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.048      ;
-; -0.002 ; baud_output[9]~reg0  ; baud_output[1]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.034      ;
-; -0.002 ; baud_output[9]~reg0  ; baud_output[2]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.034      ;
-; -0.002 ; baud_output[9]~reg0  ; baud_output[3]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.034      ;
-; -0.002 ; baud_output[9]~reg0  ; baud_output[4]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.034      ;
-; -0.002 ; baud_output[9]~reg0  ; baud_output[5]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.034      ;
-; -0.002 ; baud_output[9]~reg0  ; baud_output[6]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.034      ;
-; -0.002 ; baud_output[9]~reg0  ; baud_output[7]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.034      ;
-; -0.002 ; baud_output[9]~reg0  ; baud_output[8]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.034      ;
-; -0.002 ; baud_output[9]~reg0  ; baud_output[9]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.034      ;
-; -0.002 ; baud_output[9]~reg0  ; baud_output[10]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 1.034      ;
-; -0.002 ; baud_output[9]~reg0  ; baud_output[0]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.034      ;
-; 0.004  ; baud_output[3]~reg0  ; baud_output[1]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.028      ;
-; 0.004  ; baud_output[3]~reg0  ; baud_output[2]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.028      ;
-; 0.004  ; baud_output[3]~reg0  ; baud_output[3]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.028      ;
-; 0.004  ; baud_output[3]~reg0  ; baud_output[4]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.028      ;
-; 0.004  ; baud_output[3]~reg0  ; baud_output[5]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.028      ;
-; 0.004  ; baud_output[3]~reg0  ; baud_output[6]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.028      ;
-; 0.004  ; baud_output[3]~reg0  ; baud_output[7]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.028      ;
-; 0.004  ; baud_output[3]~reg0  ; baud_output[8]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.028      ;
-; 0.004  ; baud_output[3]~reg0  ; baud_output[9]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.028      ;
-; 0.004  ; baud_output[3]~reg0  ; baud_output[10]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 1.028      ;
-; 0.004  ; baud_output[3]~reg0  ; baud_output[0]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.028      ;
-; 0.034  ; baud_output[2]~reg0  ; baud_output[1]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 0.998      ;
-; 0.034  ; baud_output[2]~reg0  ; baud_output[2]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 0.998      ;
-; 0.034  ; baud_output[2]~reg0  ; baud_output[3]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 0.998      ;
-; 0.034  ; baud_output[2]~reg0  ; baud_output[4]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 0.998      ;
-; 0.034  ; baud_output[2]~reg0  ; baud_output[5]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 0.998      ;
-; 0.034  ; baud_output[2]~reg0  ; baud_output[6]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 0.998      ;
-; 0.034  ; baud_output[2]~reg0  ; baud_output[7]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 0.998      ;
-; 0.034  ; baud_output[2]~reg0  ; baud_output[8]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 0.998      ;
-; 0.034  ; baud_output[2]~reg0  ; baud_output[9]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 0.998      ;
-; 0.034  ; baud_output[2]~reg0  ; baud_output[10]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 0.998      ;
-; 0.034  ; baud_output[2]~reg0  ; baud_output[0]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 0.998      ;
-; 0.048  ; baud_output[4]~reg0  ; baud_output[1]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 0.984      ;
-+--------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
++------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'clk'                                                                              ;
++--------+-----------+-----------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node ; To Node   ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------+-----------+--------------+-------------+--------------+------------+------------+
+; -0.140 ; count[4]  ; count[0]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.172      ;
+; -0.140 ; count[4]  ; count[2]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.172      ;
+; -0.140 ; count[4]  ; count[3]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.172      ;
+; -0.140 ; count[4]  ; count[4]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.172      ;
+; -0.140 ; count[4]  ; count[5]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.172      ;
+; -0.140 ; count[4]  ; count[6]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.172      ;
+; -0.140 ; count[4]  ; count[7]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.172      ;
+; -0.140 ; count[4]  ; count[8]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.172      ;
+; -0.140 ; count[4]  ; count[9]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.172      ;
+; -0.140 ; count[4]  ; count[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.172      ;
+; -0.140 ; count[4]  ; count[1]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.172      ;
+; -0.129 ; count[6]  ; count[0]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.161      ;
+; -0.129 ; count[6]  ; count[2]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.161      ;
+; -0.129 ; count[6]  ; count[3]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.161      ;
+; -0.129 ; count[6]  ; count[4]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.161      ;
+; -0.129 ; count[6]  ; count[5]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.161      ;
+; -0.129 ; count[6]  ; count[6]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.161      ;
+; -0.129 ; count[6]  ; count[7]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.161      ;
+; -0.129 ; count[6]  ; count[8]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.161      ;
+; -0.129 ; count[6]  ; count[9]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.161      ;
+; -0.129 ; count[6]  ; count[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.161      ;
+; -0.129 ; count[6]  ; count[1]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.161      ;
+; -0.065 ; count[8]  ; count[0]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.097      ;
+; -0.065 ; count[8]  ; count[2]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.097      ;
+; -0.065 ; count[8]  ; count[3]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.097      ;
+; -0.065 ; count[8]  ; count[4]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.097      ;
+; -0.065 ; count[8]  ; count[5]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.097      ;
+; -0.065 ; count[8]  ; count[6]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.097      ;
+; -0.065 ; count[8]  ; count[7]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.097      ;
+; -0.065 ; count[8]  ; count[8]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.097      ;
+; -0.065 ; count[8]  ; count[9]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.097      ;
+; -0.065 ; count[8]  ; count[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.097      ;
+; -0.065 ; count[8]  ; count[1]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.097      ;
+; -0.061 ; count[7]  ; count[0]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.093      ;
+; -0.061 ; count[7]  ; count[2]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.093      ;
+; -0.061 ; count[7]  ; count[3]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.093      ;
+; -0.061 ; count[7]  ; count[4]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.093      ;
+; -0.061 ; count[7]  ; count[5]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.093      ;
+; -0.061 ; count[7]  ; count[6]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.093      ;
+; -0.061 ; count[7]  ; count[7]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.093      ;
+; -0.061 ; count[7]  ; count[8]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.093      ;
+; -0.061 ; count[7]  ; count[9]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.093      ;
+; -0.061 ; count[7]  ; count[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.093      ;
+; -0.061 ; count[7]  ; count[1]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.093      ;
+; -0.023 ; count[2]  ; count[0]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.055      ;
+; -0.023 ; count[2]  ; count[2]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.055      ;
+; -0.023 ; count[2]  ; count[3]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.055      ;
+; -0.023 ; count[2]  ; count[4]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.055      ;
+; -0.023 ; count[2]  ; count[5]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.055      ;
+; -0.023 ; count[2]  ; count[6]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.055      ;
+; -0.023 ; count[2]  ; count[7]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.055      ;
+; -0.023 ; count[2]  ; count[8]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.055      ;
+; -0.023 ; count[2]  ; count[9]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.055      ;
+; -0.023 ; count[2]  ; count[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.055      ;
+; -0.023 ; count[2]  ; count[1]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.055      ;
+; -0.012 ; count[1]  ; count[0]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.044      ;
+; -0.012 ; count[1]  ; count[2]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.044      ;
+; -0.012 ; count[1]  ; count[3]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.044      ;
+; -0.012 ; count[1]  ; count[4]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.044      ;
+; -0.012 ; count[1]  ; count[5]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.044      ;
+; -0.012 ; count[1]  ; count[6]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.044      ;
+; -0.012 ; count[1]  ; count[7]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.044      ;
+; -0.012 ; count[1]  ; count[8]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.044      ;
+; -0.012 ; count[1]  ; count[9]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.044      ;
+; -0.012 ; count[1]  ; count[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.044      ;
+; -0.012 ; count[1]  ; count[1]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.044      ;
+; -0.011 ; count[5]  ; count[0]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.043      ;
+; -0.011 ; count[5]  ; count[2]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.043      ;
+; -0.011 ; count[5]  ; count[3]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.043      ;
+; -0.011 ; count[5]  ; count[4]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.043      ;
+; -0.011 ; count[5]  ; count[5]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.043      ;
+; -0.011 ; count[5]  ; count[6]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.043      ;
+; -0.011 ; count[5]  ; count[7]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.043      ;
+; -0.011 ; count[5]  ; count[8]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.043      ;
+; -0.011 ; count[5]  ; count[9]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.043      ;
+; -0.011 ; count[5]  ; count[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.043      ;
+; -0.011 ; count[5]  ; count[1]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.043      ;
+; 0.003  ; count[0]  ; count[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.029      ;
+; 0.003  ; count[9]  ; count[0]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.029      ;
+; 0.003  ; count[9]  ; count[2]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.029      ;
+; 0.003  ; count[9]  ; count[3]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.029      ;
+; 0.003  ; count[9]  ; count[4]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.029      ;
+; 0.003  ; count[9]  ; count[5]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.029      ;
+; 0.003  ; count[9]  ; count[6]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.029      ;
+; 0.003  ; count[9]  ; count[7]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.029      ;
+; 0.003  ; count[9]  ; count[8]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.029      ;
+; 0.003  ; count[9]  ; count[9]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.029      ;
+; 0.003  ; count[9]  ; count[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.029      ;
+; 0.003  ; count[9]  ; count[1]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.029      ;
+; 0.033  ; count[10] ; count[0]  ; clk          ; clk         ; 1.000        ; 0.000      ; 0.999      ;
+; 0.033  ; count[10] ; count[2]  ; clk          ; clk         ; 1.000        ; 0.000      ; 0.999      ;
+; 0.033  ; count[10] ; count[3]  ; clk          ; clk         ; 1.000        ; 0.000      ; 0.999      ;
+; 0.033  ; count[10] ; count[4]  ; clk          ; clk         ; 1.000        ; 0.000      ; 0.999      ;
+; 0.033  ; count[10] ; count[5]  ; clk          ; clk         ; 1.000        ; 0.000      ; 0.999      ;
+; 0.033  ; count[10] ; count[6]  ; clk          ; clk         ; 1.000        ; 0.000      ; 0.999      ;
+; 0.033  ; count[10] ; count[7]  ; clk          ; clk         ; 1.000        ; 0.000      ; 0.999      ;
+; 0.033  ; count[10] ; count[8]  ; clk          ; clk         ; 1.000        ; 0.000      ; 0.999      ;
+; 0.033  ; count[10] ; count[9]  ; clk          ; clk         ; 1.000        ; 0.000      ; 0.999      ;
+; 0.033  ; count[10] ; count[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 0.999      ;
+; 0.033  ; count[10] ; count[1]  ; clk          ; clk         ; 1.000        ; 0.000      ; 0.999      ;
++--------+-----------+-----------+--------------+-------------+--------------+------------+------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------+
-; Fast Model Hold: 'clk'                                                                                                    ;
-+-------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
-; Slack ; From Node            ; To Node              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+-------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
-; 0.247 ; baud_output[10]~reg0 ; baud_output[10]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.399      ;
-; 0.364 ; baud_output[9]~reg0  ; baud_output[9]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.516      ;
-; 0.366 ; baud_output[5]~reg0  ; baud_output[5]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.518      ;
-; 0.366 ; baud_output[7]~reg0  ; baud_output[7]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.518      ;
-; 0.367 ; baud_output[0]~reg0  ; baud_output[0]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.519      ;
-; 0.368 ; baud_output[3]~reg0  ; baud_output[3]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.520      ;
-; 0.378 ; baud_output[1]~reg0  ; baud_output[1]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.530      ;
-; 0.378 ; baud_output[2]~reg0  ; baud_output[2]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.530      ;
-; 0.379 ; baud_output[4]~reg0  ; baud_output[4]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.531      ;
-; 0.379 ; baud_output[6]~reg0  ; baud_output[6]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.531      ;
-; 0.380 ; baud_output[8]~reg0  ; baud_output[8]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.532      ;
-; 0.502 ; baud_output[9]~reg0  ; baud_output[10]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.654      ;
-; 0.504 ; baud_output[5]~reg0  ; baud_output[6]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.656      ;
-; 0.504 ; baud_output[7]~reg0  ; baud_output[8]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.656      ;
-; 0.505 ; baud_output[0]~reg0  ; baud_output[1]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
-; 0.518 ; baud_output[2]~reg0  ; baud_output[3]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.670      ;
-; 0.518 ; baud_output[1]~reg0  ; baud_output[2]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.670      ;
-; 0.519 ; baud_output[4]~reg0  ; baud_output[5]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.671      ;
-; 0.519 ; baud_output[6]~reg0  ; baud_output[7]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.671      ;
-; 0.520 ; baud_output[8]~reg0  ; baud_output[9]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.672      ;
-; 0.539 ; baud_output[5]~reg0  ; baud_output[7]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.691      ;
-; 0.539 ; baud_output[7]~reg0  ; baud_output[9]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.691      ;
-; 0.540 ; baud_output[0]~reg0  ; baud_output[2]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.692      ;
-; 0.553 ; baud_output[1]~reg0  ; baud_output[3]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.705      ;
-; 0.554 ; baud_output[4]~reg0  ; baud_output[6]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.706      ;
-; 0.554 ; baud_output[6]~reg0  ; baud_output[8]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.706      ;
-; 0.555 ; baud_output[8]~reg0  ; baud_output[10]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.707      ;
-; 0.561 ; baud_output[3]~reg0  ; baud_output[4]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.713      ;
-; 0.574 ; baud_output[5]~reg0  ; baud_output[8]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.726      ;
-; 0.574 ; baud_output[7]~reg0  ; baud_output[10]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.726      ;
-; 0.575 ; baud_output[0]~reg0  ; baud_output[3]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.727      ;
-; 0.589 ; baud_output[4]~reg0  ; baud_output[7]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.741      ;
-; 0.589 ; baud_output[6]~reg0  ; baud_output[9]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.741      ;
-; 0.596 ; baud_output[3]~reg0  ; baud_output[5]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.748      ;
-; 0.609 ; baud_output[5]~reg0  ; baud_output[9]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.761      ;
-; 0.612 ; baud_output[2]~reg0  ; baud_output[4]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.764      ;
-; 0.624 ; baud_output[4]~reg0  ; baud_output[8]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.776      ;
-; 0.624 ; baud_output[6]~reg0  ; baud_output[10]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.776      ;
-; 0.631 ; baud_output[3]~reg0  ; baud_output[6]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.783      ;
-; 0.644 ; baud_output[5]~reg0  ; baud_output[10]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.796      ;
-; 0.647 ; baud_output[2]~reg0  ; baud_output[5]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.799      ;
-; 0.647 ; baud_output[1]~reg0  ; baud_output[4]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.799      ;
-; 0.659 ; baud_output[4]~reg0  ; baud_output[9]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.811      ;
-; 0.666 ; baud_output[3]~reg0  ; baud_output[7]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.818      ;
-; 0.669 ; baud_output[0]~reg0  ; baud_output[4]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.821      ;
-; 0.682 ; baud_output[2]~reg0  ; baud_output[6]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.834      ;
-; 0.682 ; baud_output[1]~reg0  ; baud_output[5]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.834      ;
-; 0.694 ; baud_output[4]~reg0  ; baud_output[10]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.846      ;
-; 0.701 ; baud_output[3]~reg0  ; baud_output[8]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.853      ;
-; 0.704 ; baud_output[0]~reg0  ; baud_output[5]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.856      ;
-; 0.717 ; baud_output[2]~reg0  ; baud_output[7]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.869      ;
-; 0.717 ; baud_output[1]~reg0  ; baud_output[6]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.869      ;
-; 0.736 ; baud_output[3]~reg0  ; baud_output[9]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.888      ;
-; 0.739 ; baud_output[0]~reg0  ; baud_output[6]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.891      ;
-; 0.752 ; baud_output[2]~reg0  ; baud_output[8]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.904      ;
-; 0.752 ; baud_output[1]~reg0  ; baud_output[7]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.904      ;
-; 0.771 ; baud_output[3]~reg0  ; baud_output[10]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.923      ;
-; 0.774 ; baud_output[0]~reg0  ; baud_output[7]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.926      ;
-; 0.779 ; baud_output[5]~reg0  ; baud_output[1]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.931      ;
-; 0.779 ; baud_output[5]~reg0  ; baud_output[2]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.931      ;
-; 0.779 ; baud_output[5]~reg0  ; baud_output[3]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.931      ;
-; 0.779 ; baud_output[5]~reg0  ; baud_output[4]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.931      ;
-; 0.779 ; baud_output[5]~reg0  ; baud_output[0]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.931      ;
-; 0.787 ; baud_output[2]~reg0  ; baud_output[9]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.939      ;
-; 0.787 ; baud_output[1]~reg0  ; baud_output[8]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.939      ;
-; 0.809 ; baud_output[0]~reg0  ; baud_output[8]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.961      ;
-; 0.822 ; baud_output[2]~reg0  ; baud_output[10]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.974      ;
-; 0.822 ; baud_output[1]~reg0  ; baud_output[9]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.974      ;
-; 0.832 ; baud_output[4]~reg0  ; baud_output[1]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.984      ;
-; 0.832 ; baud_output[4]~reg0  ; baud_output[2]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.984      ;
-; 0.832 ; baud_output[4]~reg0  ; baud_output[3]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.984      ;
-; 0.832 ; baud_output[4]~reg0  ; baud_output[0]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.984      ;
-; 0.844 ; baud_output[0]~reg0  ; baud_output[9]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.996      ;
-; 0.846 ; baud_output[2]~reg0  ; baud_output[1]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.998      ;
-; 0.846 ; baud_output[2]~reg0  ; baud_output[0]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.998      ;
-; 0.857 ; baud_output[1]~reg0  ; baud_output[10]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.009      ;
-; 0.876 ; baud_output[3]~reg0  ; baud_output[1]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.028      ;
-; 0.876 ; baud_output[3]~reg0  ; baud_output[2]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.028      ;
-; 0.876 ; baud_output[3]~reg0  ; baud_output[0]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.028      ;
-; 0.879 ; baud_output[0]~reg0  ; baud_output[10]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.031      ;
-; 0.882 ; baud_output[9]~reg0  ; baud_output[1]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.034      ;
-; 0.882 ; baud_output[9]~reg0  ; baud_output[2]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.034      ;
-; 0.882 ; baud_output[9]~reg0  ; baud_output[3]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.034      ;
-; 0.882 ; baud_output[9]~reg0  ; baud_output[4]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.034      ;
-; 0.882 ; baud_output[9]~reg0  ; baud_output[5]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.034      ;
-; 0.882 ; baud_output[9]~reg0  ; baud_output[6]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.034      ;
-; 0.882 ; baud_output[9]~reg0  ; baud_output[7]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.034      ;
-; 0.882 ; baud_output[9]~reg0  ; baud_output[8]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.034      ;
-; 0.882 ; baud_output[9]~reg0  ; baud_output[0]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.034      ;
-; 0.896 ; baud_output[7]~reg0  ; baud_output[1]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.048      ;
-; 0.896 ; baud_output[7]~reg0  ; baud_output[2]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.048      ;
-; 0.896 ; baud_output[7]~reg0  ; baud_output[3]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.048      ;
-; 0.896 ; baud_output[7]~reg0  ; baud_output[4]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.048      ;
-; 0.896 ; baud_output[7]~reg0  ; baud_output[5]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.048      ;
-; 0.896 ; baud_output[7]~reg0  ; baud_output[6]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.048      ;
-; 0.896 ; baud_output[7]~reg0  ; baud_output[0]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.048      ;
-; 0.911 ; baud_output[6]~reg0  ; baud_output[1]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.063      ;
-; 0.911 ; baud_output[6]~reg0  ; baud_output[2]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.063      ;
-; 0.911 ; baud_output[6]~reg0  ; baud_output[3]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.063      ;
-; 0.911 ; baud_output[6]~reg0  ; baud_output[4]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.063      ;
-+-------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
++------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'clk'                                                                                     ;
++-------+-----------+------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node ; To Node          ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------+------------------+--------------+-------------+--------------+------------+------------+
+; 0.250 ; count[10] ; count[10]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.402      ;
+; 0.365 ; count[0]  ; count[0]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.517      ;
+; 0.367 ; count[8]  ; count[8]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.519      ;
+; 0.367 ; count[1]  ; count[1]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.519      ;
+; 0.368 ; count[3]  ; count[3]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.520      ;
+; 0.368 ; count[6]  ; count[6]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.520      ;
+; 0.377 ; count[2]  ; count[2]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.529      ;
+; 0.378 ; count[4]  ; count[4]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.530      ;
+; 0.378 ; count[5]  ; count[5]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.530      ;
+; 0.378 ; count[7]  ; count[7]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.530      ;
+; 0.379 ; count[9]  ; count[9]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.531      ;
+; 0.446 ; count[0]  ; baud_output~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.598      ;
+; 0.474 ; count[3]  ; baud_output~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.626      ;
+; 0.502 ; count[10] ; baud_output~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.654      ;
+; 0.503 ; count[0]  ; count[1]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.655      ;
+; 0.505 ; count[1]  ; count[2]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.505 ; count[8]  ; count[9]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.506 ; count[3]  ; count[4]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.658      ;
+; 0.517 ; count[2]  ; count[3]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.669      ;
+; 0.518 ; count[7]  ; count[8]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.670      ;
+; 0.518 ; count[5]  ; count[6]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.670      ;
+; 0.518 ; count[4]  ; count[5]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.670      ;
+; 0.519 ; count[9]  ; count[10]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.671      ;
+; 0.532 ; count[9]  ; baud_output~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.684      ;
+; 0.538 ; count[0]  ; count[2]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.690      ;
+; 0.540 ; count[1]  ; count[3]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.692      ;
+; 0.540 ; count[8]  ; count[10]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.692      ;
+; 0.541 ; count[3]  ; count[5]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.693      ;
+; 0.543 ; count[1]  ; baud_output~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.695      ;
+; 0.552 ; count[2]  ; count[4]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.704      ;
+; 0.553 ; count[7]  ; count[9]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.705      ;
+; 0.553 ; count[4]  ; count[6]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.705      ;
+; 0.554 ; count[2]  ; baud_output~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.706      ;
+; 0.561 ; count[6]  ; count[7]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.713      ;
+; 0.573 ; count[0]  ; count[3]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.725      ;
+; 0.575 ; count[1]  ; count[4]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.727      ;
+; 0.576 ; count[3]  ; count[6]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.728      ;
+; 0.587 ; count[2]  ; count[5]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.739      ;
+; 0.588 ; count[7]  ; count[10]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.740      ;
+; 0.596 ; count[6]  ; count[8]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.748      ;
+; 0.600 ; count[8]  ; baud_output~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.752      ;
+; 0.608 ; count[0]  ; count[4]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.760      ;
+; 0.610 ; count[1]  ; count[5]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.762      ;
+; 0.612 ; count[5]  ; count[7]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.764      ;
+; 0.622 ; count[2]  ; count[6]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.774      ;
+; 0.631 ; count[6]  ; count[9]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.783      ;
+; 0.637 ; count[5]  ; baud_output~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.789      ;
+; 0.643 ; count[0]  ; count[5]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.795      ;
+; 0.645 ; count[1]  ; count[6]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.797      ;
+; 0.647 ; count[5]  ; count[8]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.799      ;
+; 0.647 ; count[4]  ; count[7]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.799      ;
+; 0.666 ; count[6]  ; count[10]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.818      ;
+; 0.670 ; count[3]  ; count[7]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.822      ;
+; 0.678 ; count[0]  ; count[6]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.830      ;
+; 0.682 ; count[5]  ; count[9]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.834      ;
+; 0.682 ; count[4]  ; count[8]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.834      ;
+; 0.687 ; count[7]  ; baud_output~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.839      ;
+; 0.705 ; count[3]  ; count[8]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.857      ;
+; 0.716 ; count[2]  ; count[7]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.868      ;
+; 0.717 ; count[5]  ; count[10]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.869      ;
+; 0.717 ; count[4]  ; count[9]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.869      ;
+; 0.739 ; count[1]  ; count[7]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.891      ;
+; 0.740 ; count[3]  ; count[9]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.892      ;
+; 0.751 ; count[2]  ; count[8]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.903      ;
+; 0.752 ; count[4]  ; count[10]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.904      ;
+; 0.755 ; count[6]  ; baud_output~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.907      ;
+; 0.766 ; count[4]  ; baud_output~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.918      ;
+; 0.772 ; count[0]  ; count[7]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.924      ;
+; 0.774 ; count[1]  ; count[8]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.926      ;
+; 0.775 ; count[3]  ; count[10]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.927      ;
+; 0.786 ; count[2]  ; count[9]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.938      ;
+; 0.795 ; count[0]  ; count[8]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.947      ;
+; 0.795 ; count[0]  ; count[9]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.947      ;
+; 0.795 ; count[0]  ; count[10]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.947      ;
+; 0.809 ; count[1]  ; count[9]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.961      ;
+; 0.821 ; count[2]  ; count[10]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.973      ;
+; 0.823 ; count[3]  ; count[0]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.975      ;
+; 0.823 ; count[3]  ; count[2]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.975      ;
+; 0.823 ; count[3]  ; count[1]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.975      ;
+; 0.844 ; count[1]  ; count[10]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.996      ;
+; 0.847 ; count[10] ; count[0]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.999      ;
+; 0.847 ; count[10] ; count[2]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.999      ;
+; 0.847 ; count[10] ; count[3]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.999      ;
+; 0.847 ; count[10] ; count[4]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.999      ;
+; 0.847 ; count[10] ; count[5]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.999      ;
+; 0.847 ; count[10] ; count[6]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.999      ;
+; 0.847 ; count[10] ; count[7]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.999      ;
+; 0.847 ; count[10] ; count[8]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.999      ;
+; 0.847 ; count[10] ; count[9]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.999      ;
+; 0.847 ; count[10] ; count[1]         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.999      ;
+; 0.877 ; count[9]  ; count[0]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.029      ;
+; 0.877 ; count[9]  ; count[2]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.029      ;
+; 0.877 ; count[9]  ; count[3]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.029      ;
+; 0.877 ; count[9]  ; count[4]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.029      ;
+; 0.877 ; count[9]  ; count[5]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.029      ;
+; 0.877 ; count[9]  ; count[6]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.029      ;
+; 0.877 ; count[9]  ; count[7]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.029      ;
+; 0.877 ; count[9]  ; count[8]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.029      ;
+; 0.877 ; count[9]  ; count[1]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.029      ;
+; 0.891 ; count[5]  ; count[0]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.043      ;
++-------+-----------+------------------+--------------+-------------+--------------+------------+------------+
 
 
-+-----------------------------------------------------------------------------------------------------------+
-; Fast Model Minimum Pulse Width: 'clk'                                                                     ;
-+--------+--------------+----------------+------------------+-------+------------+--------------------------+
-; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                   ;
-+--------+--------------+----------------+------------------+-------+------------+--------------------------+
-; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; clk   ; Rise       ; clk                      ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; baud_output[0]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output[0]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; baud_output[10]~reg0     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output[10]~reg0     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; baud_output[1]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output[1]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; baud_output[2]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output[2]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; baud_output[3]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output[3]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; baud_output[4]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output[4]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; baud_output[5]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output[5]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; baud_output[6]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output[6]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; baud_output[7]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output[7]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; baud_output[8]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output[8]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; baud_output[9]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output[9]~reg0      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; baud_output[0]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output[0]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; baud_output[10]~reg0|clk ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output[10]~reg0|clk ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; baud_output[1]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output[1]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; baud_output[2]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output[2]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; baud_output[3]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output[3]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; baud_output[4]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output[4]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; baud_output[5]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output[5]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; baud_output[6]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output[6]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; baud_output[7]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output[7]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; baud_output[8]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output[8]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; baud_output[9]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output[9]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk|combout              ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk|combout              ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~clkctrl|inclk[0]     ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~clkctrl|inclk[0]     ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~clkctrl|outclk       ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~clkctrl|outclk       ;
-+--------+--------------+----------------+------------------+-------+------------+--------------------------+
++-------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'clk'                                                                 ;
++--------+--------------+----------------+------------------+-------+------------+----------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target               ;
++--------+--------------+----------------+------------------+-------+------------+----------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; clk   ; Rise       ; clk                  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; baud_output~reg0     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output~reg0     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; count[0]             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; count[0]             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; count[10]            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; count[10]            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; count[1]             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; count[1]             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; count[2]             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; count[2]             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; count[3]             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; count[3]             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; count[4]             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; count[4]             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; count[5]             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; count[5]             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; count[6]             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; count[6]             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; count[7]             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; count[7]             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; count[8]             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; count[8]             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; count[9]             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; count[9]             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; baud_output~reg0|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; baud_output~reg0|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk|combout          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk|combout          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; count[0]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; count[0]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; count[10]|clk        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; count[10]|clk        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; count[1]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; count[1]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; count[2]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; count[2]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; count[3]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; count[3]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; count[4]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; count[4]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; count[5]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; count[5]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; count[6]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; count[6]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; count[7]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; count[7]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; count[8]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; count[8]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; count[9]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; count[9]|clk         ;
++--------+--------------+----------------+------------------+-------+------------+----------------------+
 
 
-+-----------------------------------------------------------------------+
-; Setup Times                                                           ;
-+-----------+------------+-------+-------+------------+-----------------+
-; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+-----------+------------+-------+-------+------------+-----------------+
-; reset     ; clk        ; 0.048 ; 0.048 ; Rise       ; clk             ;
-+-----------+------------+-------+-------+------------+-----------------+
++-------------------------------------------------------------------------+
+; Setup Times                                                             ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; reset     ; clk        ; -0.193 ; -0.193 ; Rise       ; clk             ;
++-----------+------------+--------+--------+------------+-----------------+
 
 
 +-----------------------------------------------------------------------+
@@ -811,48 +797,26 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; reset     ; clk        ; 0.072 ; 0.072 ; Rise       ; clk             ;
+; reset     ; clk        ; 0.767 ; 0.767 ; Rise       ; clk             ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
-+------------------------------------------------------------------------------+
-; Clock to Output Times                                                        ;
-+------------------+------------+-------+-------+------------+-----------------+
-; Data Port        ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+------------------+------------+-------+-------+------------+-----------------+
-; baud_output[*]   ; clk        ; 3.756 ; 3.756 ; Rise       ; clk             ;
-;  baud_output[0]  ; clk        ; 3.713 ; 3.713 ; Rise       ; clk             ;
-;  baud_output[1]  ; clk        ; 3.626 ; 3.626 ; Rise       ; clk             ;
-;  baud_output[2]  ; clk        ; 3.626 ; 3.626 ; Rise       ; clk             ;
-;  baud_output[3]  ; clk        ; 3.745 ; 3.745 ; Rise       ; clk             ;
-;  baud_output[4]  ; clk        ; 3.756 ; 3.756 ; Rise       ; clk             ;
-;  baud_output[5]  ; clk        ; 3.703 ; 3.703 ; Rise       ; clk             ;
-;  baud_output[6]  ; clk        ; 3.626 ; 3.626 ; Rise       ; clk             ;
-;  baud_output[7]  ; clk        ; 3.722 ; 3.722 ; Rise       ; clk             ;
-;  baud_output[8]  ; clk        ; 3.648 ; 3.648 ; Rise       ; clk             ;
-;  baud_output[9]  ; clk        ; 3.719 ; 3.719 ; Rise       ; clk             ;
-;  baud_output[10] ; clk        ; 3.636 ; 3.636 ; Rise       ; clk             ;
-+------------------+------------+-------+-------+------------+-----------------+
++-------------------------------------------------------------------------+
+; Clock to Output Times                                                   ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; baud_output ; clk        ; 3.655 ; 3.655 ; Rise       ; clk             ;
++-------------+------------+-------+-------+------------+-----------------+
 
 
-+------------------------------------------------------------------------------+
-; Minimum Clock to Output Times                                                ;
-+------------------+------------+-------+-------+------------+-----------------+
-; Data Port        ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+------------------+------------+-------+-------+------------+-----------------+
-; baud_output[*]   ; clk        ; 3.626 ; 3.626 ; Rise       ; clk             ;
-;  baud_output[0]  ; clk        ; 3.713 ; 3.713 ; Rise       ; clk             ;
-;  baud_output[1]  ; clk        ; 3.626 ; 3.626 ; Rise       ; clk             ;
-;  baud_output[2]  ; clk        ; 3.626 ; 3.626 ; Rise       ; clk             ;
-;  baud_output[3]  ; clk        ; 3.745 ; 3.745 ; Rise       ; clk             ;
-;  baud_output[4]  ; clk        ; 3.756 ; 3.756 ; Rise       ; clk             ;
-;  baud_output[5]  ; clk        ; 3.703 ; 3.703 ; Rise       ; clk             ;
-;  baud_output[6]  ; clk        ; 3.626 ; 3.626 ; Rise       ; clk             ;
-;  baud_output[7]  ; clk        ; 3.722 ; 3.722 ; Rise       ; clk             ;
-;  baud_output[8]  ; clk        ; 3.648 ; 3.648 ; Rise       ; clk             ;
-;  baud_output[9]  ; clk        ; 3.719 ; 3.719 ; Rise       ; clk             ;
-;  baud_output[10] ; clk        ; 3.636 ; 3.636 ; Rise       ; clk             ;
-+------------------+------------+-------+-------+------------+-----------------+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; baud_output ; clk        ; 3.655 ; 3.655 ; Rise       ; clk             ;
++-------------+------------+-------+-------+------------+-----------------+
 
 
 +-------------------------------------------------------------------------------+
@@ -860,10 +824,10 @@ No paths to report.
 +------------------+---------+-------+----------+---------+---------------------+
 ; Clock            ; Setup   ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +------------------+---------+-------+----------+---------+---------------------+
-; Worst-case Slack ; -1.371  ; 0.247 ; N/A      ; N/A     ; -1.380              ;
-;  clk             ; -1.371  ; 0.247 ; N/A      ; N/A     ; -1.380              ;
-; Design-wide TNS  ; -15.081 ; 0.0   ; 0.0      ; 0.0     ; -12.38              ;
-;  clk             ; -15.081 ; 0.000 ; N/A      ; N/A     ; -12.380             ;
+; Worst-case Slack ; -1.419  ; 0.250 ; N/A      ; N/A     ; -1.380              ;
+;  clk             ; -1.419  ; 0.250 ; N/A      ; N/A     ; -1.380              ;
+; Design-wide TNS  ; -16.542 ; 0.0   ; 0.0      ; 0.0     ; -13.38              ;
+;  clk             ; -16.542 ; 0.000 ; N/A      ; N/A     ; -13.380             ;
 +------------------+---------+-------+----------+---------+---------------------+
 
 
@@ -872,7 +836,7 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; reset     ; clk        ; 0.782 ; 0.782 ; Rise       ; clk             ;
+; reset     ; clk        ; 0.294 ; 0.294 ; Rise       ; clk             ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -881,48 +845,26 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; reset     ; clk        ; 0.072 ; 0.072 ; Rise       ; clk             ;
+; reset     ; clk        ; 0.850 ; 0.850 ; Rise       ; clk             ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
-+------------------------------------------------------------------------------+
-; Clock to Output Times                                                        ;
-+------------------+------------+-------+-------+------------+-----------------+
-; Data Port        ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+------------------+------------+-------+-------+------------+-----------------+
-; baud_output[*]   ; clk        ; 6.603 ; 6.603 ; Rise       ; clk             ;
-;  baud_output[0]  ; clk        ; 6.553 ; 6.553 ; Rise       ; clk             ;
-;  baud_output[1]  ; clk        ; 6.345 ; 6.345 ; Rise       ; clk             ;
-;  baud_output[2]  ; clk        ; 6.345 ; 6.345 ; Rise       ; clk             ;
-;  baud_output[3]  ; clk        ; 6.599 ; 6.599 ; Rise       ; clk             ;
-;  baud_output[4]  ; clk        ; 6.603 ; 6.603 ; Rise       ; clk             ;
-;  baud_output[5]  ; clk        ; 6.542 ; 6.542 ; Rise       ; clk             ;
-;  baud_output[6]  ; clk        ; 6.345 ; 6.345 ; Rise       ; clk             ;
-;  baud_output[7]  ; clk        ; 6.562 ; 6.562 ; Rise       ; clk             ;
-;  baud_output[8]  ; clk        ; 6.368 ; 6.368 ; Rise       ; clk             ;
-;  baud_output[9]  ; clk        ; 6.558 ; 6.558 ; Rise       ; clk             ;
-;  baud_output[10] ; clk        ; 6.355 ; 6.355 ; Rise       ; clk             ;
-+------------------+------------+-------+-------+------------+-----------------+
++-------------------------------------------------------------------------+
+; Clock to Output Times                                                   ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; baud_output ; clk        ; 6.370 ; 6.370 ; Rise       ; clk             ;
++-------------+------------+-------+-------+------------+-----------------+
 
 
-+------------------------------------------------------------------------------+
-; Minimum Clock to Output Times                                                ;
-+------------------+------------+-------+-------+------------+-----------------+
-; Data Port        ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+------------------+------------+-------+-------+------------+-----------------+
-; baud_output[*]   ; clk        ; 3.626 ; 3.626 ; Rise       ; clk             ;
-;  baud_output[0]  ; clk        ; 3.713 ; 3.713 ; Rise       ; clk             ;
-;  baud_output[1]  ; clk        ; 3.626 ; 3.626 ; Rise       ; clk             ;
-;  baud_output[2]  ; clk        ; 3.626 ; 3.626 ; Rise       ; clk             ;
-;  baud_output[3]  ; clk        ; 3.745 ; 3.745 ; Rise       ; clk             ;
-;  baud_output[4]  ; clk        ; 3.756 ; 3.756 ; Rise       ; clk             ;
-;  baud_output[5]  ; clk        ; 3.703 ; 3.703 ; Rise       ; clk             ;
-;  baud_output[6]  ; clk        ; 3.626 ; 3.626 ; Rise       ; clk             ;
-;  baud_output[7]  ; clk        ; 3.722 ; 3.722 ; Rise       ; clk             ;
-;  baud_output[8]  ; clk        ; 3.648 ; 3.648 ; Rise       ; clk             ;
-;  baud_output[9]  ; clk        ; 3.719 ; 3.719 ; Rise       ; clk             ;
-;  baud_output[10] ; clk        ; 3.636 ; 3.636 ; Rise       ; clk             ;
-+------------------+------------+-------+-------+------------+-----------------+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; baud_output ; clk        ; 3.655 ; 3.655 ; Rise       ; clk             ;
++-------------+------------+-------+-------+------------+-----------------+
 
 
 +-------------------------------------------------------------------+
@@ -930,7 +872,7 @@ No paths to report.
 +------------+----------+----------+----------+----------+----------+
 ; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+----------+----------+----------+----------+
-; clk        ; clk      ; 187      ; 0        ; 0        ; 0        ;
+; clk        ; clk      ; 198      ; 0        ; 0        ; 0        ;
 +------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -940,7 +882,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------+----------+----------+----------+----------+----------+
 ; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+----------+----------+----------+----------+
-; clk        ; clk      ; 187      ; 0        ; 0        ; 0        ;
+; clk        ; clk      ; 198      ; 0        ; 0        ; 0        ;
 +------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -965,9 +907,9 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 1     ; 1    ;
-; Unconstrained Input Port Paths  ; 11    ; 11   ;
-; Unconstrained Output Ports      ; 11    ; 11   ;
-; Unconstrained Output Port Paths ; 11    ; 11   ;
+; Unconstrained Input Port Paths  ; 12    ; 12   ;
+; Unconstrained Output Ports      ; 1     ; 1    ;
+; Unconstrained Output Port Paths ; 1     ; 1    ;
 +---------------------------------+-------+------+
 
 
@@ -977,7 +919,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Nov 17 22:38:31 2023
+    Info: Processing started: Mon Nov 20 20:52:21 2023
 Info: Command: quartus_sta tx_baud_counter -c tx_baud_counter
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -990,43 +932,43 @@ Info (332105): Deriving Clocks
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow Model
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -1.371
+Info (332146): Worst-case setup slack is -1.419
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -1.371       -15.081 clk 
-Info (332146): Worst-case hold slack is 0.537
+    Info (332119):    -1.419       -16.542 clk 
+Info (332146): Worst-case hold slack is 0.539
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):     0.537         0.000 clk 
+    Info (332119):     0.539         0.000 clk 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -1.380
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -1.380       -12.380 clk 
+    Info (332119):    -1.380       -13.380 clk 
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info: Analyzing Fast Model
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -0.120
+Info (332146): Worst-case setup slack is -0.140
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -0.120        -1.320 clk 
-Info (332146): Worst-case hold slack is 0.247
+    Info (332119):    -0.140        -1.540 clk 
+Info (332146): Worst-case hold slack is 0.250
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):     0.247         0.000 clk 
+    Info (332119):     0.250         0.000 clk 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -1.380
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -1.380       -12.380 clk 
+    Info (332119):    -1.380       -13.380 clk 
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4536 megabytes
-    Info: Processing ended: Fri Nov 17 22:38:32 2023
+    Info: Peak virtual memory: 4535 megabytes
+    Info: Processing ended: Mon Nov 20 20:52:22 2023
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

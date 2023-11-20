@@ -10,7 +10,7 @@ module tx_baud_counter (input clk,
             count <= 0;
         end
         else begin
-            if (count == 1301) begin
+            if (count == 0) begin
                 count <= 0;
                 baud_output <= 1;
             end

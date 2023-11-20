@@ -35,121 +35,11 @@ HEADER
 SIGNAL("baud_output")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = BUS;
-	WIDTH = 11;
-	LSB_INDEX = 0;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
 	PARENT = "";
-}
-
-SIGNAL("baud_output[10]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "baud_output";
-}
-
-SIGNAL("baud_output[9]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "baud_output";
-}
-
-SIGNAL("baud_output[8]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "baud_output";
-}
-
-SIGNAL("baud_output[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "baud_output";
-}
-
-SIGNAL("baud_output[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "baud_output";
-}
-
-SIGNAL("baud_output[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "baud_output";
-}
-
-SIGNAL("baud_output[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "baud_output";
-}
-
-SIGNAL("baud_output[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "baud_output";
-}
-
-SIGNAL("baud_output[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "baud_output";
-}
-
-SIGNAL("baud_output[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "baud_output";
-}
-
-SIGNAL("baud_output[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "baud_output";
 }
 
 SIGNAL("clk")
@@ -172,135 +62,12 @@ SIGNAL("reset")
 	PARENT = "";
 }
 
-TRANSITION_LIST("baud_output[10]")
+TRANSITION_LIST("baud_output")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 340.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL X FOR 639.0;
-		LEVEL 0 FOR 27001.0;
-	}
-}
-
-TRANSITION_LIST("baud_output[9]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 340.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL X FOR 639.0;
-		LEVEL 0 FOR 27001.0;
-	}
-}
-
-TRANSITION_LIST("baud_output[8]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 340.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL X FOR 639.0;
-		LEVEL 0 FOR 27001.0;
-	}
-}
-
-TRANSITION_LIST("baud_output[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 340.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL X FOR 639.0;
-		LEVEL 0 FOR 27001.0;
-	}
-}
-
-TRANSITION_LIST("baud_output[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 340.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL X FOR 639.0;
-		LEVEL 0 FOR 27001.0;
-	}
-}
-
-TRANSITION_LIST("baud_output[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 340.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL X FOR 639.0;
-		LEVEL 0 FOR 27001.0;
-	}
-}
-
-TRANSITION_LIST("baud_output[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 340.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL X FOR 639.0;
-		LEVEL 0 FOR 27001.0;
-	}
-}
-
-TRANSITION_LIST("baud_output[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 340.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL X FOR 639.0;
-		LEVEL 0 FOR 27001.0;
-	}
-}
-
-TRANSITION_LIST("baud_output[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 340.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL X FOR 639.0;
-		LEVEL 0 FOR 27001.0;
-	}
-}
-
-TRANSITION_LIST("baud_output[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 340.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL X FOR 639.0;
-		LEVEL 0 FOR 27001.0;
-	}
-}
-
-TRANSITION_LIST("baud_output[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 340.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL X FOR 639.0;
-		LEVEL 0 FOR 27001.0;
+		LEVEL X FOR 28000.0;
 	}
 }
 
@@ -323,15 +90,13 @@ TRANSITION_LIST("reset")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 340.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 27640.0;
+		LEVEL 1 FOR 28000.0;
 	}
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "clk";
+	CHANNEL = "baud_output";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 0;
@@ -340,7 +105,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "reset";
+	CHANNEL = "clk";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1;
@@ -349,122 +114,11 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "baud_output";
+	CHANNEL = "reset";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 2;
 	TREE_LEVEL = 0;
-	CHILDREN = 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "baud_output[10]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 3;
-	TREE_LEVEL = 1;
-	PARENT = 2;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "baud_output[9]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 4;
-	TREE_LEVEL = 1;
-	PARENT = 2;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "baud_output[8]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 5;
-	TREE_LEVEL = 1;
-	PARENT = 2;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "baud_output[7]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 6;
-	TREE_LEVEL = 1;
-	PARENT = 2;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "baud_output[6]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 7;
-	TREE_LEVEL = 1;
-	PARENT = 2;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "baud_output[5]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 8;
-	TREE_LEVEL = 1;
-	PARENT = 2;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "baud_output[4]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 9;
-	TREE_LEVEL = 1;
-	PARENT = 2;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "baud_output[3]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 10;
-	TREE_LEVEL = 1;
-	PARENT = 2;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "baud_output[2]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 11;
-	TREE_LEVEL = 1;
-	PARENT = 2;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "baud_output[1]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 12;
-	TREE_LEVEL = 1;
-	PARENT = 2;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "baud_output[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 13;
-	TREE_LEVEL = 1;
-	PARENT = 2;
 }
 
 TIME_BAR

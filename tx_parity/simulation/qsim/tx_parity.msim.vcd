@@ -3,7 +3,7 @@ $comment
 		vcd file tx_parity.msim.vcd -direction
 $end
 $date
-	Sat Nov 18 17:50:35 2023
+	Mon Nov 20 22:43:19 2023
 $end
 $version
 	ModelSim Version 10.1d
@@ -45,16 +45,16 @@ $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-b10111 !
+b1101001 !
 0+
 1*
 1)
-1(
-1'
-0&
-1%
-0$
-0#
+0(
+0'
+1&
+0%
+1$
+1#
 1"
 x,
 0-
@@ -63,22 +63,14 @@ x/
 10
 11
 12
-13
+03
 04
 1;
-1:
-19
-08
-17
-06
-05
-$end
-#500000
-b10011 !
+0:
 09
-0,
-03
-0'
-14
-0*
+18
+07
+16
+15
+$end
 #1000000

@@ -4,7 +4,7 @@ module tx_controller (input clk,
                       input ctrl_baud,
                       input ctrl_counter,
                       output reg ctrl_sr_load,
-                      output reg current_state,
+                      output reg [1:0] current_state,
                       output reg ctrl_sr_shift);
 
     reg count = 1'b0;
@@ -38,6 +38,7 @@ module tx_controller (input clk,
             end
             state_shift: begin
                 ctrl_sr_load <= 0;
+                ctrl_sr_shift <= 0;
 
                 if (ctrl_baud)
                     ctrl_sr_shift <= 1;

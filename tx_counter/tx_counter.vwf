@@ -55,51 +55,11 @@ SIGNAL("count_enable")
 SIGNAL("count_out")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = BUS;
-	WIDTH = 4;
-	LSB_INDEX = 0;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
 	PARENT = "";
-}
-
-SIGNAL("count_out[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "count_out";
-}
-
-SIGNAL("count_out[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "count_out";
-}
-
-SIGNAL("count_out[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "count_out";
-}
-
-SIGNAL("count_out[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "count_out";
 }
 
 SIGNAL("reset")
@@ -131,40 +91,11 @@ TRANSITION_LIST("count_enable")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 200.0;
-		LEVEL 1 FOR 740.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("count_out[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("count_out[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("count_out[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("count_out[0]")
+TRANSITION_LIST("count_out")
 {
 	NODE
 	{
@@ -178,11 +109,9 @@ TRANSITION_LIST("reset")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 60.0;
+		LEVEL 1 FOR 180.0;
 		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 300.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 600.0;
+		LEVEL 1 FOR 800.0;
 	}
 }
 
@@ -217,50 +146,9 @@ DISPLAY_LINE
 {
 	CHANNEL = "count_out";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 3;
 	TREE_LEVEL = 0;
-	CHILDREN = 4, 5, 6, 7;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "count_out[3]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 4;
-	TREE_LEVEL = 1;
-	PARENT = 3;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "count_out[2]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 5;
-	TREE_LEVEL = 1;
-	PARENT = 3;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "count_out[1]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 6;
-	TREE_LEVEL = 1;
-	PARENT = 3;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "count_out[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 7;
-	TREE_LEVEL = 1;
-	PARENT = 3;
 }
 
 TIME_BAR

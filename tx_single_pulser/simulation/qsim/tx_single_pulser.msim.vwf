@@ -335,13 +335,7 @@ TRANSITION_LIST("tx_single_pulser_vlg_vec_tst|pulser_in")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 140.0;
-		LEVEL 1 FOR 120.0;
+		LEVEL 1 FOR 460.0;
 		LEVEL 0 FOR 60.0;
 		LEVEL 1 FOR 480.0;
 	}
@@ -365,13 +359,7 @@ TRANSITION_LIST("tx_single_pulser_vlg_vec_tst|pulser_out")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 240.0;
+		LEVEL 0 FOR 470.0;
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 20.0;
@@ -775,13 +763,7 @@ TRANSITION_LIST("tx_single_pulser_vlg_vec_tst|i1|pulser_in~combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 140.0;
-		LEVEL 1 FOR 120.0;
+		LEVEL 1 FOR 460.0;
 		LEVEL 0 FOR 60.0;
 		LEVEL 1 FOR 480.0;
 	}
@@ -792,13 +774,7 @@ TRANSITION_LIST("tx_single_pulser_vlg_vec_tst|i1|pulser_out~1_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 140.0;
-		LEVEL 0 FOR 120.0;
+		LEVEL 0 FOR 460.0;
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 20.0;
@@ -811,13 +787,7 @@ TRANSITION_LIST("tx_single_pulser_vlg_vec_tst|i1|current_state~regout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 140.0;
-		LEVEL 0 FOR 120.0;
+		LEVEL 0 FOR 470.0;
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 20.0;
@@ -830,13 +800,7 @@ TRANSITION_LIST("tx_single_pulser_vlg_vec_tst|i1|pulser_out~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 90.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 250.0;
+		LEVEL 0 FOR 460.0;
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 30.0;
 		LEVEL 1 FOR 10.0;
@@ -849,13 +813,7 @@ TRANSITION_LIST("tx_single_pulser_vlg_vec_tst|i1|pulser_out~reg0_regout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 240.0;
+		LEVEL 0 FOR 470.0;
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 20.0;

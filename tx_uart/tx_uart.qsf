@@ -43,9 +43,6 @@ set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "20:45:44  NOVEMBER 20, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
-set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
-set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
-set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name VERILOG_FILE ../tx_single_pulser/tx_single_pulser.v
 set_global_assignment -name VERILOG_FILE ../tx_shift_register/tx_shift_register.v
 set_global_assignment -name VERILOG_FILE ../tx_parity/tx_parity.v
@@ -53,18 +50,8 @@ set_global_assignment -name VERILOG_FILE ../tx_counter/tx_counter.v
 set_global_assignment -name VERILOG_FILE ../tx_controller/tx_controller.v
 set_global_assignment -name VERILOG_FILE ../tx_baud_counter/tx_baud_counter.v
 set_global_assignment -name VERILOG_FILE ../tx_7segdecoder/tx_7segdecoder.v
-set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
-set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name BDF_FILE tx_uart.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE tx_uart.vwf
-set_global_assignment -name SIMULATION_MODE FUNCTIONAL
-set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
-set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
-set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/Adam/Documents/git-repos/ELEC473_assignment1/tx_uart/tx_uart.vwf"
 set_location_assignment PIN_N25 -to SW[0]
 set_location_assignment PIN_N26 -to SW[1]
 set_location_assignment PIN_P25 -to SW[2]
@@ -211,10 +198,10 @@ set_location_assignment PIN_L6 -to HEX7[3]
 set_location_assignment PIN_L7 -to HEX7[4]
 set_location_assignment PIN_P9 -to HEX7[5]
 set_location_assignment PIN_N9 -to HEX7[6]
-set_location_assignment PIN_G26 -to KEY[0]
+set_location_assignment VREFGROUP_B5_N0 -to KEY[0]
 set_location_assignment PIN_N23 -to KEY[1]
 set_location_assignment PIN_P23 -to KEY[2]
-set_location_assignment PIN_W26 -to KEY[3]
+set_location_assignment VREFGROUP_B1_N0 -to KEY[3]
 set_location_assignment PIN_AE23 -to LEDR[0]
 set_location_assignment PIN_AF23 -to LEDR[1]
 set_location_assignment PIN_AB21 -to LEDR[2]
@@ -490,5 +477,19 @@ set_location_assignment PIN_V24 -to GPIO_1[32]
 set_location_assignment PIN_V23 -to GPIO_1[33]
 set_location_assignment PIN_W25 -to GPIO_1[34]
 set_location_assignment PIN_W23 -to GPIO_1[35]
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_W26 -to KEY3
+set_location_assignment PIN_G26 -to KEY0
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "M:/ELEC473/projects/ELEC473_assignment1/tx_uart/tx_uart.vwf"
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED WITH WEAK PULL-UP"
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

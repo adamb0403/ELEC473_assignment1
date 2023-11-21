@@ -38,5 +38,5 @@
 # Loading work.tx_shift_register_vlg_check_tst
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
 # Simulation passed !
-# ** Note: $finish    : tx_shift_register.vt(156)
+# ** Note: $finish    : tx_shift_register.vt(157)
 #    Time: 400 ns  Iteration: 0  Instance: /tx_shift_register_vlg_vec_tst/tb_out

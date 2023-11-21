@@ -3,7 +3,7 @@ $comment
 		vcd file tx_parity.msim.vcd -direction
 $end
 $date
-	Mon Nov 20 22:43:19 2023
+	Tue Nov 21 10:27:12 2023
 $end
 $version
 	ModelSim Version 10.1d

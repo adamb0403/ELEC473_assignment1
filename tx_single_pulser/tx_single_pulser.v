@@ -7,8 +7,10 @@ module tx_single_pulser (input clk,
     parameter wait_h = 1'b0;
     parameter wait_l = 1'b1;
 
-    initial
+    initial begin
         current_state <= wait_h;
+        pulser_out <= 1'b0;
+    end
 
     always @(posedge clk) begin
         if (!reset) begin

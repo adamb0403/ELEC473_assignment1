@@ -7,8 +7,8 @@ vtx_counter
 Z1 !s100 b7hE;5gnZoaKAO>BYa8GZ0
 Z2 IcX1@3oegBOkW8Q[Gj4m]U2
 Z3 Vf5hAo?S:nfCZfG4cI]H6m2
-Z4 dC:\Users\Adam\Documents\git-repos\ELEC473_assignment1\tx_counter\simulation\qsim
-Z5 w1700513495
+Z4 dM:\ELEC473\projects\ELEC473_assignment1\tx_counter\simulation\qsim
+Z5 w1700562394
 Z6 8tx_counter.vo
 Z7 Ftx_counter.vo
 L0 31
@@ -19,7 +19,7 @@ Z9 !s90 -work|work|tx_counter.vo|
 Z10 o-work work -O0
 !i10b 1
 !s85 0
-Z11 !s108 1700513496.280000
+Z11 !s108 1700562395.863000
 Z12 !s107 tx_counter.vo|
 !s101 -O0
 vtx_counter_vlg_check_tst
@@ -28,54 +28,54 @@ Z13 !s100 TlOM1YOKga5HZkzDXdaFA3
 Z14 I7f;mT0GPLko[jG3_;S[8_1
 Z15 V=U>;Y9BbL<TdGIUD:Ea2B2
 R4
-Z16 w1700513494
-Z17 8tx_counter.vt
-Z18 Ftx_counter.vt
+R5
+Z16 8tx_counter.vt
+Z17 Ftx_counter.vt
 L0 61
 R8
 r1
 !s85 0
 31
-Z19 !s108 1700513496.359000
-Z20 !s107 tx_counter.vt|
-Z21 !s90 -work|work|tx_counter.vt|
+Z18 !s108 1700562396.168000
+Z19 !s107 tx_counter.vt|
+Z20 !s90 -work|work|tx_counter.vt|
 !s101 -O0
 R10
 vtx_counter_vlg_sample_tst
 !i10b 1
-Z22 !s100 8kcO^03n<@RPif=YG<Hdo2
-Z23 I3m5Eb4TdadznB8IM<M1CU2
-Z24 Vzci;[7hhWmanRJgGLVb1V3
+Z21 !s100 8kcO^03n<@RPif=YG<Hdo2
+Z22 I3m5Eb4TdadznB8IM<M1CU2
+Z23 Vzci;[7hhWmanRJgGLVb1V3
 R4
+R5
 R16
 R17
-R18
 L0 29
 R8
 r1
 !s85 0
 31
+R18
 R19
 R20
-R21
 !s101 -O0
 R10
 vtx_counter_vlg_vec_tst
 !i10b 1
-!s100 4JDGGhmRoGz@=5mF@5S^^1
-I3h8g]IX]lg^EA?Cfcz_251
-Z25 Vh<Fiol:GIURZ?Xha5G18g3
+Z24 !s100 4JDGGhmRoGz@=5mF@5S^^1
+Z25 I3h8g]IX]lg^EA?Cfcz_251
+Z26 Vh<Fiol:GIURZ?Xha5G18g3
 R4
+R5
 R16
 R17
-R18
-Z26 L0 156
+Z27 L0 156
 R8
 r1
 !s85 0
 31
+R18
 R19
 R20
-R21
 !s101 -O0
 R10

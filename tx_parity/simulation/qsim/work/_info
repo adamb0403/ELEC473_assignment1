@@ -7,8 +7,8 @@ vtx_parity
 Z1 !s100 @RKlT7ZLJO?ilCef^P4i71
 Z2 I;U<<PjE4LCd>;gUY4791T1
 Z3 V]QT<89<n[3>iH[RJKgJZ93
-Z4 dC:\Users\Adam\Documents\git-repos\ELEC473_assignment1\tx_parity\simulation\qsim
-Z5 w1700520198
+Z4 dM:\ELEC473\projects\ELEC473_assignment1\tx_parity\simulation\qsim
+Z5 w1700562431
 Z6 8tx_parity.vo
 Z7 Ftx_parity.vo
 L0 31
@@ -19,7 +19,7 @@ Z9 !s90 -work|work|tx_parity.vo|
 Z10 o-work work -O0
 !i10b 1
 !s85 0
-Z11 !s108 1700520198.931000
+Z11 !s108 1700562431.946000
 Z12 !s107 tx_parity.vo|
 !s101 -O0
 vtx_parity_vlg_check_tst
@@ -28,7 +28,7 @@ Z13 !s100 IUSZOcn3]XK983OL`m_AQ3
 Z14 IQB6LUUFT]1RajFhl>h5_:0
 Z15 VTGP`[F1Z:kEPiCg7ICWK21
 R4
-Z16 w1700520197
+Z16 w1700562430
 Z17 8tx_parity.vt
 Z18 Ftx_parity.vt
 L0 57
@@ -36,7 +36,7 @@ R8
 r1
 !s85 0
 31
-Z19 !s108 1700520199.011000
+Z19 !s108 1700562432.132000
 Z20 !s107 tx_parity.vt|
 Z21 !s90 -work|work|tx_parity.vt|
 !s101 -O0
@@ -62,14 +62,14 @@ R21
 R10
 vtx_parity_vlg_vec_tst
 !i10b 1
-!s100 Y2m_II4?mQ5GfEXQoMO;53
-I7o7[MdZcACR5]o6]4EeJX2
-Z25 VOP:SO_EBTH;YR9m>6gg0R2
+Z25 !s100 Y2m_II4?mQ5GfEXQoMO;53
+Z26 I7o7[MdZcACR5]o6]4EeJX2
+Z27 VOP:SO_EBTH;YR9m>6gg0R2
 R4
 R16
 R17
 R18
-Z26 L0 313
+Z28 L0 313
 R8
 r1
 !s85 0

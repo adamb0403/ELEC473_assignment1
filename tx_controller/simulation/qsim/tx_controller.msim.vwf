@@ -475,13 +475,13 @@ TRANSITION_LIST("tx_controller_vlg_vec_tst|ctrl_baud")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 80.0;
+		LEVEL 0 FOR 600.0;
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 60.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 80.0;
+		LEVEL 0 FOR 60.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 720.0;
+		LEVEL 0 FOR 220.0;
 	}
 }
 
@@ -490,9 +490,9 @@ TRANSITION_LIST("tx_controller_vlg_vec_tst|ctrl_counter")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 320.0;
+		LEVEL 0 FOR 840.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 660.0;
+		LEVEL 0 FOR 140.0;
 	}
 }
 
@@ -501,9 +501,9 @@ TRANSITION_LIST("tx_controller_vlg_vec_tst|ctrl_pulser")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 40.0;
+		LEVEL 0 FOR 540.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 940.0;
+		LEVEL 0 FOR 440.0;
 	}
 }
 
@@ -521,9 +521,9 @@ TRANSITION_LIST("tx_controller_vlg_vec_tst|ctrl_sr_load")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 70.0;
+		LEVEL 0 FOR 570.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 910.0;
+		LEVEL 0 FOR 410.0;
 	}
 }
 
@@ -532,13 +532,13 @@ TRANSITION_LIST("tx_controller_vlg_vec_tst|ctrl_sr_shift")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 90.0;
+		LEVEL 0 FOR 610.0;
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 60.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 80.0;
+		LEVEL 0 FOR 60.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 710.0;
+		LEVEL 0 FOR 210.0;
 	}
 }
 
@@ -547,9 +547,9 @@ TRANSITION_LIST("tx_controller_vlg_vec_tst|current_state[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 70.0;
-		LEVEL 1 FOR 260.0;
-		LEVEL 0 FOR 670.0;
+		LEVEL 0 FOR 570.0;
+		LEVEL 1 FOR 280.0;
+		LEVEL 0 FOR 150.0;
 	}
 }
 
@@ -558,9 +558,9 @@ TRANSITION_LIST("tx_controller_vlg_vec_tst|current_state[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 50.0;
+		LEVEL 0 FOR 550.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 930.0;
+		LEVEL 0 FOR 430.0;
 	}
 }
 
@@ -731,9 +731,9 @@ TRANSITION_LIST("tx_controller_vlg_vec_tst|i1|current_state[0]~1_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 290.0;
-		LEVEL 1 FOR 670.0;
+		LEVEL 1 FOR 540.0;
+		LEVEL 0 FOR 310.0;
+		LEVEL 1 FOR 150.0;
 	}
 }
 
@@ -742,9 +742,9 @@ TRANSITION_LIST("tx_controller_vlg_vec_tst|i1|ctrl_pulser~combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 40.0;
+		LEVEL 0 FOR 540.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 940.0;
+		LEVEL 0 FOR 440.0;
 	}
 }
 
@@ -753,9 +753,9 @@ TRANSITION_LIST("tx_controller_vlg_vec_tst|i1|ctrl_counter~combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 320.0;
+		LEVEL 0 FOR 840.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 660.0;
+		LEVEL 0 FOR 140.0;
 	}
 }
 
@@ -764,13 +764,13 @@ TRANSITION_LIST("tx_controller_vlg_vec_tst|i1|ctrl_baud~combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 80.0;
+		LEVEL 0 FOR 600.0;
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 60.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 80.0;
+		LEVEL 0 FOR 60.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 720.0;
+		LEVEL 0 FOR 220.0;
 	}
 }
 
@@ -995,9 +995,9 @@ TRANSITION_LIST("tx_controller_vlg_vec_tst|i1|current_state[0]~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 40.0;
+		LEVEL 0 FOR 540.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 950.0;
+		LEVEL 0 FOR 450.0;
 	}
 }
 
@@ -1015,9 +1015,9 @@ TRANSITION_LIST("tx_controller_vlg_vec_tst|i1|current_state[0]~2_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 70.0;
-		LEVEL 1 FOR 250.0;
-		LEVEL 0 FOR 680.0;
+		LEVEL 0 FOR 570.0;
+		LEVEL 1 FOR 270.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -1026,9 +1026,9 @@ TRANSITION_LIST("tx_controller_vlg_vec_tst|i1|current_state[0]~3_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 40.0;
+		LEVEL 0 FOR 540.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 950.0;
+		LEVEL 0 FOR 450.0;
 	}
 }
 
@@ -1037,9 +1037,9 @@ TRANSITION_LIST("tx_controller_vlg_vec_tst|i1|current_state[0]~reg0_regout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 50.0;
+		LEVEL 0 FOR 550.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 930.0;
+		LEVEL 0 FOR 430.0;
 	}
 }
 
@@ -1048,9 +1048,9 @@ TRANSITION_LIST("tx_controller_vlg_vec_tst|i1|current_state[1]~4_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 270.0;
-		LEVEL 0 FOR 680.0;
+		LEVEL 0 FOR 550.0;
+		LEVEL 1 FOR 290.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -1059,9 +1059,9 @@ TRANSITION_LIST("tx_controller_vlg_vec_tst|i1|current_state[1]~reg0_regout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 70.0;
-		LEVEL 1 FOR 260.0;
-		LEVEL 0 FOR 670.0;
+		LEVEL 0 FOR 570.0;
+		LEVEL 1 FOR 280.0;
+		LEVEL 0 FOR 150.0;
 	}
 }
 
@@ -1070,9 +1070,9 @@ TRANSITION_LIST("tx_controller_vlg_vec_tst|i1|Mux0~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 50.0;
+		LEVEL 0 FOR 550.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 930.0;
+		LEVEL 0 FOR 430.0;
 	}
 }
 
@@ -1081,9 +1081,9 @@ TRANSITION_LIST("tx_controller_vlg_vec_tst|i1|ctrl_sr_load~reg0_regout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 70.0;
+		LEVEL 0 FOR 570.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 910.0;
+		LEVEL 0 FOR 410.0;
 	}
 }
 
@@ -1092,13 +1092,13 @@ TRANSITION_LIST("tx_controller_vlg_vec_tst|i1|ctrl_sr_shift~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 80.0;
+		LEVEL 0 FOR 600.0;
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 60.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 80.0;
+		LEVEL 0 FOR 60.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 720.0;
+		LEVEL 0 FOR 220.0;
 	}
 }
 
@@ -1107,13 +1107,13 @@ TRANSITION_LIST("tx_controller_vlg_vec_tst|i1|ctrl_sr_shift~reg0_regout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 90.0;
+		LEVEL 0 FOR 610.0;
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 60.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 80.0;
+		LEVEL 0 FOR 60.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 710.0;
+		LEVEL 0 FOR 210.0;
 	}
 }
 

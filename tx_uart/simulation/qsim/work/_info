@@ -4,10 +4,10 @@ K3
 cModel Technology
 Z0 dC:\Users\Adam\Documents\git-repos\ELEC473_assignment1\tx_uart\simulation\qsim
 vtx_uart
-Z1 IRjRd_zjmh[5]m9NaEo5Nm3
-Z2 V?I_I8UD;cJRTH>hLE0NMo1
-Z3 dC:\Users\Adam\Documents\git-repos\ELEC473_assignment1\tx_uart\simulation\qsim
-Z4 w1700520423
+Z1 I:fObLWG3QNK0AB6nhVXFh1
+Z2 VVA7j7d[]e<H83^HmWK@0[3
+Z3 dM:\ELEC473\projects\ELEC473_assignment1\tx_uart\simulation\qsim
+Z4 w1700581265
 Z5 8tx_uart.vo
 Z6 Ftx_uart.vo
 L0 31
@@ -17,65 +17,65 @@ r1
 Z8 !s90 -work|work|tx_uart.vo|
 Z9 o-work work -O0
 !i10b 1
-Z10 !s100 =84FzgW0Yh[RjV6O[ID[11
+Z10 !s100 GfDRlO;VR74M0n:<;iH4^0
 !s85 0
-Z11 !s108 1700520424.472000
+Z11 !s108 1700581266.219000
 Z12 !s107 tx_uart.vo|
 !s101 -O0
 vtx_uart_vlg_check_tst
 !i10b 1
-Z13 !s100 9NE<;b;B4EZb1l6Q91SLk0
-Z14 Ig6^IV^XK=zV9Q67agFb0W0
-Z15 VOh08C[O>=mXR6CG<CJCF81
+Z13 !s100 H=oOcG`WR4Joc60Ci8bU73
+Z14 Ie_:l;G]c7VdimB_gJYHi00
+Z15 VIY^d=Jh`_G6n@M2J>Qc_U1
 R3
-R4
-Z16 8tx_uart.vt
-Z17 Ftx_uart.vt
+Z16 w1700581264
+Z17 8tx_uart.vt
+Z18 Ftx_uart.vt
 L0 63
 R7
 r1
 !s85 0
 31
-Z18 !s108 1700520424.552000
-Z19 !s107 tx_uart.vt|
-Z20 !s90 -work|work|tx_uart.vt|
+Z19 !s108 1700581266.417000
+Z20 !s107 tx_uart.vt|
+Z21 !s90 -work|work|tx_uart.vt|
 !s101 -O0
 R9
 vtx_uart_vlg_sample_tst
 !i10b 1
-Z21 !s100 TDLEhln;Z?YP9g6n@KTgd2
-Z22 Ia:WDEKheOiLV65@9oITa;2
-Z23 V_ZoD<`?I9mc0SVKo535DY2
+Z22 !s100 RHejPhGENh_RQE=B4;CDV2
+Z23 Iio:TQ572;hV52mGZ@J>c<0
+Z24 VhD[hzDH[YZ2Z3_cgDZ@1e2
 R3
-R4
 R16
 R17
+R18
 L0 29
 R7
 r1
 !s85 0
 31
-R18
 R19
 R20
+R21
 !s101 -O0
 R9
 vtx_uart_vlg_vec_tst
 !i10b 1
-Z24 !s100 7AL7nW]eh?NNDFXU8=8Jo1
-Z25 IfLg_<bI@6e6beb<4CDXzk3
-Z26 V1;o^oPe=aXCXZ;>QJXa8o0
+Z25 !s100 TObI3:HTH^eC;S;DC5k5_1
+Z26 I^fK8zY?@m9haaJkYY7mZf3
+Z27 V1;o^oPe=aXCXZ;>QJXa8o0
 R3
-R4
 R16
 R17
-Z27 L0 426
+R18
+Z28 L0 485
 R7
 r1
 !s85 0
 31
-R18
 R19
 R20
+R21
 !s101 -O0
 R9

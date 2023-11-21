@@ -14,6 +14,15 @@
 # Top level modules:
 # 	tx_uart_vlg_vec_tst
 # vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.tx_uart_vlg_vec_tst 
+# //  ModelSim ALTERA 10.1d Nov  2 2012 
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
 # Loading work.tx_uart_vlg_vec_tst
 # Loading work.tx_uart
 # Loading cycloneii_ver.cycloneii_lcell_ff
@@ -28,6 +37,21 @@
 # Loading work.tx_uart_vlg_sample_tst
 # Loading work.tx_uart_vlg_check_tst
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
-# Simulation passed !
-# ** Note: $finish    : tx_uart.vt(422)
-#    Time: 1 us  Iteration: 0  Instance: /tx_uart_vlg_vec_tst/tb_out
+# ERROR! Vector Mismatch for output port HEX4[1] :: @time = 1000000.000 ps
+#      Expected value = 0000000
+#      Real value = 0010010
+# ERROR! Vector Mismatch for output port HEX4[4] :: @time = 1000000.000 ps
+#      Expected value = 0000000
+#      Real value = 0010010
+# ERROR! Vector Mismatch for output port HEX5[1] :: @time = 1000000.000 ps
+#      Expected value = 0000000
+#      Real value = 0010010
+# ERROR! Vector Mismatch for output port HEX5[4] :: @time = 1000000.000 ps
+#      Expected value = 0000000
+#      Real value = 0010010
+# ERROR! Vector Mismatch for output port UART_TXD :: @time = 20260000.000 ps
+#      Expected value = 0
+#      Real value = 1
+#           5 mismatched vectors : Simulation failed !
+# ** Note: $finish    : tx_uart.vt(481)
+#    Time: 100 us  Iteration: 0  Instance: /tx_uart_vlg_vec_tst/tb_out

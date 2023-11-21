@@ -14,9 +14,8 @@ module tx_controller (input clk,
 
     // reg [1:0] current_state = state_0;
 
-    initial begin
+    initial
         current_state = state_0;
-    end
 
     always @(posedge clk) begin
         if (!reset) begin

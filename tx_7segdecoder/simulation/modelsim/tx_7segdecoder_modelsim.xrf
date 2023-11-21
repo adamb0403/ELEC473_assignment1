@@ -1,7 +1,7 @@
 vendor_name = ModelSim
-source_file = 1, C:/Users/Adam/Documents/git-repos/ELEC473_assignment1/tx_7segdecoder/tx_7segdecoder.v
-source_file = 1, C:/Users/Adam/Documents/git-repos/ELEC473_assignment1/tx_7segdecoder/tx_7segdecoder.vwf
-source_file = 1, C:/Users/Adam/Documents/git-repos/ELEC473_assignment1/tx_7segdecoder/db/tx_7segdecoder.cbx.xml
+source_file = 1, M:/ELEC473/projects/ELEC473_assignment1/tx_7segdecoder/tx_7segdecoder.v
+source_file = 1, M:/ELEC473/projects/ELEC473_assignment1/tx_7segdecoder/tx_7segdecoder.vwf
+source_file = 1, M:/ELEC473/projects/ELEC473_assignment1/tx_7segdecoder/db/tx_7segdecoder.cbx.xml
 design_name = tx_7segdecoder
 instance = comp, \seven_seg_input[6]~I , seven_seg_input[6], tx_7segdecoder, 1
 instance = comp, \seven_seg_input[4]~I , seven_seg_input[4], tx_7segdecoder, 1

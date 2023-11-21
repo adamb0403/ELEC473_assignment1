@@ -1,19 +1,21 @@
 module tx_counter (input clk,
                    input reset,
                    input count_enable,
-                   output reg count_out);
+                   output count_out);
 
     reg [3:0] count;
 
+	 assign count_out = (count == 4'd10);
+	 
     always @(posedge clk) begin
-        count_out <= 0;
+        //count_out <= 0;
         if (!reset) begin
             count <= 0;
         end
         else if (count_enable) begin
-            if (count == 9) begin
+            if (count == 10) begin
                 count <= 0;
-                count_out <= 1;
+                //count_out <= 1;
             end
             else begin
                 count <= count + 1;

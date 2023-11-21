@@ -3,7 +3,7 @@ $comment
 		vcd file tx_counter.msim.vcd -direction
 $end
 $date
-	Mon Nov 20 20:51:36 2023
+	Tue Nov 21 10:26:36 2023
 $end
 $version
 	ModelSim Version 10.1d

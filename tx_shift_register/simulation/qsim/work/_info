@@ -4,54 +4,54 @@ K3
 cModel Technology
 Z0 dC:\Users\Adam\Documents\git-repos\ELEC473_assignment1\tx_shift_register\simulation\qsim
 vtx_shift_register
-Z1 IlmgLFJdA<H1bKOWHzj5YT1
-Z2 V1[ZhX6N7Sa<[95CQbH`5o1
-Z3 dM:\ELEC473\projects\ELEC473_assignment1\tx_shift_register\simulation\qsim
-Z4 w1700493020
-Z5 8tx_shift_register.vo
-Z6 Ftx_shift_register.vo
+Z1 !s100 4NINLE>ia1AL2[ehgAjdJ0
+Z2 IZ@jQ4=gE7cdSZQ;0V@FY03
+Z3 VVTzZ_HJH6IA2@cUPf2;<Z2
+Z4 dM:\ELEC473\projects\ELEC473_assignment1\tx_shift_register\simulation\qsim
+Z5 w1700581103
+Z6 8tx_shift_register.vo
+Z7 Ftx_shift_register.vo
 L0 31
-Z7 OV;L;10.1d;51
+Z8 OV;L;10.1d;51
 r1
 31
-Z8 !s90 -work|work|tx_shift_register.vo|
-Z9 o-work work -O0
+Z9 !s90 -work|work|tx_shift_register.vo|
+Z10 o-work work -O0
 !i10b 1
-Z10 !s100 eE<5dD:2[Y1W39I]LA@h22
 !s85 0
-Z11 !s108 1700493021.978000
+Z11 !s108 1700581104.211000
 Z12 !s107 tx_shift_register.vo|
 !s101 -O0
 vtx_shift_register_vlg_check_tst
 !i10b 1
-Z13 !s100 QZF8jGN=[GBU=]k6M3Cb:1
-Z14 I@FbT=ezNJ;VQDGB>AG61P1
+Z13 !s100 2[3e2J5IJg9YFk>D<_jPl3
+Z14 InlNc;gRXb;l3@oXik>o8`1
 Z15 Ve`F8>2n9iCi9G8zXYVagO0
-R3
-Z16 w1700493019
+R4
+Z16 w1700581102
 Z17 8tx_shift_register.vt
 Z18 Ftx_shift_register.vt
 L0 65
-R7
+R8
 r1
 !s85 0
 31
-Z19 !s108 1700493022.186000
+Z19 !s108 1700581104.397000
 Z20 !s107 tx_shift_register.vt|
 Z21 !s90 -work|work|tx_shift_register.vt|
 !s101 -O0
-R9
+R10
 vtx_shift_register_vlg_sample_tst
 !i10b 1
-Z22 !s100 IVXdhR;UknYGAF[CA[R[E1
-Z23 I5MS6aSE[Y9Vo_njd]NC7;0
-Z24 VCaaLAzdg?aZ<`RKGUgi[20
-R3
+Z22 !s100 BG^b:hm6m1HCFcl1Sz_353
+Z23 IzP@jk1_`_`jda9BZWD7H`3
+Z24 VGQnd7REIDJe:f_GG_<@H[3
+R4
 R16
 R17
 R18
 L0 29
-R7
+R8
 r1
 !s85 0
 31
@@ -59,18 +59,18 @@ R19
 R20
 R21
 !s101 -O0
-R9
+R10
 vtx_shift_register_vlg_vec_tst
 !i10b 1
-Z25 !s100 IYe=:c?Y4N?Sg41:QPSX51
-Z26 I_[UWgg^QG<7JC]cVnKziI0
-Z27 V:iX9IKcbRI9ZlGdU<@PDz0
-R3
+!s100 ZLe2ik]O?V4:zKQ7la3zb1
+InTG<cPhTPcVFzaTO1<:=;1
+Z25 V:iX9IKcbRI9ZlGdU<@PDz0
+R4
 R16
 R17
 R18
-Z28 L0 160
-R7
+Z26 L0 161
+R8
 r1
 !s85 0
 31
@@ -78,4 +78,4 @@ R19
 R20
 R21
 !s101 -O0
-R9
+R10

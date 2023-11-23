@@ -6,14 +6,12 @@ module tx_shift_register (input clk,
                           output tx_sr_out);
     
     reg [10:0] tmp_data;
-	 assign tx_sr_out = tmp_data[0];
-	 
-	 initial
-		 tmp_data = 11'b1111111111;
+	assign tx_sr_out = tmp_data[0];
+	
+	initial
+		tmp_data = 11'b1111111111;
 	 
     always @(posedge clk) begin
-       
-
         if (!reset)
             tmp_data <= 11'b1111111111;
 

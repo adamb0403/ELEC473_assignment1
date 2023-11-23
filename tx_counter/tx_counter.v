@@ -5,7 +5,7 @@ module tx_counter (input clk,
 
     reg [3:0] count;
 
-	 assign count_out = (count == 4'd10);
+	assign count_out = (count == 4'd10);
 	 
     always @(posedge clk) begin
         //count_out <= 0;

@@ -4,7 +4,7 @@ module tx_baud_counter (input clk,
 
     reg [10:0] count;
 	 
-	 assign baud_output = (count == 11'd1301);
+	assign baud_output = (count == 11'd1301);
 
     always @(posedge clk) begin
         //baud_output = 0;

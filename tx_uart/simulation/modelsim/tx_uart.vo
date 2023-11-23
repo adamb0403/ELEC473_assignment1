@@ -14,9 +14,9 @@
 
 // VENDOR "Altera"
 // PROGRAM "Quartus II 64-Bit"
-// VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version"
+// VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
-// DATE "11/21/2023 16:19:24"
+// DATE "11/22/2023 15:01:54"
 
 // 
 // Device: Altera EP2C35F672C6 Package FBGA672
@@ -167,10 +167,10 @@ wire \inst2|Decoder0~0_combout ;
 wire \inst2|seven_seg_1[1]~0_combout ;
 wire \inst2|seven_seg_1[0]~1_combout ;
 wire [8:2] \SW~combout ;
-wire [1:0] \inst4|current_state ;
 wire [3:0] \inst5|count ;
-wire [10:0] \inst6|tmp_data ;
+wire [1:0] \inst4|current_state ;
 wire [10:0] \inst3|count ;
+wire [10:0] \inst6|tmp_data ;
 
 
 // Location: LCFF_X41_Y8_N25

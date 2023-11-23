@@ -1,6 +1,6 @@
 Analysis & Synthesis report for tx_uart
-Thu Nov 23 16:18:26 2023
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+Thu Nov 23 20:50:58 2023
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -43,24 +43,24 @@ applicable agreement for further details.
 
 
 
-+---------------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                          ;
-+------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov 23 16:18:26 2023            ;
-; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
-; Revision Name                      ; tx_uart                                          ;
-; Top-level Entity Name              ; tx_uart                                          ;
-; Family                             ; Cyclone II                                       ;
-; Total logic elements               ; 56                                               ;
-;     Total combinational functions  ; 56                                               ;
-;     Dedicated logic registers      ; 32                                               ;
-; Total registers                    ; 32                                               ;
-; Total pins                         ; 29                                               ;
-; Total virtual pins                 ; 0                                                ;
-; Total memory bits                  ; 0                                                ;
-; Embedded Multiplier 9-bit elements ; 0                                                ;
-; Total PLLs                         ; 0                                                ;
-+------------------------------------+--------------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu Nov 23 20:50:58 2023           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; tx_uart                                         ;
+; Top-level Entity Name              ; tx_uart                                         ;
+; Family                             ; Cyclone II                                      ;
+; Total logic elements               ; 63                                              ;
+;     Total combinational functions  ; 62                                              ;
+;     Dedicated logic registers      ; 31                                              ;
+; Total registers                    ; 31                                              ;
+; Total pins                         ; 29                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -148,37 +148,32 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 8           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-;     Processors 2-16        ;   0.0%      ;
-+----------------------------+-------------+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                        ;
-+------------------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path         ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                  ; Library ;
-+------------------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------+---------+
-; ../tx_single_pulser/tx_single_pulser.v   ; yes             ; User Verilog HDL File  ; M:/ELEC473/projects/ELEC473_assignment1/tx_single_pulser/tx_single_pulser.v   ;         ;
-; ../tx_shift_register/tx_shift_register.v ; yes             ; User Verilog HDL File  ; M:/ELEC473/projects/ELEC473_assignment1/tx_shift_register/tx_shift_register.v ;         ;
-; ../tx_parity/tx_parity.v                 ; yes             ; User Verilog HDL File  ; M:/ELEC473/projects/ELEC473_assignment1/tx_parity/tx_parity.v                 ;         ;
-; ../tx_counter/tx_counter.v               ; yes             ; User Verilog HDL File  ; M:/ELEC473/projects/ELEC473_assignment1/tx_counter/tx_counter.v               ;         ;
-; ../tx_controller/tx_controller.v         ; yes             ; User Verilog HDL File  ; M:/ELEC473/projects/ELEC473_assignment1/tx_controller/tx_controller.v         ;         ;
-; ../tx_baud_counter/tx_baud_counter.v     ; yes             ; User Verilog HDL File  ; M:/ELEC473/projects/ELEC473_assignment1/tx_baud_counter/tx_baud_counter.v     ;         ;
-; ../tx_7segdecoder/tx_7segdecoder.v       ; yes             ; User Verilog HDL File  ; M:/ELEC473/projects/ELEC473_assignment1/tx_7segdecoder/tx_7segdecoder.v       ;         ;
-; tx_uart.v                                ; yes             ; User Verilog HDL File  ; M:/ELEC473/projects/ELEC473_assignment1/tx_uart/tx_uart.v                     ;         ;
-+------------------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                      ;
++------------------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path         ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                ; Library ;
++------------------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------------+---------+
+; ../tx_synchroniser/tx_synchroniser.v     ; yes             ; User Verilog HDL File  ; C:/Users/Adam/Documents/git-repos/ELEC473_assignment1/tx_synchroniser/tx_synchroniser.v     ;         ;
+; ../tx_single_pulser/tx_single_pulser.v   ; yes             ; User Verilog HDL File  ; C:/Users/Adam/Documents/git-repos/ELEC473_assignment1/tx_single_pulser/tx_single_pulser.v   ;         ;
+; ../tx_shift_register/tx_shift_register.v ; yes             ; User Verilog HDL File  ; C:/Users/Adam/Documents/git-repos/ELEC473_assignment1/tx_shift_register/tx_shift_register.v ;         ;
+; ../tx_parity/tx_parity.v                 ; yes             ; User Verilog HDL File  ; C:/Users/Adam/Documents/git-repos/ELEC473_assignment1/tx_parity/tx_parity.v                 ;         ;
+; ../tx_counter/tx_counter.v               ; yes             ; User Verilog HDL File  ; C:/Users/Adam/Documents/git-repos/ELEC473_assignment1/tx_counter/tx_counter.v               ;         ;
+; ../tx_controller/tx_controller.v         ; yes             ; User Verilog HDL File  ; C:/Users/Adam/Documents/git-repos/ELEC473_assignment1/tx_controller/tx_controller.v         ;         ;
+; ../tx_baud_counter/tx_baud_counter.v     ; yes             ; User Verilog HDL File  ; C:/Users/Adam/Documents/git-repos/ELEC473_assignment1/tx_baud_counter/tx_baud_counter.v     ;         ;
+; ../tx_7segdecoder/tx_7segdecoder.v       ; yes             ; User Verilog HDL File  ; C:/Users/Adam/Documents/git-repos/ELEC473_assignment1/tx_7segdecoder/tx_7segdecoder.v       ;         ;
+; tx_uart.v                                ; yes             ; User Verilog HDL File  ; C:/Users/Adam/Documents/git-repos/ELEC473_assignment1/tx_uart/tx_uart.v                     ;         ;
++------------------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------+
@@ -186,46 +181,47 @@ applicable agreement for further details.
 +---------------------------------------------+----------+
 ; Resource                                    ; Usage    ;
 +---------------------------------------------+----------+
-; Estimated Total logic elements              ; 56       ;
+; Estimated Total logic elements              ; 63       ;
 ;                                             ;          ;
-; Total combinational functions               ; 56       ;
+; Total combinational functions               ; 62       ;
 ; Logic element usage by number of LUT inputs ;          ;
-;     -- 4 input functions                    ; 24       ;
-;     -- 3 input functions                    ; 15       ;
+;     -- 4 input functions                    ; 36       ;
+;     -- 3 input functions                    ; 9        ;
 ;     -- <=2 input functions                  ; 17       ;
 ;                                             ;          ;
 ; Logic elements by mode                      ;          ;
-;     -- normal mode                          ; 43       ;
-;     -- arithmetic mode                      ; 13       ;
+;     -- normal mode                          ; 52       ;
+;     -- arithmetic mode                      ; 10       ;
 ;                                             ;          ;
-; Total registers                             ; 32       ;
-;     -- Dedicated logic registers            ; 32       ;
+; Total registers                             ; 31       ;
+;     -- Dedicated logic registers            ; 31       ;
 ;     -- I/O registers                        ; 0        ;
 ;                                             ;          ;
 ; I/O pins                                    ; 29       ;
 ; Embedded Multiplier 9-bit elements          ; 0        ;
 ; Maximum fan-out node                        ; CLOCK_50 ;
-; Maximum fan-out                             ; 32       ;
-; Total fan-out                               ; 281      ;
-; Average fan-out                             ; 2.40     ;
+; Maximum fan-out                             ; 31       ;
+; Total fan-out                               ; 304      ;
+; Average fan-out                             ; 2.49     ;
 +---------------------------------------------+----------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                        ;
-+------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+--------------+
-; Compilation Hierarchy Node   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name              ; Library Name ;
-+------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+--------------+
-; |tx_uart                     ; 56 (0)            ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 29   ; 0            ; |tx_uart                         ; work         ;
-;    |tx_7segdecoder:lsb|      ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tx_uart|tx_7segdecoder:lsb      ; work         ;
-;    |tx_7segdecoder:msb|      ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tx_uart|tx_7segdecoder:msb      ; work         ;
-;    |tx_baud_counter:baud|    ; 16 (16)           ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tx_uart|tx_baud_counter:baud    ; work         ;
-;    |tx_controller:ctrl|      ; 6 (6)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tx_uart|tx_controller:ctrl      ; work         ;
-;    |tx_counter:counter|      ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tx_uart|tx_counter:counter      ; work         ;
-;    |tx_parity:parity|        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tx_uart|tx_parity:parity        ; work         ;
-;    |tx_shift_register:sr|    ; 12 (12)           ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tx_uart|tx_shift_register:sr    ; work         ;
-;    |tx_single_pulser:pulser| ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tx_uart|tx_single_pulser:pulser ; work         ;
-+------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                  ;
++-----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+--------------+
+; Compilation Hierarchy Node        ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                   ; Library Name ;
++-----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+--------------+
+; |tx_uart                          ; 62 (0)            ; 31 (0)       ; 0           ; 0            ; 0       ; 0         ; 29   ; 0            ; |tx_uart                              ; work         ;
+;    |tx_7segdecoder:lsb|           ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tx_uart|tx_7segdecoder:lsb           ; work         ;
+;    |tx_7segdecoder:msb|           ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tx_uart|tx_7segdecoder:msb           ; work         ;
+;    |tx_baud_counter:baud|         ; 12 (12)           ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tx_uart|tx_baud_counter:baud         ; work         ;
+;    |tx_controller:ctrl|           ; 12 (12)           ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tx_uart|tx_controller:ctrl           ; work         ;
+;    |tx_counter:counter|           ; 8 (8)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tx_uart|tx_counter:counter           ; work         ;
+;    |tx_parity:parity|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tx_uart|tx_parity:parity             ; work         ;
+;    |tx_shift_register:sr|         ; 12 (12)           ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tx_uart|tx_shift_register:sr         ; work         ;
+;    |tx_single_pulser:pulser|      ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tx_uart|tx_single_pulser:pulser      ; work         ;
+;    |tx_synchroniser:synchroniser| ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tx_uart|tx_synchroniser:synchroniser ; work         ;
++-----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -234,8 +230,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 32    ;
-; Number of registers using Synchronous Clear  ; 17    ;
+; Total registers                              ; 31    ;
+; Number of registers using Synchronous Clear  ; 12    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
@@ -251,7 +247,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------+---------+
 ; tx_shift_register:sr|tmp_data[0]        ; 1       ;
 ; tx_shift_register:sr|tmp_data[1]        ; 1       ;
+; tx_synchroniser:synchroniser|ff2        ; 3       ;
 ; tx_shift_register:sr|tmp_data[2]        ; 1       ;
+; tx_synchroniser:synchroniser|ff1        ; 1       ;
 ; tx_shift_register:sr|tmp_data[3]        ; 1       ;
 ; tx_shift_register:sr|tmp_data[4]        ; 1       ;
 ; tx_shift_register:sr|tmp_data[5]        ; 1       ;
@@ -259,7 +257,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; tx_shift_register:sr|tmp_data[7]        ; 1       ;
 ; tx_shift_register:sr|tmp_data[8]        ; 1       ;
 ; tx_shift_register:sr|tmp_data[9]        ; 1       ;
-; Total number of inverted registers = 10 ;         ;
+; Total number of inverted registers = 12 ;         ;
 +-----------------------------------------+---------+
 
 
@@ -268,10 +266,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                   ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |tx_uart|tx_counter:counter|count[0]         ;
-; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |tx_uart|tx_baud_counter:baud|count[2]       ;
+; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |tx_uart|tx_baud_counter:baud|count[3]       ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |tx_uart|tx_counter:counter|count[1]         ;
 ; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |tx_uart|tx_controller:ctrl|current_state[0] ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |tx_uart|tx_shift_register:sr|tmp_data[1]    ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |tx_uart|tx_shift_register:sr|tmp_data[0]    ;
 ; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |tx_uart|tx_shift_register:sr|tmp_data[3]    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
 
@@ -322,23 +320,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
-    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Thu Nov 23 16:18:23 2023
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Thu Nov 23 20:50:56 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off tx_uart -c tx_uart
-Info (11104): Parallel Compilation has detected 16 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 8 of the 8 physical processors detected instead.
-Info (12021): Found 1 design units, including 1 entities, in source file /elec473/projects/elec473_assignment1/tx_single_pulser/tx_single_pulser.v
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file /users/adam/documents/git-repos/elec473_assignment1/tx_synchroniser/tx_synchroniser.v
+    Info (12023): Found entity 1: tx_synchroniser
+Info (12021): Found 1 design units, including 1 entities, in source file /users/adam/documents/git-repos/elec473_assignment1/tx_single_pulser/tx_single_pulser.v
     Info (12023): Found entity 1: tx_single_pulser
-Info (12021): Found 1 design units, including 1 entities, in source file /elec473/projects/elec473_assignment1/tx_shift_register/tx_shift_register.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/adam/documents/git-repos/elec473_assignment1/tx_shift_register/tx_shift_register.v
     Info (12023): Found entity 1: tx_shift_register
-Info (12021): Found 1 design units, including 1 entities, in source file /elec473/projects/elec473_assignment1/tx_parity/tx_parity.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/adam/documents/git-repos/elec473_assignment1/tx_parity/tx_parity.v
     Info (12023): Found entity 1: tx_parity
-Info (12021): Found 1 design units, including 1 entities, in source file /elec473/projects/elec473_assignment1/tx_counter/tx_counter.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/adam/documents/git-repos/elec473_assignment1/tx_counter/tx_counter.v
     Info (12023): Found entity 1: tx_counter
-Info (12021): Found 1 design units, including 1 entities, in source file /elec473/projects/elec473_assignment1/tx_controller/tx_controller.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/adam/documents/git-repos/elec473_assignment1/tx_controller/tx_controller.v
     Info (12023): Found entity 1: tx_controller
-Info (12021): Found 1 design units, including 1 entities, in source file /elec473/projects/elec473_assignment1/tx_baud_counter/tx_baud_counter.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/adam/documents/git-repos/elec473_assignment1/tx_baud_counter/tx_baud_counter.v
     Info (12023): Found entity 1: tx_baud_counter
-Info (12021): Found 1 design units, including 1 entities, in source file /elec473/projects/elec473_assignment1/tx_7segdecoder/tx_7segdecoder.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/adam/documents/git-repos/elec473_assignment1/tx_7segdecoder/tx_7segdecoder.v
     Info (12023): Found entity 1: tx_7segdecoder
 Info (12021): Found 1 design units, including 1 entities, in source file tx_uart.v
     Info (12023): Found entity 1: tx_uart
@@ -347,25 +347,25 @@ Info (12128): Elaborating entity "tx_7segdecoder" for hierarchy "tx_7segdecoder:
 Info (12128): Elaborating entity "tx_baud_counter" for hierarchy "tx_baud_counter:baud"
 Info (12128): Elaborating entity "tx_counter" for hierarchy "tx_counter:counter"
 Warning (10230): Verilog HDL assignment warning at tx_counter.v(24): truncated value with size 32 to match size of target (4)
+Info (12128): Elaborating entity "tx_synchroniser" for hierarchy "tx_synchroniser:synchroniser"
 Info (12128): Elaborating entity "tx_single_pulser" for hierarchy "tx_single_pulser:pulser"
 Info (12128): Elaborating entity "tx_parity" for hierarchy "tx_parity:parity"
 Info (12128): Elaborating entity "tx_shift_register" for hierarchy "tx_shift_register:sr"
 Info (12128): Elaborating entity "tx_controller" for hierarchy "tx_controller:ctrl"
-Warning (10036): Verilog HDL or VHDL warning at tx_controller.v(10): object "count" assigned a value but never read
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 2 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[1]"
     Warning (15610): No output dependent on input pin "KEY[2]"
-Info (21057): Implemented 85 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 92 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 12 input pins
     Info (21059): Implemented 17 output pins
-    Info (21061): Implemented 56 logic cells
+    Info (21061): Implemented 63 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4610 megabytes
-    Info: Processing ended: Thu Nov 23 16:18:26 2023
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 4597 megabytes
+    Info: Processing ended: Thu Nov 23 20:50:58 2023
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 

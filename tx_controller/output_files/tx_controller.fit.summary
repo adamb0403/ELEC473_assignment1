@@ -1,5 +1,5 @@
-Fitter Status : Successful - Thu Nov 23 13:35:59 2023
-Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
+Fitter Status : Successful - Thu Nov 23 19:30:53 2023
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : tx_controller
 Top-level Entity Name : tx_controller
 Family : Cyclone II
@@ -7,8 +7,8 @@ Device : EP2C35F672C6
 Timing Models : Final
 Total logic elements : 7 / 33,216 ( < 1 % )
     Total combinational functions : 7 / 33,216 ( < 1 % )
-    Dedicated logic registers : 4 / 33,216 ( < 1 % )
-Total registers : 4
+    Dedicated logic registers : 2 / 33,216 ( < 1 % )
+Total registers : 2
 Total pins : 9 / 475 ( 2 % )
 Total virtual pins : 0
 Total memory bits : 0 / 483,840 ( 0 % )

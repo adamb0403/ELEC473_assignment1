@@ -6,6 +6,7 @@ module tx_uart (input CLOCK_50,
                 output [6:0] HEX5,
                 output [6:0] HEX4);
 
+    wire synchroniser_pulser;
     wire pulser_ctrl;
     wire baud_ctrl;
     wire counter_ctrl;
@@ -36,10 +37,16 @@ module tx_uart (input CLOCK_50,
         .count_out(counter_ctrl)
     );
 
+    tx_synchroniser synchroniser (
+        .clk(CLOCK_50),
+        .key_in(KEY[3]),
+        .key_out(synchroniser_pulser)
+    );
+
     tx_single_pulser pulser (
         .clk(CLOCK_50),
         .reset(KEY[0]),
-        .pulser_in(KEY[3]),
+        .pulser_in(synchroniser_pulser),
         .pulser_out(pulser_ctrl)
     );
 

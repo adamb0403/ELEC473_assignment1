@@ -152,7 +152,7 @@ SIGNAL("tx_single_pulser_vlg_vec_tst|i1|clk~combout")
 	PARENT = "";
 }
 
-SIGNAL("tx_single_pulser_vlg_vec_tst|i1|clk~clkctrl_outclk")
+SIGNAL("tx_single_pulser_vlg_vec_tst|i1|pulser_in~combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -172,17 +172,7 @@ SIGNAL("tx_single_pulser_vlg_vec_tst|i1|reset~combout")
 	PARENT = "";
 }
 
-SIGNAL("tx_single_pulser_vlg_vec_tst|i1|pulser_in~combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("tx_single_pulser_vlg_vec_tst|i1|pulser_out~1_combout")
+SIGNAL("tx_single_pulser_vlg_vec_tst|i1|current_state~0_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -203,16 +193,6 @@ SIGNAL("tx_single_pulser_vlg_vec_tst|i1|current_state~regout")
 }
 
 SIGNAL("tx_single_pulser_vlg_vec_tst|i1|pulser_out~0_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("tx_single_pulser_vlg_vec_tst|i1|pulser_out~reg0_regout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -335,7 +315,11 @@ TRANSITION_LIST("tx_single_pulser_vlg_vec_tst|pulser_in")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 460.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 180.0;
 		LEVEL 0 FOR 60.0;
 		LEVEL 1 FOR 480.0;
 	}
@@ -359,11 +343,15 @@ TRANSITION_LIST("tx_single_pulser_vlg_vec_tst|pulser_out")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 470.0;
-		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 100.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 90.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 250.0;
+		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 470.0;
+		LEVEL 0 FOR 490.0;
 	}
 }
 
@@ -637,111 +625,18 @@ TRANSITION_LIST("tx_single_pulser_vlg_vec_tst|i1|clk~combout")
 	}
 }
 
-TRANSITION_LIST("tx_single_pulser_vlg_vec_tst|i1|clk~clkctrl_outclk")
+TRANSITION_LIST("tx_single_pulser_vlg_vec_tst|i1|pulser_in~combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 180.0;
+		LEVEL 0 FOR 60.0;
+		LEVEL 1 FOR 480.0;
 	}
 }
 
@@ -758,23 +653,16 @@ TRANSITION_LIST("tx_single_pulser_vlg_vec_tst|i1|reset~combout")
 	}
 }
 
-TRANSITION_LIST("tx_single_pulser_vlg_vec_tst|i1|pulser_in~combout")
+TRANSITION_LIST("tx_single_pulser_vlg_vec_tst|i1|current_state~0_combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 460.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 480.0;
-	}
-}
-
-TRANSITION_LIST("tx_single_pulser_vlg_vec_tst|i1|pulser_out~1_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 460.0;
+		LEVEL 0 FOR 100.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 180.0;
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 20.0;
@@ -787,7 +675,11 @@ TRANSITION_LIST("tx_single_pulser_vlg_vec_tst|i1|current_state~regout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 470.0;
+		LEVEL 0 FOR 110.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 180.0;
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 20.0;
@@ -800,24 +692,15 @@ TRANSITION_LIST("tx_single_pulser_vlg_vec_tst|i1|pulser_out~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 460.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 490.0;
-	}
-}
-
-TRANSITION_LIST("tx_single_pulser_vlg_vec_tst|i1|pulser_out~reg0_regout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 470.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 90.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 250.0;
+		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 470.0;
+		LEVEL 1 FOR 490.0;
 	}
 }
 
@@ -931,7 +814,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_single_pulser_vlg_vec_tst|i1|clk~clkctrl_outclk";
+	CHANNEL = "tx_single_pulser_vlg_vec_tst|i1|pulser_in~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 12;
@@ -949,7 +832,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_single_pulser_vlg_vec_tst|i1|pulser_in~combout";
+	CHANNEL = "tx_single_pulser_vlg_vec_tst|i1|current_state~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 14;
@@ -958,7 +841,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_single_pulser_vlg_vec_tst|i1|pulser_out~1_combout";
+	CHANNEL = "tx_single_pulser_vlg_vec_tst|i1|current_state~regout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 15;
@@ -967,28 +850,10 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_single_pulser_vlg_vec_tst|i1|current_state~regout";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 16;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
 	CHANNEL = "tx_single_pulser_vlg_vec_tst|i1|pulser_out~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 17;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "tx_single_pulser_vlg_vec_tst|i1|pulser_out~reg0_regout";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 18;
+	TREE_INDEX = 16;
 	TREE_LEVEL = 0;
 }
 ;

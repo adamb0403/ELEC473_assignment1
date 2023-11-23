@@ -4,11 +4,11 @@ K3
 cModel Technology
 Z0 dC:\Users\Adam\Documents\git-repos\ELEC473_assignment1\tx_controller\simulation\qsim
 vtx_controller
-Z1 !s100 BkJKh6=Lk9@bNDJgBG0LO3
-Z2 IOJ?f?^[a:MXR38Ecm?>770
+Z1 !s100 7G3AMjQB]fTheC^AH_cUk1
+Z2 IbjCW=m]@?ojGidk:B3Bze2
 Z3 VIe=<RM339ib[BdeS_5:`l0
-Z4 dM:\ELEC473\projects\ELEC473_assignment1\tx_controller\simulation\qsim
-Z5 w1700747324
+Z4 dC:\Users\Adam\Documents\git-repos\ELEC473_assignment1\tx_controller\simulation\qsim
+Z5 w1700767869
 Z6 8tx_controller.vo
 Z7 Ftx_controller.vo
 L0 31
@@ -19,7 +19,7 @@ Z9 !s90 -work|work|tx_controller.vo|
 Z10 o-work work -O0
 !i10b 1
 !s85 0
-Z11 !s108 1700747325.481000
+Z11 !s108 1700767870.107000
 Z12 !s107 tx_controller.vo|
 !s101 -O0
 vtx_controller_vlg_check_tst
@@ -28,7 +28,7 @@ Z13 !s100 8=3TU_1OzS197EmKjkfEU3
 Z14 IKo`KMQbYJK89b8[2=zQ8f1
 Z15 VKlHS@mch>fhV?Y:Ac^dHc0
 R4
-Z16 w1700747323
+Z16 w1700767868
 Z17 8tx_controller.vt
 Z18 Ftx_controller.vt
 L0 65
@@ -36,7 +36,7 @@ R8
 r1
 !s85 0
 31
-Z19 !s108 1700747325.674000
+Z19 !s108 1700767870.263000
 Z20 !s107 tx_controller.vt|
 Z21 !s90 -work|work|tx_controller.vt|
 !s101 -O0

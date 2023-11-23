@@ -12,14 +12,17 @@ module tx_counter (input clk,
         if (!reset) begin
             count <= 0;
         end
+        else if (count == 4'd10)
+            count <= 0;
+
         else if (count_enable) begin
-            if (count == 10) begin
-                count <= 0;
-                //count_out <= 1;
-            end
-            else begin
+            // if (count == 4'd10) begin
+            //     count <= 0;
+            //     //count_out <= 1;
+            // end
+            // else begin
                 count <= count + 1;
-            end
+            // end
         end
     end
 endmodule

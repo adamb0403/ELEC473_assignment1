@@ -7,6 +7,8 @@ entity tx_uart is
         KEY0            : in     vl_logic;
         KEY3            : in     vl_logic;
         SW              : in     vl_logic_vector(8 downto 2);
+        ctrl_counter    : out    vl_logic;
+        count_enabe     : out    vl_logic;
         ctrl_state      : out    vl_logic_vector(1 downto 0);
         HEX4            : out    vl_logic_vector(6 downto 0);
         HEX5            : out    vl_logic_vector(6 downto 0)

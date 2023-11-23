@@ -63,7 +63,7 @@
  -- Pin directions (input, output or bidir) are based on device operating in user mode.
  ---------------------------------------------------------------------------------
 
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 CHIP  "tx_uart"  ASSIGNED TO AN: EP2C35F672C6
 
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
@@ -106,7 +106,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AA11      :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA12      :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA13      :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA14      :        :                   :         : 7         :                
-ctrl_state[1]                : AA15      : output : 3.3-V LVTTL       :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA15      :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA16      :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA17      :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA18      :        :                   :         : 7         :                
@@ -211,7 +211,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AE12      :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE13      :        :                   :         : 8         :                
 SW[3]                        : AE14      : input  : 3.3-V LVTTL       :         : 7         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE15      :        :                   :         : 7         :                
-ctrl_state[0]                : AE16      : output : 3.3-V LVTTL       :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE16      :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE17      :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE18      :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE19      :        :                   :         : 7         :                
@@ -603,7 +603,7 @@ VCCINT                       : R16       : power  :                   : 1.2V    
 RESERVED_INPUT_WITH_WEAK_PULLUP : R17       :        :                   :         : 6         :                
 VCCIO6                       : R18       : power  :                   : 3.3V    : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R19       :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : R20       :        :                   :         : 6         :                
+ctrl_state[0]                : R20       : output : 3.3-V LVTTL       :         : 6         : N              
 GND                          : R21       : gnd    :                   :         :           :                
 nSTATUS                      : R22       :        :                   :         : 6         :                
 CONF_DONE                    : R23       :        :                   :         : 6         :                
@@ -631,9 +631,9 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : T18       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : T19       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : T20       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : T21       :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : T22       :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : T23       :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : T24       :        :                   :         : 6         :                
+count_enabe                  : T22       : output : 3.3-V LVTTL       :         : 6         : N              
+ctrl_state[1]                : T23       : output : 3.3-V LVTTL       :         : 6         : N              
+ctrl_counter                 : T24       : output : 3.3-V LVTTL       :         : 6         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : T25       :        :                   :         : 6         :                
 VCCIO6                       : T26       : power  :                   : 3.3V    : 6         :                
 HEX4[1]                      : U1        : output : 3.3-V LVTTL       :         : 1         : Y              

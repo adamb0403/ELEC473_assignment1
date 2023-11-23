@@ -256,8 +256,8 @@ GND*                         : B7        :        :                   :         
 GND*                         : B8        :        :                   :         : 3         :                
 GND*                         : B9        :        :                   :         : 3         :                
 GND*                         : B10       :        :                   :         : 3         :                
-tx_sr_in[1]                  : B11       : input  : 3.3-V LVTTL       :         : 3         : N              
-tx_sr_in[8]                  : B12       : input  : 3.3-V LVTTL       :         : 3         : N              
+tx_sr_in[7]                  : B11       : input  : 3.3-V LVTTL       :         : 3         : N              
+tx_sr_in[5]                  : B12       : input  : 3.3-V LVTTL       :         : 3         : N              
 GND+                         : B13       :        :                   :         : 4         :                
 GND*                         : B14       :        :                   :         : 4         :                
 GND*                         : B15       :        :                   :         : 4         :                
@@ -282,9 +282,9 @@ GND*                         : C7        :        :                   :         
 GND*                         : C8        :        :                   :         : 3         :                
 GND*                         : C9        :        :                   :         : 3         :                
 GND*                         : C10       :        :                   :         : 3         :                
-tx_sr_in[6]                  : C11       : input  : 3.3-V LVTTL       :         : 3         : N              
-tx_sr_in[10]                 : C12       : input  : 3.3-V LVTTL       :         : 3         : N              
-reset                        : C13       : input  : 3.3-V LVTTL       :         : 3         : N              
+reset                        : C11       : input  : 3.3-V LVTTL       :         : 3         : N              
+tx_sr_shift                  : C12       : input  : 3.3-V LVTTL       :         : 3         : N              
+tx_sr_in[0]                  : C13       : input  : 3.3-V LVTTL       :         : 3         : N              
 GND                          : C14       : gnd    :                   :         :           :                
 GND*                         : C15       :        :                   :         : 4         :                
 GND*                         : C16       :        :                   :         : 4         :                
@@ -308,10 +308,10 @@ GND*                         : D7        :        :                   :         
 GND*                         : D8        :        :                   :         : 3         :                
 GND*                         : D9        :        :                   :         : 3         :                
 GND*                         : D10       :        :                   :         : 3         :                
-GND*                         : D11       :        :                   :         : 3         :                
-tx_sr_in[5]                  : D12       : input  : 3.3-V LVTTL       :         : 3         : N              
-tx_sr_in[0]                  : D13       : input  : 3.3-V LVTTL       :         : 3         : N              
-tx_sr_in[3]                  : D14       : input  : 3.3-V LVTTL       :         : 4         : N              
+tx_sr_out                    : D11       : output : 3.3-V LVTTL       :         : 3         : N              
+tx_sr_in[9]                  : D12       : input  : 3.3-V LVTTL       :         : 3         : N              
+tx_sr_load                   : D13       : input  : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : D14       :        :                   :         : 4         :                
 GND*                         : D15       :        :                   :         : 4         :                
 GND*                         : D16       :        :                   :         : 4         :                
 GND*                         : D17       :        :                   :         : 4         :                
@@ -335,7 +335,7 @@ GND*                         : E8        :        :                   :         
 VCCIO3                       : E9        : power  :                   : 3.3V    : 3         :                
 GND*                         : E10       :        :                   :         : 3         :                
 GND                          : E11       : gnd    :                   :         :           :                
-tx_sr_load                   : E12       : input  : 3.3-V LVTTL       :         : 3         : N              
+tx_sr_in[3]                  : E12       : input  : 3.3-V LVTTL       :         : 3         : N              
 VCCIO3                       : E13       : power  :                   : 3.3V    : 3         :                
 VCCIO4                       : E14       : power  :                   : 3.3V    : 4         :                
 GND*                         : E15       :        :                   :         : 4         :                
@@ -361,7 +361,7 @@ GNDA_PLL3                    : F8        : gnd    :                   :         
 GND*                         : F9        :        :                   :         : 3         :                
 GND*                         : F10       :        :                   :         : 3         :                
 GND*                         : F11       :        :                   :         : 3         :                
-tx_sr_in[9]                  : F12       : input  : 3.3-V LVTTL       :         : 3         : N              
+tx_sr_in[8]                  : F12       : input  : 3.3-V LVTTL       :         : 3         : N              
 GND*                         : F13       :        :                   :         : 4         :                
 GND*                         : F14       :        :                   :         : 4         :                
 GND*                         : F15       :        :                   :         : 4         :                
@@ -437,11 +437,11 @@ GND*                         : J6        :        :                   :         
 GND*                         : J7        :        :                   :         : 2         :                
 GND*                         : J8        :        :                   :         : 2         :                
 GND*                         : J9        :        :                   :         : 3         :                
-tx_sr_out                    : J10       : output : 3.3-V LVTTL       :         : 3         : N              
-tx_sr_in[4]                  : J11       : input  : 3.3-V LVTTL       :         : 3         : N              
+tx_sr_in[1]                  : J10       : input  : 3.3-V LVTTL       :         : 3         : N              
+tx_sr_in[10]                 : J11       : input  : 3.3-V LVTTL       :         : 3         : N              
 VCCIO3                       : J12       : power  :                   : 3.3V    : 3         :                
-tx_sr_in[7]                  : J13       : input  : 3.3-V LVTTL       :         : 3         : N              
-tx_sr_shift                  : J14       : input  : 3.3-V LVTTL       :         : 3         : N              
+tx_sr_in[4]                  : J13       : input  : 3.3-V LVTTL       :         : 3         : N              
+tx_sr_in[6]                  : J14       : input  : 3.3-V LVTTL       :         : 3         : N              
 VCCIO4                       : J15       : power  :                   : 3.3V    : 4         :                
 GND*                         : J16       :        :                   :         : 4         :                
 GND*                         : J17       :        :                   :         : 4         :                

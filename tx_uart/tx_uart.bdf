@@ -183,7 +183,7 @@ applicable agreement for further details.
 		(pt 176 32)
 		(output)
 		(text "pulser_out" (rect 0 0 50 12)(font "Arial" ))
-		(text "pulser_out" (rect 113 27 155 39)(font "Arial" ))
+		(text "pulser_out" (rect 113 27 163 39)(font "Arial" ))
 		(line (pt 176 32)(pt 160 32))
 	)
 	(parameter
@@ -216,14 +216,14 @@ applicable agreement for further details.
 		(pt 264 32)
 		(output)
 		(text "seven_seg_1[6..0]" (rect 0 0 92 12)(font "Arial" ))
-		(text "seven_seg_1[6..0]" (rect 166 27 243 39)(font "Arial" ))
+		(text "seven_seg_1[6..0]" (rect 166 27 258 39)(font "Arial" ))
 		(line (pt 264 32)(pt 248 32)(line_width 3))
 	)
 	(port
 		(pt 264 48)
 		(output)
 		(text "seven_seg_2[6..0]" (rect 0 0 92 12)(font "Arial" ))
-		(text "seven_seg_2[6..0]" (rect 166 43 243 55)(font "Arial" ))
+		(text "seven_seg_2[6..0]" (rect 166 43 258 55)(font "Arial" ))
 		(line (pt 264 48)(pt 248 48)(line_width 3))
 	)
 	(drawing
@@ -252,7 +252,7 @@ applicable agreement for further details.
 		(pt 168 32)
 		(output)
 		(text "baud_output" (rect 0 0 60 12)(font "Arial" ))
-		(text "baud_output" (rect 97 27 147 39)(font "Arial" ))
+		(text "baud_output" (rect 97 27 157 39)(font "Arial" ))
 		(line (pt 168 32)(pt 152 32))
 	)
 	(drawing
@@ -302,21 +302,21 @@ applicable agreement for further details.
 		(pt 224 32)
 		(output)
 		(text "ctrl_sr_load" (rect 0 0 56 12)(font "Arial" ))
-		(text "ctrl_sr_load" (rect 156 27 203 39)(font "Arial" ))
+		(text "ctrl_sr_load" (rect 156 27 212 39)(font "Arial" ))
 		(line (pt 224 32)(pt 208 32))
 	)
 	(port
 		(pt 224 48)
 		(output)
 		(text "current_state[1..0]" (rect 0 0 90 12)(font "Arial" ))
-		(text "current_state[1..0]" (rect 127 43 203 55)(font "Arial" ))
+		(text "current_state[1..0]" (rect 127 43 217 55)(font "Arial" ))
 		(line (pt 224 48)(pt 208 48)(line_width 3))
 	)
 	(port
 		(pt 224 64)
 		(output)
 		(text "ctrl_sr_shift" (rect 0 0 59 12)(font "Arial" ))
-		(text "ctrl_sr_shift" (rect 154 59 203 71)(font "Arial" ))
+		(text "ctrl_sr_shift" (rect 154 59 213 71)(font "Arial" ))
 		(line (pt 224 64)(pt 208 64))
 	)
 	(parameter
@@ -368,7 +368,7 @@ applicable agreement for further details.
 		(pt 192 32)
 		(output)
 		(text "count_out" (rect 0 0 48 12)(font "Arial" ))
-		(text "count_out" (rect 131 27 171 39)(font "Arial" ))
+		(text "count_out" (rect 131 27 179 39)(font "Arial" ))
 		(line (pt 192 32)(pt 176 32))
 	)
 	(drawing
@@ -573,10 +573,6 @@ applicable agreement for further details.
 	(pt 1040 544)
 )
 (connector
-	(pt 1072 488)
-	(pt 1072 544)
-)
-(connector
 	(pt 816 488)
 	(pt 816 424)
 )
@@ -699,10 +695,6 @@ applicable agreement for further details.
 	(pt 552 560)
 )
 (connector
-	(pt 1088 392)
-	(pt 1088 656)
-)
-(connector
 	(pt 1056 392)
 	(pt 1088 392)
 )
@@ -781,6 +773,14 @@ applicable agreement for further details.
 (connector
 	(pt 1360 344)
 	(pt 1504 344)
+)
+(connector
+	(pt 1072 488)
+	(pt 1072 544)
+)
+(connector
+	(pt 1088 392)
+	(pt 1088 656)
 )
 (junction (pt 552 416))
 (junction (pt 456 416))

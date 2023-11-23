@@ -10,7 +10,7 @@ module tx_shift_register (input clk,
 	
 	initial
 		tmp_data = 11'b1111111111;
-	 
+	
     always @(posedge clk) begin
         if (!reset)
             tmp_data <= 11'b1111111111;

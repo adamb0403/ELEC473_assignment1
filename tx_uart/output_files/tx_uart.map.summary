@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Wed Nov 22 15:01:40 2023
-Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Analysis & Synthesis Status : Successful - Thu Nov 23 14:16:21 2023
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
 Revision Name : tx_uart
 Top-level Entity Name : tx_uart
 Family : Cyclone II
-Total logic elements : 61
-    Total combinational functions : 61
+Total logic elements : 59
+    Total combinational functions : 59
     Dedicated logic registers : 32
 Total registers : 32
-Total pins : 27
+Total pins : 29
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

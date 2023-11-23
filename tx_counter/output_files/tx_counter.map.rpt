@@ -1,5 +1,5 @@
 Analysis & Synthesis report for tx_counter
-Tue Nov 21 10:26:06 2023
+Thu Nov 23 13:58:07 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -42,15 +42,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Nov 21 10:26:06 2023            ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov 23 13:58:07 2023            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; tx_counter                                       ;
 ; Top-level Entity Name              ; tx_counter                                       ;
 ; Family                             ; Cyclone II                                       ;
-; Total logic elements               ; 9                                                ;
-;     Total combinational functions  ; 9                                                ;
-;     Dedicated logic registers      ; 5                                                ;
-; Total registers                    ; 5                                                ;
+; Total logic elements               ; 8                                                ;
+;     Total combinational functions  ; 8                                                ;
+;     Dedicated logic registers      ; 4                                                ;
+; Total registers                    ; 4                                                ;
 ; Total pins                         ; 4                                                ;
 ; Total virtual pins                 ; 0                                                ;
 ; Total memory bits                  ; 0                                                ;
@@ -170,34 +170,34 @@ applicable agreement for further details.
 +----------------------------------+-----------------+------------------------+-----------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-; Estimated Total logic elements              ; 9     ;
-;                                             ;       ;
-; Total combinational functions               ; 9     ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 3     ;
-;     -- 3 input functions                    ; 4     ;
-;     -- <=2 input functions                  ; 2     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 9     ;
-;     -- arithmetic mode                      ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 5     ;
-;     -- Dedicated logic registers            ; 5     ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 4     ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-; Maximum fan-out node                        ; reset ;
-; Maximum fan-out                             ; 6     ;
-; Total fan-out                               ; 43    ;
-; Average fan-out                             ; 2.39  ;
-+---------------------------------------------+-------+
++--------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary            ;
++---------------------------------------------+----------+
+; Resource                                    ; Usage    ;
++---------------------------------------------+----------+
+; Estimated Total logic elements              ; 8        ;
+;                                             ;          ;
+; Total combinational functions               ; 8        ;
+; Logic element usage by number of LUT inputs ;          ;
+;     -- 4 input functions                    ; 3        ;
+;     -- 3 input functions                    ; 4        ;
+;     -- <=2 input functions                  ; 1        ;
+;                                             ;          ;
+; Logic elements by mode                      ;          ;
+;     -- normal mode                          ; 8        ;
+;     -- arithmetic mode                      ; 0        ;
+;                                             ;          ;
+; Total registers                             ; 4        ;
+;     -- Dedicated logic registers            ; 4        ;
+;     -- I/O registers                        ; 0        ;
+;                                             ;          ;
+; I/O pins                                    ; 4        ;
+; Embedded Multiplier 9-bit elements          ; 0        ;
+; Maximum fan-out node                        ; count[0] ;
+; Maximum fan-out                             ; 5        ;
+; Total fan-out                               ; 39       ;
+; Average fan-out                             ; 2.44     ;
++---------------------------------------------+----------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -205,7 +205,7 @@ applicable agreement for further details.
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |tx_counter                ; 9 (9)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 4    ; 0            ; |tx_counter         ; work         ;
+; |tx_counter                ; 8 (8)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 4    ; 0            ; |tx_counter         ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -215,7 +215,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 5     ;
+; Total registers                              ; 4     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -249,23 +249,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Tue Nov 21 10:26:05 2023
+    Info: Processing started: Thu Nov 23 13:58:05 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off tx_counter -c tx_counter
 Info (11104): Parallel Compilation has detected 16 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 8 of the 8 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file tx_counter.v
     Info (12023): Found entity 1: tx_counter
 Info (12127): Elaborating entity "tx_counter" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at tx_counter.v(19): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at tx_counter.v(21): truncated value with size 32 to match size of target (4)
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 13 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 12 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 9 logic cells
+    Info (21061): Implemented 8 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4606 megabytes
-    Info: Processing ended: Tue Nov 21 10:26:06 2023
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 4607 megabytes
+    Info: Processing ended: Thu Nov 23 13:58:07 2023
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 

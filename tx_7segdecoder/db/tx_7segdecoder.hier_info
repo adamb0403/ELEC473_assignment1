@@ -1,24 +1,14 @@
 |tx_7segdecoder
-seven_seg_input[0] => Decoder1.IN3
-seven_seg_input[1] => Decoder1.IN2
-seven_seg_input[2] => Decoder1.IN1
-seven_seg_input[3] => Decoder1.IN0
-seven_seg_input[4] => Decoder0.IN2
-seven_seg_input[5] => Decoder0.IN1
-seven_seg_input[6] => Decoder0.IN0
-seven_seg_1[0] <= decoder.DB_MAX_OUTPUT_PORT_TYPE
-seven_seg_1[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
-seven_seg_1[2] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
-seven_seg_1[3] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
-seven_seg_1[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
-seven_seg_1[5] <= decoder.DB_MAX_OUTPUT_PORT_TYPE
-seven_seg_1[6] <= decoder.DB_MAX_OUTPUT_PORT_TYPE
-seven_seg_2[0] <= WideOr9.DB_MAX_OUTPUT_PORT_TYPE
-seven_seg_2[1] <= WideOr8.DB_MAX_OUTPUT_PORT_TYPE
-seven_seg_2[2] <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
-seven_seg_2[3] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
-seven_seg_2[4] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
-seven_seg_2[5] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
-seven_seg_2[6] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg_input[0] => Decoder0.IN3
+seven_seg_input[1] => Decoder0.IN2
+seven_seg_input[2] => Decoder0.IN1
+seven_seg_input[3] => Decoder0.IN0
+seven_seg_output[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg_output[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg_output[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg_output[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg_output[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg_output[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg_output[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 

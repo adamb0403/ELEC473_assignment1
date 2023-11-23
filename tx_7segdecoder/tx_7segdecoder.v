@@ -1,9 +1,8 @@
-module tx_7segdecoder (input [6:0] seven_seg_input,
-                       output reg [6:0] seven_seg_1,
-                       output reg [6:0] seven_seg_2);
+module tx_7segdecoder (input [3:0] seven_seg_input,
+                       output reg [6:0] seven_seg_output);
 
-    reg [3:0] b_digit_1;
-    reg [3:0] b_digit_2;
+    // reg [3:0] b_digit_1;
+    // reg [3:0] b_digit_2;
 
     function automatic [6:0] decoder;
         input [3:0] binary;
@@ -30,10 +29,10 @@ module tx_7segdecoder (input [6:0] seven_seg_input,
     endfunction
 
     always @(seven_seg_input) begin
-        b_digit_1 = seven_seg_input[6:4];
-        b_digit_2 = seven_seg_input[3:0];
+        // b_digit_1 = seven_seg_input[6:4];
+        // b_digit_2 = seven_seg_input[3:0];
 
-        seven_seg_1 = decoder(b_digit_1);
-        seven_seg_2 = decoder(b_digit_2);
+        seven_seg_output = decoder(seven_seg_input);
+        // seven_seg_2 = decoder(b_digit_2);
     end
 endmodule

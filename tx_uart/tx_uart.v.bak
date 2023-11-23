@@ -1,0 +1,70 @@
+module tx_uart (input CLOCK_50,
+                input KEY[0],
+                input KEY[3],
+                input SW[8:2],
+                output UART_TXD,
+                output ctrl_state[1:0],
+                output HEX5[6:0],
+                output HEX4[6:0]);
+
+    wire pulser-ctrl;
+    wire baud-ctrl;
+    wire counter-ctrl;
+    wire ctrl-sr-shift-counter-in;
+    wire ctrl-sr-load;
+    wire [10:0] parity-sr;
+
+
+    tx_7segdecoder msb (
+        .seven_seg_input(SW[8:6])
+        );
+
+    tx_7segdecoder lsb (
+        .seven_seg_input(SW[5:2])
+        );
+
+    tx_baud_counter baud (
+        .clk(CLOCK_50),
+        .reset(KEY[0]),
+        .baud_output(baud-ctrl)
+        );
+
+    tx_counter counter (
+        .clk(CLOCK_50),
+        .reset(KEY[0]),
+        .count_enable(ctrl-sr-shift-counter-in),
+        .count_out(counter-ctrl)
+    );
+
+    tx_single_pulser pulser (
+        .clk(CLOCK_50),
+        .reset(KEY[0]),
+        .pulser_in(KEY[3]),
+        .pulser_out(pulser-ctrl)
+    );
+
+    tx_parity parity (
+        .parity_in(SW[8:2]),
+        .parity_out(parity-sr[10:0])
+    );
+
+    tx_shift_register sr (
+        .clk(CLOCK_50),
+        .reset(KEY[0]),
+        .tx_sr_load(ctrl-sr-load),
+        .tx_sr_shift(ctrl-sr-shift-counter-in),
+        .tx_sr_in(parity-sr[10:0]),
+        .tx_sr_out(UART_TXD)
+    );
+
+    tx_controller ctrl (
+        .clk(CLOCK_50),
+        .reset(KEY[0]),
+        .ctrl_pulser(pulser-ctrl),
+        .ctrl_baud(baud-ctrl),
+        .ctrl_counter(counter-ctrl),
+        .ctrl_sr_load(ctrl-sr-load),
+        .ctrl_sr_shift(ctrl-sr-shift-counter-in),
+        .current_state(ctrl_state[1:0]),
+    )
+endmodule

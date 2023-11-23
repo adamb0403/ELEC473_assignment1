@@ -1,5 +1,5 @@
 Analysis & Synthesis report for tx_uart
-Thu Nov 23 14:16:21 2023
+Thu Nov 23 16:18:26 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -16,10 +16,11 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Ver
   8. General Register Statistics
   9. Inverted Register Statistics
  10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Parameter Settings for User Entity Instance: tx_controller:inst4
- 12. Parameter Settings for User Entity Instance: tx_single_pulser:inst
- 13. Elapsed Time Per Partition
- 14. Analysis & Synthesis Messages
+ 11. Parameter Settings for User Entity Instance: tx_single_pulser:pulser
+ 12. Parameter Settings for User Entity Instance: tx_controller:ctrl
+ 13. Port Connectivity Checks: "tx_7segdecoder:msb"
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
 
 
 
@@ -45,13 +46,13 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov 23 14:16:21 2023            ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov 23 16:18:26 2023            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; tx_uart                                          ;
 ; Top-level Entity Name              ; tx_uart                                          ;
 ; Family                             ; Cyclone II                                       ;
-; Total logic elements               ; 59                                               ;
-;     Total combinational functions  ; 59                                               ;
+; Total logic elements               ; 56                                               ;
+;     Total combinational functions  ; 56                                               ;
 ;     Dedicated logic registers      ; 32                                               ;
 ; Total registers                    ; 32                                               ;
 ; Total pins                         ; 29                                               ;
@@ -164,20 +165,20 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                    ;
-+------------------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path         ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                  ; Library ;
-+------------------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------+---------+
-; ../tx_single_pulser/tx_single_pulser.v   ; yes             ; User Verilog HDL File              ; M:/ELEC473/projects/ELEC473_assignment1/tx_single_pulser/tx_single_pulser.v   ;         ;
-; ../tx_shift_register/tx_shift_register.v ; yes             ; User Verilog HDL File              ; M:/ELEC473/projects/ELEC473_assignment1/tx_shift_register/tx_shift_register.v ;         ;
-; ../tx_parity/tx_parity.v                 ; yes             ; User Verilog HDL File              ; M:/ELEC473/projects/ELEC473_assignment1/tx_parity/tx_parity.v                 ;         ;
-; ../tx_counter/tx_counter.v               ; yes             ; User Verilog HDL File              ; M:/ELEC473/projects/ELEC473_assignment1/tx_counter/tx_counter.v               ;         ;
-; ../tx_controller/tx_controller.v         ; yes             ; User Verilog HDL File              ; M:/ELEC473/projects/ELEC473_assignment1/tx_controller/tx_controller.v         ;         ;
-; ../tx_baud_counter/tx_baud_counter.v     ; yes             ; User Verilog HDL File              ; M:/ELEC473/projects/ELEC473_assignment1/tx_baud_counter/tx_baud_counter.v     ;         ;
-; ../tx_7segdecoder/tx_7segdecoder.v       ; yes             ; User Verilog HDL File              ; M:/ELEC473/projects/ELEC473_assignment1/tx_7segdecoder/tx_7segdecoder.v       ;         ;
-; tx_uart.bdf                              ; yes             ; User Block Diagram/Schematic File  ; M:/ELEC473/projects/ELEC473_assignment1/tx_uart/tx_uart.bdf                   ;         ;
-+------------------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                        ;
++------------------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path         ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                  ; Library ;
++------------------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------+---------+
+; ../tx_single_pulser/tx_single_pulser.v   ; yes             ; User Verilog HDL File  ; M:/ELEC473/projects/ELEC473_assignment1/tx_single_pulser/tx_single_pulser.v   ;         ;
+; ../tx_shift_register/tx_shift_register.v ; yes             ; User Verilog HDL File  ; M:/ELEC473/projects/ELEC473_assignment1/tx_shift_register/tx_shift_register.v ;         ;
+; ../tx_parity/tx_parity.v                 ; yes             ; User Verilog HDL File  ; M:/ELEC473/projects/ELEC473_assignment1/tx_parity/tx_parity.v                 ;         ;
+; ../tx_counter/tx_counter.v               ; yes             ; User Verilog HDL File  ; M:/ELEC473/projects/ELEC473_assignment1/tx_counter/tx_counter.v               ;         ;
+; ../tx_controller/tx_controller.v         ; yes             ; User Verilog HDL File  ; M:/ELEC473/projects/ELEC473_assignment1/tx_controller/tx_controller.v         ;         ;
+; ../tx_baud_counter/tx_baud_counter.v     ; yes             ; User Verilog HDL File  ; M:/ELEC473/projects/ELEC473_assignment1/tx_baud_counter/tx_baud_counter.v     ;         ;
+; ../tx_7segdecoder/tx_7segdecoder.v       ; yes             ; User Verilog HDL File  ; M:/ELEC473/projects/ELEC473_assignment1/tx_7segdecoder/tx_7segdecoder.v       ;         ;
+; tx_uart.v                                ; yes             ; User Verilog HDL File  ; M:/ELEC473/projects/ELEC473_assignment1/tx_uart/tx_uart.v                     ;         ;
++------------------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------+
@@ -185,16 +186,16 @@ applicable agreement for further details.
 +---------------------------------------------+----------+
 ; Resource                                    ; Usage    ;
 +---------------------------------------------+----------+
-; Estimated Total logic elements              ; 59       ;
+; Estimated Total logic elements              ; 56       ;
 ;                                             ;          ;
-; Total combinational functions               ; 59       ;
+; Total combinational functions               ; 56       ;
 ; Logic element usage by number of LUT inputs ;          ;
-;     -- 4 input functions                    ; 25       ;
-;     -- 3 input functions                    ; 16       ;
-;     -- <=2 input functions                  ; 18       ;
+;     -- 4 input functions                    ; 24       ;
+;     -- 3 input functions                    ; 15       ;
+;     -- <=2 input functions                  ; 17       ;
 ;                                             ;          ;
 ; Logic elements by mode                      ;          ;
-;     -- normal mode                          ; 46       ;
+;     -- normal mode                          ; 43       ;
 ;     -- arithmetic mode                      ; 13       ;
 ;                                             ;          ;
 ; Total registers                             ; 32       ;
@@ -205,8 +206,8 @@ applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0        ;
 ; Maximum fan-out node                        ; CLOCK_50 ;
 ; Maximum fan-out                             ; 32       ;
-; Total fan-out                               ; 292      ;
-; Average fan-out                             ; 2.43     ;
+; Total fan-out                               ; 281      ;
+; Average fan-out                             ; 2.40     ;
 +---------------------------------------------+----------+
 
 
@@ -215,14 +216,15 @@ applicable agreement for further details.
 +------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+--------------+
 ; Compilation Hierarchy Node   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name              ; Library Name ;
 +------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+--------------+
-; |tx_uart                     ; 59 (0)            ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 29   ; 0            ; |tx_uart                         ; work         ;
-;    |tx_7segdecoder:inst2|    ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tx_uart|tx_7segdecoder:inst2    ; work         ;
-;    |tx_baud_counter:inst3|   ; 15 (15)           ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tx_uart|tx_baud_counter:inst3   ; work         ;
-;    |tx_controller:inst4|     ; 8 (8)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tx_uart|tx_controller:inst4     ; work         ;
-;    |tx_counter:inst5|        ; 6 (6)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tx_uart|tx_counter:inst5        ; work         ;
-;    |tx_parity:inst1|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tx_uart|tx_parity:inst1         ; work         ;
-;    |tx_shift_register:inst6| ; 13 (13)           ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tx_uart|tx_shift_register:inst6 ; work         ;
-;    |tx_single_pulser:inst|   ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tx_uart|tx_single_pulser:inst   ; work         ;
+; |tx_uart                     ; 56 (0)            ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 29   ; 0            ; |tx_uart                         ; work         ;
+;    |tx_7segdecoder:lsb|      ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tx_uart|tx_7segdecoder:lsb      ; work         ;
+;    |tx_7segdecoder:msb|      ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tx_uart|tx_7segdecoder:msb      ; work         ;
+;    |tx_baud_counter:baud|    ; 16 (16)           ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tx_uart|tx_baud_counter:baud    ; work         ;
+;    |tx_controller:ctrl|      ; 6 (6)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tx_uart|tx_controller:ctrl      ; work         ;
+;    |tx_counter:counter|      ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tx_uart|tx_counter:counter      ; work         ;
+;    |tx_parity:parity|        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tx_uart|tx_parity:parity        ; work         ;
+;    |tx_shift_register:sr|    ; 12 (12)           ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tx_uart|tx_shift_register:sr    ; work         ;
+;    |tx_single_pulser:pulser| ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tx_uart|tx_single_pulser:pulser ; work         ;
 +------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -247,54 +249,63 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------+---------+
 ; Inverted Register                       ; Fan out ;
 +-----------------------------------------+---------+
-; tx_shift_register:inst6|tmp_data[0]     ; 1       ;
-; tx_shift_register:inst6|tmp_data[1]     ; 1       ;
-; tx_shift_register:inst6|tmp_data[2]     ; 1       ;
-; tx_shift_register:inst6|tmp_data[3]     ; 1       ;
-; tx_shift_register:inst6|tmp_data[4]     ; 1       ;
-; tx_shift_register:inst6|tmp_data[5]     ; 1       ;
-; tx_shift_register:inst6|tmp_data[6]     ; 1       ;
-; tx_shift_register:inst6|tmp_data[7]     ; 1       ;
-; tx_shift_register:inst6|tmp_data[8]     ; 1       ;
-; tx_shift_register:inst6|tmp_data[9]     ; 1       ;
+; tx_shift_register:sr|tmp_data[0]        ; 1       ;
+; tx_shift_register:sr|tmp_data[1]        ; 1       ;
+; tx_shift_register:sr|tmp_data[2]        ; 1       ;
+; tx_shift_register:sr|tmp_data[3]        ; 1       ;
+; tx_shift_register:sr|tmp_data[4]        ; 1       ;
+; tx_shift_register:sr|tmp_data[5]        ; 1       ;
+; tx_shift_register:sr|tmp_data[6]        ; 1       ;
+; tx_shift_register:sr|tmp_data[7]        ; 1       ;
+; tx_shift_register:sr|tmp_data[8]        ; 1       ;
+; tx_shift_register:sr|tmp_data[9]        ; 1       ;
 ; Total number of inverted registers = 10 ;         ;
 +-----------------------------------------+---------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                              ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |tx_uart|tx_counter:inst5|count[0]            ;
-; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |tx_uart|tx_baud_counter:inst3|count[0]       ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |tx_uart|tx_controller:inst4|current_state[1] ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |tx_uart|tx_shift_register:inst6|tmp_data[1]  ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |tx_uart|tx_shift_register:inst6|tmp_data[3]  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |tx_uart|tx_counter:counter|count[0]         ;
+; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |tx_uart|tx_baud_counter:baud|count[2]       ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |tx_uart|tx_controller:ctrl|current_state[0] ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |tx_uart|tx_shift_register:sr|tmp_data[1]    ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |tx_uart|tx_shift_register:sr|tmp_data[3]    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
 
 
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: tx_controller:inst4 ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; state_0        ; 00    ; Unsigned Binary                         ;
-; state_load     ; 01    ; Unsigned Binary                         ;
-; state_shift    ; 10    ; Unsigned Binary                         ;
-+----------------+-------+-----------------------------------------+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: tx_single_pulser:pulser ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; wait_h         ; 0     ; Unsigned Binary                             ;
+; wait_l         ; 1     ; Unsigned Binary                             ;
++----------------+-------+---------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: tx_single_pulser:inst ;
-+----------------+-------+-------------------------------------------+
-; Parameter Name ; Value ; Type                                      ;
-+----------------+-------+-------------------------------------------+
-; wait_h         ; 0     ; Unsigned Binary                           ;
-; wait_l         ; 1     ; Unsigned Binary                           ;
-+----------------+-------+-------------------------------------------+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: tx_controller:ctrl ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; state_0        ; 00    ; Unsigned Binary                        ;
+; state_load     ; 01    ; Unsigned Binary                        ;
+; state_shift    ; 10    ; Unsigned Binary                        ;
++----------------+-------+----------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "tx_7segdecoder:msb"                                                                                                                                               ;
++-----------------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port            ; Type  ; Severity ; Details                                                                                                                                                 ;
++-----------------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; seven_seg_input ; Input ; Warning  ; Input port expression (3 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "seven_seg_input[3..3]" will be connected to GND. ;
++-----------------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------+
@@ -312,7 +323,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Thu Nov 23 14:16:19 2023
+    Info: Processing started: Thu Nov 23 16:18:23 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off tx_uart -c tx_uart
 Info (11104): Parallel Compilation has detected 16 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 8 of the 8 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file /elec473/projects/elec473_assignment1/tx_single_pulser/tx_single_pulser.v
@@ -329,32 +340,32 @@ Info (12021): Found 1 design units, including 1 entities, in source file /elec47
     Info (12023): Found entity 1: tx_baud_counter
 Info (12021): Found 1 design units, including 1 entities, in source file /elec473/projects/elec473_assignment1/tx_7segdecoder/tx_7segdecoder.v
     Info (12023): Found entity 1: tx_7segdecoder
-Info (12021): Found 1 design units, including 1 entities, in source file tx_uart.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file tx_uart.v
     Info (12023): Found entity 1: tx_uart
 Info (12127): Elaborating entity "tx_uart" for the top level hierarchy
-Warning (275089): Not all bits in bus "KEY[3..0]" are used
-Warning (275080): Converted elements in bus name "KEY" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "KEY[0]" to "KEY0"
-    Warning (275081): Converted element name(s) from "KEY[3]" to "KEY3"
-Info (12128): Elaborating entity "tx_shift_register" for hierarchy "tx_shift_register:inst6"
-Info (12128): Elaborating entity "tx_controller" for hierarchy "tx_controller:inst4"
-Warning (10036): Verilog HDL or VHDL warning at tx_controller.v(10): object "count" assigned a value but never read
-Info (12128): Elaborating entity "tx_single_pulser" for hierarchy "tx_single_pulser:inst"
-Info (12128): Elaborating entity "tx_baud_counter" for hierarchy "tx_baud_counter:inst3"
-Info (12128): Elaborating entity "tx_counter" for hierarchy "tx_counter:inst5"
+Info (12128): Elaborating entity "tx_7segdecoder" for hierarchy "tx_7segdecoder:msb"
+Info (12128): Elaborating entity "tx_baud_counter" for hierarchy "tx_baud_counter:baud"
+Info (12128): Elaborating entity "tx_counter" for hierarchy "tx_counter:counter"
 Warning (10230): Verilog HDL assignment warning at tx_counter.v(24): truncated value with size 32 to match size of target (4)
-Info (12128): Elaborating entity "tx_parity" for hierarchy "tx_parity:inst1"
-Info (12128): Elaborating entity "tx_7segdecoder" for hierarchy "tx_7segdecoder:inst2"
+Info (12128): Elaborating entity "tx_single_pulser" for hierarchy "tx_single_pulser:pulser"
+Info (12128): Elaborating entity "tx_parity" for hierarchy "tx_parity:parity"
+Info (12128): Elaborating entity "tx_shift_register" for hierarchy "tx_shift_register:sr"
+Info (12128): Elaborating entity "tx_controller" for hierarchy "tx_controller:ctrl"
+Warning (10036): Verilog HDL or VHDL warning at tx_controller.v(10): object "count" assigned a value but never read
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 88 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 10 input pins
-    Info (21059): Implemented 19 output pins
-    Info (21061): Implemented 59 logic cells
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "KEY[1]"
+    Warning (15610): No output dependent on input pin "KEY[2]"
+Info (21057): Implemented 85 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 12 input pins
+    Info (21059): Implemented 17 output pins
+    Info (21061): Implemented 56 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4611 megabytes
-    Info: Processing ended: Thu Nov 23 14:16:21 2023
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 4610 megabytes
+    Info: Processing ended: Thu Nov 23 16:18:26 2023
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:01
 
 

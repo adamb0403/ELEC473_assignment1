@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for tx_7segdecoder
-Tue Nov 21 10:23:28 2023
+Thu Nov 23 14:53:51 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -127,118 +127,76 @@ No paths to report.
 No paths to report.
 
 
-+---------------------------------------------------------------------+
-; Propagation Delay                                                   ;
-+--------------------+----------------+-------+-------+-------+-------+
-; Input Port         ; Output Port    ; RR    ; RF    ; FR    ; FF    ;
-+--------------------+----------------+-------+-------+-------+-------+
-; seven_seg_input[0] ; seven_seg_2[0] ; 9.539 ; 9.539 ; 9.539 ; 9.539 ;
-; seven_seg_input[0] ; seven_seg_2[1] ; 9.757 ;       ;       ; 9.757 ;
-; seven_seg_input[0] ; seven_seg_2[2] ; 9.524 ;       ;       ; 9.524 ;
-; seven_seg_input[0] ; seven_seg_2[3] ; 9.548 ; 9.548 ; 9.548 ; 9.548 ;
-; seven_seg_input[0] ; seven_seg_2[4] ;       ; 9.707 ; 9.707 ;       ;
-; seven_seg_input[0] ; seven_seg_2[5] ; 9.515 ; 9.515 ; 9.515 ; 9.515 ;
-; seven_seg_input[0] ; seven_seg_2[6] ; 9.748 ; 9.748 ; 9.748 ; 9.748 ;
-; seven_seg_input[1] ; seven_seg_2[0] ; 9.548 ; 9.548 ; 9.548 ; 9.548 ;
-; seven_seg_input[1] ; seven_seg_2[1] ; 9.750 ; 9.750 ; 9.750 ; 9.750 ;
-; seven_seg_input[1] ; seven_seg_2[2] ;       ; 9.529 ; 9.529 ;       ;
-; seven_seg_input[1] ; seven_seg_2[3] ; 9.539 ; 9.539 ; 9.539 ; 9.539 ;
-; seven_seg_input[1] ; seven_seg_2[4] ; 9.724 ;       ;       ; 9.724 ;
-; seven_seg_input[1] ; seven_seg_2[5] ; 9.516 ; 9.516 ; 9.516 ; 9.516 ;
-; seven_seg_input[1] ; seven_seg_2[6] ; 9.724 ; 9.724 ; 9.724 ; 9.724 ;
-; seven_seg_input[2] ; seven_seg_2[0] ; 9.350 ; 9.350 ; 9.350 ; 9.350 ;
-; seven_seg_input[2] ; seven_seg_2[1] ; 9.554 ; 9.554 ; 9.554 ; 9.554 ;
-; seven_seg_input[2] ; seven_seg_2[2] ; 9.330 ; 9.330 ; 9.330 ; 9.330 ;
-; seven_seg_input[2] ; seven_seg_2[3] ; 9.346 ; 9.346 ; 9.346 ; 9.346 ;
-; seven_seg_input[2] ; seven_seg_2[4] ; 9.533 ; 9.533 ; 9.533 ; 9.533 ;
-; seven_seg_input[2] ; seven_seg_2[5] ; 9.322 ;       ;       ; 9.322 ;
-; seven_seg_input[2] ; seven_seg_2[6] ; 9.557 ; 9.557 ; 9.557 ; 9.557 ;
-; seven_seg_input[3] ; seven_seg_2[0] ; 9.280 ; 9.280 ; 9.280 ; 9.280 ;
-; seven_seg_input[3] ; seven_seg_2[1] ; 9.480 ; 9.480 ; 9.480 ; 9.480 ;
-; seven_seg_input[3] ; seven_seg_2[2] ;       ; 9.258 ; 9.258 ;       ;
-; seven_seg_input[3] ; seven_seg_2[3] ; 9.268 ; 9.268 ; 9.268 ; 9.268 ;
-; seven_seg_input[3] ; seven_seg_2[4] ; 9.454 ; 9.454 ; 9.454 ; 9.454 ;
-; seven_seg_input[3] ; seven_seg_2[5] ; 9.249 ; 9.249 ; 9.249 ; 9.249 ;
-; seven_seg_input[3] ; seven_seg_2[6] ; 9.486 ; 9.486 ; 9.486 ; 9.486 ;
-; seven_seg_input[4] ; seven_seg_1[0] ; 7.331 ;       ;       ; 7.331 ;
-; seven_seg_input[4] ; seven_seg_1[1] ; 7.175 ;       ;       ; 7.175 ;
-; seven_seg_input[4] ; seven_seg_1[2] ; 7.143 ;       ;       ; 7.143 ;
-; seven_seg_input[4] ; seven_seg_1[3] ; 7.435 ; 7.435 ; 7.435 ; 7.435 ;
-; seven_seg_input[4] ; seven_seg_1[4] ;       ; 7.128 ; 7.128 ;       ;
-; seven_seg_input[4] ; seven_seg_1[5] ; 7.131 ; 7.131 ; 7.131 ; 7.131 ;
-; seven_seg_input[4] ; seven_seg_1[6] ; 7.460 ; 7.460 ; 7.460 ; 7.460 ;
-; seven_seg_input[5] ; seven_seg_1[0] ; 6.968 ; 6.968 ; 6.968 ; 6.968 ;
-; seven_seg_input[5] ; seven_seg_1[1] ; 6.817 ;       ;       ; 6.817 ;
-; seven_seg_input[5] ; seven_seg_1[2] ;       ; 6.810 ; 6.810 ;       ;
-; seven_seg_input[5] ; seven_seg_1[3] ; 7.072 ; 7.072 ; 7.072 ; 7.072 ;
-; seven_seg_input[5] ; seven_seg_1[4] ; 6.767 ;       ;       ; 6.767 ;
-; seven_seg_input[5] ; seven_seg_1[5] ; 6.772 ; 6.772 ; 6.772 ; 6.772 ;
-; seven_seg_input[5] ; seven_seg_1[6] ;       ; 7.099 ; 7.099 ;       ;
-; seven_seg_input[6] ; seven_seg_1[0] ; 9.456 ; 9.456 ; 9.456 ; 9.456 ;
-; seven_seg_input[6] ; seven_seg_1[1] ;       ; 9.304 ; 9.304 ;       ;
-; seven_seg_input[6] ; seven_seg_1[2] ; 9.322 ;       ;       ; 9.322 ;
-; seven_seg_input[6] ; seven_seg_1[3] ; 9.585 ; 9.585 ; 9.585 ; 9.585 ;
-; seven_seg_input[6] ; seven_seg_1[4] ;       ; 9.239 ; 9.239 ;       ;
-; seven_seg_input[6] ; seven_seg_1[5] ; 9.284 ;       ;       ; 9.284 ;
-; seven_seg_input[6] ; seven_seg_1[6] ; 9.611 ; 9.611 ; 9.611 ; 9.611 ;
-+--------------------+----------------+-------+-------+-------+-------+
++--------------------------------------------------------------------------+
+; Propagation Delay                                                        ;
++--------------------+---------------------+-------+-------+-------+-------+
+; Input Port         ; Output Port         ; RR    ; RF    ; FR    ; FF    ;
++--------------------+---------------------+-------+-------+-------+-------+
+; seven_seg_input[0] ; seven_seg_output[0] ; 5.685 ; 5.685 ; 5.685 ; 5.685 ;
+; seven_seg_input[0] ; seven_seg_output[1] ; 5.702 ; 5.702 ; 5.702 ; 5.702 ;
+; seven_seg_input[0] ; seven_seg_output[2] ;       ; 5.864 ; 5.864 ;       ;
+; seven_seg_input[0] ; seven_seg_output[3] ; 6.030 ; 6.030 ; 6.030 ; 6.030 ;
+; seven_seg_input[0] ; seven_seg_output[4] ; 5.711 ;       ;       ; 5.711 ;
+; seven_seg_input[0] ; seven_seg_output[5] ; 5.885 ;       ;       ; 5.885 ;
+; seven_seg_input[0] ; seven_seg_output[6] ; 5.689 ; 5.689 ; 5.689 ; 5.689 ;
+; seven_seg_input[1] ; seven_seg_output[0] ; 5.408 ; 5.408 ; 5.408 ; 5.408 ;
+; seven_seg_input[1] ; seven_seg_output[1] ; 5.431 ; 5.431 ; 5.431 ; 5.431 ;
+; seven_seg_input[1] ; seven_seg_output[2] ; 5.621 ;       ;       ; 5.621 ;
+; seven_seg_input[1] ; seven_seg_output[3] ; 5.769 ; 5.769 ; 5.769 ; 5.769 ;
+; seven_seg_input[1] ; seven_seg_output[4] ;       ; 5.445 ; 5.445 ;       ;
+; seven_seg_input[1] ; seven_seg_output[5] ; 5.608 ; 5.608 ; 5.608 ; 5.608 ;
+; seven_seg_input[1] ; seven_seg_output[6] ; 5.411 ; 5.411 ; 5.411 ; 5.411 ;
+; seven_seg_input[2] ; seven_seg_output[0] ; 9.334 ; 9.334 ; 9.334 ; 9.334 ;
+; seven_seg_input[2] ; seven_seg_output[1] ; 9.354 ;       ;       ; 9.354 ;
+; seven_seg_input[2] ; seven_seg_output[2] ; 9.539 ; 9.539 ; 9.539 ; 9.539 ;
+; seven_seg_input[2] ; seven_seg_output[3] ; 9.684 ; 9.684 ; 9.684 ; 9.684 ;
+; seven_seg_input[2] ; seven_seg_output[4] ; 9.360 ; 9.360 ; 9.360 ; 9.360 ;
+; seven_seg_input[2] ; seven_seg_output[5] ; 9.534 ; 9.534 ; 9.534 ; 9.534 ;
+; seven_seg_input[2] ; seven_seg_output[6] ; 9.336 ; 9.336 ; 9.336 ; 9.336 ;
+; seven_seg_input[3] ; seven_seg_output[0] ; 9.516 ; 9.516 ; 9.516 ; 9.516 ;
+; seven_seg_input[3] ; seven_seg_output[1] ; 9.542 ; 9.542 ; 9.542 ; 9.542 ;
+; seven_seg_input[3] ; seven_seg_output[2] ; 9.731 ; 9.731 ; 9.731 ; 9.731 ;
+; seven_seg_input[3] ; seven_seg_output[3] ; 9.852 ; 9.852 ; 9.852 ; 9.852 ;
+; seven_seg_input[3] ; seven_seg_output[4] ;       ; 9.554 ; 9.554 ;       ;
+; seven_seg_input[3] ; seven_seg_output[5] ; 9.717 ; 9.717 ; 9.717 ; 9.717 ;
+; seven_seg_input[3] ; seven_seg_output[6] ; 9.520 ; 9.520 ; 9.520 ; 9.520 ;
++--------------------+---------------------+-------+-------+-------+-------+
 
 
-+---------------------------------------------------------------------+
-; Minimum Propagation Delay                                           ;
-+--------------------+----------------+-------+-------+-------+-------+
-; Input Port         ; Output Port    ; RR    ; RF    ; FR    ; FF    ;
-+--------------------+----------------+-------+-------+-------+-------+
-; seven_seg_input[0] ; seven_seg_2[0] ; 9.539 ; 9.539 ; 9.539 ; 9.539 ;
-; seven_seg_input[0] ; seven_seg_2[1] ; 9.757 ;       ;       ; 9.757 ;
-; seven_seg_input[0] ; seven_seg_2[2] ; 9.524 ;       ;       ; 9.524 ;
-; seven_seg_input[0] ; seven_seg_2[3] ; 9.548 ; 9.548 ; 9.548 ; 9.548 ;
-; seven_seg_input[0] ; seven_seg_2[4] ;       ; 9.707 ; 9.707 ;       ;
-; seven_seg_input[0] ; seven_seg_2[5] ; 9.515 ; 9.515 ; 9.515 ; 9.515 ;
-; seven_seg_input[0] ; seven_seg_2[6] ; 9.748 ; 9.748 ; 9.748 ; 9.748 ;
-; seven_seg_input[1] ; seven_seg_2[0] ; 9.548 ; 9.548 ; 9.548 ; 9.548 ;
-; seven_seg_input[1] ; seven_seg_2[1] ; 9.750 ; 9.750 ; 9.750 ; 9.750 ;
-; seven_seg_input[1] ; seven_seg_2[2] ;       ; 9.529 ; 9.529 ;       ;
-; seven_seg_input[1] ; seven_seg_2[3] ; 9.539 ; 9.539 ; 9.539 ; 9.539 ;
-; seven_seg_input[1] ; seven_seg_2[4] ; 9.724 ;       ;       ; 9.724 ;
-; seven_seg_input[1] ; seven_seg_2[5] ; 9.516 ; 9.516 ; 9.516 ; 9.516 ;
-; seven_seg_input[1] ; seven_seg_2[6] ; 9.724 ; 9.724 ; 9.724 ; 9.724 ;
-; seven_seg_input[2] ; seven_seg_2[0] ; 9.350 ; 9.350 ; 9.350 ; 9.350 ;
-; seven_seg_input[2] ; seven_seg_2[1] ; 9.554 ; 9.554 ; 9.554 ; 9.554 ;
-; seven_seg_input[2] ; seven_seg_2[2] ; 9.330 ; 9.330 ; 9.330 ; 9.330 ;
-; seven_seg_input[2] ; seven_seg_2[3] ; 9.346 ; 9.346 ; 9.346 ; 9.346 ;
-; seven_seg_input[2] ; seven_seg_2[4] ; 9.533 ; 9.533 ; 9.533 ; 9.533 ;
-; seven_seg_input[2] ; seven_seg_2[5] ; 9.322 ;       ;       ; 9.322 ;
-; seven_seg_input[2] ; seven_seg_2[6] ; 9.557 ; 9.557 ; 9.557 ; 9.557 ;
-; seven_seg_input[3] ; seven_seg_2[0] ; 9.280 ; 9.280 ; 9.280 ; 9.280 ;
-; seven_seg_input[3] ; seven_seg_2[1] ; 9.480 ; 9.480 ; 9.480 ; 9.480 ;
-; seven_seg_input[3] ; seven_seg_2[2] ;       ; 9.258 ; 9.258 ;       ;
-; seven_seg_input[3] ; seven_seg_2[3] ; 9.268 ; 9.268 ; 9.268 ; 9.268 ;
-; seven_seg_input[3] ; seven_seg_2[4] ; 9.454 ; 9.454 ; 9.454 ; 9.454 ;
-; seven_seg_input[3] ; seven_seg_2[5] ; 9.249 ; 9.249 ; 9.249 ; 9.249 ;
-; seven_seg_input[3] ; seven_seg_2[6] ; 9.486 ; 9.486 ; 9.486 ; 9.486 ;
-; seven_seg_input[4] ; seven_seg_1[0] ; 7.331 ;       ;       ; 7.331 ;
-; seven_seg_input[4] ; seven_seg_1[1] ; 7.175 ;       ;       ; 7.175 ;
-; seven_seg_input[4] ; seven_seg_1[2] ; 7.143 ;       ;       ; 7.143 ;
-; seven_seg_input[4] ; seven_seg_1[3] ; 7.435 ; 7.435 ; 7.435 ; 7.435 ;
-; seven_seg_input[4] ; seven_seg_1[4] ;       ; 7.128 ; 7.128 ;       ;
-; seven_seg_input[4] ; seven_seg_1[5] ; 7.131 ; 7.131 ; 7.131 ; 7.131 ;
-; seven_seg_input[4] ; seven_seg_1[6] ; 7.460 ; 7.460 ; 7.460 ; 7.460 ;
-; seven_seg_input[5] ; seven_seg_1[0] ; 6.968 ; 6.968 ; 6.968 ; 6.968 ;
-; seven_seg_input[5] ; seven_seg_1[1] ; 6.817 ;       ;       ; 6.817 ;
-; seven_seg_input[5] ; seven_seg_1[2] ;       ; 6.810 ; 6.810 ;       ;
-; seven_seg_input[5] ; seven_seg_1[3] ; 7.072 ; 7.072 ; 7.072 ; 7.072 ;
-; seven_seg_input[5] ; seven_seg_1[4] ; 6.767 ;       ;       ; 6.767 ;
-; seven_seg_input[5] ; seven_seg_1[5] ; 6.772 ; 6.772 ; 6.772 ; 6.772 ;
-; seven_seg_input[5] ; seven_seg_1[6] ;       ; 7.099 ; 7.099 ;       ;
-; seven_seg_input[6] ; seven_seg_1[0] ; 9.456 ; 9.456 ; 9.456 ; 9.456 ;
-; seven_seg_input[6] ; seven_seg_1[1] ;       ; 9.304 ; 9.304 ;       ;
-; seven_seg_input[6] ; seven_seg_1[2] ; 9.322 ;       ;       ; 9.322 ;
-; seven_seg_input[6] ; seven_seg_1[3] ; 9.585 ; 9.585 ; 9.585 ; 9.585 ;
-; seven_seg_input[6] ; seven_seg_1[4] ;       ; 9.239 ; 9.239 ;       ;
-; seven_seg_input[6] ; seven_seg_1[5] ; 9.284 ;       ;       ; 9.284 ;
-; seven_seg_input[6] ; seven_seg_1[6] ; 9.611 ; 9.611 ; 9.611 ; 9.611 ;
-+--------------------+----------------+-------+-------+-------+-------+
++--------------------------------------------------------------------------+
+; Minimum Propagation Delay                                                ;
++--------------------+---------------------+-------+-------+-------+-------+
+; Input Port         ; Output Port         ; RR    ; RF    ; FR    ; FF    ;
++--------------------+---------------------+-------+-------+-------+-------+
+; seven_seg_input[0] ; seven_seg_output[0] ; 5.685 ; 5.685 ; 5.685 ; 5.685 ;
+; seven_seg_input[0] ; seven_seg_output[1] ; 5.702 ; 5.702 ; 5.702 ; 5.702 ;
+; seven_seg_input[0] ; seven_seg_output[2] ;       ; 5.864 ; 5.864 ;       ;
+; seven_seg_input[0] ; seven_seg_output[3] ; 6.030 ; 6.030 ; 6.030 ; 6.030 ;
+; seven_seg_input[0] ; seven_seg_output[4] ; 5.711 ;       ;       ; 5.711 ;
+; seven_seg_input[0] ; seven_seg_output[5] ; 5.885 ;       ;       ; 5.885 ;
+; seven_seg_input[0] ; seven_seg_output[6] ; 5.689 ; 5.689 ; 5.689 ; 5.689 ;
+; seven_seg_input[1] ; seven_seg_output[0] ; 5.408 ; 5.408 ; 5.408 ; 5.408 ;
+; seven_seg_input[1] ; seven_seg_output[1] ; 5.431 ; 5.431 ; 5.431 ; 5.431 ;
+; seven_seg_input[1] ; seven_seg_output[2] ; 5.621 ;       ;       ; 5.621 ;
+; seven_seg_input[1] ; seven_seg_output[3] ; 5.769 ; 5.769 ; 5.769 ; 5.769 ;
+; seven_seg_input[1] ; seven_seg_output[4] ;       ; 5.445 ; 5.445 ;       ;
+; seven_seg_input[1] ; seven_seg_output[5] ; 5.608 ; 5.608 ; 5.608 ; 5.608 ;
+; seven_seg_input[1] ; seven_seg_output[6] ; 5.411 ; 5.411 ; 5.411 ; 5.411 ;
+; seven_seg_input[2] ; seven_seg_output[0] ; 9.334 ; 9.334 ; 9.334 ; 9.334 ;
+; seven_seg_input[2] ; seven_seg_output[1] ; 9.354 ;       ;       ; 9.354 ;
+; seven_seg_input[2] ; seven_seg_output[2] ; 9.539 ; 9.539 ; 9.539 ; 9.539 ;
+; seven_seg_input[2] ; seven_seg_output[3] ; 9.684 ; 9.684 ; 9.684 ; 9.684 ;
+; seven_seg_input[2] ; seven_seg_output[4] ; 9.360 ; 9.360 ; 9.360 ; 9.360 ;
+; seven_seg_input[2] ; seven_seg_output[5] ; 9.534 ; 9.534 ; 9.534 ; 9.534 ;
+; seven_seg_input[2] ; seven_seg_output[6] ; 9.336 ; 9.336 ; 9.336 ; 9.336 ;
+; seven_seg_input[3] ; seven_seg_output[0] ; 9.516 ; 9.516 ; 9.516 ; 9.516 ;
+; seven_seg_input[3] ; seven_seg_output[1] ; 9.542 ; 9.542 ; 9.542 ; 9.542 ;
+; seven_seg_input[3] ; seven_seg_output[2] ; 9.731 ; 9.731 ; 9.731 ; 9.731 ;
+; seven_seg_input[3] ; seven_seg_output[3] ; 9.852 ; 9.852 ; 9.852 ; 9.852 ;
+; seven_seg_input[3] ; seven_seg_output[4] ;       ; 9.554 ; 9.554 ;       ;
+; seven_seg_input[3] ; seven_seg_output[5] ; 9.717 ; 9.717 ; 9.717 ; 9.717 ;
+; seven_seg_input[3] ; seven_seg_output[6] ; 9.520 ; 9.520 ; 9.520 ; 9.520 ;
++--------------------+---------------------+-------+-------+-------+-------+
 
 
 ----------------------------
@@ -271,118 +229,76 @@ No paths to report.
 No paths to report.
 
 
-+---------------------------------------------------------------------+
-; Propagation Delay                                                   ;
-+--------------------+----------------+-------+-------+-------+-------+
-; Input Port         ; Output Port    ; RR    ; RF    ; FR    ; FF    ;
-+--------------------+----------------+-------+-------+-------+-------+
-; seven_seg_input[0] ; seven_seg_2[0] ; 5.328 ; 5.328 ; 5.328 ; 5.328 ;
-; seven_seg_input[0] ; seven_seg_2[1] ; 5.430 ;       ;       ; 5.430 ;
-; seven_seg_input[0] ; seven_seg_2[2] ; 5.320 ;       ;       ; 5.320 ;
-; seven_seg_input[0] ; seven_seg_2[3] ; 5.337 ; 5.337 ; 5.337 ; 5.337 ;
-; seven_seg_input[0] ; seven_seg_2[4] ;       ; 5.403 ; 5.403 ;       ;
-; seven_seg_input[0] ; seven_seg_2[5] ; 5.302 ; 5.302 ; 5.302 ; 5.302 ;
-; seven_seg_input[0] ; seven_seg_2[6] ; 5.421 ; 5.421 ; 5.421 ; 5.421 ;
-; seven_seg_input[1] ; seven_seg_2[0] ; 5.346 ; 5.346 ; 5.346 ; 5.346 ;
-; seven_seg_input[1] ; seven_seg_2[1] ; 5.431 ; 5.431 ; 5.431 ; 5.431 ;
-; seven_seg_input[1] ; seven_seg_2[2] ;       ; 5.328 ; 5.328 ;       ;
-; seven_seg_input[1] ; seven_seg_2[3] ; 5.344 ; 5.344 ; 5.344 ; 5.344 ;
-; seven_seg_input[1] ; seven_seg_2[4] ; 5.405 ;       ;       ; 5.405 ;
-; seven_seg_input[1] ; seven_seg_2[5] ; 5.316 ; 5.316 ; 5.316 ; 5.316 ;
-; seven_seg_input[1] ; seven_seg_2[6] ; 5.433 ; 5.433 ; 5.433 ; 5.433 ;
-; seven_seg_input[2] ; seven_seg_2[0] ; 5.249 ; 5.249 ; 5.249 ; 5.249 ;
-; seven_seg_input[2] ; seven_seg_2[1] ; 5.333 ; 5.333 ; 5.333 ; 5.333 ;
-; seven_seg_input[2] ; seven_seg_2[2] ; 5.225 ; 5.225 ; 5.225 ; 5.225 ;
-; seven_seg_input[2] ; seven_seg_2[3] ; 5.241 ; 5.241 ; 5.241 ; 5.241 ;
-; seven_seg_input[2] ; seven_seg_2[4] ; 5.311 ; 5.311 ; 5.311 ; 5.311 ;
-; seven_seg_input[2] ; seven_seg_2[5] ; 5.215 ;       ;       ; 5.215 ;
-; seven_seg_input[2] ; seven_seg_2[6] ; 5.331 ; 5.331 ; 5.331 ; 5.331 ;
-; seven_seg_input[3] ; seven_seg_2[0] ; 5.235 ; 5.235 ; 5.235 ; 5.235 ;
-; seven_seg_input[3] ; seven_seg_2[1] ; 5.316 ; 5.316 ; 5.316 ; 5.316 ;
-; seven_seg_input[3] ; seven_seg_2[2] ;       ; 5.214 ; 5.214 ;       ;
-; seven_seg_input[3] ; seven_seg_2[3] ; 5.226 ; 5.226 ; 5.226 ; 5.226 ;
-; seven_seg_input[3] ; seven_seg_2[4] ; 5.291 ; 5.291 ; 5.291 ; 5.291 ;
-; seven_seg_input[3] ; seven_seg_2[5] ; 5.204 ; 5.204 ; 5.204 ; 5.204 ;
-; seven_seg_input[3] ; seven_seg_2[6] ; 5.319 ; 5.319 ; 5.319 ; 5.319 ;
-; seven_seg_input[4] ; seven_seg_1[0] ; 3.854 ;       ;       ; 3.854 ;
-; seven_seg_input[4] ; seven_seg_1[1] ; 3.770 ;       ;       ; 3.770 ;
-; seven_seg_input[4] ; seven_seg_1[2] ; 3.770 ;       ;       ; 3.770 ;
-; seven_seg_input[4] ; seven_seg_1[3] ; 3.875 ; 3.875 ; 3.875 ; 3.875 ;
-; seven_seg_input[4] ; seven_seg_1[4] ;       ; 3.719 ; 3.719 ;       ;
-; seven_seg_input[4] ; seven_seg_1[5] ; 3.721 ; 3.721 ; 3.721 ; 3.721 ;
-; seven_seg_input[4] ; seven_seg_1[6] ; 3.898 ; 3.898 ; 3.898 ; 3.898 ;
-; seven_seg_input[5] ; seven_seg_1[0] ; 3.674 ; 3.674 ; 3.674 ; 3.674 ;
-; seven_seg_input[5] ; seven_seg_1[1] ; 3.616 ;       ;       ; 3.616 ;
-; seven_seg_input[5] ; seven_seg_1[2] ;       ; 3.612 ; 3.612 ;       ;
-; seven_seg_input[5] ; seven_seg_1[3] ; 3.718 ; 3.718 ; 3.718 ; 3.718 ;
-; seven_seg_input[5] ; seven_seg_1[4] ; 3.567 ;       ;       ; 3.567 ;
-; seven_seg_input[5] ; seven_seg_1[5] ; 3.568 ; 3.568 ; 3.568 ; 3.568 ;
-; seven_seg_input[5] ; seven_seg_1[6] ;       ; 3.741 ; 3.741 ;       ;
-; seven_seg_input[6] ; seven_seg_1[0] ; 5.316 ; 5.316 ; 5.316 ; 5.316 ;
-; seven_seg_input[6] ; seven_seg_1[1] ;       ; 5.252 ; 5.252 ;       ;
-; seven_seg_input[6] ; seven_seg_1[2] ; 5.248 ;       ;       ; 5.248 ;
-; seven_seg_input[6] ; seven_seg_1[3] ; 5.361 ; 5.361 ; 5.361 ; 5.361 ;
-; seven_seg_input[6] ; seven_seg_1[4] ;       ; 5.203 ; 5.203 ;       ;
-; seven_seg_input[6] ; seven_seg_1[5] ; 5.204 ;       ;       ; 5.204 ;
-; seven_seg_input[6] ; seven_seg_1[6] ; 5.384 ; 5.384 ; 5.384 ; 5.384 ;
-+--------------------+----------------+-------+-------+-------+-------+
++--------------------------------------------------------------------------+
+; Propagation Delay                                                        ;
++--------------------+---------------------+-------+-------+-------+-------+
+; Input Port         ; Output Port         ; RR    ; RF    ; FR    ; FF    ;
++--------------------+---------------------+-------+-------+-------+-------+
+; seven_seg_input[0] ; seven_seg_output[0] ; 2.949 ; 2.949 ; 2.949 ; 2.949 ;
+; seven_seg_input[0] ; seven_seg_output[1] ; 2.966 ; 2.966 ; 2.966 ; 2.966 ;
+; seven_seg_input[0] ; seven_seg_output[2] ;       ; 3.021 ; 3.021 ;       ;
+; seven_seg_input[0] ; seven_seg_output[3] ; 3.126 ; 3.126 ; 3.126 ; 3.126 ;
+; seven_seg_input[0] ; seven_seg_output[4] ; 2.976 ;       ;       ; 2.976 ;
+; seven_seg_input[0] ; seven_seg_output[5] ; 3.015 ;       ;       ; 3.015 ;
+; seven_seg_input[0] ; seven_seg_output[6] ; 2.947 ; 2.947 ; 2.947 ; 2.947 ;
+; seven_seg_input[1] ; seven_seg_output[0] ; 2.826 ; 2.826 ; 2.826 ; 2.826 ;
+; seven_seg_input[1] ; seven_seg_output[1] ; 2.850 ; 2.850 ; 2.850 ; 2.850 ;
+; seven_seg_input[1] ; seven_seg_output[2] ; 2.909 ;       ;       ; 2.909 ;
+; seven_seg_input[1] ; seven_seg_output[3] ; 3.016 ; 3.016 ; 3.016 ; 3.016 ;
+; seven_seg_input[1] ; seven_seg_output[4] ;       ; 2.862 ; 2.862 ;       ;
+; seven_seg_input[1] ; seven_seg_output[5] ; 2.896 ; 2.896 ; 2.896 ; 2.896 ;
+; seven_seg_input[1] ; seven_seg_output[6] ; 2.828 ; 2.828 ; 2.828 ; 2.828 ;
+; seven_seg_input[2] ; seven_seg_output[0] ; 5.235 ; 5.235 ; 5.235 ; 5.235 ;
+; seven_seg_input[2] ; seven_seg_output[1] ; 5.255 ;       ;       ; 5.255 ;
+; seven_seg_input[2] ; seven_seg_output[2] ; 5.311 ; 5.311 ; 5.311 ; 5.311 ;
+; seven_seg_input[2] ; seven_seg_output[3] ; 5.413 ; 5.413 ; 5.413 ; 5.413 ;
+; seven_seg_input[2] ; seven_seg_output[4] ; 5.261 ; 5.261 ; 5.261 ; 5.261 ;
+; seven_seg_input[2] ; seven_seg_output[5] ; 5.305 ; 5.305 ; 5.305 ; 5.305 ;
+; seven_seg_input[2] ; seven_seg_output[6] ; 5.237 ; 5.237 ; 5.237 ; 5.237 ;
+; seven_seg_input[3] ; seven_seg_output[0] ; 5.315 ; 5.315 ; 5.315 ; 5.315 ;
+; seven_seg_input[3] ; seven_seg_output[1] ; 5.333 ; 5.333 ; 5.333 ; 5.333 ;
+; seven_seg_input[3] ; seven_seg_output[2] ; 5.392 ; 5.392 ; 5.392 ; 5.392 ;
+; seven_seg_input[3] ; seven_seg_output[3] ; 5.499 ; 5.499 ; 5.499 ; 5.499 ;
+; seven_seg_input[3] ; seven_seg_output[4] ;       ; 5.346 ; 5.346 ;       ;
+; seven_seg_input[3] ; seven_seg_output[5] ; 5.378 ; 5.378 ; 5.378 ; 5.378 ;
+; seven_seg_input[3] ; seven_seg_output[6] ; 5.310 ; 5.310 ; 5.310 ; 5.310 ;
++--------------------+---------------------+-------+-------+-------+-------+
 
 
-+---------------------------------------------------------------------+
-; Minimum Propagation Delay                                           ;
-+--------------------+----------------+-------+-------+-------+-------+
-; Input Port         ; Output Port    ; RR    ; RF    ; FR    ; FF    ;
-+--------------------+----------------+-------+-------+-------+-------+
-; seven_seg_input[0] ; seven_seg_2[0] ; 5.328 ; 5.328 ; 5.328 ; 5.328 ;
-; seven_seg_input[0] ; seven_seg_2[1] ; 5.430 ;       ;       ; 5.430 ;
-; seven_seg_input[0] ; seven_seg_2[2] ; 5.320 ;       ;       ; 5.320 ;
-; seven_seg_input[0] ; seven_seg_2[3] ; 5.337 ; 5.337 ; 5.337 ; 5.337 ;
-; seven_seg_input[0] ; seven_seg_2[4] ;       ; 5.403 ; 5.403 ;       ;
-; seven_seg_input[0] ; seven_seg_2[5] ; 5.302 ; 5.302 ; 5.302 ; 5.302 ;
-; seven_seg_input[0] ; seven_seg_2[6] ; 5.421 ; 5.421 ; 5.421 ; 5.421 ;
-; seven_seg_input[1] ; seven_seg_2[0] ; 5.346 ; 5.346 ; 5.346 ; 5.346 ;
-; seven_seg_input[1] ; seven_seg_2[1] ; 5.431 ; 5.431 ; 5.431 ; 5.431 ;
-; seven_seg_input[1] ; seven_seg_2[2] ;       ; 5.328 ; 5.328 ;       ;
-; seven_seg_input[1] ; seven_seg_2[3] ; 5.344 ; 5.344 ; 5.344 ; 5.344 ;
-; seven_seg_input[1] ; seven_seg_2[4] ; 5.405 ;       ;       ; 5.405 ;
-; seven_seg_input[1] ; seven_seg_2[5] ; 5.316 ; 5.316 ; 5.316 ; 5.316 ;
-; seven_seg_input[1] ; seven_seg_2[6] ; 5.433 ; 5.433 ; 5.433 ; 5.433 ;
-; seven_seg_input[2] ; seven_seg_2[0] ; 5.249 ; 5.249 ; 5.249 ; 5.249 ;
-; seven_seg_input[2] ; seven_seg_2[1] ; 5.333 ; 5.333 ; 5.333 ; 5.333 ;
-; seven_seg_input[2] ; seven_seg_2[2] ; 5.225 ; 5.225 ; 5.225 ; 5.225 ;
-; seven_seg_input[2] ; seven_seg_2[3] ; 5.241 ; 5.241 ; 5.241 ; 5.241 ;
-; seven_seg_input[2] ; seven_seg_2[4] ; 5.311 ; 5.311 ; 5.311 ; 5.311 ;
-; seven_seg_input[2] ; seven_seg_2[5] ; 5.215 ;       ;       ; 5.215 ;
-; seven_seg_input[2] ; seven_seg_2[6] ; 5.331 ; 5.331 ; 5.331 ; 5.331 ;
-; seven_seg_input[3] ; seven_seg_2[0] ; 5.235 ; 5.235 ; 5.235 ; 5.235 ;
-; seven_seg_input[3] ; seven_seg_2[1] ; 5.316 ; 5.316 ; 5.316 ; 5.316 ;
-; seven_seg_input[3] ; seven_seg_2[2] ;       ; 5.214 ; 5.214 ;       ;
-; seven_seg_input[3] ; seven_seg_2[3] ; 5.226 ; 5.226 ; 5.226 ; 5.226 ;
-; seven_seg_input[3] ; seven_seg_2[4] ; 5.291 ; 5.291 ; 5.291 ; 5.291 ;
-; seven_seg_input[3] ; seven_seg_2[5] ; 5.204 ; 5.204 ; 5.204 ; 5.204 ;
-; seven_seg_input[3] ; seven_seg_2[6] ; 5.319 ; 5.319 ; 5.319 ; 5.319 ;
-; seven_seg_input[4] ; seven_seg_1[0] ; 3.854 ;       ;       ; 3.854 ;
-; seven_seg_input[4] ; seven_seg_1[1] ; 3.770 ;       ;       ; 3.770 ;
-; seven_seg_input[4] ; seven_seg_1[2] ; 3.770 ;       ;       ; 3.770 ;
-; seven_seg_input[4] ; seven_seg_1[3] ; 3.875 ; 3.875 ; 3.875 ; 3.875 ;
-; seven_seg_input[4] ; seven_seg_1[4] ;       ; 3.719 ; 3.719 ;       ;
-; seven_seg_input[4] ; seven_seg_1[5] ; 3.721 ; 3.721 ; 3.721 ; 3.721 ;
-; seven_seg_input[4] ; seven_seg_1[6] ; 3.898 ; 3.898 ; 3.898 ; 3.898 ;
-; seven_seg_input[5] ; seven_seg_1[0] ; 3.674 ; 3.674 ; 3.674 ; 3.674 ;
-; seven_seg_input[5] ; seven_seg_1[1] ; 3.616 ;       ;       ; 3.616 ;
-; seven_seg_input[5] ; seven_seg_1[2] ;       ; 3.612 ; 3.612 ;       ;
-; seven_seg_input[5] ; seven_seg_1[3] ; 3.718 ; 3.718 ; 3.718 ; 3.718 ;
-; seven_seg_input[5] ; seven_seg_1[4] ; 3.567 ;       ;       ; 3.567 ;
-; seven_seg_input[5] ; seven_seg_1[5] ; 3.568 ; 3.568 ; 3.568 ; 3.568 ;
-; seven_seg_input[5] ; seven_seg_1[6] ;       ; 3.741 ; 3.741 ;       ;
-; seven_seg_input[6] ; seven_seg_1[0] ; 5.316 ; 5.316 ; 5.316 ; 5.316 ;
-; seven_seg_input[6] ; seven_seg_1[1] ;       ; 5.252 ; 5.252 ;       ;
-; seven_seg_input[6] ; seven_seg_1[2] ; 5.248 ;       ;       ; 5.248 ;
-; seven_seg_input[6] ; seven_seg_1[3] ; 5.361 ; 5.361 ; 5.361 ; 5.361 ;
-; seven_seg_input[6] ; seven_seg_1[4] ;       ; 5.203 ; 5.203 ;       ;
-; seven_seg_input[6] ; seven_seg_1[5] ; 5.204 ;       ;       ; 5.204 ;
-; seven_seg_input[6] ; seven_seg_1[6] ; 5.384 ; 5.384 ; 5.384 ; 5.384 ;
-+--------------------+----------------+-------+-------+-------+-------+
++--------------------------------------------------------------------------+
+; Minimum Propagation Delay                                                ;
++--------------------+---------------------+-------+-------+-------+-------+
+; Input Port         ; Output Port         ; RR    ; RF    ; FR    ; FF    ;
++--------------------+---------------------+-------+-------+-------+-------+
+; seven_seg_input[0] ; seven_seg_output[0] ; 2.949 ; 2.949 ; 2.949 ; 2.949 ;
+; seven_seg_input[0] ; seven_seg_output[1] ; 2.966 ; 2.966 ; 2.966 ; 2.966 ;
+; seven_seg_input[0] ; seven_seg_output[2] ;       ; 3.021 ; 3.021 ;       ;
+; seven_seg_input[0] ; seven_seg_output[3] ; 3.126 ; 3.126 ; 3.126 ; 3.126 ;
+; seven_seg_input[0] ; seven_seg_output[4] ; 2.976 ;       ;       ; 2.976 ;
+; seven_seg_input[0] ; seven_seg_output[5] ; 3.015 ;       ;       ; 3.015 ;
+; seven_seg_input[0] ; seven_seg_output[6] ; 2.947 ; 2.947 ; 2.947 ; 2.947 ;
+; seven_seg_input[1] ; seven_seg_output[0] ; 2.826 ; 2.826 ; 2.826 ; 2.826 ;
+; seven_seg_input[1] ; seven_seg_output[1] ; 2.850 ; 2.850 ; 2.850 ; 2.850 ;
+; seven_seg_input[1] ; seven_seg_output[2] ; 2.909 ;       ;       ; 2.909 ;
+; seven_seg_input[1] ; seven_seg_output[3] ; 3.016 ; 3.016 ; 3.016 ; 3.016 ;
+; seven_seg_input[1] ; seven_seg_output[4] ;       ; 2.862 ; 2.862 ;       ;
+; seven_seg_input[1] ; seven_seg_output[5] ; 2.896 ; 2.896 ; 2.896 ; 2.896 ;
+; seven_seg_input[1] ; seven_seg_output[6] ; 2.828 ; 2.828 ; 2.828 ; 2.828 ;
+; seven_seg_input[2] ; seven_seg_output[0] ; 5.235 ; 5.235 ; 5.235 ; 5.235 ;
+; seven_seg_input[2] ; seven_seg_output[1] ; 5.255 ;       ;       ; 5.255 ;
+; seven_seg_input[2] ; seven_seg_output[2] ; 5.311 ; 5.311 ; 5.311 ; 5.311 ;
+; seven_seg_input[2] ; seven_seg_output[3] ; 5.413 ; 5.413 ; 5.413 ; 5.413 ;
+; seven_seg_input[2] ; seven_seg_output[4] ; 5.261 ; 5.261 ; 5.261 ; 5.261 ;
+; seven_seg_input[2] ; seven_seg_output[5] ; 5.305 ; 5.305 ; 5.305 ; 5.305 ;
+; seven_seg_input[2] ; seven_seg_output[6] ; 5.237 ; 5.237 ; 5.237 ; 5.237 ;
+; seven_seg_input[3] ; seven_seg_output[0] ; 5.315 ; 5.315 ; 5.315 ; 5.315 ;
+; seven_seg_input[3] ; seven_seg_output[1] ; 5.333 ; 5.333 ; 5.333 ; 5.333 ;
+; seven_seg_input[3] ; seven_seg_output[2] ; 5.392 ; 5.392 ; 5.392 ; 5.392 ;
+; seven_seg_input[3] ; seven_seg_output[3] ; 5.499 ; 5.499 ; 5.499 ; 5.499 ;
+; seven_seg_input[3] ; seven_seg_output[4] ;       ; 5.346 ; 5.346 ;       ;
+; seven_seg_input[3] ; seven_seg_output[5] ; 5.378 ; 5.378 ; 5.378 ; 5.378 ;
+; seven_seg_input[3] ; seven_seg_output[6] ; 5.310 ; 5.310 ; 5.310 ; 5.310 ;
++--------------------+---------------------+-------+-------+-------+-------+
 
 
 +----------------------------------------------------------------------------+
@@ -395,118 +311,76 @@ No paths to report.
 +------------------+-------+------+----------+---------+---------------------+
 
 
-+---------------------------------------------------------------------+
-; Progagation Delay                                                   ;
-+--------------------+----------------+-------+-------+-------+-------+
-; Input Port         ; Output Port    ; RR    ; RF    ; FR    ; FF    ;
-+--------------------+----------------+-------+-------+-------+-------+
-; seven_seg_input[0] ; seven_seg_2[0] ; 9.539 ; 9.539 ; 9.539 ; 9.539 ;
-; seven_seg_input[0] ; seven_seg_2[1] ; 9.757 ;       ;       ; 9.757 ;
-; seven_seg_input[0] ; seven_seg_2[2] ; 9.524 ;       ;       ; 9.524 ;
-; seven_seg_input[0] ; seven_seg_2[3] ; 9.548 ; 9.548 ; 9.548 ; 9.548 ;
-; seven_seg_input[0] ; seven_seg_2[4] ;       ; 9.707 ; 9.707 ;       ;
-; seven_seg_input[0] ; seven_seg_2[5] ; 9.515 ; 9.515 ; 9.515 ; 9.515 ;
-; seven_seg_input[0] ; seven_seg_2[6] ; 9.748 ; 9.748 ; 9.748 ; 9.748 ;
-; seven_seg_input[1] ; seven_seg_2[0] ; 9.548 ; 9.548 ; 9.548 ; 9.548 ;
-; seven_seg_input[1] ; seven_seg_2[1] ; 9.750 ; 9.750 ; 9.750 ; 9.750 ;
-; seven_seg_input[1] ; seven_seg_2[2] ;       ; 9.529 ; 9.529 ;       ;
-; seven_seg_input[1] ; seven_seg_2[3] ; 9.539 ; 9.539 ; 9.539 ; 9.539 ;
-; seven_seg_input[1] ; seven_seg_2[4] ; 9.724 ;       ;       ; 9.724 ;
-; seven_seg_input[1] ; seven_seg_2[5] ; 9.516 ; 9.516 ; 9.516 ; 9.516 ;
-; seven_seg_input[1] ; seven_seg_2[6] ; 9.724 ; 9.724 ; 9.724 ; 9.724 ;
-; seven_seg_input[2] ; seven_seg_2[0] ; 9.350 ; 9.350 ; 9.350 ; 9.350 ;
-; seven_seg_input[2] ; seven_seg_2[1] ; 9.554 ; 9.554 ; 9.554 ; 9.554 ;
-; seven_seg_input[2] ; seven_seg_2[2] ; 9.330 ; 9.330 ; 9.330 ; 9.330 ;
-; seven_seg_input[2] ; seven_seg_2[3] ; 9.346 ; 9.346 ; 9.346 ; 9.346 ;
-; seven_seg_input[2] ; seven_seg_2[4] ; 9.533 ; 9.533 ; 9.533 ; 9.533 ;
-; seven_seg_input[2] ; seven_seg_2[5] ; 9.322 ;       ;       ; 9.322 ;
-; seven_seg_input[2] ; seven_seg_2[6] ; 9.557 ; 9.557 ; 9.557 ; 9.557 ;
-; seven_seg_input[3] ; seven_seg_2[0] ; 9.280 ; 9.280 ; 9.280 ; 9.280 ;
-; seven_seg_input[3] ; seven_seg_2[1] ; 9.480 ; 9.480 ; 9.480 ; 9.480 ;
-; seven_seg_input[3] ; seven_seg_2[2] ;       ; 9.258 ; 9.258 ;       ;
-; seven_seg_input[3] ; seven_seg_2[3] ; 9.268 ; 9.268 ; 9.268 ; 9.268 ;
-; seven_seg_input[3] ; seven_seg_2[4] ; 9.454 ; 9.454 ; 9.454 ; 9.454 ;
-; seven_seg_input[3] ; seven_seg_2[5] ; 9.249 ; 9.249 ; 9.249 ; 9.249 ;
-; seven_seg_input[3] ; seven_seg_2[6] ; 9.486 ; 9.486 ; 9.486 ; 9.486 ;
-; seven_seg_input[4] ; seven_seg_1[0] ; 7.331 ;       ;       ; 7.331 ;
-; seven_seg_input[4] ; seven_seg_1[1] ; 7.175 ;       ;       ; 7.175 ;
-; seven_seg_input[4] ; seven_seg_1[2] ; 7.143 ;       ;       ; 7.143 ;
-; seven_seg_input[4] ; seven_seg_1[3] ; 7.435 ; 7.435 ; 7.435 ; 7.435 ;
-; seven_seg_input[4] ; seven_seg_1[4] ;       ; 7.128 ; 7.128 ;       ;
-; seven_seg_input[4] ; seven_seg_1[5] ; 7.131 ; 7.131 ; 7.131 ; 7.131 ;
-; seven_seg_input[4] ; seven_seg_1[6] ; 7.460 ; 7.460 ; 7.460 ; 7.460 ;
-; seven_seg_input[5] ; seven_seg_1[0] ; 6.968 ; 6.968 ; 6.968 ; 6.968 ;
-; seven_seg_input[5] ; seven_seg_1[1] ; 6.817 ;       ;       ; 6.817 ;
-; seven_seg_input[5] ; seven_seg_1[2] ;       ; 6.810 ; 6.810 ;       ;
-; seven_seg_input[5] ; seven_seg_1[3] ; 7.072 ; 7.072 ; 7.072 ; 7.072 ;
-; seven_seg_input[5] ; seven_seg_1[4] ; 6.767 ;       ;       ; 6.767 ;
-; seven_seg_input[5] ; seven_seg_1[5] ; 6.772 ; 6.772 ; 6.772 ; 6.772 ;
-; seven_seg_input[5] ; seven_seg_1[6] ;       ; 7.099 ; 7.099 ;       ;
-; seven_seg_input[6] ; seven_seg_1[0] ; 9.456 ; 9.456 ; 9.456 ; 9.456 ;
-; seven_seg_input[6] ; seven_seg_1[1] ;       ; 9.304 ; 9.304 ;       ;
-; seven_seg_input[6] ; seven_seg_1[2] ; 9.322 ;       ;       ; 9.322 ;
-; seven_seg_input[6] ; seven_seg_1[3] ; 9.585 ; 9.585 ; 9.585 ; 9.585 ;
-; seven_seg_input[6] ; seven_seg_1[4] ;       ; 9.239 ; 9.239 ;       ;
-; seven_seg_input[6] ; seven_seg_1[5] ; 9.284 ;       ;       ; 9.284 ;
-; seven_seg_input[6] ; seven_seg_1[6] ; 9.611 ; 9.611 ; 9.611 ; 9.611 ;
-+--------------------+----------------+-------+-------+-------+-------+
++--------------------------------------------------------------------------+
+; Progagation Delay                                                        ;
++--------------------+---------------------+-------+-------+-------+-------+
+; Input Port         ; Output Port         ; RR    ; RF    ; FR    ; FF    ;
++--------------------+---------------------+-------+-------+-------+-------+
+; seven_seg_input[0] ; seven_seg_output[0] ; 5.685 ; 5.685 ; 5.685 ; 5.685 ;
+; seven_seg_input[0] ; seven_seg_output[1] ; 5.702 ; 5.702 ; 5.702 ; 5.702 ;
+; seven_seg_input[0] ; seven_seg_output[2] ;       ; 5.864 ; 5.864 ;       ;
+; seven_seg_input[0] ; seven_seg_output[3] ; 6.030 ; 6.030 ; 6.030 ; 6.030 ;
+; seven_seg_input[0] ; seven_seg_output[4] ; 5.711 ;       ;       ; 5.711 ;
+; seven_seg_input[0] ; seven_seg_output[5] ; 5.885 ;       ;       ; 5.885 ;
+; seven_seg_input[0] ; seven_seg_output[6] ; 5.689 ; 5.689 ; 5.689 ; 5.689 ;
+; seven_seg_input[1] ; seven_seg_output[0] ; 5.408 ; 5.408 ; 5.408 ; 5.408 ;
+; seven_seg_input[1] ; seven_seg_output[1] ; 5.431 ; 5.431 ; 5.431 ; 5.431 ;
+; seven_seg_input[1] ; seven_seg_output[2] ; 5.621 ;       ;       ; 5.621 ;
+; seven_seg_input[1] ; seven_seg_output[3] ; 5.769 ; 5.769 ; 5.769 ; 5.769 ;
+; seven_seg_input[1] ; seven_seg_output[4] ;       ; 5.445 ; 5.445 ;       ;
+; seven_seg_input[1] ; seven_seg_output[5] ; 5.608 ; 5.608 ; 5.608 ; 5.608 ;
+; seven_seg_input[1] ; seven_seg_output[6] ; 5.411 ; 5.411 ; 5.411 ; 5.411 ;
+; seven_seg_input[2] ; seven_seg_output[0] ; 9.334 ; 9.334 ; 9.334 ; 9.334 ;
+; seven_seg_input[2] ; seven_seg_output[1] ; 9.354 ;       ;       ; 9.354 ;
+; seven_seg_input[2] ; seven_seg_output[2] ; 9.539 ; 9.539 ; 9.539 ; 9.539 ;
+; seven_seg_input[2] ; seven_seg_output[3] ; 9.684 ; 9.684 ; 9.684 ; 9.684 ;
+; seven_seg_input[2] ; seven_seg_output[4] ; 9.360 ; 9.360 ; 9.360 ; 9.360 ;
+; seven_seg_input[2] ; seven_seg_output[5] ; 9.534 ; 9.534 ; 9.534 ; 9.534 ;
+; seven_seg_input[2] ; seven_seg_output[6] ; 9.336 ; 9.336 ; 9.336 ; 9.336 ;
+; seven_seg_input[3] ; seven_seg_output[0] ; 9.516 ; 9.516 ; 9.516 ; 9.516 ;
+; seven_seg_input[3] ; seven_seg_output[1] ; 9.542 ; 9.542 ; 9.542 ; 9.542 ;
+; seven_seg_input[3] ; seven_seg_output[2] ; 9.731 ; 9.731 ; 9.731 ; 9.731 ;
+; seven_seg_input[3] ; seven_seg_output[3] ; 9.852 ; 9.852 ; 9.852 ; 9.852 ;
+; seven_seg_input[3] ; seven_seg_output[4] ;       ; 9.554 ; 9.554 ;       ;
+; seven_seg_input[3] ; seven_seg_output[5] ; 9.717 ; 9.717 ; 9.717 ; 9.717 ;
+; seven_seg_input[3] ; seven_seg_output[6] ; 9.520 ; 9.520 ; 9.520 ; 9.520 ;
++--------------------+---------------------+-------+-------+-------+-------+
 
 
-+---------------------------------------------------------------------+
-; Minimum Progagation Delay                                           ;
-+--------------------+----------------+-------+-------+-------+-------+
-; Input Port         ; Output Port    ; RR    ; RF    ; FR    ; FF    ;
-+--------------------+----------------+-------+-------+-------+-------+
-; seven_seg_input[0] ; seven_seg_2[0] ; 5.328 ; 5.328 ; 5.328 ; 5.328 ;
-; seven_seg_input[0] ; seven_seg_2[1] ; 5.430 ;       ;       ; 5.430 ;
-; seven_seg_input[0] ; seven_seg_2[2] ; 5.320 ;       ;       ; 5.320 ;
-; seven_seg_input[0] ; seven_seg_2[3] ; 5.337 ; 5.337 ; 5.337 ; 5.337 ;
-; seven_seg_input[0] ; seven_seg_2[4] ;       ; 5.403 ; 5.403 ;       ;
-; seven_seg_input[0] ; seven_seg_2[5] ; 5.302 ; 5.302 ; 5.302 ; 5.302 ;
-; seven_seg_input[0] ; seven_seg_2[6] ; 5.421 ; 5.421 ; 5.421 ; 5.421 ;
-; seven_seg_input[1] ; seven_seg_2[0] ; 5.346 ; 5.346 ; 5.346 ; 5.346 ;
-; seven_seg_input[1] ; seven_seg_2[1] ; 5.431 ; 5.431 ; 5.431 ; 5.431 ;
-; seven_seg_input[1] ; seven_seg_2[2] ;       ; 5.328 ; 5.328 ;       ;
-; seven_seg_input[1] ; seven_seg_2[3] ; 5.344 ; 5.344 ; 5.344 ; 5.344 ;
-; seven_seg_input[1] ; seven_seg_2[4] ; 5.405 ;       ;       ; 5.405 ;
-; seven_seg_input[1] ; seven_seg_2[5] ; 5.316 ; 5.316 ; 5.316 ; 5.316 ;
-; seven_seg_input[1] ; seven_seg_2[6] ; 5.433 ; 5.433 ; 5.433 ; 5.433 ;
-; seven_seg_input[2] ; seven_seg_2[0] ; 5.249 ; 5.249 ; 5.249 ; 5.249 ;
-; seven_seg_input[2] ; seven_seg_2[1] ; 5.333 ; 5.333 ; 5.333 ; 5.333 ;
-; seven_seg_input[2] ; seven_seg_2[2] ; 5.225 ; 5.225 ; 5.225 ; 5.225 ;
-; seven_seg_input[2] ; seven_seg_2[3] ; 5.241 ; 5.241 ; 5.241 ; 5.241 ;
-; seven_seg_input[2] ; seven_seg_2[4] ; 5.311 ; 5.311 ; 5.311 ; 5.311 ;
-; seven_seg_input[2] ; seven_seg_2[5] ; 5.215 ;       ;       ; 5.215 ;
-; seven_seg_input[2] ; seven_seg_2[6] ; 5.331 ; 5.331 ; 5.331 ; 5.331 ;
-; seven_seg_input[3] ; seven_seg_2[0] ; 5.235 ; 5.235 ; 5.235 ; 5.235 ;
-; seven_seg_input[3] ; seven_seg_2[1] ; 5.316 ; 5.316 ; 5.316 ; 5.316 ;
-; seven_seg_input[3] ; seven_seg_2[2] ;       ; 5.214 ; 5.214 ;       ;
-; seven_seg_input[3] ; seven_seg_2[3] ; 5.226 ; 5.226 ; 5.226 ; 5.226 ;
-; seven_seg_input[3] ; seven_seg_2[4] ; 5.291 ; 5.291 ; 5.291 ; 5.291 ;
-; seven_seg_input[3] ; seven_seg_2[5] ; 5.204 ; 5.204 ; 5.204 ; 5.204 ;
-; seven_seg_input[3] ; seven_seg_2[6] ; 5.319 ; 5.319 ; 5.319 ; 5.319 ;
-; seven_seg_input[4] ; seven_seg_1[0] ; 3.854 ;       ;       ; 3.854 ;
-; seven_seg_input[4] ; seven_seg_1[1] ; 3.770 ;       ;       ; 3.770 ;
-; seven_seg_input[4] ; seven_seg_1[2] ; 3.770 ;       ;       ; 3.770 ;
-; seven_seg_input[4] ; seven_seg_1[3] ; 3.875 ; 3.875 ; 3.875 ; 3.875 ;
-; seven_seg_input[4] ; seven_seg_1[4] ;       ; 3.719 ; 3.719 ;       ;
-; seven_seg_input[4] ; seven_seg_1[5] ; 3.721 ; 3.721 ; 3.721 ; 3.721 ;
-; seven_seg_input[4] ; seven_seg_1[6] ; 3.898 ; 3.898 ; 3.898 ; 3.898 ;
-; seven_seg_input[5] ; seven_seg_1[0] ; 3.674 ; 3.674 ; 3.674 ; 3.674 ;
-; seven_seg_input[5] ; seven_seg_1[1] ; 3.616 ;       ;       ; 3.616 ;
-; seven_seg_input[5] ; seven_seg_1[2] ;       ; 3.612 ; 3.612 ;       ;
-; seven_seg_input[5] ; seven_seg_1[3] ; 3.718 ; 3.718 ; 3.718 ; 3.718 ;
-; seven_seg_input[5] ; seven_seg_1[4] ; 3.567 ;       ;       ; 3.567 ;
-; seven_seg_input[5] ; seven_seg_1[5] ; 3.568 ; 3.568 ; 3.568 ; 3.568 ;
-; seven_seg_input[5] ; seven_seg_1[6] ;       ; 3.741 ; 3.741 ;       ;
-; seven_seg_input[6] ; seven_seg_1[0] ; 5.316 ; 5.316 ; 5.316 ; 5.316 ;
-; seven_seg_input[6] ; seven_seg_1[1] ;       ; 5.252 ; 5.252 ;       ;
-; seven_seg_input[6] ; seven_seg_1[2] ; 5.248 ;       ;       ; 5.248 ;
-; seven_seg_input[6] ; seven_seg_1[3] ; 5.361 ; 5.361 ; 5.361 ; 5.361 ;
-; seven_seg_input[6] ; seven_seg_1[4] ;       ; 5.203 ; 5.203 ;       ;
-; seven_seg_input[6] ; seven_seg_1[5] ; 5.204 ;       ;       ; 5.204 ;
-; seven_seg_input[6] ; seven_seg_1[6] ; 5.384 ; 5.384 ; 5.384 ; 5.384 ;
-+--------------------+----------------+-------+-------+-------+-------+
++--------------------------------------------------------------------------+
+; Minimum Progagation Delay                                                ;
++--------------------+---------------------+-------+-------+-------+-------+
+; Input Port         ; Output Port         ; RR    ; RF    ; FR    ; FF    ;
++--------------------+---------------------+-------+-------+-------+-------+
+; seven_seg_input[0] ; seven_seg_output[0] ; 2.949 ; 2.949 ; 2.949 ; 2.949 ;
+; seven_seg_input[0] ; seven_seg_output[1] ; 2.966 ; 2.966 ; 2.966 ; 2.966 ;
+; seven_seg_input[0] ; seven_seg_output[2] ;       ; 3.021 ; 3.021 ;       ;
+; seven_seg_input[0] ; seven_seg_output[3] ; 3.126 ; 3.126 ; 3.126 ; 3.126 ;
+; seven_seg_input[0] ; seven_seg_output[4] ; 2.976 ;       ;       ; 2.976 ;
+; seven_seg_input[0] ; seven_seg_output[5] ; 3.015 ;       ;       ; 3.015 ;
+; seven_seg_input[0] ; seven_seg_output[6] ; 2.947 ; 2.947 ; 2.947 ; 2.947 ;
+; seven_seg_input[1] ; seven_seg_output[0] ; 2.826 ; 2.826 ; 2.826 ; 2.826 ;
+; seven_seg_input[1] ; seven_seg_output[1] ; 2.850 ; 2.850 ; 2.850 ; 2.850 ;
+; seven_seg_input[1] ; seven_seg_output[2] ; 2.909 ;       ;       ; 2.909 ;
+; seven_seg_input[1] ; seven_seg_output[3] ; 3.016 ; 3.016 ; 3.016 ; 3.016 ;
+; seven_seg_input[1] ; seven_seg_output[4] ;       ; 2.862 ; 2.862 ;       ;
+; seven_seg_input[1] ; seven_seg_output[5] ; 2.896 ; 2.896 ; 2.896 ; 2.896 ;
+; seven_seg_input[1] ; seven_seg_output[6] ; 2.828 ; 2.828 ; 2.828 ; 2.828 ;
+; seven_seg_input[2] ; seven_seg_output[0] ; 5.235 ; 5.235 ; 5.235 ; 5.235 ;
+; seven_seg_input[2] ; seven_seg_output[1] ; 5.255 ;       ;       ; 5.255 ;
+; seven_seg_input[2] ; seven_seg_output[2] ; 5.311 ; 5.311 ; 5.311 ; 5.311 ;
+; seven_seg_input[2] ; seven_seg_output[3] ; 5.413 ; 5.413 ; 5.413 ; 5.413 ;
+; seven_seg_input[2] ; seven_seg_output[4] ; 5.261 ; 5.261 ; 5.261 ; 5.261 ;
+; seven_seg_input[2] ; seven_seg_output[5] ; 5.305 ; 5.305 ; 5.305 ; 5.305 ;
+; seven_seg_input[2] ; seven_seg_output[6] ; 5.237 ; 5.237 ; 5.237 ; 5.237 ;
+; seven_seg_input[3] ; seven_seg_output[0] ; 5.315 ; 5.315 ; 5.315 ; 5.315 ;
+; seven_seg_input[3] ; seven_seg_output[1] ; 5.333 ; 5.333 ; 5.333 ; 5.333 ;
+; seven_seg_input[3] ; seven_seg_output[2] ; 5.392 ; 5.392 ; 5.392 ; 5.392 ;
+; seven_seg_input[3] ; seven_seg_output[3] ; 5.499 ; 5.499 ; 5.499 ; 5.499 ;
+; seven_seg_input[3] ; seven_seg_output[4] ;       ; 5.346 ; 5.346 ;       ;
+; seven_seg_input[3] ; seven_seg_output[5] ; 5.378 ; 5.378 ; 5.378 ; 5.378 ;
+; seven_seg_input[3] ; seven_seg_output[6] ; 5.310 ; 5.310 ; 5.310 ; 5.310 ;
++--------------------+---------------------+-------+-------+-------+-------+
 
 
 -------------------
@@ -534,10 +408,10 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 7     ; 7    ;
-; Unconstrained Input Port Paths  ; 49    ; 49   ;
-; Unconstrained Output Ports      ; 14    ; 14   ;
-; Unconstrained Output Port Paths ; 49    ; 49   ;
+; Unconstrained Input Ports       ; 4     ; 4    ;
+; Unconstrained Input Port Paths  ; 28    ; 28   ;
+; Unconstrained Output Ports      ; 7     ; 7    ;
+; Unconstrained Output Port Paths ; 28    ; 28   ;
 +---------------------------------+-------+------+
 
 
@@ -547,7 +421,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Tue Nov 21 10:23:27 2023
+    Info: Processing started: Thu Nov 23 14:53:50 2023
 Info: Command: quartus_sta tx_7segdecoder -c tx_7segdecoder
 Info: qsta_default_script.tcl version: #1
 Info (11104): Parallel Compilation has detected 16 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 8 of the 8 physical processors detected instead.
@@ -581,7 +455,7 @@ Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 3 warnings
     Info: Peak virtual memory: 4571 megabytes
-    Info: Processing ended: Tue Nov 21 10:23:28 2023
+    Info: Processing ended: Thu Nov 23 14:53:51 2023
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

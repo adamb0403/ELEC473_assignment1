@@ -401,7 +401,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : G22       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : G23       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G24       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G25       :        :                   :         : 5         :                
-KEY0                         : G26       : input  : 3.3-V LVTTL       :         : 5         : Y              
+KEY[0]                       : G26       : input  : 3.3-V LVTTL       :         : 5         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : H1        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : H2        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : H3        :        :                   :         : 2         :                
@@ -554,7 +554,7 @@ GND                          : N19       : gnd    :                   :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : N20       :        :                   :         : 5         :                
 NC                           : N21       :        :                   :         :           :                
 VCCIO5                       : N22       : power  :                   : 3.3V    : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : N23       :        :                   :         : 5         :                
+KEY[1]                       : N23       : input  : 3.3-V LVTTL       :         : 5         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : N24       :        :                   :         : 5         :                
 GND+                         : N25       :        :                   :         : 5         :                
 GND+                         : N26       :        :                   :         : 5         :                
@@ -580,7 +580,7 @@ GND                          : P19       : gnd    :                   :         
 MSEL0                        : P20       :        :                   :         : 6         :                
 MSEL1                        : P21       :        :                   :         : 6         :                
 VCCIO6                       : P22       : power  :                   : 3.3V    : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : P23       :        :                   :         : 6         :                
+KEY[2]                       : P23       : input  : 3.3-V LVTTL       :         : 6         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : P24       :        :                   :         : 6         :                
 SW[2]                        : P25       : input  : 3.3-V LVTTL       :         : 6         : Y              
 GND+                         : P26       :        :                   :         : 6         :                
@@ -603,7 +603,7 @@ VCCINT                       : R16       : power  :                   : 1.2V    
 RESERVED_INPUT_WITH_WEAK_PULLUP : R17       :        :                   :         : 6         :                
 VCCIO6                       : R18       : power  :                   : 3.3V    : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R19       :        :                   :         : 6         :                
-ctrl_state[0]                : R20       : output : 3.3-V LVTTL       :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : R20       :        :                   :         : 6         :                
 GND                          : R21       : gnd    :                   :         :           :                
 nSTATUS                      : R22       :        :                   :         : 6         :                
 CONF_DONE                    : R23       :        :                   :         : 6         :                
@@ -631,14 +631,14 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : T18       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : T19       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : T20       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : T21       :        :                   :         : 6         :                
-count_enabe                  : T22       : output : 3.3-V LVTTL       :         : 6         : N              
-ctrl_state[1]                : T23       : output : 3.3-V LVTTL       :         : 6         : N              
-ctrl_counter                 : T24       : output : 3.3-V LVTTL       :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : T22       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T23       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T24       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : T25       :        :                   :         : 6         :                
 VCCIO6                       : T26       : power  :                   : 3.3V    : 6         :                
 HEX4[1]                      : U1        : output : 3.3-V LVTTL       :         : 1         : Y              
 HEX4[2]                      : U2        : output : 3.3-V LVTTL       :         : 1         : Y              
-RESERVED_INPUT_WITH_WEAK_PULLUP : U3        :        :                   :         : 1         :                
+ctrl_state[1]                : U3        : output : 3.3-V LVTTL       :         : 1         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : U4        :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : U5        :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : U6        :        :                   :         : 1         :                
@@ -662,7 +662,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : U23       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : U24       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : U25       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : U26       :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : V1        :        :                   :         : 1         :                
+ctrl_state[0]                : V1        : output : 3.3-V LVTTL       :         : 1         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : V2        :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V3        :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V4        :        :                   :         : 1         :                
@@ -713,7 +713,7 @@ GND                          : W22       : gnd    :                   :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : W23       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : W24       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : W25       :        :                   :         : 6         :                
-KEY3                         : W26       : input  : 3.3-V LVTTL       :         : 6         : Y              
+KEY[3]                       : W26       : input  : 3.3-V LVTTL       :         : 6         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y1        :        :                   :         : 1         :                
 NC                           : Y2        :        :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y3        :        :                   :         : 1         :                

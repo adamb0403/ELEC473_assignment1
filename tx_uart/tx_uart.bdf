@@ -51,7 +51,7 @@ applicable agreement for further details.
 		(line (pt 117 12)(pt 121 8))
 	)
 	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 112 792 168 808))
+	(annotation_block (location)(rect 48 792 168 936))
 )
 (pin
 	(input)
@@ -89,7 +89,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1160 824 1336 840)
+	(rect 1176 824 1352 840)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "HEX5[6..0]" (rect 90 0 143 12)(font "Arial" ))
 	(pt 0 8)
@@ -102,11 +102,11 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 1336 840 1392 856))
+	(annotation_block (location)(rect 1352 840 1408 856))
 )
 (pin
 	(output)
-	(rect 1160 840 1336 856)
+	(rect 1176 928 1352 944)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "HEX4[6..0]" (rect 90 0 143 12)(font "Arial" ))
 	(pt 0 8)
@@ -119,7 +119,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 1336 856 1392 872))
+	(annotation_block (location)(rect 1352 944 1408 960))
 )
 (pin
 	(output)
@@ -200,35 +200,6 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 160 96))
 	)
 	(annotation_block (parameter)(rect 584 280 776 328))
-)
-(symbol
-	(rect 832 800 1096 880)
-	(text "tx_7segdecoder" (rect 5 0 82 12)(font "Arial" ))
-	(text "inst2" (rect 8 64 31 76)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "seven_seg_input[6..0]" (rect 0 0 109 12)(font "Arial" ))
-		(text "seven_seg_input[6..0]" (rect 21 27 130 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 264 32)
-		(output)
-		(text "seven_seg_1[6..0]" (rect 0 0 92 12)(font "Arial" ))
-		(text "seven_seg_1[6..0]" (rect 166 27 258 39)(font "Arial" ))
-		(line (pt 264 32)(pt 248 32)(line_width 3))
-	)
-	(port
-		(pt 264 48)
-		(output)
-		(text "seven_seg_2[6..0]" (rect 0 0 92 12)(font "Arial" ))
-		(text "seven_seg_2[6..0]" (rect 166 43 258 55)(font "Arial" ))
-		(line (pt 264 48)(pt 248 48)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 248 64))
-	)
 )
 (symbol
 	(rect 600 512 768 592)
@@ -447,6 +418,50 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 184 128))
 	)
 )
+(symbol
+	(rect 840 800 1128 880)
+	(text "tx_7segdecoder" (rect 5 0 82 12)(font "Arial" ))
+	(text "inst2" (rect 8 64 31 76)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "seven_seg_input[3..0]" (rect 0 0 109 12)(font "Arial" ))
+		(text "seven_seg_input[3..0]" (rect 21 27 130 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 288 32)
+		(output)
+		(text "seven_seg_output[6..0]" (rect 0 0 116 12)(font "Arial" ))
+		(text "seven_seg_output[6..0]" (rect 169 27 285 39)(font "Arial" ))
+		(line (pt 288 32)(pt 272 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 272 64))
+	)
+)
+(symbol
+	(rect 840 904 1128 984)
+	(text "tx_7segdecoder" (rect 5 0 82 12)(font "Arial" ))
+	(text "inst7" (rect 8 64 31 76)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "seven_seg_input[3..0]" (rect 0 0 109 12)(font "Arial" ))
+		(text "seven_seg_input[3..0]" (rect 21 27 130 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 288 32)
+		(output)
+		(text "seven_seg_output[6..0]" (rect 0 0 116 12)(font "Arial" ))
+		(text "seven_seg_output[6..0]" (rect 169 27 285 39)(font "Arial" ))
+		(line (pt 288 32)(pt 272 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 272 64))
+	)
+)
 (connector
 	(pt 456 624)
 	(pt 784 624)
@@ -590,21 +605,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 688 832)
-	(pt 832 832)
-	(bus)
-)
-(connector
-	(pt 1160 832)
-	(pt 1096 832)
-	(bus)
-)
-(connector
-	(pt 1096 848)
-	(pt 1160 848)
-	(bus)
-)
-(connector
 	(pt 552 360)
 	(pt 552 392)
 )
@@ -723,32 +723,12 @@ applicable agreement for further details.
 	(pt 424 416)
 )
 (connector
-	(pt 688 720)
-	(pt 688 784)
-	(bus)
-)
-(connector
-	(pt 688 784)
-	(pt 688 832)
-	(bus)
-)
-(connector
 	(pt 344 352)
 	(pt 352 352)
 )
 (connector
 	(pt 352 352)
 	(pt 376 352)
-)
-(connector
-	(pt 336 784)
-	(pt 344 784)
-	(bus)
-)
-(connector
-	(pt 344 784)
-	(pt 688 784)
-	(bus)
 )
 (connector
 	(pt 352 408)
@@ -782,6 +762,53 @@ applicable agreement for further details.
 	(pt 1088 392)
 	(pt 1088 656)
 )
+(connector
+	(pt 1176 832)
+	(pt 1128 832)
+	(bus)
+)
+(connector
+	(pt 1128 936)
+	(pt 1176 936)
+	(bus)
+)
+(connector
+	(pt 352 784)
+	(pt 352 832)
+	(bus)
+)
+(connector
+	(pt 344 784)
+	(pt 352 784)
+	(bus)
+)
+(connector
+	(pt 352 832)
+	(pt 688 832)
+	(bus)
+)
+(connector
+	(pt 688 720)
+	(pt 688 832)
+	(bus)
+)
+(connector
+	(pt 688 832)
+	(pt 688 936)
+	(bus)
+)
+(connector
+	(text "SW[5..2]" (rect 698 920 741 932)(font "Arial" ))
+	(pt 688 936)
+	(pt 840 936)
+	(bus)
+)
+(connector
+	(text "0,SW[8:5]" (rect 698 816 747 828)(font "Arial" ))
+	(pt 688 832)
+	(pt 840 832)
+	(bus)
+)
 (junction (pt 552 416))
 (junction (pt 456 416))
 (junction (pt 376 360))
@@ -790,9 +817,8 @@ applicable agreement for further details.
 (junction (pt 1088 392))
 (junction (pt 376 352))
 (junction (pt 424 408))
-(junction (pt 688 784))
 (junction (pt 352 352))
-(junction (pt 344 784))
 (junction (pt 360 408))
 (junction (pt 352 448))
 (junction (pt 1360 344))
+(junction (pt 688 832))

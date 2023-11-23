@@ -37,9 +37,6 @@
 # Loading work.tx_uart_vlg_sample_tst
 # Loading work.tx_uart_vlg_check_tst
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
-# ERROR! Vector Mismatch for output port ctrl_state[1] :: @time = 600000.000 ps
-#      Expected value = 00
-#      Real value = 10
 # ERROR! Vector Mismatch for output port HEX4[1] :: @time = 600000.000 ps
 #      Expected value = 0000000
 #      Real value = 0010010
@@ -52,12 +49,15 @@
 # ERROR! Vector Mismatch for output port HEX5[4] :: @time = 600000.000 ps
 #      Expected value = 0000000
 #      Real value = 0010010
-# ERROR! Vector Mismatch for output port UART_TXD :: @time = 660000.000 ps
+# ERROR! Vector Mismatch for output port UART_TXD :: @time = 600000.000 ps
 #      Expected value = 0
 #      Real value = 1
-# ERROR! Vector Mismatch for output port ctrl_state[0] :: @time = 7340000.000 ps
+# ERROR! Vector Mismatch for output port ctrl_state[1] :: @time = 600000.000 ps
+#      Expected value = 00
+#      Real value = 10
+# ERROR! Vector Mismatch for output port ctrl_state[0] :: @time = 7820000.000 ps
 #      Expected value = 00
 #      Real value = 01
 #           7 mismatched vectors : Simulation failed !
-# ** Note: $finish    : tx_uart.vt(537)
+# ** Note: $finish    : tx_uart.vt(481)
 #    Time: 10 us  Iteration: 0  Instance: /tx_uart_vlg_vec_tst/tb_out

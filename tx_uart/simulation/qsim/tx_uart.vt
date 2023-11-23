@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "11/23/2023 14:14:51"
+// Generated on "11/23/2023 16:16:22"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    tx_uart
 // 
@@ -28,20 +28,18 @@
 `timescale 1 ps/ 1 ps
 module tx_uart_vlg_sample_tst(
 	CLOCK_50,
-	KEY0,
-	KEY3,
+	KEY,
 	SW,
 	sampler_tx
 );
 input  CLOCK_50;
-input  KEY0;
-input  KEY3;
+input [3:0] KEY;
 input [8:2] SW;
 output sampler_tx;
 
 reg sample;
 time current_time;
-always @(CLOCK_50 or KEY0 or KEY3 or SW)
+always @(CLOCK_50 or KEY or SW)
                                                                                 
 begin                                                 
  if ($realtime > 0)                                   
@@ -61,56 +59,44 @@ assign sampler_tx = sample;
 endmodule
 
 module tx_uart_vlg_check_tst (
-	count_enabe,
-	ctrl_counter,
-	ctrl_state,
 	HEX4,
 	HEX5,
 	UART_TXD,
+	ctrl_state,
 	sampler_rx
 );
-input  count_enabe;
-input  ctrl_counter;
-input [1:0] ctrl_state;
 input [6:0] HEX4;
 input [6:0] HEX5;
 input  UART_TXD;
+input [1:0] ctrl_state;
 input sampler_rx;
 
-reg  count_enabe_expected;
-reg  ctrl_counter_expected;
-reg [1:0] ctrl_state_expected;
 reg [6:0] HEX4_expected;
 reg [6:0] HEX5_expected;
 reg  UART_TXD_expected;
+reg [1:0] ctrl_state_expected;
 
-reg  count_enabe_prev;
-reg  ctrl_counter_prev;
-reg [1:0] ctrl_state_prev;
 reg [6:0] HEX4_prev;
 reg [6:0] HEX5_prev;
 reg  UART_TXD_prev;
+reg [1:0] ctrl_state_prev;
 
-reg  count_enabe_expected_prev;
-reg  ctrl_counter_expected_prev;
-reg [1:0] ctrl_state_expected_prev;
 reg [6:0] HEX4_expected_prev;
 reg [6:0] HEX5_expected_prev;
 reg  UART_TXD_expected_prev;
+reg [1:0] ctrl_state_expected_prev;
 
-reg  last_count_enabe_exp;
-reg  last_ctrl_counter_exp;
-reg [1:0] last_ctrl_state_exp;
 reg [6:0] last_HEX4_exp;
 reg [6:0] last_HEX5_exp;
 reg  last_UART_TXD_exp;
+reg [1:0] last_ctrl_state_exp;
 
 reg trigger;
 
 integer i;
 integer nummismatches;
 
-reg [1:6] on_first_change ;
+reg [1:4] on_first_change ;
 
 
 initial
@@ -118,31 +104,27 @@ begin
 trigger = 0;
 i = 0;
 nummismatches = 0;
-on_first_change = 6'b1;
+on_first_change = 4'b1;
 end
 
 // update real /o prevs
 
 always @(trigger)
 begin
-	count_enabe_prev = count_enabe;
-	ctrl_counter_prev = ctrl_counter;
-	ctrl_state_prev = ctrl_state;
 	HEX4_prev = HEX4;
 	HEX5_prev = HEX5;
 	UART_TXD_prev = UART_TXD;
+	ctrl_state_prev = ctrl_state;
 end
 
 // update expected /o prevs
 
 always @(trigger)
 begin
-	count_enabe_expected_prev = count_enabe_expected;
-	ctrl_counter_expected_prev = ctrl_counter_expected;
-	ctrl_state_expected_prev = ctrl_state_expected;
 	HEX4_expected_prev = HEX4_expected;
 	HEX5_expected_prev = HEX5_expected;
 	UART_TXD_expected_prev = UART_TXD_expected;
+	ctrl_state_expected_prev = ctrl_state_expected;
 end
 
 
@@ -249,20 +231,8 @@ begin
 	ctrl_state_expected[0] = 1'bX;
 	ctrl_state_expected[0] = #599000 1'b0;
 end 
-
-// expected count_enabe
-initial
-begin
-	count_enabe_expected = 1'bX;
-end 
-
-// expected ctrl_counter
-initial
-begin
-	ctrl_counter_expected = 1'bX;
-end 
 // generate trigger
-always @(count_enabe_expected or count_enabe or ctrl_counter_expected or ctrl_counter or ctrl_state_expected or ctrl_state or HEX4_expected or HEX4 or HEX5_expected or HEX5 or UART_TXD_expected or UART_TXD)
+always @(HEX4_expected or HEX4 or HEX5_expected or HEX5 or UART_TXD_expected or UART_TXD or ctrl_state_expected or ctrl_state)
 begin
 	trigger <= ~trigger;
 end
@@ -272,255 +242,229 @@ begin
 `ifdef debug_tbench
 	$display("Scanning pattern %d @time = %t",i,$realtime );
 	i = i + 1;
-	$display("| expected count_enabe = %b | expected ctrl_counter = %b | expected ctrl_state = %b | expected HEX4 = %b | expected HEX5 = %b | expected UART_TXD = %b | ",count_enabe_expected_prev,ctrl_counter_expected_prev,ctrl_state_expected_prev,HEX4_expected_prev,HEX5_expected_prev,UART_TXD_expected_prev);
-	$display("| real count_enabe = %b | real ctrl_counter = %b | real ctrl_state = %b | real HEX4 = %b | real HEX5 = %b | real UART_TXD = %b | ",count_enabe_prev,ctrl_counter_prev,ctrl_state_prev,HEX4_prev,HEX5_prev,UART_TXD_prev);
+	$display("| expected HEX4 = %b | expected HEX5 = %b | expected UART_TXD = %b | expected ctrl_state = %b | ",HEX4_expected_prev,HEX5_expected_prev,UART_TXD_expected_prev,ctrl_state_expected_prev);
+	$display("| real HEX4 = %b | real HEX5 = %b | real UART_TXD = %b | real ctrl_state = %b | ",HEX4_prev,HEX5_prev,UART_TXD_prev,ctrl_state_prev);
 `endif
-	if (
-		( count_enabe_expected_prev !== 1'bx ) && ( count_enabe_prev !== count_enabe_expected_prev )
-		&& ((count_enabe_expected_prev !== last_count_enabe_exp) ||
-			on_first_change[1])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port count_enabe :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", count_enabe_expected_prev);
-		$display ("     Real value = %b", count_enabe_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[1] = 1'b0;
-		last_count_enabe_exp = count_enabe_expected_prev;
-	end
-	if (
-		( ctrl_counter_expected_prev !== 1'bx ) && ( ctrl_counter_prev !== ctrl_counter_expected_prev )
-		&& ((ctrl_counter_expected_prev !== last_ctrl_counter_exp) ||
-			on_first_change[2])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port ctrl_counter :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", ctrl_counter_expected_prev);
-		$display ("     Real value = %b", ctrl_counter_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[2] = 1'b0;
-		last_ctrl_counter_exp = ctrl_counter_expected_prev;
-	end
-	if (
-		( ctrl_state_expected_prev[0] !== 1'bx ) && ( ctrl_state_prev[0] !== ctrl_state_expected_prev[0] )
-		&& ((ctrl_state_expected_prev[0] !== last_ctrl_state_exp[0]) ||
-			on_first_change[3])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port ctrl_state[0] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", ctrl_state_expected_prev);
-		$display ("     Real value = %b", ctrl_state_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[3] = 1'b0;
-		last_ctrl_state_exp[0] = ctrl_state_expected_prev[0];
-	end
-	if (
-		( ctrl_state_expected_prev[1] !== 1'bx ) && ( ctrl_state_prev[1] !== ctrl_state_expected_prev[1] )
-		&& ((ctrl_state_expected_prev[1] !== last_ctrl_state_exp[1]) ||
-			on_first_change[3])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port ctrl_state[1] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", ctrl_state_expected_prev);
-		$display ("     Real value = %b", ctrl_state_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[3] = 1'b0;
-		last_ctrl_state_exp[1] = ctrl_state_expected_prev[1];
-	end
 	if (
 		( HEX4_expected_prev[0] !== 1'bx ) && ( HEX4_prev[0] !== HEX4_expected_prev[0] )
 		&& ((HEX4_expected_prev[0] !== last_HEX4_exp[0]) ||
-			on_first_change[4])
+			on_first_change[1])
 	)
 	begin
 		$display ("ERROR! Vector Mismatch for output port HEX4[0] :: @time = %t",  $realtime);
 		$display ("     Expected value = %b", HEX4_expected_prev);
 		$display ("     Real value = %b", HEX4_prev);
 		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
+		on_first_change[1] = 1'b0;
 		last_HEX4_exp[0] = HEX4_expected_prev[0];
 	end
 	if (
 		( HEX4_expected_prev[1] !== 1'bx ) && ( HEX4_prev[1] !== HEX4_expected_prev[1] )
 		&& ((HEX4_expected_prev[1] !== last_HEX4_exp[1]) ||
-			on_first_change[4])
+			on_first_change[1])
 	)
 	begin
 		$display ("ERROR! Vector Mismatch for output port HEX4[1] :: @time = %t",  $realtime);
 		$display ("     Expected value = %b", HEX4_expected_prev);
 		$display ("     Real value = %b", HEX4_prev);
 		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
+		on_first_change[1] = 1'b0;
 		last_HEX4_exp[1] = HEX4_expected_prev[1];
 	end
 	if (
 		( HEX4_expected_prev[2] !== 1'bx ) && ( HEX4_prev[2] !== HEX4_expected_prev[2] )
 		&& ((HEX4_expected_prev[2] !== last_HEX4_exp[2]) ||
-			on_first_change[4])
+			on_first_change[1])
 	)
 	begin
 		$display ("ERROR! Vector Mismatch for output port HEX4[2] :: @time = %t",  $realtime);
 		$display ("     Expected value = %b", HEX4_expected_prev);
 		$display ("     Real value = %b", HEX4_prev);
 		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
+		on_first_change[1] = 1'b0;
 		last_HEX4_exp[2] = HEX4_expected_prev[2];
 	end
 	if (
 		( HEX4_expected_prev[3] !== 1'bx ) && ( HEX4_prev[3] !== HEX4_expected_prev[3] )
 		&& ((HEX4_expected_prev[3] !== last_HEX4_exp[3]) ||
-			on_first_change[4])
+			on_first_change[1])
 	)
 	begin
 		$display ("ERROR! Vector Mismatch for output port HEX4[3] :: @time = %t",  $realtime);
 		$display ("     Expected value = %b", HEX4_expected_prev);
 		$display ("     Real value = %b", HEX4_prev);
 		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
+		on_first_change[1] = 1'b0;
 		last_HEX4_exp[3] = HEX4_expected_prev[3];
 	end
 	if (
 		( HEX4_expected_prev[4] !== 1'bx ) && ( HEX4_prev[4] !== HEX4_expected_prev[4] )
 		&& ((HEX4_expected_prev[4] !== last_HEX4_exp[4]) ||
-			on_first_change[4])
+			on_first_change[1])
 	)
 	begin
 		$display ("ERROR! Vector Mismatch for output port HEX4[4] :: @time = %t",  $realtime);
 		$display ("     Expected value = %b", HEX4_expected_prev);
 		$display ("     Real value = %b", HEX4_prev);
 		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
+		on_first_change[1] = 1'b0;
 		last_HEX4_exp[4] = HEX4_expected_prev[4];
 	end
 	if (
 		( HEX4_expected_prev[5] !== 1'bx ) && ( HEX4_prev[5] !== HEX4_expected_prev[5] )
 		&& ((HEX4_expected_prev[5] !== last_HEX4_exp[5]) ||
-			on_first_change[4])
+			on_first_change[1])
 	)
 	begin
 		$display ("ERROR! Vector Mismatch for output port HEX4[5] :: @time = %t",  $realtime);
 		$display ("     Expected value = %b", HEX4_expected_prev);
 		$display ("     Real value = %b", HEX4_prev);
 		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
+		on_first_change[1] = 1'b0;
 		last_HEX4_exp[5] = HEX4_expected_prev[5];
 	end
 	if (
 		( HEX4_expected_prev[6] !== 1'bx ) && ( HEX4_prev[6] !== HEX4_expected_prev[6] )
 		&& ((HEX4_expected_prev[6] !== last_HEX4_exp[6]) ||
-			on_first_change[4])
+			on_first_change[1])
 	)
 	begin
 		$display ("ERROR! Vector Mismatch for output port HEX4[6] :: @time = %t",  $realtime);
 		$display ("     Expected value = %b", HEX4_expected_prev);
 		$display ("     Real value = %b", HEX4_prev);
 		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
+		on_first_change[1] = 1'b0;
 		last_HEX4_exp[6] = HEX4_expected_prev[6];
 	end
 	if (
 		( HEX5_expected_prev[0] !== 1'bx ) && ( HEX5_prev[0] !== HEX5_expected_prev[0] )
 		&& ((HEX5_expected_prev[0] !== last_HEX5_exp[0]) ||
-			on_first_change[5])
+			on_first_change[2])
 	)
 	begin
 		$display ("ERROR! Vector Mismatch for output port HEX5[0] :: @time = %t",  $realtime);
 		$display ("     Expected value = %b", HEX5_expected_prev);
 		$display ("     Real value = %b", HEX5_prev);
 		nummismatches = nummismatches + 1;
-		on_first_change[5] = 1'b0;
+		on_first_change[2] = 1'b0;
 		last_HEX5_exp[0] = HEX5_expected_prev[0];
 	end
 	if (
 		( HEX5_expected_prev[1] !== 1'bx ) && ( HEX5_prev[1] !== HEX5_expected_prev[1] )
 		&& ((HEX5_expected_prev[1] !== last_HEX5_exp[1]) ||
-			on_first_change[5])
+			on_first_change[2])
 	)
 	begin
 		$display ("ERROR! Vector Mismatch for output port HEX5[1] :: @time = %t",  $realtime);
 		$display ("     Expected value = %b", HEX5_expected_prev);
 		$display ("     Real value = %b", HEX5_prev);
 		nummismatches = nummismatches + 1;
-		on_first_change[5] = 1'b0;
+		on_first_change[2] = 1'b0;
 		last_HEX5_exp[1] = HEX5_expected_prev[1];
 	end
 	if (
 		( HEX5_expected_prev[2] !== 1'bx ) && ( HEX5_prev[2] !== HEX5_expected_prev[2] )
 		&& ((HEX5_expected_prev[2] !== last_HEX5_exp[2]) ||
-			on_first_change[5])
+			on_first_change[2])
 	)
 	begin
 		$display ("ERROR! Vector Mismatch for output port HEX5[2] :: @time = %t",  $realtime);
 		$display ("     Expected value = %b", HEX5_expected_prev);
 		$display ("     Real value = %b", HEX5_prev);
 		nummismatches = nummismatches + 1;
-		on_first_change[5] = 1'b0;
+		on_first_change[2] = 1'b0;
 		last_HEX5_exp[2] = HEX5_expected_prev[2];
 	end
 	if (
 		( HEX5_expected_prev[3] !== 1'bx ) && ( HEX5_prev[3] !== HEX5_expected_prev[3] )
 		&& ((HEX5_expected_prev[3] !== last_HEX5_exp[3]) ||
-			on_first_change[5])
+			on_first_change[2])
 	)
 	begin
 		$display ("ERROR! Vector Mismatch for output port HEX5[3] :: @time = %t",  $realtime);
 		$display ("     Expected value = %b", HEX5_expected_prev);
 		$display ("     Real value = %b", HEX5_prev);
 		nummismatches = nummismatches + 1;
-		on_first_change[5] = 1'b0;
+		on_first_change[2] = 1'b0;
 		last_HEX5_exp[3] = HEX5_expected_prev[3];
 	end
 	if (
 		( HEX5_expected_prev[4] !== 1'bx ) && ( HEX5_prev[4] !== HEX5_expected_prev[4] )
 		&& ((HEX5_expected_prev[4] !== last_HEX5_exp[4]) ||
-			on_first_change[5])
+			on_first_change[2])
 	)
 	begin
 		$display ("ERROR! Vector Mismatch for output port HEX5[4] :: @time = %t",  $realtime);
 		$display ("     Expected value = %b", HEX5_expected_prev);
 		$display ("     Real value = %b", HEX5_prev);
 		nummismatches = nummismatches + 1;
-		on_first_change[5] = 1'b0;
+		on_first_change[2] = 1'b0;
 		last_HEX5_exp[4] = HEX5_expected_prev[4];
 	end
 	if (
 		( HEX5_expected_prev[5] !== 1'bx ) && ( HEX5_prev[5] !== HEX5_expected_prev[5] )
 		&& ((HEX5_expected_prev[5] !== last_HEX5_exp[5]) ||
-			on_first_change[5])
+			on_first_change[2])
 	)
 	begin
 		$display ("ERROR! Vector Mismatch for output port HEX5[5] :: @time = %t",  $realtime);
 		$display ("     Expected value = %b", HEX5_expected_prev);
 		$display ("     Real value = %b", HEX5_prev);
 		nummismatches = nummismatches + 1;
-		on_first_change[5] = 1'b0;
+		on_first_change[2] = 1'b0;
 		last_HEX5_exp[5] = HEX5_expected_prev[5];
 	end
 	if (
 		( HEX5_expected_prev[6] !== 1'bx ) && ( HEX5_prev[6] !== HEX5_expected_prev[6] )
 		&& ((HEX5_expected_prev[6] !== last_HEX5_exp[6]) ||
-			on_first_change[5])
+			on_first_change[2])
 	)
 	begin
 		$display ("ERROR! Vector Mismatch for output port HEX5[6] :: @time = %t",  $realtime);
 		$display ("     Expected value = %b", HEX5_expected_prev);
 		$display ("     Real value = %b", HEX5_prev);
 		nummismatches = nummismatches + 1;
-		on_first_change[5] = 1'b0;
+		on_first_change[2] = 1'b0;
 		last_HEX5_exp[6] = HEX5_expected_prev[6];
 	end
 	if (
 		( UART_TXD_expected_prev !== 1'bx ) && ( UART_TXD_prev !== UART_TXD_expected_prev )
 		&& ((UART_TXD_expected_prev !== last_UART_TXD_exp) ||
-			on_first_change[6])
+			on_first_change[3])
 	)
 	begin
 		$display ("ERROR! Vector Mismatch for output port UART_TXD :: @time = %t",  $realtime);
 		$display ("     Expected value = %b", UART_TXD_expected_prev);
 		$display ("     Real value = %b", UART_TXD_prev);
 		nummismatches = nummismatches + 1;
-		on_first_change[6] = 1'b0;
+		on_first_change[3] = 1'b0;
 		last_UART_TXD_exp = UART_TXD_expected_prev;
+	end
+	if (
+		( ctrl_state_expected_prev[0] !== 1'bx ) && ( ctrl_state_prev[0] !== ctrl_state_expected_prev[0] )
+		&& ((ctrl_state_expected_prev[0] !== last_ctrl_state_exp[0]) ||
+			on_first_change[4])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port ctrl_state[0] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", ctrl_state_expected_prev);
+		$display ("     Real value = %b", ctrl_state_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[4] = 1'b0;
+		last_ctrl_state_exp[0] = ctrl_state_expected_prev[0];
+	end
+	if (
+		( ctrl_state_expected_prev[1] !== 1'bx ) && ( ctrl_state_prev[1] !== ctrl_state_expected_prev[1] )
+		&& ((ctrl_state_expected_prev[1] !== last_ctrl_state_exp[1]) ||
+			on_first_change[4])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port ctrl_state[1] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", ctrl_state_expected_prev);
+		$display ("     Real value = %b", ctrl_state_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[4] = 1'b0;
+		last_ctrl_state_exp[1] = ctrl_state_expected_prev[1];
 	end
 
 	trigger <= ~trigger;
@@ -542,16 +486,13 @@ module tx_uart_vlg_vec_tst();
 // constants                                           
 // general purpose registers
 reg CLOCK_50;
-reg KEY0;
-reg KEY3;
+reg [3:0] KEY;
 reg [8:2] SW;
 // wires                                               
-wire count_enabe;
-wire ctrl_counter;
-wire [1:0] ctrl_state;
 wire [6:0] HEX4;
 wire [6:0] HEX5;
 wire UART_TXD;
+wire [1:0] ctrl_state;
 
 wire sampler;                             
 
@@ -559,15 +500,12 @@ wire sampler;
 tx_uart i1 (
 // port map - connection between master ports and signals/registers   
 	.CLOCK_50(CLOCK_50),
-	.count_enabe(count_enabe),
-	.ctrl_counter(ctrl_counter),
-	.ctrl_state(ctrl_state),
 	.HEX4(HEX4),
 	.HEX5(HEX5),
-	.KEY0(KEY0),
-	.KEY3(KEY3),
+	.KEY(KEY),
 	.SW(SW),
-	.UART_TXD(UART_TXD)
+	.UART_TXD(UART_TXD),
+	.ctrl_state(ctrl_state)
 );
 
 // CLOCK_50
@@ -576,26 +514,6 @@ begin
 	CLOCK_50 = 1'b0;
 	CLOCK_50 = #10000 1'b1;
 	#10000;
-end 
-
-// KEY0
-initial
-begin
-	KEY0 = 1'b1;
-	KEY0 = #2920000 1'b0;
-	KEY0 = #20000 1'b1;
-	KEY0 = #1220000 1'b0;
-	KEY0 = #20000 1'b1;
-end 
-
-// KEY3
-initial
-begin
-	KEY3 = 1'b1;
-	KEY3 = #160000 1'b0;
-	KEY3 = #20000 1'b1;
-	KEY3 = #7120000 1'b0;
-	KEY3 = #20000 1'b1;
 end 
 
 // SW[8]
@@ -640,21 +558,34 @@ begin
 	SW[2] = 1'b1;
 end 
 
+// KEY[0]
+initial
+begin
+	KEY[0] = 1'b1;
+end 
+
+// KEY[3]
+initial
+begin
+	KEY[3] = 1'b1;
+	KEY[3] = #240000 1'b0;
+	KEY[3] = #20000 1'b1;
+	KEY[3] = #7520000 1'b0;
+	KEY[3] = #20000 1'b1;
+end 
+
 tx_uart_vlg_sample_tst tb_sample (
 	.CLOCK_50(CLOCK_50),
-	.KEY0(KEY0),
-	.KEY3(KEY3),
+	.KEY(KEY),
 	.SW(SW),
 	.sampler_tx(sampler)
 );
 
 tx_uart_vlg_check_tst tb_out(
-	.count_enabe(count_enabe),
-	.ctrl_counter(ctrl_counter),
-	.ctrl_state(ctrl_state),
 	.HEX4(HEX4),
 	.HEX5(HEX5),
 	.UART_TXD(UART_TXD),
+	.ctrl_state(ctrl_state),
 	.sampler_rx(sampler)
 );
 endmodule

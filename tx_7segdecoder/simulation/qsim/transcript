@@ -34,5 +34,5 @@
 # Loading work.tx_7segdecoder_vlg_check_tst
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
 # Simulation passed !
-# ** Note: $finish    : tx_7segdecoder.vt(389)
+# ** Note: $finish    : tx_7segdecoder.vt(255)
 #    Time: 1 us  Iteration: 0  Instance: /tx_7segdecoder_vlg_vec_tst/tb_out

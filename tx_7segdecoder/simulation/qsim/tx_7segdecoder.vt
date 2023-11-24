@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "11/23/2023 14:54:49"
+// Generated on "11/24/2023 16:20:47"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    tx_7segdecoder
 // 
@@ -274,31 +274,29 @@ tx_7segdecoder i1 (
 // seven_seg_input[ 3 ]
 initial
 begin
-	seven_seg_input[3] = 1'b1;
-	seven_seg_input[3] = #240000 1'b0;
-	seven_seg_input[3] = #120000 1'b1;
+	seven_seg_input[3] = 1'b0;
+	seven_seg_input[3] = #220000 1'b1;
+	seven_seg_input[3] = #320000 1'b0;
 end 
 // seven_seg_input[ 2 ]
 initial
 begin
-	seven_seg_input[2] = 1'b0;
-	seven_seg_input[2] = #110000 1'b1;
-	seven_seg_input[2] = #130000 1'b0;
-	seven_seg_input[2] = #120000 1'b1;
-	seven_seg_input[2] = #140000 1'b0;
+	seven_seg_input[2] = 1'b1;
+	seven_seg_input[2] = #540000 1'b0;
 end 
 // seven_seg_input[ 1 ]
 initial
 begin
 	seven_seg_input[1] = 1'b0;
+	seven_seg_input[1] = #220000 1'b1;
+	seven_seg_input[1] = #80000 1'b0;
 end 
 // seven_seg_input[ 0 ]
 initial
 begin
-	seven_seg_input[0] = 1'b1;
-	seven_seg_input[0] = #110000 1'b0;
-	seven_seg_input[0] = #250000 1'b1;
-	seven_seg_input[0] = #140000 1'b0;
+	seven_seg_input[0] = 1'b0;
+	seven_seg_input[0] = #220000 1'b1;
+	seven_seg_input[0] = #320000 1'b0;
 end 
 
 tx_7segdecoder_vlg_sample_tst tb_sample (

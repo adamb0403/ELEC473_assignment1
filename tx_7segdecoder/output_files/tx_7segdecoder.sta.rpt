@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for tx_7segdecoder
-Thu Nov 23 14:53:51 2023
+Fri Nov 24 16:18:47 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -421,7 +421,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Thu Nov 23 14:53:50 2023
+    Info: Processing started: Fri Nov 24 16:18:46 2023
 Info: Command: quartus_sta tx_7segdecoder -c tx_7segdecoder
 Info: qsta_default_script.tcl version: #1
 Info (11104): Parallel Compilation has detected 16 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 8 of the 8 physical processors detected instead.
@@ -455,8 +455,8 @@ Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 3 warnings
     Info: Peak virtual memory: 4571 megabytes
-    Info: Processing ended: Thu Nov 23 14:53:51 2023
+    Info: Processing ended: Fri Nov 24 16:18:47 2023
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
 
 

@@ -6,6 +6,7 @@ module tx_uart (input CLOCK_50,
                 output [6:0] HEX5,
                 output [6:0] HEX4);
 
+    // Wires between each block, denoted as to_from
     wire synchroniser_pulser;
     wire pulser_ctrl;
     wire baud_ctrl;
@@ -14,6 +15,7 @@ module tx_uart (input CLOCK_50,
     wire ctrl_load;
     wire [10:0] parity_sr;
 
+    // Instantiating each block and connecting them within this file through passing inputs/outputs
     tx_7segdecoder msb (
         .seven_seg_input(SW[8:6]),
         .seven_seg_output(HEX5[6:0])

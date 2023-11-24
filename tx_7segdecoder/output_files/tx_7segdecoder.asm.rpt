@@ -1,5 +1,5 @@
 Assembler report for tx_7segdecoder
-Thu Nov 23 14:53:48 2023
+Fri Nov 24 16:18:43 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Nov 23 14:53:48 2023 ;
+; Assembler Status      ; Successful - Fri Nov 24 16:18:43 2023 ;
 ; Revision Name         ; tx_7segdecoder                        ;
 ; Top-level Entity Name ; tx_7segdecoder                        ;
 ; Family                ; Cyclone II                            ;
@@ -117,14 +117,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Thu Nov 23 14:53:46 2023
+    Info: Processing started: Fri Nov 24 16:18:40 2023
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off tx_7segdecoder -c tx_7segdecoder
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4556 megabytes
-    Info: Processing ended: Thu Nov 23 14:53:48 2023
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 4560 megabytes
+    Info: Processing ended: Fri Nov 24 16:18:43 2023
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:01
 
 

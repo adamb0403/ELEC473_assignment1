@@ -1,5 +1,5 @@
 Analysis & Synthesis report for tx_7segdecoder
-Thu Nov 23 14:53:37 2023
+Fri Nov 24 16:18:16 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -41,7 +41,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov 23 14:53:37 2023            ;
+; Analysis & Synthesis Status        ; Successful - Fri Nov 24 16:18:16 2023            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; tx_7segdecoder                                   ;
 ; Top-level Entity Name              ; tx_7segdecoder                                   ;
@@ -239,7 +239,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Thu Nov 23 14:53:35 2023
+    Info: Processing started: Fri Nov 24 16:18:14 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off tx_7segdecoder -c tx_7segdecoder
 Info (11104): Parallel Compilation has detected 16 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 8 of the 8 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file tx_7segdecoder.v
@@ -252,8 +252,8 @@ Info (21057): Implemented 18 device resources after synthesis - the final resour
     Info (21059): Implemented 7 output pins
     Info (21061): Implemented 7 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4611 megabytes
-    Info: Processing ended: Thu Nov 23 14:53:37 2023
+    Info: Peak virtual memory: 4606 megabytes
+    Info: Processing ended: Fri Nov 24 16:18:16 2023
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 

@@ -1,6 +1,6 @@
 TimeQuest Timing Analyzer report for tx_uart
-Thu Nov 23 20:51:11 2023
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Fri Nov 24 16:21:30 2023
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
 ---------------------
@@ -74,28 +74,34 @@ applicable agreement for further details.
 
 
 
-+----------------------------------------------------------------------------------------+
-; TimeQuest Timing Analyzer Summary                                                      ;
-+--------------------+-------------------------------------------------------------------+
-; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
-; Revision Name      ; tx_uart                                                           ;
-; Device Family      ; Cyclone II                                                        ;
-; Device Name        ; EP2C35F672C6                                                      ;
-; Timing Models      ; Final                                                             ;
-; Delay Model        ; Combined                                                          ;
-; Rise/Fall Delays   ; Unavailable                                                       ;
-+--------------------+-------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                       ;
++--------------------+--------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version ;
+; Revision Name      ; tx_uart                                                            ;
+; Device Family      ; Cyclone II                                                         ;
+; Device Name        ; EP2C35F672C6                                                       ;
+; Timing Models      ; Final                                                              ;
+; Delay Model        ; Combined                                                           ;
+; Rise/Fall Delays   ; Unavailable                                                        ;
++--------------------+--------------------------------------------------------------------+
 
 
-Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
-+-------------------------------------+
-; Parallel Compilation                ;
-+----------------------------+--------+
-; Processors                 ; Number ;
-+----------------------------+--------+
-; Number detected on machine ; 4      ;
-; Maximum allowed            ; 1      ;
-+----------------------------+--------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 8           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-16        ;   0.0%      ;
++----------------------------+-------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -112,7 +118,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +------------+-----------------+------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
 +------------+-----------------+------------+------+
-; 319.28 MHz ; 319.28 MHz      ; CLOCK_50   ;      ;
+; 318.98 MHz ; 318.98 MHz      ; CLOCK_50   ;      ;
 +------------+-----------------+------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -122,7 +128,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------+--------+---------------+
 ; Clock    ; Slack  ; End Point TNS ;
 +----------+--------+---------------+
-; CLOCK_50 ; -2.132 ; -47.233       ;
+; CLOCK_50 ; -2.135 ; -47.368       ;
 +----------+--------+---------------+
 
 
@@ -161,106 +167,106 @@ No paths to report.
 +--------+-------------------------------------+----------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node                           ; To Node                          ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+-------------------------------------+----------------------------------+--------------+-------------+--------------+------------+------------+
-; -2.132 ; tx_baud_counter:baud|count[5]       ; tx_shift_register:sr|tmp_data[9] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.167      ;
-; -2.132 ; tx_baud_counter:baud|count[5]       ; tx_shift_register:sr|tmp_data[8] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.167      ;
-; -2.132 ; tx_baud_counter:baud|count[5]       ; tx_shift_register:sr|tmp_data[7] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.167      ;
-; -2.132 ; tx_baud_counter:baud|count[5]       ; tx_shift_register:sr|tmp_data[6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.167      ;
-; -2.132 ; tx_baud_counter:baud|count[5]       ; tx_shift_register:sr|tmp_data[5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.167      ;
-; -2.132 ; tx_baud_counter:baud|count[5]       ; tx_shift_register:sr|tmp_data[4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.167      ;
-; -2.132 ; tx_baud_counter:baud|count[5]       ; tx_shift_register:sr|tmp_data[3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.167      ;
-; -2.132 ; tx_baud_counter:baud|count[5]       ; tx_shift_register:sr|tmp_data[2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.167      ;
-; -2.132 ; tx_baud_counter:baud|count[5]       ; tx_shift_register:sr|tmp_data[1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.167      ;
-; -2.132 ; tx_baud_counter:baud|count[5]       ; tx_shift_register:sr|tmp_data[0] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.167      ;
-; -2.109 ; tx_baud_counter:baud|count[1]       ; tx_shift_register:sr|tmp_data[9] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.144      ;
-; -2.109 ; tx_baud_counter:baud|count[1]       ; tx_shift_register:sr|tmp_data[8] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.144      ;
-; -2.109 ; tx_baud_counter:baud|count[1]       ; tx_shift_register:sr|tmp_data[7] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.144      ;
-; -2.109 ; tx_baud_counter:baud|count[1]       ; tx_shift_register:sr|tmp_data[6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.144      ;
-; -2.109 ; tx_baud_counter:baud|count[1]       ; tx_shift_register:sr|tmp_data[5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.144      ;
-; -2.109 ; tx_baud_counter:baud|count[1]       ; tx_shift_register:sr|tmp_data[4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.144      ;
-; -2.109 ; tx_baud_counter:baud|count[1]       ; tx_shift_register:sr|tmp_data[3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.144      ;
-; -2.109 ; tx_baud_counter:baud|count[1]       ; tx_shift_register:sr|tmp_data[2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.144      ;
-; -2.109 ; tx_baud_counter:baud|count[1]       ; tx_shift_register:sr|tmp_data[1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.144      ;
-; -2.109 ; tx_baud_counter:baud|count[1]       ; tx_shift_register:sr|tmp_data[0] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.144      ;
-; -2.077 ; tx_baud_counter:baud|count[6]       ; tx_shift_register:sr|tmp_data[9] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.112      ;
-; -2.077 ; tx_baud_counter:baud|count[6]       ; tx_shift_register:sr|tmp_data[8] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.112      ;
-; -2.077 ; tx_baud_counter:baud|count[6]       ; tx_shift_register:sr|tmp_data[7] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.112      ;
-; -2.077 ; tx_baud_counter:baud|count[6]       ; tx_shift_register:sr|tmp_data[6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.112      ;
-; -2.077 ; tx_baud_counter:baud|count[6]       ; tx_shift_register:sr|tmp_data[5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.112      ;
-; -2.077 ; tx_baud_counter:baud|count[6]       ; tx_shift_register:sr|tmp_data[4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.112      ;
-; -2.077 ; tx_baud_counter:baud|count[6]       ; tx_shift_register:sr|tmp_data[3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.112      ;
-; -2.077 ; tx_baud_counter:baud|count[6]       ; tx_shift_register:sr|tmp_data[2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.112      ;
-; -2.077 ; tx_baud_counter:baud|count[6]       ; tx_shift_register:sr|tmp_data[1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.112      ;
-; -2.077 ; tx_baud_counter:baud|count[6]       ; tx_shift_register:sr|tmp_data[0] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.112      ;
-; -2.057 ; tx_baud_counter:baud|count[2]       ; tx_shift_register:sr|tmp_data[9] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.092      ;
-; -2.057 ; tx_baud_counter:baud|count[2]       ; tx_shift_register:sr|tmp_data[8] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.092      ;
-; -2.057 ; tx_baud_counter:baud|count[2]       ; tx_shift_register:sr|tmp_data[7] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.092      ;
-; -2.057 ; tx_baud_counter:baud|count[2]       ; tx_shift_register:sr|tmp_data[6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.092      ;
-; -2.057 ; tx_baud_counter:baud|count[2]       ; tx_shift_register:sr|tmp_data[5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.092      ;
-; -2.057 ; tx_baud_counter:baud|count[2]       ; tx_shift_register:sr|tmp_data[4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.092      ;
-; -2.057 ; tx_baud_counter:baud|count[2]       ; tx_shift_register:sr|tmp_data[3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.092      ;
-; -2.057 ; tx_baud_counter:baud|count[2]       ; tx_shift_register:sr|tmp_data[2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.092      ;
-; -2.057 ; tx_baud_counter:baud|count[2]       ; tx_shift_register:sr|tmp_data[1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.092      ;
-; -2.057 ; tx_baud_counter:baud|count[2]       ; tx_shift_register:sr|tmp_data[0] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.092      ;
-; -2.014 ; tx_baud_counter:baud|count[9]       ; tx_shift_register:sr|tmp_data[9] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.049      ;
-; -2.014 ; tx_baud_counter:baud|count[9]       ; tx_shift_register:sr|tmp_data[8] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.049      ;
-; -2.014 ; tx_baud_counter:baud|count[9]       ; tx_shift_register:sr|tmp_data[7] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.049      ;
-; -2.014 ; tx_baud_counter:baud|count[9]       ; tx_shift_register:sr|tmp_data[6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.049      ;
-; -2.014 ; tx_baud_counter:baud|count[9]       ; tx_shift_register:sr|tmp_data[5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.049      ;
-; -2.014 ; tx_baud_counter:baud|count[9]       ; tx_shift_register:sr|tmp_data[4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.049      ;
-; -2.014 ; tx_baud_counter:baud|count[9]       ; tx_shift_register:sr|tmp_data[3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.049      ;
-; -2.014 ; tx_baud_counter:baud|count[9]       ; tx_shift_register:sr|tmp_data[2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.049      ;
-; -2.014 ; tx_baud_counter:baud|count[9]       ; tx_shift_register:sr|tmp_data[1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.049      ;
-; -2.014 ; tx_baud_counter:baud|count[9]       ; tx_shift_register:sr|tmp_data[0] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.049      ;
-; -1.996 ; tx_baud_counter:baud|count[7]       ; tx_shift_register:sr|tmp_data[9] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.031      ;
-; -1.996 ; tx_baud_counter:baud|count[7]       ; tx_shift_register:sr|tmp_data[8] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.031      ;
-; -1.996 ; tx_baud_counter:baud|count[7]       ; tx_shift_register:sr|tmp_data[7] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.031      ;
-; -1.996 ; tx_baud_counter:baud|count[7]       ; tx_shift_register:sr|tmp_data[6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.031      ;
-; -1.996 ; tx_baud_counter:baud|count[7]       ; tx_shift_register:sr|tmp_data[5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.031      ;
-; -1.996 ; tx_baud_counter:baud|count[7]       ; tx_shift_register:sr|tmp_data[4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.031      ;
-; -1.996 ; tx_baud_counter:baud|count[7]       ; tx_shift_register:sr|tmp_data[3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.031      ;
-; -1.996 ; tx_baud_counter:baud|count[7]       ; tx_shift_register:sr|tmp_data[2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.031      ;
-; -1.996 ; tx_baud_counter:baud|count[7]       ; tx_shift_register:sr|tmp_data[1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.031      ;
-; -1.996 ; tx_baud_counter:baud|count[7]       ; tx_shift_register:sr|tmp_data[0] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.031      ;
-; -1.968 ; tx_baud_counter:baud|count[3]       ; tx_shift_register:sr|tmp_data[9] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.003      ;
-; -1.968 ; tx_baud_counter:baud|count[3]       ; tx_shift_register:sr|tmp_data[8] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.003      ;
-; -1.968 ; tx_baud_counter:baud|count[3]       ; tx_shift_register:sr|tmp_data[7] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.003      ;
-; -1.968 ; tx_baud_counter:baud|count[3]       ; tx_shift_register:sr|tmp_data[6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.003      ;
-; -1.968 ; tx_baud_counter:baud|count[3]       ; tx_shift_register:sr|tmp_data[5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.003      ;
-; -1.968 ; tx_baud_counter:baud|count[3]       ; tx_shift_register:sr|tmp_data[4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.003      ;
-; -1.968 ; tx_baud_counter:baud|count[3]       ; tx_shift_register:sr|tmp_data[3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.003      ;
-; -1.968 ; tx_baud_counter:baud|count[3]       ; tx_shift_register:sr|tmp_data[2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.003      ;
-; -1.968 ; tx_baud_counter:baud|count[3]       ; tx_shift_register:sr|tmp_data[1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.003      ;
-; -1.968 ; tx_baud_counter:baud|count[3]       ; tx_shift_register:sr|tmp_data[0] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.003      ;
-; -1.945 ; tx_baud_counter:baud|count[8]       ; tx_shift_register:sr|tmp_data[9] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.980      ;
-; -1.945 ; tx_baud_counter:baud|count[8]       ; tx_shift_register:sr|tmp_data[8] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.980      ;
-; -1.945 ; tx_baud_counter:baud|count[8]       ; tx_shift_register:sr|tmp_data[7] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.980      ;
-; -1.945 ; tx_baud_counter:baud|count[8]       ; tx_shift_register:sr|tmp_data[6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.980      ;
-; -1.945 ; tx_baud_counter:baud|count[8]       ; tx_shift_register:sr|tmp_data[5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.980      ;
-; -1.945 ; tx_baud_counter:baud|count[8]       ; tx_shift_register:sr|tmp_data[4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.980      ;
-; -1.945 ; tx_baud_counter:baud|count[8]       ; tx_shift_register:sr|tmp_data[3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.980      ;
-; -1.945 ; tx_baud_counter:baud|count[8]       ; tx_shift_register:sr|tmp_data[2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.980      ;
-; -1.945 ; tx_baud_counter:baud|count[8]       ; tx_shift_register:sr|tmp_data[1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.980      ;
-; -1.945 ; tx_baud_counter:baud|count[8]       ; tx_shift_register:sr|tmp_data[0] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.980      ;
-; -1.889 ; tx_controller:ctrl|current_state[1] ; tx_shift_register:sr|tmp_data[9] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.002     ; 2.923      ;
-; -1.889 ; tx_controller:ctrl|current_state[1] ; tx_shift_register:sr|tmp_data[8] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.002     ; 2.923      ;
-; -1.889 ; tx_controller:ctrl|current_state[1] ; tx_shift_register:sr|tmp_data[7] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.002     ; 2.923      ;
-; -1.889 ; tx_controller:ctrl|current_state[1] ; tx_shift_register:sr|tmp_data[6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.002     ; 2.923      ;
-; -1.889 ; tx_controller:ctrl|current_state[1] ; tx_shift_register:sr|tmp_data[5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.002     ; 2.923      ;
-; -1.889 ; tx_controller:ctrl|current_state[1] ; tx_shift_register:sr|tmp_data[4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.002     ; 2.923      ;
-; -1.889 ; tx_controller:ctrl|current_state[1] ; tx_shift_register:sr|tmp_data[3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.002     ; 2.923      ;
-; -1.889 ; tx_controller:ctrl|current_state[1] ; tx_shift_register:sr|tmp_data[2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.002     ; 2.923      ;
-; -1.889 ; tx_controller:ctrl|current_state[1] ; tx_shift_register:sr|tmp_data[1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.002     ; 2.923      ;
-; -1.889 ; tx_controller:ctrl|current_state[1] ; tx_shift_register:sr|tmp_data[0] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.002     ; 2.923      ;
-; -1.856 ; tx_baud_counter:baud|count[4]       ; tx_shift_register:sr|tmp_data[9] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.891      ;
-; -1.856 ; tx_baud_counter:baud|count[4]       ; tx_shift_register:sr|tmp_data[8] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.891      ;
-; -1.856 ; tx_baud_counter:baud|count[4]       ; tx_shift_register:sr|tmp_data[7] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.891      ;
-; -1.856 ; tx_baud_counter:baud|count[4]       ; tx_shift_register:sr|tmp_data[6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.891      ;
-; -1.856 ; tx_baud_counter:baud|count[4]       ; tx_shift_register:sr|tmp_data[5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.891      ;
-; -1.856 ; tx_baud_counter:baud|count[4]       ; tx_shift_register:sr|tmp_data[4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.891      ;
-; -1.856 ; tx_baud_counter:baud|count[4]       ; tx_shift_register:sr|tmp_data[3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.891      ;
-; -1.856 ; tx_baud_counter:baud|count[4]       ; tx_shift_register:sr|tmp_data[2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.891      ;
-; -1.856 ; tx_baud_counter:baud|count[4]       ; tx_shift_register:sr|tmp_data[1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.891      ;
-; -1.856 ; tx_baud_counter:baud|count[4]       ; tx_shift_register:sr|tmp_data[0] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.891      ;
+; -2.135 ; tx_baud_counter:baud|count[0]       ; tx_shift_register:sr|tmp_data[9] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.170      ;
+; -2.135 ; tx_baud_counter:baud|count[0]       ; tx_shift_register:sr|tmp_data[8] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.170      ;
+; -2.135 ; tx_baud_counter:baud|count[0]       ; tx_shift_register:sr|tmp_data[7] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.170      ;
+; -2.135 ; tx_baud_counter:baud|count[0]       ; tx_shift_register:sr|tmp_data[6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.170      ;
+; -2.135 ; tx_baud_counter:baud|count[0]       ; tx_shift_register:sr|tmp_data[5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.170      ;
+; -2.135 ; tx_baud_counter:baud|count[0]       ; tx_shift_register:sr|tmp_data[4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.170      ;
+; -2.135 ; tx_baud_counter:baud|count[0]       ; tx_shift_register:sr|tmp_data[3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.170      ;
+; -2.135 ; tx_baud_counter:baud|count[0]       ; tx_shift_register:sr|tmp_data[2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.170      ;
+; -2.135 ; tx_baud_counter:baud|count[0]       ; tx_shift_register:sr|tmp_data[1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.170      ;
+; -2.135 ; tx_baud_counter:baud|count[0]       ; tx_shift_register:sr|tmp_data[0] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.170      ;
+; -2.134 ; tx_baud_counter:baud|count[5]       ; tx_shift_register:sr|tmp_data[9] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.169      ;
+; -2.134 ; tx_baud_counter:baud|count[5]       ; tx_shift_register:sr|tmp_data[8] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.169      ;
+; -2.134 ; tx_baud_counter:baud|count[5]       ; tx_shift_register:sr|tmp_data[7] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.169      ;
+; -2.134 ; tx_baud_counter:baud|count[5]       ; tx_shift_register:sr|tmp_data[6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.169      ;
+; -2.134 ; tx_baud_counter:baud|count[5]       ; tx_shift_register:sr|tmp_data[5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.169      ;
+; -2.134 ; tx_baud_counter:baud|count[5]       ; tx_shift_register:sr|tmp_data[4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.169      ;
+; -2.134 ; tx_baud_counter:baud|count[5]       ; tx_shift_register:sr|tmp_data[3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.169      ;
+; -2.134 ; tx_baud_counter:baud|count[5]       ; tx_shift_register:sr|tmp_data[2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.169      ;
+; -2.134 ; tx_baud_counter:baud|count[5]       ; tx_shift_register:sr|tmp_data[1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.169      ;
+; -2.134 ; tx_baud_counter:baud|count[5]       ; tx_shift_register:sr|tmp_data[0] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.169      ;
+; -2.108 ; tx_baud_counter:baud|count[2]       ; tx_shift_register:sr|tmp_data[9] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.143      ;
+; -2.108 ; tx_baud_counter:baud|count[2]       ; tx_shift_register:sr|tmp_data[8] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.143      ;
+; -2.108 ; tx_baud_counter:baud|count[2]       ; tx_shift_register:sr|tmp_data[7] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.143      ;
+; -2.108 ; tx_baud_counter:baud|count[2]       ; tx_shift_register:sr|tmp_data[6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.143      ;
+; -2.108 ; tx_baud_counter:baud|count[2]       ; tx_shift_register:sr|tmp_data[5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.143      ;
+; -2.108 ; tx_baud_counter:baud|count[2]       ; tx_shift_register:sr|tmp_data[4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.143      ;
+; -2.108 ; tx_baud_counter:baud|count[2]       ; tx_shift_register:sr|tmp_data[3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.143      ;
+; -2.108 ; tx_baud_counter:baud|count[2]       ; tx_shift_register:sr|tmp_data[2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.143      ;
+; -2.108 ; tx_baud_counter:baud|count[2]       ; tx_shift_register:sr|tmp_data[1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.143      ;
+; -2.108 ; tx_baud_counter:baud|count[2]       ; tx_shift_register:sr|tmp_data[0] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.143      ;
+; -2.079 ; tx_baud_counter:baud|count[6]       ; tx_shift_register:sr|tmp_data[9] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.114      ;
+; -2.079 ; tx_baud_counter:baud|count[6]       ; tx_shift_register:sr|tmp_data[8] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.114      ;
+; -2.079 ; tx_baud_counter:baud|count[6]       ; tx_shift_register:sr|tmp_data[7] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.114      ;
+; -2.079 ; tx_baud_counter:baud|count[6]       ; tx_shift_register:sr|tmp_data[6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.114      ;
+; -2.079 ; tx_baud_counter:baud|count[6]       ; tx_shift_register:sr|tmp_data[5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.114      ;
+; -2.079 ; tx_baud_counter:baud|count[6]       ; tx_shift_register:sr|tmp_data[4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.114      ;
+; -2.079 ; tx_baud_counter:baud|count[6]       ; tx_shift_register:sr|tmp_data[3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.114      ;
+; -2.079 ; tx_baud_counter:baud|count[6]       ; tx_shift_register:sr|tmp_data[2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.114      ;
+; -2.079 ; tx_baud_counter:baud|count[6]       ; tx_shift_register:sr|tmp_data[1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.114      ;
+; -2.079 ; tx_baud_counter:baud|count[6]       ; tx_shift_register:sr|tmp_data[0] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.114      ;
+; -2.017 ; tx_baud_counter:baud|count[8]       ; tx_shift_register:sr|tmp_data[9] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.052      ;
+; -2.017 ; tx_baud_counter:baud|count[8]       ; tx_shift_register:sr|tmp_data[8] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.052      ;
+; -2.017 ; tx_baud_counter:baud|count[8]       ; tx_shift_register:sr|tmp_data[7] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.052      ;
+; -2.017 ; tx_baud_counter:baud|count[8]       ; tx_shift_register:sr|tmp_data[6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.052      ;
+; -2.017 ; tx_baud_counter:baud|count[8]       ; tx_shift_register:sr|tmp_data[5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.052      ;
+; -2.017 ; tx_baud_counter:baud|count[8]       ; tx_shift_register:sr|tmp_data[4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.052      ;
+; -2.017 ; tx_baud_counter:baud|count[8]       ; tx_shift_register:sr|tmp_data[3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.052      ;
+; -2.017 ; tx_baud_counter:baud|count[8]       ; tx_shift_register:sr|tmp_data[2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.052      ;
+; -2.017 ; tx_baud_counter:baud|count[8]       ; tx_shift_register:sr|tmp_data[1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.052      ;
+; -2.017 ; tx_baud_counter:baud|count[8]       ; tx_shift_register:sr|tmp_data[0] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.052      ;
+; -1.998 ; tx_baud_counter:baud|count[7]       ; tx_shift_register:sr|tmp_data[9] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.033      ;
+; -1.998 ; tx_baud_counter:baud|count[7]       ; tx_shift_register:sr|tmp_data[8] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.033      ;
+; -1.998 ; tx_baud_counter:baud|count[7]       ; tx_shift_register:sr|tmp_data[7] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.033      ;
+; -1.998 ; tx_baud_counter:baud|count[7]       ; tx_shift_register:sr|tmp_data[6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.033      ;
+; -1.998 ; tx_baud_counter:baud|count[7]       ; tx_shift_register:sr|tmp_data[5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.033      ;
+; -1.998 ; tx_baud_counter:baud|count[7]       ; tx_shift_register:sr|tmp_data[4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.033      ;
+; -1.998 ; tx_baud_counter:baud|count[7]       ; tx_shift_register:sr|tmp_data[3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.033      ;
+; -1.998 ; tx_baud_counter:baud|count[7]       ; tx_shift_register:sr|tmp_data[2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.033      ;
+; -1.998 ; tx_baud_counter:baud|count[7]       ; tx_shift_register:sr|tmp_data[1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.033      ;
+; -1.998 ; tx_baud_counter:baud|count[7]       ; tx_shift_register:sr|tmp_data[0] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.033      ;
+; -1.970 ; tx_baud_counter:baud|count[3]       ; tx_shift_register:sr|tmp_data[9] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.005      ;
+; -1.970 ; tx_baud_counter:baud|count[3]       ; tx_shift_register:sr|tmp_data[8] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.005      ;
+; -1.970 ; tx_baud_counter:baud|count[3]       ; tx_shift_register:sr|tmp_data[7] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.005      ;
+; -1.970 ; tx_baud_counter:baud|count[3]       ; tx_shift_register:sr|tmp_data[6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.005      ;
+; -1.970 ; tx_baud_counter:baud|count[3]       ; tx_shift_register:sr|tmp_data[5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.005      ;
+; -1.970 ; tx_baud_counter:baud|count[3]       ; tx_shift_register:sr|tmp_data[4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.005      ;
+; -1.970 ; tx_baud_counter:baud|count[3]       ; tx_shift_register:sr|tmp_data[3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.005      ;
+; -1.970 ; tx_baud_counter:baud|count[3]       ; tx_shift_register:sr|tmp_data[2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.005      ;
+; -1.970 ; tx_baud_counter:baud|count[3]       ; tx_shift_register:sr|tmp_data[1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.005      ;
+; -1.970 ; tx_baud_counter:baud|count[3]       ; tx_shift_register:sr|tmp_data[0] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 3.005      ;
+; -1.941 ; tx_baud_counter:baud|count[9]       ; tx_shift_register:sr|tmp_data[9] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.976      ;
+; -1.941 ; tx_baud_counter:baud|count[9]       ; tx_shift_register:sr|tmp_data[8] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.976      ;
+; -1.941 ; tx_baud_counter:baud|count[9]       ; tx_shift_register:sr|tmp_data[7] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.976      ;
+; -1.941 ; tx_baud_counter:baud|count[9]       ; tx_shift_register:sr|tmp_data[6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.976      ;
+; -1.941 ; tx_baud_counter:baud|count[9]       ; tx_shift_register:sr|tmp_data[5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.976      ;
+; -1.941 ; tx_baud_counter:baud|count[9]       ; tx_shift_register:sr|tmp_data[4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.976      ;
+; -1.941 ; tx_baud_counter:baud|count[9]       ; tx_shift_register:sr|tmp_data[3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.976      ;
+; -1.941 ; tx_baud_counter:baud|count[9]       ; tx_shift_register:sr|tmp_data[2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.976      ;
+; -1.941 ; tx_baud_counter:baud|count[9]       ; tx_shift_register:sr|tmp_data[1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.976      ;
+; -1.941 ; tx_baud_counter:baud|count[9]       ; tx_shift_register:sr|tmp_data[0] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.976      ;
+; -1.891 ; tx_controller:ctrl|current_state[1] ; tx_shift_register:sr|tmp_data[9] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.002     ; 2.925      ;
+; -1.891 ; tx_controller:ctrl|current_state[1] ; tx_shift_register:sr|tmp_data[8] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.002     ; 2.925      ;
+; -1.891 ; tx_controller:ctrl|current_state[1] ; tx_shift_register:sr|tmp_data[7] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.002     ; 2.925      ;
+; -1.891 ; tx_controller:ctrl|current_state[1] ; tx_shift_register:sr|tmp_data[6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.002     ; 2.925      ;
+; -1.891 ; tx_controller:ctrl|current_state[1] ; tx_shift_register:sr|tmp_data[5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.002     ; 2.925      ;
+; -1.891 ; tx_controller:ctrl|current_state[1] ; tx_shift_register:sr|tmp_data[4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.002     ; 2.925      ;
+; -1.891 ; tx_controller:ctrl|current_state[1] ; tx_shift_register:sr|tmp_data[3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.002     ; 2.925      ;
+; -1.891 ; tx_controller:ctrl|current_state[1] ; tx_shift_register:sr|tmp_data[2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.002     ; 2.925      ;
+; -1.891 ; tx_controller:ctrl|current_state[1] ; tx_shift_register:sr|tmp_data[1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.002     ; 2.925      ;
+; -1.891 ; tx_controller:ctrl|current_state[1] ; tx_shift_register:sr|tmp_data[0] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.002     ; 2.925      ;
+; -1.858 ; tx_baud_counter:baud|count[4]       ; tx_shift_register:sr|tmp_data[9] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.893      ;
+; -1.858 ; tx_baud_counter:baud|count[4]       ; tx_shift_register:sr|tmp_data[8] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.893      ;
+; -1.858 ; tx_baud_counter:baud|count[4]       ; tx_shift_register:sr|tmp_data[7] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.893      ;
+; -1.858 ; tx_baud_counter:baud|count[4]       ; tx_shift_register:sr|tmp_data[6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.893      ;
+; -1.858 ; tx_baud_counter:baud|count[4]       ; tx_shift_register:sr|tmp_data[5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.893      ;
+; -1.858 ; tx_baud_counter:baud|count[4]       ; tx_shift_register:sr|tmp_data[4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.893      ;
+; -1.858 ; tx_baud_counter:baud|count[4]       ; tx_shift_register:sr|tmp_data[3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.893      ;
+; -1.858 ; tx_baud_counter:baud|count[4]       ; tx_shift_register:sr|tmp_data[2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.893      ;
+; -1.858 ; tx_baud_counter:baud|count[4]       ; tx_shift_register:sr|tmp_data[1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.893      ;
+; -1.858 ; tx_baud_counter:baud|count[4]       ; tx_shift_register:sr|tmp_data[0] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 2.893      ;
 +--------+-------------------------------------+----------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -275,7 +281,7 @@ No paths to report.
 ; 0.391 ; tx_counter:counter|count[3]           ; tx_counter:counter|count[3]           ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.657      ;
 ; 0.391 ; tx_controller:ctrl|current_state[0]   ; tx_controller:ctrl|current_state[0]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.657      ;
 ; 0.391 ; tx_shift_register:sr|tmp_data[10]     ; tx_shift_register:sr|tmp_data[10]     ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.657      ;
-; 0.535 ; tx_baud_counter:baud|count[10]        ; tx_baud_counter:baud|count[10]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.801      ;
+; 0.530 ; tx_baud_counter:baud|count[10]        ; tx_baud_counter:baud|count[10]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.796      ;
 ; 0.653 ; tx_shift_register:sr|tmp_data[2]      ; tx_shift_register:sr|tmp_data[1]      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.919      ;
 ; 0.660 ; tx_shift_register:sr|tmp_data[6]      ; tx_shift_register:sr|tmp_data[5]      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.926      ;
 ; 0.676 ; tx_synchroniser:synchroniser|ff2      ; tx_single_pulser:pulser|current_state ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.942      ;
@@ -284,33 +290,32 @@ No paths to report.
 ; 0.795 ; tx_shift_register:sr|tmp_data[10]     ; tx_shift_register:sr|tmp_data[9]      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.061      ;
 ; 0.801 ; tx_baud_counter:baud|count[6]         ; tx_baud_counter:baud|count[6]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.067      ;
 ; 0.809 ; tx_baud_counter:baud|count[8]         ; tx_baud_counter:baud|count[8]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.075      ;
-; 0.813 ; tx_baud_counter:baud|count[9]         ; tx_baud_counter:baud|count[9]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.079      ;
 ; 0.820 ; tx_shift_register:sr|tmp_data[7]      ; tx_shift_register:sr|tmp_data[6]      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.086      ;
 ; 0.820 ; tx_shift_register:sr|tmp_data[3]      ; tx_shift_register:sr|tmp_data[2]      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.086      ;
 ; 0.834 ; tx_shift_register:sr|tmp_data[8]      ; tx_shift_register:sr|tmp_data[7]      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.100      ;
 ; 0.834 ; tx_shift_register:sr|tmp_data[4]      ; tx_shift_register:sr|tmp_data[3]      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.100      ;
-; 0.834 ; tx_counter:counter|count[0]           ; tx_counter:counter|count[1]           ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.100      ;
 ; 0.835 ; tx_shift_register:sr|tmp_data[5]      ; tx_shift_register:sr|tmp_data[4]      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.101      ;
-; 0.842 ; tx_baud_counter:baud|count[0]         ; tx_baud_counter:baud|count[0]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.108      ;
+; 0.843 ; tx_baud_counter:baud|count[0]         ; tx_baud_counter:baud|count[0]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.109      ;
 ; 0.844 ; tx_baud_counter:baud|count[3]         ; tx_baud_counter:baud|count[3]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.110      ;
 ; 0.845 ; tx_baud_counter:baud|count[5]         ; tx_baud_counter:baud|count[5]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.111      ;
 ; 0.846 ; tx_baud_counter:baud|count[7]         ; tx_baud_counter:baud|count[7]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.112      ;
+; 0.858 ; tx_counter:counter|count[0]           ; tx_counter:counter|count[1]           ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.124      ;
 ; 0.966 ; tx_synchroniser:synchroniser|ff2      ; tx_controller:ctrl|current_state[0]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.232      ;
 ; 0.978 ; tx_baud_counter:baud|count[2]         ; tx_baud_counter:baud|count[2]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.244      ;
 ; 0.979 ; tx_baud_counter:baud|count[1]         ; tx_baud_counter:baud|count[1]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.245      ;
 ; 0.979 ; tx_baud_counter:baud|count[4]         ; tx_baud_counter:baud|count[4]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.245      ;
-; 1.030 ; tx_controller:ctrl|current_state[1]   ; tx_shift_register:sr|tmp_data[0]      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.002     ; 1.294      ;
-; 1.031 ; tx_controller:ctrl|current_state[1]   ; tx_shift_register:sr|tmp_data[1]      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.002     ; 1.295      ;
+; 1.011 ; tx_baud_counter:baud|count[9]         ; tx_baud_counter:baud|count[9]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.277      ;
+; 1.026 ; tx_controller:ctrl|current_state[1]   ; tx_shift_register:sr|tmp_data[1]      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.002     ; 1.290      ;
+; 1.026 ; tx_controller:ctrl|current_state[1]   ; tx_shift_register:sr|tmp_data[0]      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.002     ; 1.290      ;
 ; 1.064 ; tx_single_pulser:pulser|current_state ; tx_controller:ctrl|current_state[1]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.330      ;
-; 1.095 ; tx_synchroniser:synchroniser|ff1      ; tx_synchroniser:synchroniser|ff2      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.361      ;
+; 1.090 ; tx_synchroniser:synchroniser|ff1      ; tx_synchroniser:synchroniser|ff2      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.356      ;
 ; 1.101 ; tx_single_pulser:pulser|current_state ; tx_controller:ctrl|current_state[0]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.367      ;
 ; 1.184 ; tx_baud_counter:baud|count[6]         ; tx_baud_counter:baud|count[7]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.450      ;
 ; 1.190 ; tx_counter:counter|count[2]           ; tx_counter:counter|count[0]           ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.456      ;
 ; 1.192 ; tx_baud_counter:baud|count[8]         ; tx_baud_counter:baud|count[9]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.458      ;
-; 1.196 ; tx_baud_counter:baud|count[9]         ; tx_baud_counter:baud|count[10]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.462      ;
 ; 1.215 ; tx_counter:counter|count[2]           ; tx_counter:counter|count[3]           ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.481      ;
 ; 1.218 ; tx_controller:ctrl|current_state[1]   ; tx_controller:ctrl|current_state[1]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.484      ;
-; 1.228 ; tx_baud_counter:baud|count[0]         ; tx_baud_counter:baud|count[1]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.494      ;
+; 1.229 ; tx_baud_counter:baud|count[0]         ; tx_baud_counter:baud|count[1]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.495      ;
 ; 1.229 ; tx_counter:counter|count[2]           ; tx_controller:ctrl|current_state[1]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.495      ;
 ; 1.230 ; tx_baud_counter:baud|count[3]         ; tx_baud_counter:baud|count[4]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.496      ;
 ; 1.231 ; tx_baud_counter:baud|count[5]         ; tx_baud_counter:baud|count[6]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.497      ;
@@ -320,13 +325,12 @@ No paths to report.
 ; 1.263 ; tx_baud_counter:baud|count[8]         ; tx_baud_counter:baud|count[10]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.529      ;
 ; 1.272 ; tx_controller:ctrl|current_state[0]   ; tx_shift_register:sr|tmp_data[1]      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.002     ; 1.536      ;
 ; 1.276 ; tx_controller:ctrl|current_state[0]   ; tx_shift_register:sr|tmp_data[10]     ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.002     ; 1.540      ;
-; 1.299 ; tx_baud_counter:baud|count[0]         ; tx_baud_counter:baud|count[2]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.565      ;
+; 1.298 ; tx_controller:ctrl|current_state[1]   ; tx_shift_register:sr|tmp_data[10]     ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.002     ; 1.562      ;
+; 1.300 ; tx_baud_counter:baud|count[0]         ; tx_baud_counter:baud|count[2]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.566      ;
 ; 1.301 ; tx_baud_counter:baud|count[3]         ; tx_baud_counter:baud|count[5]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.567      ;
-; 1.302 ; tx_controller:ctrl|current_state[1]   ; tx_shift_register:sr|tmp_data[10]     ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.002     ; 1.566      ;
 ; 1.302 ; tx_baud_counter:baud|count[5]         ; tx_baud_counter:baud|count[7]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.568      ;
 ; 1.303 ; tx_baud_counter:baud|count[7]         ; tx_baud_counter:baud|count[9]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.569      ;
 ; 1.326 ; tx_baud_counter:baud|count[6]         ; tx_baud_counter:baud|count[9]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.592      ;
-; 1.361 ; tx_counter:counter|count[2]           ; tx_counter:counter|count[1]           ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.627      ;
 ; 1.362 ; tx_baud_counter:baud|count[1]         ; tx_baud_counter:baud|count[2]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.628      ;
 ; 1.362 ; tx_baud_counter:baud|count[4]         ; tx_baud_counter:baud|count[5]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.628      ;
 ; 1.363 ; tx_counter:counter|count[0]           ; tx_counter:counter|count[3]           ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.629      ;
@@ -335,7 +339,8 @@ No paths to report.
 ; 1.374 ; tx_baud_counter:baud|count[7]         ; tx_baud_counter:baud|count[10]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.640      ;
 ; 1.382 ; tx_counter:counter|count[0]           ; tx_controller:ctrl|current_state[1]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.648      ;
 ; 1.391 ; tx_synchroniser:synchroniser|ff2      ; tx_controller:ctrl|current_state[1]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.657      ;
-; 1.394 ; tx_counter:counter|count[0]           ; tx_counter:counter|count[2]           ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.660      ;
+; 1.393 ; tx_counter:counter|count[0]           ; tx_counter:counter|count[2]           ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.659      ;
+; 1.397 ; tx_baud_counter:baud|count[9]         ; tx_baud_counter:baud|count[10]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.663      ;
 ; 1.397 ; tx_baud_counter:baud|count[6]         ; tx_baud_counter:baud|count[10]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.663      ;
 ; 1.421 ; tx_controller:ctrl|current_state[0]   ; tx_shift_register:sr|tmp_data[6]      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.002     ; 1.685      ;
 ; 1.421 ; tx_controller:ctrl|current_state[0]   ; tx_shift_register:sr|tmp_data[4]      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.002     ; 1.685      ;
@@ -349,7 +354,7 @@ No paths to report.
 ; 1.443 ; tx_baud_counter:baud|count[3]         ; tx_baud_counter:baud|count[7]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.709      ;
 ; 1.444 ; tx_baud_counter:baud|count[5]         ; tx_baud_counter:baud|count[9]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.710      ;
 ; 1.454 ; tx_baud_counter:baud|count[2]         ; tx_baud_counter:baud|count[3]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.720      ;
-; 1.458 ; tx_baud_counter:baud|count[0]         ; tx_baud_counter:baud|count[3]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.724      ;
+; 1.459 ; tx_baud_counter:baud|count[0]         ; tx_baud_counter:baud|count[3]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.725      ;
 ; 1.468 ; tx_counter:counter|count[1]           ; tx_counter:counter|count[0]           ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.734      ;
 ; 1.504 ; tx_baud_counter:baud|count[4]         ; tx_baud_counter:baud|count[7]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.770      ;
 ; 1.507 ; tx_counter:counter|count[1]           ; tx_controller:ctrl|current_state[1]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.773      ;
@@ -357,18 +362,19 @@ No paths to report.
 ; 1.515 ; tx_baud_counter:baud|count[5]         ; tx_baud_counter:baud|count[10]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.781      ;
 ; 1.521 ; tx_baud_counter:baud|count[1]         ; tx_baud_counter:baud|count[3]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.787      ;
 ; 1.525 ; tx_baud_counter:baud|count[2]         ; tx_baud_counter:baud|count[4]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.791      ;
-; 1.529 ; tx_baud_counter:baud|count[0]         ; tx_baud_counter:baud|count[4]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.795      ;
+; 1.530 ; tx_baud_counter:baud|count[0]         ; tx_baud_counter:baud|count[4]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.796      ;
 ; 1.542 ; tx_controller:ctrl|current_state[0]   ; tx_controller:ctrl|current_state[1]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.808      ;
-; 1.553 ; tx_counter:counter|count[1]           ; tx_counter:counter|count[2]           ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.819      ;
 ; 1.575 ; tx_baud_counter:baud|count[4]         ; tx_baud_counter:baud|count[8]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.841      ;
-; 1.582 ; tx_controller:ctrl|current_state[1]   ; tx_shift_register:sr|tmp_data[6]      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.002     ; 1.846      ;
-; 1.582 ; tx_controller:ctrl|current_state[1]   ; tx_shift_register:sr|tmp_data[4]      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.002     ; 1.846      ;
-; 1.585 ; tx_controller:ctrl|current_state[1]   ; tx_shift_register:sr|tmp_data[7]      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.002     ; 1.849      ;
+; 1.578 ; tx_controller:ctrl|current_state[1]   ; tx_shift_register:sr|tmp_data[6]      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.002     ; 1.842      ;
+; 1.578 ; tx_controller:ctrl|current_state[1]   ; tx_shift_register:sr|tmp_data[4]      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.002     ; 1.842      ;
+; 1.581 ; tx_controller:ctrl|current_state[1]   ; tx_shift_register:sr|tmp_data[7]      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.002     ; 1.845      ;
 ; 1.585 ; tx_baud_counter:baud|count[3]         ; tx_baud_counter:baud|count[9]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.851      ;
-; 1.590 ; tx_controller:ctrl|current_state[1]   ; tx_shift_register:sr|tmp_data[9]      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.002     ; 1.854      ;
-; 1.592 ; tx_controller:ctrl|current_state[1]   ; tx_shift_register:sr|tmp_data[8]      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.002     ; 1.856      ;
+; 1.586 ; tx_controller:ctrl|current_state[1]   ; tx_shift_register:sr|tmp_data[9]      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.002     ; 1.850      ;
+; 1.588 ; tx_controller:ctrl|current_state[1]   ; tx_shift_register:sr|tmp_data[8]      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.002     ; 1.852      ;
+; 1.590 ; tx_controller:ctrl|current_state[1]   ; tx_shift_register:sr|tmp_data[5]      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.002     ; 1.854      ;
+; 1.590 ; tx_controller:ctrl|current_state[1]   ; tx_shift_register:sr|tmp_data[2]      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.002     ; 1.854      ;
+; 1.591 ; tx_controller:ctrl|current_state[1]   ; tx_shift_register:sr|tmp_data[3]      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.002     ; 1.855      ;
 ; 1.592 ; tx_baud_counter:baud|count[1]         ; tx_baud_counter:baud|count[4]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.858      ;
-; 1.594 ; tx_controller:ctrl|current_state[1]   ; tx_shift_register:sr|tmp_data[5]      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.002     ; 1.858      ;
 +-------+---------------------------------------+---------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -486,7 +492,7 @@ No paths to report.
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
 ; KEY[*]    ; CLOCK_50   ; 5.554 ; 5.554 ; Rise       ; CLOCK_50        ;
-;  KEY[0]   ; CLOCK_50   ; 5.350 ; 5.350 ; Rise       ; CLOCK_50        ;
+;  KEY[0]   ; CLOCK_50   ; 5.358 ; 5.358 ; Rise       ; CLOCK_50        ;
 ;  KEY[3]   ; CLOCK_50   ; 5.554 ; 5.554 ; Rise       ; CLOCK_50        ;
 ; SW[*]     ; CLOCK_50   ; 1.802 ; 1.802 ; Rise       ; CLOCK_50        ;
 ;  SW[2]    ; CLOCK_50   ; 0.934 ; 0.934 ; Rise       ; CLOCK_50        ;
@@ -504,8 +510,8 @@ No paths to report.
 +-----------+------------+--------+--------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------+------------+--------+--------+------------+-----------------+
-; KEY[*]    ; CLOCK_50   ; -4.047 ; -4.047 ; Rise       ; CLOCK_50        ;
-;  KEY[0]   ; CLOCK_50   ; -4.047 ; -4.047 ; Rise       ; CLOCK_50        ;
+; KEY[*]    ; CLOCK_50   ; -4.036 ; -4.036 ; Rise       ; CLOCK_50        ;
+;  KEY[0]   ; CLOCK_50   ; -4.036 ; -4.036 ; Rise       ; CLOCK_50        ;
 ;  KEY[3]   ; CLOCK_50   ; -5.324 ; -5.324 ; Rise       ; CLOCK_50        ;
 ; SW[*]     ; CLOCK_50   ; 0.114  ; 0.114  ; Rise       ; CLOCK_50        ;
 ;  SW[2]    ; CLOCK_50   ; 0.114  ; 0.114  ; Rise       ; CLOCK_50        ;
@@ -661,7 +667,7 @@ No paths to report.
 +----------+--------+---------------+
 ; Clock    ; Slack  ; End Point TNS ;
 +----------+--------+---------------+
-; CLOCK_50 ; -0.509 ; -7.631        ;
+; CLOCK_50 ; -0.503 ; -7.415        ;
 +----------+--------+---------------+
 
 
@@ -700,106 +706,106 @@ No paths to report.
 +--------+-------------------------------------+----------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node                           ; To Node                          ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+-------------------------------------+----------------------------------+--------------+-------------+--------------+------------+------------+
-; -0.509 ; tx_baud_counter:baud|count[5]       ; tx_shift_register:sr|tmp_data[9] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.540      ;
-; -0.509 ; tx_baud_counter:baud|count[5]       ; tx_shift_register:sr|tmp_data[8] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.540      ;
-; -0.509 ; tx_baud_counter:baud|count[5]       ; tx_shift_register:sr|tmp_data[7] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.540      ;
-; -0.509 ; tx_baud_counter:baud|count[5]       ; tx_shift_register:sr|tmp_data[6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.540      ;
-; -0.509 ; tx_baud_counter:baud|count[5]       ; tx_shift_register:sr|tmp_data[5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.540      ;
-; -0.509 ; tx_baud_counter:baud|count[5]       ; tx_shift_register:sr|tmp_data[4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.540      ;
-; -0.509 ; tx_baud_counter:baud|count[5]       ; tx_shift_register:sr|tmp_data[3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.540      ;
-; -0.509 ; tx_baud_counter:baud|count[5]       ; tx_shift_register:sr|tmp_data[2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.540      ;
-; -0.509 ; tx_baud_counter:baud|count[5]       ; tx_shift_register:sr|tmp_data[1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.540      ;
-; -0.509 ; tx_baud_counter:baud|count[5]       ; tx_shift_register:sr|tmp_data[0] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.540      ;
-; -0.490 ; tx_baud_counter:baud|count[1]       ; tx_shift_register:sr|tmp_data[9] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.521      ;
-; -0.490 ; tx_baud_counter:baud|count[1]       ; tx_shift_register:sr|tmp_data[8] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.521      ;
-; -0.490 ; tx_baud_counter:baud|count[1]       ; tx_shift_register:sr|tmp_data[7] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.521      ;
-; -0.490 ; tx_baud_counter:baud|count[1]       ; tx_shift_register:sr|tmp_data[6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.521      ;
-; -0.490 ; tx_baud_counter:baud|count[1]       ; tx_shift_register:sr|tmp_data[5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.521      ;
-; -0.490 ; tx_baud_counter:baud|count[1]       ; tx_shift_register:sr|tmp_data[4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.521      ;
-; -0.490 ; tx_baud_counter:baud|count[1]       ; tx_shift_register:sr|tmp_data[3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.521      ;
-; -0.490 ; tx_baud_counter:baud|count[1]       ; tx_shift_register:sr|tmp_data[2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.521      ;
-; -0.490 ; tx_baud_counter:baud|count[1]       ; tx_shift_register:sr|tmp_data[1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.521      ;
-; -0.490 ; tx_baud_counter:baud|count[1]       ; tx_shift_register:sr|tmp_data[0] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.521      ;
-; -0.486 ; tx_baud_counter:baud|count[6]       ; tx_shift_register:sr|tmp_data[9] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.517      ;
-; -0.486 ; tx_baud_counter:baud|count[6]       ; tx_shift_register:sr|tmp_data[8] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.517      ;
-; -0.486 ; tx_baud_counter:baud|count[6]       ; tx_shift_register:sr|tmp_data[7] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.517      ;
-; -0.486 ; tx_baud_counter:baud|count[6]       ; tx_shift_register:sr|tmp_data[6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.517      ;
-; -0.486 ; tx_baud_counter:baud|count[6]       ; tx_shift_register:sr|tmp_data[5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.517      ;
-; -0.486 ; tx_baud_counter:baud|count[6]       ; tx_shift_register:sr|tmp_data[4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.517      ;
-; -0.486 ; tx_baud_counter:baud|count[6]       ; tx_shift_register:sr|tmp_data[3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.517      ;
-; -0.486 ; tx_baud_counter:baud|count[6]       ; tx_shift_register:sr|tmp_data[2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.517      ;
-; -0.486 ; tx_baud_counter:baud|count[6]       ; tx_shift_register:sr|tmp_data[1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.517      ;
-; -0.486 ; tx_baud_counter:baud|count[6]       ; tx_shift_register:sr|tmp_data[0] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.517      ;
-; -0.475 ; tx_baud_counter:baud|count[2]       ; tx_shift_register:sr|tmp_data[9] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.506      ;
-; -0.475 ; tx_baud_counter:baud|count[2]       ; tx_shift_register:sr|tmp_data[8] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.506      ;
-; -0.475 ; tx_baud_counter:baud|count[2]       ; tx_shift_register:sr|tmp_data[7] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.506      ;
-; -0.475 ; tx_baud_counter:baud|count[2]       ; tx_shift_register:sr|tmp_data[6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.506      ;
-; -0.475 ; tx_baud_counter:baud|count[2]       ; tx_shift_register:sr|tmp_data[5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.506      ;
-; -0.475 ; tx_baud_counter:baud|count[2]       ; tx_shift_register:sr|tmp_data[4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.506      ;
-; -0.475 ; tx_baud_counter:baud|count[2]       ; tx_shift_register:sr|tmp_data[3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.506      ;
-; -0.475 ; tx_baud_counter:baud|count[2]       ; tx_shift_register:sr|tmp_data[2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.506      ;
-; -0.475 ; tx_baud_counter:baud|count[2]       ; tx_shift_register:sr|tmp_data[1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.506      ;
-; -0.475 ; tx_baud_counter:baud|count[2]       ; tx_shift_register:sr|tmp_data[0] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.506      ;
-; -0.433 ; tx_baud_counter:baud|count[9]       ; tx_shift_register:sr|tmp_data[9] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.464      ;
-; -0.433 ; tx_baud_counter:baud|count[9]       ; tx_shift_register:sr|tmp_data[8] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.464      ;
-; -0.433 ; tx_baud_counter:baud|count[9]       ; tx_shift_register:sr|tmp_data[7] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.464      ;
-; -0.433 ; tx_baud_counter:baud|count[9]       ; tx_shift_register:sr|tmp_data[6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.464      ;
-; -0.433 ; tx_baud_counter:baud|count[9]       ; tx_shift_register:sr|tmp_data[5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.464      ;
-; -0.433 ; tx_baud_counter:baud|count[9]       ; tx_shift_register:sr|tmp_data[4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.464      ;
-; -0.433 ; tx_baud_counter:baud|count[9]       ; tx_shift_register:sr|tmp_data[3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.464      ;
-; -0.433 ; tx_baud_counter:baud|count[9]       ; tx_shift_register:sr|tmp_data[2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.464      ;
-; -0.433 ; tx_baud_counter:baud|count[9]       ; tx_shift_register:sr|tmp_data[1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.464      ;
-; -0.433 ; tx_baud_counter:baud|count[9]       ; tx_shift_register:sr|tmp_data[0] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.464      ;
-; -0.432 ; tx_baud_counter:baud|count[8]       ; tx_shift_register:sr|tmp_data[9] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.463      ;
-; -0.432 ; tx_baud_counter:baud|count[8]       ; tx_shift_register:sr|tmp_data[8] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.463      ;
-; -0.432 ; tx_baud_counter:baud|count[8]       ; tx_shift_register:sr|tmp_data[7] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.463      ;
-; -0.432 ; tx_baud_counter:baud|count[8]       ; tx_shift_register:sr|tmp_data[6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.463      ;
-; -0.432 ; tx_baud_counter:baud|count[8]       ; tx_shift_register:sr|tmp_data[5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.463      ;
-; -0.432 ; tx_baud_counter:baud|count[8]       ; tx_shift_register:sr|tmp_data[4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.463      ;
-; -0.432 ; tx_baud_counter:baud|count[8]       ; tx_shift_register:sr|tmp_data[3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.463      ;
-; -0.432 ; tx_baud_counter:baud|count[8]       ; tx_shift_register:sr|tmp_data[2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.463      ;
-; -0.432 ; tx_baud_counter:baud|count[8]       ; tx_shift_register:sr|tmp_data[1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.463      ;
-; -0.432 ; tx_baud_counter:baud|count[8]       ; tx_shift_register:sr|tmp_data[0] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.463      ;
-; -0.425 ; tx_baud_counter:baud|count[7]       ; tx_shift_register:sr|tmp_data[9] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.456      ;
-; -0.425 ; tx_baud_counter:baud|count[7]       ; tx_shift_register:sr|tmp_data[8] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.456      ;
-; -0.425 ; tx_baud_counter:baud|count[7]       ; tx_shift_register:sr|tmp_data[7] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.456      ;
-; -0.425 ; tx_baud_counter:baud|count[7]       ; tx_shift_register:sr|tmp_data[6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.456      ;
-; -0.425 ; tx_baud_counter:baud|count[7]       ; tx_shift_register:sr|tmp_data[5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.456      ;
-; -0.425 ; tx_baud_counter:baud|count[7]       ; tx_shift_register:sr|tmp_data[4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.456      ;
-; -0.425 ; tx_baud_counter:baud|count[7]       ; tx_shift_register:sr|tmp_data[3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.456      ;
-; -0.425 ; tx_baud_counter:baud|count[7]       ; tx_shift_register:sr|tmp_data[2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.456      ;
-; -0.425 ; tx_baud_counter:baud|count[7]       ; tx_shift_register:sr|tmp_data[1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.456      ;
-; -0.425 ; tx_baud_counter:baud|count[7]       ; tx_shift_register:sr|tmp_data[0] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.456      ;
-; -0.411 ; tx_baud_counter:baud|count[3]       ; tx_shift_register:sr|tmp_data[9] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.442      ;
-; -0.411 ; tx_baud_counter:baud|count[3]       ; tx_shift_register:sr|tmp_data[8] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.442      ;
-; -0.411 ; tx_baud_counter:baud|count[3]       ; tx_shift_register:sr|tmp_data[7] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.442      ;
-; -0.411 ; tx_baud_counter:baud|count[3]       ; tx_shift_register:sr|tmp_data[6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.442      ;
-; -0.411 ; tx_baud_counter:baud|count[3]       ; tx_shift_register:sr|tmp_data[5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.442      ;
-; -0.411 ; tx_baud_counter:baud|count[3]       ; tx_shift_register:sr|tmp_data[4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.442      ;
-; -0.411 ; tx_baud_counter:baud|count[3]       ; tx_shift_register:sr|tmp_data[3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.442      ;
-; -0.411 ; tx_baud_counter:baud|count[3]       ; tx_shift_register:sr|tmp_data[2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.442      ;
-; -0.411 ; tx_baud_counter:baud|count[3]       ; tx_shift_register:sr|tmp_data[1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.442      ;
-; -0.411 ; tx_baud_counter:baud|count[3]       ; tx_shift_register:sr|tmp_data[0] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.442      ;
-; -0.384 ; tx_controller:ctrl|current_state[1] ; tx_shift_register:sr|tmp_data[9] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.002     ; 1.414      ;
-; -0.384 ; tx_controller:ctrl|current_state[1] ; tx_shift_register:sr|tmp_data[8] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.002     ; 1.414      ;
-; -0.384 ; tx_controller:ctrl|current_state[1] ; tx_shift_register:sr|tmp_data[7] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.002     ; 1.414      ;
-; -0.384 ; tx_controller:ctrl|current_state[1] ; tx_shift_register:sr|tmp_data[6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.002     ; 1.414      ;
-; -0.384 ; tx_controller:ctrl|current_state[1] ; tx_shift_register:sr|tmp_data[5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.002     ; 1.414      ;
-; -0.384 ; tx_controller:ctrl|current_state[1] ; tx_shift_register:sr|tmp_data[4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.002     ; 1.414      ;
-; -0.384 ; tx_controller:ctrl|current_state[1] ; tx_shift_register:sr|tmp_data[3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.002     ; 1.414      ;
-; -0.384 ; tx_controller:ctrl|current_state[1] ; tx_shift_register:sr|tmp_data[2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.002     ; 1.414      ;
-; -0.384 ; tx_controller:ctrl|current_state[1] ; tx_shift_register:sr|tmp_data[1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.002     ; 1.414      ;
-; -0.384 ; tx_controller:ctrl|current_state[1] ; tx_shift_register:sr|tmp_data[0] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.002     ; 1.414      ;
-; -0.364 ; tx_baud_counter:baud|count[4]       ; tx_shift_register:sr|tmp_data[9] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.395      ;
-; -0.364 ; tx_baud_counter:baud|count[4]       ; tx_shift_register:sr|tmp_data[8] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.395      ;
-; -0.364 ; tx_baud_counter:baud|count[4]       ; tx_shift_register:sr|tmp_data[7] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.395      ;
-; -0.364 ; tx_baud_counter:baud|count[4]       ; tx_shift_register:sr|tmp_data[6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.395      ;
-; -0.364 ; tx_baud_counter:baud|count[4]       ; tx_shift_register:sr|tmp_data[5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.395      ;
-; -0.364 ; tx_baud_counter:baud|count[4]       ; tx_shift_register:sr|tmp_data[4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.395      ;
-; -0.364 ; tx_baud_counter:baud|count[4]       ; tx_shift_register:sr|tmp_data[3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.395      ;
-; -0.364 ; tx_baud_counter:baud|count[4]       ; tx_shift_register:sr|tmp_data[2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.395      ;
-; -0.364 ; tx_baud_counter:baud|count[4]       ; tx_shift_register:sr|tmp_data[1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.395      ;
-; -0.364 ; tx_baud_counter:baud|count[4]       ; tx_shift_register:sr|tmp_data[0] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.395      ;
+; -0.503 ; tx_baud_counter:baud|count[5]       ; tx_shift_register:sr|tmp_data[9] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.534      ;
+; -0.503 ; tx_baud_counter:baud|count[5]       ; tx_shift_register:sr|tmp_data[8] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.534      ;
+; -0.503 ; tx_baud_counter:baud|count[5]       ; tx_shift_register:sr|tmp_data[7] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.534      ;
+; -0.503 ; tx_baud_counter:baud|count[5]       ; tx_shift_register:sr|tmp_data[6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.534      ;
+; -0.503 ; tx_baud_counter:baud|count[5]       ; tx_shift_register:sr|tmp_data[5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.534      ;
+; -0.503 ; tx_baud_counter:baud|count[5]       ; tx_shift_register:sr|tmp_data[4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.534      ;
+; -0.503 ; tx_baud_counter:baud|count[5]       ; tx_shift_register:sr|tmp_data[3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.534      ;
+; -0.503 ; tx_baud_counter:baud|count[5]       ; tx_shift_register:sr|tmp_data[2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.534      ;
+; -0.503 ; tx_baud_counter:baud|count[5]       ; tx_shift_register:sr|tmp_data[1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.534      ;
+; -0.503 ; tx_baud_counter:baud|count[5]       ; tx_shift_register:sr|tmp_data[0] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.534      ;
+; -0.490 ; tx_baud_counter:baud|count[0]       ; tx_shift_register:sr|tmp_data[9] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.521      ;
+; -0.490 ; tx_baud_counter:baud|count[0]       ; tx_shift_register:sr|tmp_data[8] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.521      ;
+; -0.490 ; tx_baud_counter:baud|count[0]       ; tx_shift_register:sr|tmp_data[7] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.521      ;
+; -0.490 ; tx_baud_counter:baud|count[0]       ; tx_shift_register:sr|tmp_data[6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.521      ;
+; -0.490 ; tx_baud_counter:baud|count[0]       ; tx_shift_register:sr|tmp_data[5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.521      ;
+; -0.490 ; tx_baud_counter:baud|count[0]       ; tx_shift_register:sr|tmp_data[4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.521      ;
+; -0.490 ; tx_baud_counter:baud|count[0]       ; tx_shift_register:sr|tmp_data[3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.521      ;
+; -0.490 ; tx_baud_counter:baud|count[0]       ; tx_shift_register:sr|tmp_data[2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.521      ;
+; -0.490 ; tx_baud_counter:baud|count[0]       ; tx_shift_register:sr|tmp_data[1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.521      ;
+; -0.490 ; tx_baud_counter:baud|count[0]       ; tx_shift_register:sr|tmp_data[0] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.521      ;
+; -0.482 ; tx_baud_counter:baud|count[6]       ; tx_shift_register:sr|tmp_data[9] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.513      ;
+; -0.482 ; tx_baud_counter:baud|count[6]       ; tx_shift_register:sr|tmp_data[8] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.513      ;
+; -0.482 ; tx_baud_counter:baud|count[6]       ; tx_shift_register:sr|tmp_data[7] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.513      ;
+; -0.482 ; tx_baud_counter:baud|count[6]       ; tx_shift_register:sr|tmp_data[6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.513      ;
+; -0.482 ; tx_baud_counter:baud|count[6]       ; tx_shift_register:sr|tmp_data[5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.513      ;
+; -0.482 ; tx_baud_counter:baud|count[6]       ; tx_shift_register:sr|tmp_data[4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.513      ;
+; -0.482 ; tx_baud_counter:baud|count[6]       ; tx_shift_register:sr|tmp_data[3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.513      ;
+; -0.482 ; tx_baud_counter:baud|count[6]       ; tx_shift_register:sr|tmp_data[2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.513      ;
+; -0.482 ; tx_baud_counter:baud|count[6]       ; tx_shift_register:sr|tmp_data[1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.513      ;
+; -0.482 ; tx_baud_counter:baud|count[6]       ; tx_shift_register:sr|tmp_data[0] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.513      ;
+; -0.478 ; tx_baud_counter:baud|count[2]       ; tx_shift_register:sr|tmp_data[9] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.509      ;
+; -0.478 ; tx_baud_counter:baud|count[2]       ; tx_shift_register:sr|tmp_data[8] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.509      ;
+; -0.478 ; tx_baud_counter:baud|count[2]       ; tx_shift_register:sr|tmp_data[7] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.509      ;
+; -0.478 ; tx_baud_counter:baud|count[2]       ; tx_shift_register:sr|tmp_data[6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.509      ;
+; -0.478 ; tx_baud_counter:baud|count[2]       ; tx_shift_register:sr|tmp_data[5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.509      ;
+; -0.478 ; tx_baud_counter:baud|count[2]       ; tx_shift_register:sr|tmp_data[4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.509      ;
+; -0.478 ; tx_baud_counter:baud|count[2]       ; tx_shift_register:sr|tmp_data[3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.509      ;
+; -0.478 ; tx_baud_counter:baud|count[2]       ; tx_shift_register:sr|tmp_data[2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.509      ;
+; -0.478 ; tx_baud_counter:baud|count[2]       ; tx_shift_register:sr|tmp_data[1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.509      ;
+; -0.478 ; tx_baud_counter:baud|count[2]       ; tx_shift_register:sr|tmp_data[0] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.509      ;
+; -0.458 ; tx_baud_counter:baud|count[8]       ; tx_shift_register:sr|tmp_data[9] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.489      ;
+; -0.458 ; tx_baud_counter:baud|count[8]       ; tx_shift_register:sr|tmp_data[8] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.489      ;
+; -0.458 ; tx_baud_counter:baud|count[8]       ; tx_shift_register:sr|tmp_data[7] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.489      ;
+; -0.458 ; tx_baud_counter:baud|count[8]       ; tx_shift_register:sr|tmp_data[6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.489      ;
+; -0.458 ; tx_baud_counter:baud|count[8]       ; tx_shift_register:sr|tmp_data[5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.489      ;
+; -0.458 ; tx_baud_counter:baud|count[8]       ; tx_shift_register:sr|tmp_data[4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.489      ;
+; -0.458 ; tx_baud_counter:baud|count[8]       ; tx_shift_register:sr|tmp_data[3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.489      ;
+; -0.458 ; tx_baud_counter:baud|count[8]       ; tx_shift_register:sr|tmp_data[2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.489      ;
+; -0.458 ; tx_baud_counter:baud|count[8]       ; tx_shift_register:sr|tmp_data[1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.489      ;
+; -0.458 ; tx_baud_counter:baud|count[8]       ; tx_shift_register:sr|tmp_data[0] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.489      ;
+; -0.425 ; tx_baud_counter:baud|count[9]       ; tx_shift_register:sr|tmp_data[9] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.456      ;
+; -0.425 ; tx_baud_counter:baud|count[9]       ; tx_shift_register:sr|tmp_data[8] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.456      ;
+; -0.425 ; tx_baud_counter:baud|count[9]       ; tx_shift_register:sr|tmp_data[7] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.456      ;
+; -0.425 ; tx_baud_counter:baud|count[9]       ; tx_shift_register:sr|tmp_data[6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.456      ;
+; -0.425 ; tx_baud_counter:baud|count[9]       ; tx_shift_register:sr|tmp_data[5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.456      ;
+; -0.425 ; tx_baud_counter:baud|count[9]       ; tx_shift_register:sr|tmp_data[4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.456      ;
+; -0.425 ; tx_baud_counter:baud|count[9]       ; tx_shift_register:sr|tmp_data[3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.456      ;
+; -0.425 ; tx_baud_counter:baud|count[9]       ; tx_shift_register:sr|tmp_data[2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.456      ;
+; -0.425 ; tx_baud_counter:baud|count[9]       ; tx_shift_register:sr|tmp_data[1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.456      ;
+; -0.425 ; tx_baud_counter:baud|count[9]       ; tx_shift_register:sr|tmp_data[0] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.456      ;
+; -0.423 ; tx_baud_counter:baud|count[7]       ; tx_shift_register:sr|tmp_data[9] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.454      ;
+; -0.423 ; tx_baud_counter:baud|count[7]       ; tx_shift_register:sr|tmp_data[8] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.454      ;
+; -0.423 ; tx_baud_counter:baud|count[7]       ; tx_shift_register:sr|tmp_data[7] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.454      ;
+; -0.423 ; tx_baud_counter:baud|count[7]       ; tx_shift_register:sr|tmp_data[6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.454      ;
+; -0.423 ; tx_baud_counter:baud|count[7]       ; tx_shift_register:sr|tmp_data[5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.454      ;
+; -0.423 ; tx_baud_counter:baud|count[7]       ; tx_shift_register:sr|tmp_data[4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.454      ;
+; -0.423 ; tx_baud_counter:baud|count[7]       ; tx_shift_register:sr|tmp_data[3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.454      ;
+; -0.423 ; tx_baud_counter:baud|count[7]       ; tx_shift_register:sr|tmp_data[2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.454      ;
+; -0.423 ; tx_baud_counter:baud|count[7]       ; tx_shift_register:sr|tmp_data[1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.454      ;
+; -0.423 ; tx_baud_counter:baud|count[7]       ; tx_shift_register:sr|tmp_data[0] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.454      ;
+; -0.415 ; tx_baud_counter:baud|count[3]       ; tx_shift_register:sr|tmp_data[9] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.446      ;
+; -0.415 ; tx_baud_counter:baud|count[3]       ; tx_shift_register:sr|tmp_data[8] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.446      ;
+; -0.415 ; tx_baud_counter:baud|count[3]       ; tx_shift_register:sr|tmp_data[7] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.446      ;
+; -0.415 ; tx_baud_counter:baud|count[3]       ; tx_shift_register:sr|tmp_data[6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.446      ;
+; -0.415 ; tx_baud_counter:baud|count[3]       ; tx_shift_register:sr|tmp_data[5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.446      ;
+; -0.415 ; tx_baud_counter:baud|count[3]       ; tx_shift_register:sr|tmp_data[4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.446      ;
+; -0.415 ; tx_baud_counter:baud|count[3]       ; tx_shift_register:sr|tmp_data[3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.446      ;
+; -0.415 ; tx_baud_counter:baud|count[3]       ; tx_shift_register:sr|tmp_data[2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.446      ;
+; -0.415 ; tx_baud_counter:baud|count[3]       ; tx_shift_register:sr|tmp_data[1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.446      ;
+; -0.415 ; tx_baud_counter:baud|count[3]       ; tx_shift_register:sr|tmp_data[0] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.446      ;
+; -0.385 ; tx_controller:ctrl|current_state[1] ; tx_shift_register:sr|tmp_data[9] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.002     ; 1.415      ;
+; -0.385 ; tx_controller:ctrl|current_state[1] ; tx_shift_register:sr|tmp_data[8] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.002     ; 1.415      ;
+; -0.385 ; tx_controller:ctrl|current_state[1] ; tx_shift_register:sr|tmp_data[7] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.002     ; 1.415      ;
+; -0.385 ; tx_controller:ctrl|current_state[1] ; tx_shift_register:sr|tmp_data[6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.002     ; 1.415      ;
+; -0.385 ; tx_controller:ctrl|current_state[1] ; tx_shift_register:sr|tmp_data[5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.002     ; 1.415      ;
+; -0.385 ; tx_controller:ctrl|current_state[1] ; tx_shift_register:sr|tmp_data[4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.002     ; 1.415      ;
+; -0.385 ; tx_controller:ctrl|current_state[1] ; tx_shift_register:sr|tmp_data[3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.002     ; 1.415      ;
+; -0.385 ; tx_controller:ctrl|current_state[1] ; tx_shift_register:sr|tmp_data[2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.002     ; 1.415      ;
+; -0.385 ; tx_controller:ctrl|current_state[1] ; tx_shift_register:sr|tmp_data[1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.002     ; 1.415      ;
+; -0.385 ; tx_controller:ctrl|current_state[1] ; tx_shift_register:sr|tmp_data[0] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.002     ; 1.415      ;
+; -0.365 ; tx_baud_counter:baud|count[4]       ; tx_shift_register:sr|tmp_data[9] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.396      ;
+; -0.365 ; tx_baud_counter:baud|count[4]       ; tx_shift_register:sr|tmp_data[8] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.396      ;
+; -0.365 ; tx_baud_counter:baud|count[4]       ; tx_shift_register:sr|tmp_data[7] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.396      ;
+; -0.365 ; tx_baud_counter:baud|count[4]       ; tx_shift_register:sr|tmp_data[6] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.396      ;
+; -0.365 ; tx_baud_counter:baud|count[4]       ; tx_shift_register:sr|tmp_data[5] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.396      ;
+; -0.365 ; tx_baud_counter:baud|count[4]       ; tx_shift_register:sr|tmp_data[4] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.396      ;
+; -0.365 ; tx_baud_counter:baud|count[4]       ; tx_shift_register:sr|tmp_data[3] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.396      ;
+; -0.365 ; tx_baud_counter:baud|count[4]       ; tx_shift_register:sr|tmp_data[2] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.396      ;
+; -0.365 ; tx_baud_counter:baud|count[4]       ; tx_shift_register:sr|tmp_data[1] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.396      ;
+; -0.365 ; tx_baud_counter:baud|count[4]       ; tx_shift_register:sr|tmp_data[0] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.001     ; 1.396      ;
 +--------+-------------------------------------+----------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -814,7 +820,7 @@ No paths to report.
 ; 0.215 ; tx_counter:counter|count[3]           ; tx_counter:counter|count[3]           ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.367      ;
 ; 0.215 ; tx_controller:ctrl|current_state[0]   ; tx_controller:ctrl|current_state[0]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.367      ;
 ; 0.215 ; tx_shift_register:sr|tmp_data[10]     ; tx_shift_register:sr|tmp_data[10]     ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.367      ;
-; 0.247 ; tx_baud_counter:baud|count[10]        ; tx_baud_counter:baud|count[10]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.399      ;
+; 0.245 ; tx_baud_counter:baud|count[10]        ; tx_baud_counter:baud|count[10]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.397      ;
 ; 0.292 ; tx_shift_register:sr|tmp_data[2]      ; tx_shift_register:sr|tmp_data[1]      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.444      ;
 ; 0.299 ; tx_shift_register:sr|tmp_data[6]      ; tx_shift_register:sr|tmp_data[5]      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.451      ;
 ; 0.331 ; tx_synchroniser:synchroniser|ff2      ; tx_single_pulser:pulser|current_state ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.483      ;
@@ -822,8 +828,7 @@ No paths to report.
 ; 0.360 ; tx_baud_counter:baud|count[6]         ; tx_baud_counter:baud|count[6]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.512      ;
 ; 0.362 ; tx_shift_register:sr|tmp_data[9]      ; tx_shift_register:sr|tmp_data[8]      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.514      ;
 ; 0.362 ; tx_shift_register:sr|tmp_data[1]      ; tx_shift_register:sr|tmp_data[0]      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.514      ;
-; 0.365 ; tx_baud_counter:baud|count[8]         ; tx_baud_counter:baud|count[8]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.517      ;
-; 0.365 ; tx_baud_counter:baud|count[9]         ; tx_baud_counter:baud|count[9]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.517      ;
+; 0.363 ; tx_baud_counter:baud|count[8]         ; tx_baud_counter:baud|count[8]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.515      ;
 ; 0.376 ; tx_baud_counter:baud|count[0]         ; tx_baud_counter:baud|count[0]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.528      ;
 ; 0.377 ; tx_baud_counter:baud|count[3]         ; tx_baud_counter:baud|count[3]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.529      ;
 ; 0.377 ; tx_baud_counter:baud|count[5]         ; tx_baud_counter:baud|count[5]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.529      ;
@@ -837,22 +842,22 @@ No paths to report.
 ; 0.436 ; tx_baud_counter:baud|count[4]         ; tx_baud_counter:baud|count[4]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.588      ;
 ; 0.438 ; tx_baud_counter:baud|count[1]         ; tx_baud_counter:baud|count[1]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.590      ;
 ; 0.440 ; tx_baud_counter:baud|count[2]         ; tx_baud_counter:baud|count[2]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.592      ;
+; 0.448 ; tx_baud_counter:baud|count[9]         ; tx_baud_counter:baud|count[9]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.600      ;
 ; 0.458 ; tx_synchroniser:synchroniser|ff2      ; tx_controller:ctrl|current_state[0]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.610      ;
 ; 0.463 ; tx_single_pulser:pulser|current_state ; tx_controller:ctrl|current_state[1]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.615      ;
 ; 0.487 ; tx_single_pulser:pulser|current_state ; tx_controller:ctrl|current_state[0]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.639      ;
-; 0.496 ; tx_controller:ctrl|current_state[1]   ; tx_shift_register:sr|tmp_data[1]      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.002     ; 0.646      ;
-; 0.496 ; tx_controller:ctrl|current_state[1]   ; tx_shift_register:sr|tmp_data[0]      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.002     ; 0.646      ;
+; 0.492 ; tx_controller:ctrl|current_state[1]   ; tx_shift_register:sr|tmp_data[1]      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.002     ; 0.642      ;
+; 0.492 ; tx_controller:ctrl|current_state[1]   ; tx_shift_register:sr|tmp_data[0]      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.002     ; 0.642      ;
 ; 0.498 ; tx_baud_counter:baud|count[6]         ; tx_baud_counter:baud|count[7]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.650      ;
-; 0.503 ; tx_baud_counter:baud|count[9]         ; tx_baud_counter:baud|count[10]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.655      ;
-; 0.503 ; tx_baud_counter:baud|count[8]         ; tx_baud_counter:baud|count[9]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.655      ;
+; 0.501 ; tx_baud_counter:baud|count[8]         ; tx_baud_counter:baud|count[9]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.653      ;
 ; 0.516 ; tx_baud_counter:baud|count[0]         ; tx_baud_counter:baud|count[1]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.668      ;
 ; 0.517 ; tx_baud_counter:baud|count[5]         ; tx_baud_counter:baud|count[6]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.669      ;
 ; 0.517 ; tx_baud_counter:baud|count[3]         ; tx_baud_counter:baud|count[4]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.669      ;
 ; 0.518 ; tx_baud_counter:baud|count[7]         ; tx_baud_counter:baud|count[8]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.670      ;
-; 0.522 ; tx_synchroniser:synchroniser|ff1      ; tx_synchroniser:synchroniser|ff2      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.674      ;
+; 0.519 ; tx_synchroniser:synchroniser|ff1      ; tx_synchroniser:synchroniser|ff2      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.671      ;
 ; 0.525 ; tx_controller:ctrl|current_state[1]   ; tx_controller:ctrl|current_state[1]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.677      ;
 ; 0.533 ; tx_baud_counter:baud|count[6]         ; tx_baud_counter:baud|count[8]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.685      ;
-; 0.538 ; tx_baud_counter:baud|count[8]         ; tx_baud_counter:baud|count[10]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.690      ;
+; 0.536 ; tx_baud_counter:baud|count[8]         ; tx_baud_counter:baud|count[10]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.688      ;
 ; 0.542 ; tx_counter:counter|count[2]           ; tx_counter:counter|count[3]           ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.694      ;
 ; 0.548 ; tx_counter:counter|count[2]           ; tx_controller:ctrl|current_state[1]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.700      ;
 ; 0.551 ; tx_counter:counter|count[2]           ; tx_counter:counter|count[0]           ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.703      ;
@@ -868,13 +873,13 @@ No paths to report.
 ; 0.583 ; tx_controller:ctrl|current_state[0]   ; tx_shift_register:sr|tmp_data[10]     ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.002     ; 0.733      ;
 ; 0.587 ; tx_baud_counter:baud|count[3]         ; tx_baud_counter:baud|count[6]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.739      ;
 ; 0.587 ; tx_baud_counter:baud|count[5]         ; tx_baud_counter:baud|count[8]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.739      ;
+; 0.588 ; tx_baud_counter:baud|count[9]         ; tx_baud_counter:baud|count[10]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.740      ;
 ; 0.588 ; tx_baud_counter:baud|count[7]         ; tx_baud_counter:baud|count[10]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.740      ;
 ; 0.598 ; tx_counter:counter|count[0]           ; tx_counter:counter|count[3]           ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.750      ;
-; 0.599 ; tx_counter:counter|count[2]           ; tx_counter:counter|count[1]           ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.751      ;
 ; 0.603 ; tx_baud_counter:baud|count[6]         ; tx_baud_counter:baud|count[10]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.755      ;
 ; 0.607 ; tx_synchroniser:synchroniser|ff2      ; tx_controller:ctrl|current_state[1]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.759      ;
+; 0.609 ; tx_controller:ctrl|current_state[1]   ; tx_shift_register:sr|tmp_data[10]     ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.002     ; 0.759      ;
 ; 0.609 ; tx_baud_counter:baud|count[4]         ; tx_baud_counter:baud|count[6]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.761      ;
-; 0.613 ; tx_controller:ctrl|current_state[1]   ; tx_shift_register:sr|tmp_data[10]     ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.002     ; 0.763      ;
 ; 0.613 ; tx_counter:counter|count[0]           ; tx_controller:ctrl|current_state[1]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.765      ;
 ; 0.618 ; tx_counter:counter|count[0]           ; tx_counter:counter|count[2]           ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.770      ;
 ; 0.622 ; tx_baud_counter:baud|count[3]         ; tx_baud_counter:baud|count[7]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.774      ;
@@ -899,7 +904,6 @@ No paths to report.
 ; 0.678 ; tx_controller:ctrl|current_state[0]   ; tx_shift_register:sr|tmp_data[3]      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.002     ; 0.828      ;
 ; 0.679 ; tx_baud_counter:baud|count[4]         ; tx_baud_counter:baud|count[8]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.831      ;
 ; 0.680 ; tx_baud_counter:baud|count[0]         ; tx_baud_counter:baud|count[4]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.832      ;
-; 0.690 ; tx_counter:counter|count[1]           ; tx_counter:counter|count[2]           ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.842      ;
 ; 0.692 ; tx_baud_counter:baud|count[3]         ; tx_baud_counter:baud|count[9]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.844      ;
 ; 0.704 ; tx_baud_counter:baud|count[2]         ; tx_baud_counter:baud|count[5]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.856      ;
 ; 0.705 ; tx_baud_counter:baud|count[1]         ; tx_baud_counter:baud|count[4]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.857      ;
@@ -908,6 +912,8 @@ No paths to report.
 ; 0.715 ; tx_baud_counter:baud|count[0]         ; tx_baud_counter:baud|count[5]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.867      ;
 ; 0.727 ; tx_baud_counter:baud|count[3]         ; tx_baud_counter:baud|count[10]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.879      ;
 ; 0.739 ; tx_baud_counter:baud|count[2]         ; tx_baud_counter:baud|count[6]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.891      ;
+; 0.740 ; tx_baud_counter:baud|count[1]         ; tx_baud_counter:baud|count[5]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.892      ;
+; 0.741 ; tx_controller:ctrl|current_state[1]   ; tx_shift_register:sr|tmp_data[6]      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.002     ; 0.891      ;
 +-------+---------------------------------------+---------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -1025,7 +1031,7 @@ No paths to report.
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
 ; KEY[*]    ; CLOCK_50   ; 2.898 ; 2.898 ; Rise       ; CLOCK_50        ;
-;  KEY[0]   ; CLOCK_50   ; 2.877 ; 2.877 ; Rise       ; CLOCK_50        ;
+;  KEY[0]   ; CLOCK_50   ; 2.882 ; 2.882 ; Rise       ; CLOCK_50        ;
 ;  KEY[3]   ; CLOCK_50   ; 2.898 ; 2.898 ; Rise       ; CLOCK_50        ;
 ; SW[*]     ; CLOCK_50   ; 0.524 ; 0.524 ; Rise       ; CLOCK_50        ;
 ;  SW[2]    ; CLOCK_50   ; 0.077 ; 0.077 ; Rise       ; CLOCK_50        ;
@@ -1043,8 +1049,8 @@ No paths to report.
 +-----------+------------+--------+--------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------+------------+--------+--------+------------+-----------------+
-; KEY[*]    ; CLOCK_50   ; -2.187 ; -2.187 ; Rise       ; CLOCK_50        ;
-;  KEY[0]   ; CLOCK_50   ; -2.187 ; -2.187 ; Rise       ; CLOCK_50        ;
+; KEY[*]    ; CLOCK_50   ; -2.181 ; -2.181 ; Rise       ; CLOCK_50        ;
+;  KEY[0]   ; CLOCK_50   ; -2.181 ; -2.181 ; Rise       ; CLOCK_50        ;
 ;  KEY[3]   ; CLOCK_50   ; -2.778 ; -2.778 ; Rise       ; CLOCK_50        ;
 ; SW[*]     ; CLOCK_50   ; 0.371  ; 0.371  ; Rise       ; CLOCK_50        ;
 ;  SW[2]    ; CLOCK_50   ; 0.371  ; 0.371  ; Rise       ; CLOCK_50        ;
@@ -1200,10 +1206,10 @@ No paths to report.
 +------------------+---------+-------+----------+---------+---------------------+
 ; Clock            ; Setup   ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +------------------+---------+-------+----------+---------+---------------------+
-; Worst-case Slack ; -2.132  ; 0.215 ; N/A      ; N/A     ; -1.380              ;
-;  CLOCK_50        ; -2.132  ; 0.215 ; N/A      ; N/A     ; -1.380              ;
-; Design-wide TNS  ; -47.233 ; 0.0   ; 0.0      ; 0.0     ; -32.38              ;
-;  CLOCK_50        ; -47.233 ; 0.000 ; N/A      ; N/A     ; -32.380             ;
+; Worst-case Slack ; -2.135  ; 0.215 ; N/A      ; N/A     ; -1.380              ;
+;  CLOCK_50        ; -2.135  ; 0.215 ; N/A      ; N/A     ; -1.380              ;
+; Design-wide TNS  ; -47.368 ; 0.0   ; 0.0      ; 0.0     ; -32.38              ;
+;  CLOCK_50        ; -47.368 ; 0.000 ; N/A      ; N/A     ; -32.380             ;
 +------------------+---------+-------+----------+---------+---------------------+
 
 
@@ -1213,7 +1219,7 @@ No paths to report.
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
 ; KEY[*]    ; CLOCK_50   ; 5.554 ; 5.554 ; Rise       ; CLOCK_50        ;
-;  KEY[0]   ; CLOCK_50   ; 5.350 ; 5.350 ; Rise       ; CLOCK_50        ;
+;  KEY[0]   ; CLOCK_50   ; 5.358 ; 5.358 ; Rise       ; CLOCK_50        ;
 ;  KEY[3]   ; CLOCK_50   ; 5.554 ; 5.554 ; Rise       ; CLOCK_50        ;
 ; SW[*]     ; CLOCK_50   ; 1.802 ; 1.802 ; Rise       ; CLOCK_50        ;
 ;  SW[2]    ; CLOCK_50   ; 0.934 ; 0.934 ; Rise       ; CLOCK_50        ;
@@ -1231,8 +1237,8 @@ No paths to report.
 +-----------+------------+--------+--------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------+------------+--------+--------+------------+-----------------+
-; KEY[*]    ; CLOCK_50   ; -2.187 ; -2.187 ; Rise       ; CLOCK_50        ;
-;  KEY[0]   ; CLOCK_50   ; -2.187 ; -2.187 ; Rise       ; CLOCK_50        ;
+; KEY[*]    ; CLOCK_50   ; -2.181 ; -2.181 ; Rise       ; CLOCK_50        ;
+;  KEY[0]   ; CLOCK_50   ; -2.181 ; -2.181 ; Rise       ; CLOCK_50        ;
 ;  KEY[3]   ; CLOCK_50   ; -2.778 ; -2.778 ; Rise       ; CLOCK_50        ;
 ; SW[*]     ; CLOCK_50   ; 0.371  ; 0.371  ; Rise       ; CLOCK_50        ;
 ;  SW[2]    ; CLOCK_50   ; 0.371  ; 0.371  ; Rise       ; CLOCK_50        ;
@@ -1434,11 +1440,11 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 +------------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
-    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Nov 23 20:51:10 2023
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+    Info: Processing started: Fri Nov 24 16:21:28 2023
 Info: Command: quartus_sta tx_uart -c tx_uart
 Info: qsta_default_script.tcl version: #1
-Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (11104): Parallel Compilation has detected 16 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 8 of the 8 physical processors detected instead.
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'tx_uart.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
@@ -1448,10 +1454,10 @@ Info (332105): Deriving Clocks
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow Model
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -2.132
+Info (332146): Worst-case setup slack is -2.135
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -2.132       -47.233 CLOCK_50 
+    Info (332119):    -2.135       -47.368 CLOCK_50 
 Info (332146): Worst-case hold slack is 0.391
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
@@ -1465,10 +1471,10 @@ Info (332146): Worst-case minimum pulse width slack is -1.380
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info: Analyzing Fast Model
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -0.509
+Info (332146): Worst-case setup slack is -0.503
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -0.509        -7.631 CLOCK_50 
+    Info (332119):    -0.503        -7.415 CLOCK_50 
 Info (332146): Worst-case hold slack is 0.215
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
@@ -1482,10 +1488,10 @@ Info (332146): Worst-case minimum pulse width slack is -1.380
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4539 megabytes
-    Info: Processing ended: Thu Nov 23 20:51:11 2023
-    Info: Elapsed time: 00:00:01
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4586 megabytes
+    Info: Processing ended: Fri Nov 24 16:21:30 2023
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 

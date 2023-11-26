@@ -4,78 +4,78 @@ K3
 cModel Technology
 Z0 dC:\Users\Adam\Documents\git-repos\ELEC473_assignment1\tx_shift_register\simulation\qsim
 vtx_shift_register
-Z1 IlIRYRSCT9S9UK9][=UFHD0
-Z2 VVTzZ_HJH6IA2@cUPf2;<Z2
-Z3 dM:\ELEC473\projects\ELEC473_assignment1\tx_shift_register\simulation\qsim
-Z4 w1700747405
-Z5 8tx_shift_register.vo
-Z6 Ftx_shift_register.vo
+Z1 !s100 Qf4cPNX[EjICPjVN_]7YK0
+Z2 IGWV[QL[fa6jSGl1YM6OT30
+Z3 VVTzZ_HJH6IA2@cUPf2;<Z2
+Z4 dC:\Users\Adam\Documents\git-repos\ELEC473_assignment1\tx_shift_register\simulation\qsim
+Z5 w1701009744
+Z6 8tx_shift_register.vo
+Z7 Ftx_shift_register.vo
 L0 31
-Z7 OV;L;10.1d;51
+Z8 OV;L;10.1d;51
 r1
 31
-Z8 !s90 -work|work|tx_shift_register.vo|
-Z9 o-work work -O0
+Z9 !s90 -work|work|tx_shift_register.vo|
+Z10 o-work work -O0
 !i10b 1
-Z10 !s100 AFGg9_lUQO78EeJ_95H0Q2
 !s85 0
-Z11 !s108 1700747405.833000
+Z11 !s108 1701009745.393000
 Z12 !s107 tx_shift_register.vo|
 !s101 -O0
 vtx_shift_register_vlg_check_tst
 !i10b 1
-Z13 !s100 2[3e2J5IJg9YFk>D<_jPl3
-Z14 InlNc;gRXb;l3@oXik>o8`1
-Z15 Ve`F8>2n9iCi9G8zXYVagO0
-R3
-Z16 w1700747404
-Z17 8tx_shift_register.vt
-Z18 Ftx_shift_register.vt
+!s100 j0>VHKVA?o59^Q>=U7=kh2
+Ie`HYL@jTf=U;FREf3`TWm0
+Z13 Ve`F8>2n9iCi9G8zXYVagO0
+R4
+Z14 w1701009743
+Z15 8tx_shift_register.vt
+Z16 Ftx_shift_register.vt
 L0 65
-R7
+R8
 r1
 !s85 0
 31
-Z19 !s108 1700747406.031000
-Z20 !s107 tx_shift_register.vt|
-Z21 !s90 -work|work|tx_shift_register.vt|
+Z17 !s108 1701009745.484000
+Z18 !s107 tx_shift_register.vt|
+Z19 !s90 -work|work|tx_shift_register.vt|
 !s101 -O0
-R9
+R10
 vtx_shift_register_vlg_sample_tst
 !i10b 1
-Z22 !s100 BG^b:hm6m1HCFcl1Sz_353
-Z23 IzP@jk1_`_`jda9BZWD7H`3
-Z24 VGQnd7REIDJe:f_GG_<@H[3
-R3
+Z20 !s100 BG^b:hm6m1HCFcl1Sz_353
+Z21 IzP@jk1_`_`jda9BZWD7H`3
+Z22 VGQnd7REIDJe:f_GG_<@H[3
+R4
+R14
+R15
 R16
-R17
-R18
 L0 29
-R7
+R8
 r1
 !s85 0
 31
+R17
+R18
 R19
-R20
-R21
 !s101 -O0
-R9
+R10
 vtx_shift_register_vlg_vec_tst
 !i10b 1
-Z25 !s100 ZLe2ik]O?V4:zKQ7la3zb1
-Z26 InTG<cPhTPcVFzaTO1<:=;1
-Z27 V:iX9IKcbRI9ZlGdU<@PDz0
-R3
+!s100 3cfA3QZ56aHni0GDH6BGI1
+IXbO8cFCk<5^l?ii=3>Ulo1
+Z23 V:iX9IKcbRI9ZlGdU<@PDz0
+R4
+R14
+R15
 R16
-R17
-R18
-Z28 L0 161
-R7
+Z24 L0 161
+R8
 r1
 !s85 0
 31
+R17
+R18
 R19
-R20
-R21
 !s101 -O0
-R9
+R10

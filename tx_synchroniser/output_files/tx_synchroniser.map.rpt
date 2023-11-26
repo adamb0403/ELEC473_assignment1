@@ -1,5 +1,5 @@
 Analysis & Synthesis report for tx_synchroniser
-Thu Nov 23 20:17:21 2023
+Sun Nov 26 13:39:11 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -14,8 +14,9 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Elapsed Time Per Partition
- 10. Analysis & Synthesis Messages
+  9. Inverted Register Statistics
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -41,16 +42,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov 23 20:17:21 2023           ;
+; Analysis & Synthesis Status        ; Successful - Sun Nov 26 13:39:11 2023           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; tx_synchroniser                                 ;
 ; Top-level Entity Name              ; tx_synchroniser                                 ;
 ; Family                             ; Cyclone IV GX                                   ;
 ; Total logic elements               ; 2                                               ;
-;     Total combinational functions  ; 0                                               ;
+;     Total combinational functions  ; 1                                               ;
 ;     Dedicated logic registers      ; 2                                               ;
 ; Total registers                    ; 2                                               ;
-; Total pins                         ; 4                                               ;
+; Total pins                         ; 3                                               ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -173,12 +174,12 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------+------------------+
 ; Resource                 ; Usage            ;
 +--------------------------+------------------+
-; I/O pins                 ; 4                ;
+; I/O pins                 ; 3                ;
 ; DSP block 9-bit elements ; 0                ;
 ; Maximum fan-out node     ; clk~input        ;
 ; Maximum fan-out          ; 2                ;
 ; Total fan-out            ; 9                ;
-; Average fan-out          ; 0.90             ;
+; Average fan-out          ; 1.00             ;
 +--------------------------+------------------+
 
 
@@ -187,7 +188,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
-; |tx_synchroniser           ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 4    ; 0            ; |tx_synchroniser    ; work         ;
+; |tx_synchroniser           ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 3    ; 0            ; |tx_synchroniser    ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -207,6 +208,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; ff2                                    ; 1       ;
+; ff1                                    ; 1       ;
+; Total number of inverted registers = 2 ;         ;
++----------------------------------------+---------+
+
+
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
@@ -222,7 +234,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Nov 23 20:17:19 2023
+    Info: Processing started: Sun Nov 26 13:39:09 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off tx_synchroniser -c tx_synchroniser
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file tx_synchroniser.v
@@ -231,16 +243,14 @@ Info (12127): Elaborating entity "tx_synchroniser" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "reset"
-Info (21057): Implemented 6 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 3 input pins
+Info (21057): Implemented 5 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
     Info (21059): Implemented 1 output pins
     Info (21061): Implemented 2 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 3 warnings
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4642 megabytes
-    Info: Processing ended: Thu Nov 23 20:17:21 2023
+    Info: Processing ended: Sun Nov 26 13:39:11 2023
     Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
 
 

@@ -62,16 +62,6 @@ SIGNAL("key_out")
 	PARENT = "";
 }
 
-SIGNAL("reset")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
 TRANSITION_LIST("clk")
 {
 	NODE
@@ -114,15 +104,6 @@ TRANSITION_LIST("key_out")
 	}
 }
 
-TRANSITION_LIST("reset")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-
 DISPLAY_LINE
 {
 	CHANNEL = "clk";
@@ -134,7 +115,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "reset";
+	CHANNEL = "key_in";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1;
@@ -143,19 +124,10 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "key_in";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 2;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
 	CHANNEL = "key_out";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 3;
+	TREE_INDEX = 2;
 	TREE_LEVEL = 0;
 }
 

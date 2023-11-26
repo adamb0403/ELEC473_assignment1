@@ -14,15 +14,6 @@
 # Top level modules:
 # 	tx_shift_register_vlg_vec_tst
 # vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.tx_shift_register_vlg_vec_tst 
-# //  ModelSim ALTERA 10.1d Nov  2 2012 
-# //
-# //  Copyright 1991-2012 Mentor Graphics Corporation
-# //  All Rights Reserved.
-# //
-# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
-# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
-# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
-# //
 # Loading work.tx_shift_register_vlg_vec_tst
 # Loading work.tx_shift_register
 # Loading cycloneii_ver.cycloneii_io
@@ -37,6 +28,9 @@
 # Loading work.tx_shift_register_vlg_sample_tst
 # Loading work.tx_shift_register_vlg_check_tst
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
-# Simulation passed !
+# ERROR! Vector Mismatch for output port tx_sr_out :: @time = 1000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+#           1 mismatched vectors : Simulation failed !
 # ** Note: $finish    : tx_shift_register.vt(157)
-#    Time: 400 ns  Iteration: 0  Instance: /tx_shift_register_vlg_vec_tst/tb_out
+#    Time: 1200 ns  Iteration: 0  Instance: /tx_shift_register_vlg_vec_tst/tb_out

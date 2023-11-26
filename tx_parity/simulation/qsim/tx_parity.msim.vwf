@@ -112,6 +112,16 @@ SIGNAL("tx_parity_vlg_vec_tst|parity_in[0]")
 	PARENT = "tx_parity_vlg_vec_tst|parity_in";
 }
 
+SIGNAL("tx_parity_vlg_vec_tst|parity_out[10]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
 SIGNAL("tx_parity_vlg_vec_tst|parity_out[9]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -377,7 +387,10 @@ TRANSITION_LIST("tx_parity_vlg_vec_tst|parity_in[6]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 180.0;
+		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 580.0;
 	}
 }
 
@@ -386,7 +399,8 @@ TRANSITION_LIST("tx_parity_vlg_vec_tst|parity_in[5]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 420.0;
+		LEVEL 1 FOR 580.0;
 	}
 }
 
@@ -395,7 +409,9 @@ TRANSITION_LIST("tx_parity_vlg_vec_tst|parity_in[4]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 420.0;
+		LEVEL 1 FOR 140.0;
+		LEVEL 0 FOR 440.0;
 	}
 }
 
@@ -404,7 +420,9 @@ TRANSITION_LIST("tx_parity_vlg_vec_tst|parity_in[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 340.0;
+		LEVEL 1 FOR 580.0;
 	}
 }
 
@@ -413,7 +431,10 @@ TRANSITION_LIST("tx_parity_vlg_vec_tst|parity_in[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 340.0;
+		LEVEL 1 FOR 140.0;
+		LEVEL 0 FOR 440.0;
 	}
 }
 
@@ -422,11 +443,24 @@ TRANSITION_LIST("tx_parity_vlg_vec_tst|parity_in[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 420.0;
+		LEVEL 1 FOR 140.0;
+		LEVEL 0 FOR 440.0;
 	}
 }
 
 TRANSITION_LIST("tx_parity_vlg_vec_tst|parity_in[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 260.0;
+		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 580.0;
+	}
+}
+
+TRANSITION_LIST("tx_parity_vlg_vec_tst|parity_out[10]")
 {
 	NODE
 	{
@@ -440,7 +474,10 @@ TRANSITION_LIST("tx_parity_vlg_vec_tst|parity_out[9]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 340.0;
+		LEVEL 0 FOR 140.0;
+		LEVEL 1 FOR 440.0;
 	}
 }
 
@@ -449,7 +486,10 @@ TRANSITION_LIST("tx_parity_vlg_vec_tst|parity_out[8]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 180.0;
+		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 580.0;
 	}
 }
 
@@ -458,7 +498,8 @@ TRANSITION_LIST("tx_parity_vlg_vec_tst|parity_out[7]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 420.0;
+		LEVEL 1 FOR 580.0;
 	}
 }
 
@@ -467,7 +508,9 @@ TRANSITION_LIST("tx_parity_vlg_vec_tst|parity_out[6]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 420.0;
+		LEVEL 1 FOR 140.0;
+		LEVEL 0 FOR 440.0;
 	}
 }
 
@@ -476,7 +519,9 @@ TRANSITION_LIST("tx_parity_vlg_vec_tst|parity_out[5]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 340.0;
+		LEVEL 1 FOR 580.0;
 	}
 }
 
@@ -485,7 +530,10 @@ TRANSITION_LIST("tx_parity_vlg_vec_tst|parity_out[4]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 340.0;
+		LEVEL 1 FOR 140.0;
+		LEVEL 0 FOR 440.0;
 	}
 }
 
@@ -494,7 +542,9 @@ TRANSITION_LIST("tx_parity_vlg_vec_tst|parity_out[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 420.0;
+		LEVEL 1 FOR 140.0;
+		LEVEL 0 FOR 440.0;
 	}
 }
 
@@ -503,7 +553,9 @@ TRANSITION_LIST("tx_parity_vlg_vec_tst|parity_out[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 1 FOR 260.0;
+		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 580.0;
 	}
 }
 
@@ -512,7 +564,7 @@ TRANSITION_LIST("tx_parity_vlg_vec_tst|parity_out[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -521,7 +573,7 @@ TRANSITION_LIST("tx_parity_vlg_vec_tst|parity_out[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -530,7 +582,11 @@ TRANSITION_LIST("tx_parity_vlg_vec_tst|sampler")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL X FOR 80.0;
+		LEVEL 0 FOR 180.0;
+		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 140.0;
+		LEVEL 1 FOR 440.0;
 	}
 }
 
@@ -593,7 +649,8 @@ TRANSITION_LIST("tx_parity_vlg_vec_tst|i1|WideXnor0~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 260.0;
+		LEVEL 0 FOR 740.0;
 	}
 }
 
@@ -602,7 +659,10 @@ TRANSITION_LIST("tx_parity_vlg_vec_tst|i1|WideXnor0~combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 340.0;
+		LEVEL 1 FOR 140.0;
+		LEVEL 0 FOR 440.0;
 	}
 }
 
@@ -611,7 +671,10 @@ TRANSITION_LIST("tx_parity_vlg_vec_tst|i1|parity_in~combout[6]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 180.0;
+		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 580.0;
 	}
 }
 
@@ -620,7 +683,8 @@ TRANSITION_LIST("tx_parity_vlg_vec_tst|i1|parity_in~combout[5]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 420.0;
+		LEVEL 1 FOR 580.0;
 	}
 }
 
@@ -629,7 +693,9 @@ TRANSITION_LIST("tx_parity_vlg_vec_tst|i1|parity_in~combout[4]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 420.0;
+		LEVEL 1 FOR 140.0;
+		LEVEL 0 FOR 440.0;
 	}
 }
 
@@ -638,7 +704,9 @@ TRANSITION_LIST("tx_parity_vlg_vec_tst|i1|parity_in~combout[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 340.0;
+		LEVEL 1 FOR 580.0;
 	}
 }
 
@@ -647,7 +715,10 @@ TRANSITION_LIST("tx_parity_vlg_vec_tst|i1|parity_in~combout[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 340.0;
+		LEVEL 1 FOR 140.0;
+		LEVEL 0 FOR 440.0;
 	}
 }
 
@@ -656,7 +727,9 @@ TRANSITION_LIST("tx_parity_vlg_vec_tst|i1|parity_in~combout[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 420.0;
+		LEVEL 1 FOR 140.0;
+		LEVEL 0 FOR 440.0;
 	}
 }
 
@@ -665,7 +738,9 @@ TRANSITION_LIST("tx_parity_vlg_vec_tst|i1|parity_in~combout[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 1 FOR 260.0;
+		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 580.0;
 	}
 }
 
@@ -751,7 +826,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_parity_vlg_vec_tst|parity_out[9]";
+	CHANNEL = "tx_parity_vlg_vec_tst|parity_out[10]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 8;
@@ -760,7 +835,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_parity_vlg_vec_tst|parity_out[8]";
+	CHANNEL = "tx_parity_vlg_vec_tst|parity_out[9]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 9;
@@ -769,7 +844,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_parity_vlg_vec_tst|parity_out[7]";
+	CHANNEL = "tx_parity_vlg_vec_tst|parity_out[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 10;
@@ -778,7 +853,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_parity_vlg_vec_tst|parity_out[6]";
+	CHANNEL = "tx_parity_vlg_vec_tst|parity_out[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 11;
@@ -787,7 +862,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_parity_vlg_vec_tst|parity_out[5]";
+	CHANNEL = "tx_parity_vlg_vec_tst|parity_out[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 12;
@@ -796,7 +871,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_parity_vlg_vec_tst|parity_out[4]";
+	CHANNEL = "tx_parity_vlg_vec_tst|parity_out[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 13;
@@ -805,7 +880,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_parity_vlg_vec_tst|parity_out[3]";
+	CHANNEL = "tx_parity_vlg_vec_tst|parity_out[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 14;
@@ -814,7 +889,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_parity_vlg_vec_tst|parity_out[2]";
+	CHANNEL = "tx_parity_vlg_vec_tst|parity_out[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 15;
@@ -823,7 +898,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_parity_vlg_vec_tst|parity_out[1]";
+	CHANNEL = "tx_parity_vlg_vec_tst|parity_out[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 16;
@@ -832,7 +907,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_parity_vlg_vec_tst|parity_out[0]";
+	CHANNEL = "tx_parity_vlg_vec_tst|parity_out[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 17;
@@ -841,7 +916,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_parity_vlg_vec_tst|sampler";
+	CHANNEL = "tx_parity_vlg_vec_tst|parity_out[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 18;
@@ -850,7 +925,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_parity_vlg_vec_tst|i1|gnd";
+	CHANNEL = "tx_parity_vlg_vec_tst|sampler";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 19;
@@ -859,7 +934,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_parity_vlg_vec_tst|i1|vcc";
+	CHANNEL = "tx_parity_vlg_vec_tst|i1|gnd";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 20;
@@ -868,7 +943,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_parity_vlg_vec_tst|i1|unknown";
+	CHANNEL = "tx_parity_vlg_vec_tst|i1|vcc";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 21;
@@ -877,7 +952,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_parity_vlg_vec_tst|i1|devclrn";
+	CHANNEL = "tx_parity_vlg_vec_tst|i1|unknown";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 22;
@@ -886,7 +961,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_parity_vlg_vec_tst|i1|devpor";
+	CHANNEL = "tx_parity_vlg_vec_tst|i1|devclrn";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 23;
@@ -895,7 +970,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_parity_vlg_vec_tst|i1|devoe";
+	CHANNEL = "tx_parity_vlg_vec_tst|i1|devpor";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 24;
@@ -904,7 +979,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_parity_vlg_vec_tst|i1|WideXnor0~0_combout";
+	CHANNEL = "tx_parity_vlg_vec_tst|i1|devoe";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 25;
@@ -913,7 +988,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_parity_vlg_vec_tst|i1|WideXnor0~combout";
+	CHANNEL = "tx_parity_vlg_vec_tst|i1|WideXnor0~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 26;
@@ -922,7 +997,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_parity_vlg_vec_tst|i1|parity_in~combout[6]";
+	CHANNEL = "tx_parity_vlg_vec_tst|i1|WideXnor0~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 27;
@@ -931,7 +1006,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_parity_vlg_vec_tst|i1|parity_in~combout[5]";
+	CHANNEL = "tx_parity_vlg_vec_tst|i1|parity_in~combout[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 28;
@@ -940,7 +1015,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_parity_vlg_vec_tst|i1|parity_in~combout[4]";
+	CHANNEL = "tx_parity_vlg_vec_tst|i1|parity_in~combout[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 29;
@@ -949,7 +1024,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_parity_vlg_vec_tst|i1|parity_in~combout[3]";
+	CHANNEL = "tx_parity_vlg_vec_tst|i1|parity_in~combout[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 30;
@@ -958,7 +1033,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_parity_vlg_vec_tst|i1|parity_in~combout[2]";
+	CHANNEL = "tx_parity_vlg_vec_tst|i1|parity_in~combout[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 31;
@@ -967,7 +1042,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_parity_vlg_vec_tst|i1|parity_in~combout[1]";
+	CHANNEL = "tx_parity_vlg_vec_tst|i1|parity_in~combout[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 32;
@@ -976,10 +1051,19 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_parity_vlg_vec_tst|i1|parity_in~combout[0]";
+	CHANNEL = "tx_parity_vlg_vec_tst|i1|parity_in~combout[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 33;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "tx_parity_vlg_vec_tst|i1|parity_in~combout[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 34;
 	TREE_LEVEL = 0;
 }
 ;

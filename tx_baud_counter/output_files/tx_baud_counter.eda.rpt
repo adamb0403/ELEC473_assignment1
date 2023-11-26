@@ -1,6 +1,6 @@
 EDA Netlist Writer report for tx_baud_counter
-Tue Nov 21 10:25:34 2023
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+Sun Nov 26 14:07:52 2023
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Nov 21 10:25:34 2023 ;
+; EDA Netlist Writer Status ; Successful - Sun Nov 26 14:07:52 2023 ;
 ; Revision Name             ; tx_baud_counter                       ;
 ; Top-level Entity Name     ; tx_baud_counter                       ;
 ; Family                    ; Cyclone II                            ;
@@ -65,13 +65,13 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                     ;
-+------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                ;
-+------------------------------------------------------------------------------------------------+
-; M:/ELEC473/projects/ELEC473_assignment1/tx_baud_counter/simulation/modelsim/tx_baud_counter.vo ;
-+------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                                   ;
++--------------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                              ;
++--------------------------------------------------------------------------------------------------------------+
+; C:/Users/Adam/Documents/git-repos/ELEC473_assignment1/tx_baud_counter/simulation/modelsim/tx_baud_counter.vo ;
++--------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -79,14 +79,14 @@ applicable agreement for further details.
 +-----------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
-    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Tue Nov 21 10:25:33 2023
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sun Nov 26 14:07:52 2023
 Info: Command: quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog tx_baud_counter -c tx_baud_counter
-Info (204019): Generated file tx_baud_counter.vo in folder "M:/ELEC473/projects/ELEC473_assignment1/tx_baud_counter/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file tx_baud_counter.vo in folder "C:/Users/Adam/Documents/git-repos/ELEC473_assignment1/tx_baud_counter/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4524 megabytes
-    Info: Processing ended: Tue Nov 21 10:25:34 2023
+    Info: Peak virtual memory: 4515 megabytes
+    Info: Processing ended: Sun Nov 26 14:07:53 2023
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
 
 

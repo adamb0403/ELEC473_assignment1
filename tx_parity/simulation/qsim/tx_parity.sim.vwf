@@ -119,7 +119,7 @@ SIGNAL("parity_out")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = BUS;
-	WIDTH = 10;
+	WIDTH = 11;
 	LSB_INDEX = 0;
 	DIRECTION = OUTPUT;
 	PARENT = "";
@@ -225,12 +225,25 @@ SIGNAL("parity_out[0]")
 	PARENT = "parity_out";
 }
 
+SIGNAL("parity_out[10]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "parity_out";
+}
+
 TRANSITION_LIST("parity_in[6]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 180.0;
+		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 580.0;
 	}
 }
 TRANSITION_LIST("parity_in[5]")
@@ -238,7 +251,8 @@ TRANSITION_LIST("parity_in[5]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 420.0;
+		LEVEL 1 FOR 580.0;
 	}
 }
 TRANSITION_LIST("parity_in[4]")
@@ -246,7 +260,9 @@ TRANSITION_LIST("parity_in[4]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 420.0;
+		LEVEL 1 FOR 140.0;
+		LEVEL 0 FOR 440.0;
 	}
 }
 TRANSITION_LIST("parity_in[3]")
@@ -254,7 +270,9 @@ TRANSITION_LIST("parity_in[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 340.0;
+		LEVEL 1 FOR 580.0;
 	}
 }
 TRANSITION_LIST("parity_in[2]")
@@ -262,7 +280,10 @@ TRANSITION_LIST("parity_in[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 340.0;
+		LEVEL 1 FOR 140.0;
+		LEVEL 0 FOR 440.0;
 	}
 }
 TRANSITION_LIST("parity_in[1]")
@@ -270,7 +291,9 @@ TRANSITION_LIST("parity_in[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 420.0;
+		LEVEL 1 FOR 140.0;
+		LEVEL 0 FOR 440.0;
 	}
 }
 TRANSITION_LIST("parity_in[0]")
@@ -278,7 +301,9 @@ TRANSITION_LIST("parity_in[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 1 FOR 260.0;
+		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 580.0;
 	}
 }
 TRANSITION_LIST("parity_out[9]")
@@ -286,7 +311,10 @@ TRANSITION_LIST("parity_out[9]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 340.0;
+		LEVEL 0 FOR 140.0;
+		LEVEL 1 FOR 440.0;
 	}
 }
 TRANSITION_LIST("parity_out[8]")
@@ -294,7 +322,10 @@ TRANSITION_LIST("parity_out[8]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 180.0;
+		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 580.0;
 	}
 }
 TRANSITION_LIST("parity_out[7]")
@@ -302,7 +333,8 @@ TRANSITION_LIST("parity_out[7]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 420.0;
+		LEVEL 1 FOR 580.0;
 	}
 }
 TRANSITION_LIST("parity_out[6]")
@@ -310,7 +342,9 @@ TRANSITION_LIST("parity_out[6]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 420.0;
+		LEVEL 1 FOR 140.0;
+		LEVEL 0 FOR 440.0;
 	}
 }
 TRANSITION_LIST("parity_out[5]")
@@ -318,7 +352,9 @@ TRANSITION_LIST("parity_out[5]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 340.0;
+		LEVEL 1 FOR 580.0;
 	}
 }
 TRANSITION_LIST("parity_out[4]")
@@ -326,7 +362,10 @@ TRANSITION_LIST("parity_out[4]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 340.0;
+		LEVEL 1 FOR 140.0;
+		LEVEL 0 FOR 440.0;
 	}
 }
 TRANSITION_LIST("parity_out[3]")
@@ -334,7 +373,9 @@ TRANSITION_LIST("parity_out[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 420.0;
+		LEVEL 1 FOR 140.0;
+		LEVEL 0 FOR 440.0;
 	}
 }
 TRANSITION_LIST("parity_out[2]")
@@ -342,7 +383,9 @@ TRANSITION_LIST("parity_out[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 1 FOR 260.0;
+		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 580.0;
 	}
 }
 TRANSITION_LIST("parity_out[1]")
@@ -350,7 +393,7 @@ TRANSITION_LIST("parity_out[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 TRANSITION_LIST("parity_out[0]")
@@ -358,7 +401,15 @@ TRANSITION_LIST("parity_out[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("parity_out[10]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -450,12 +501,12 @@ DISPLAY_LINE
 	RADIX = Binary;
 	TREE_INDEX = 8;
 	TREE_LEVEL = 0;
-	CHILDREN = 9, 10, 11, 12, 13, 14, 15, 16, 17, 18;
+	CHILDREN = 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "parity_out[9]";
+	CHANNEL = "parity_out[10]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 9;
@@ -465,7 +516,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "parity_out[8]";
+	CHANNEL = "parity_out[9]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 10;
@@ -475,7 +526,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "parity_out[7]";
+	CHANNEL = "parity_out[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 11;
@@ -485,7 +536,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "parity_out[6]";
+	CHANNEL = "parity_out[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 12;
@@ -495,7 +546,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "parity_out[5]";
+	CHANNEL = "parity_out[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 13;
@@ -505,7 +556,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "parity_out[4]";
+	CHANNEL = "parity_out[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 14;
@@ -515,7 +566,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "parity_out[3]";
+	CHANNEL = "parity_out[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 15;
@@ -525,7 +576,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "parity_out[2]";
+	CHANNEL = "parity_out[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 16;
@@ -535,7 +586,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "parity_out[1]";
+	CHANNEL = "parity_out[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 17;
@@ -545,10 +596,20 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "parity_out[0]";
+	CHANNEL = "parity_out[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 18;
+	TREE_LEVEL = 1;
+	PARENT = 8;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "parity_out[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 19;
 	TREE_LEVEL = 1;
 	PARENT = 8;
 }

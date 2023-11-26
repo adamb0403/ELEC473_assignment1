@@ -35,56 +35,6 @@ HEADER
 
 
 
-SIGNAL("seven_seg_input")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = BUS;
-	WIDTH = 4;
-	LSB_INDEX = 0;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("seven_seg_input[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "seven_seg_input";
-}
-
-SIGNAL("seven_seg_input[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "seven_seg_input";
-}
-
-SIGNAL("seven_seg_input[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "seven_seg_input";
-}
-
-SIGNAL("seven_seg_input[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "seven_seg_input";
-}
-
 SIGNAL("seven_seg_output")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -165,55 +115,63 @@ SIGNAL("seven_seg_output[0]")
 	PARENT = "seven_seg_output";
 }
 
-TRANSITION_LIST("seven_seg_input[3]")
+SIGNAL("seven_seg_input")
 {
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 240.0;
-		LEVEL 0 FOR 120.0;
-		LEVEL 1 FOR 640.0;
-	}
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 4;
+	LSB_INDEX = 0;
+	DIRECTION = INPUT;
+	PARENT = "";
 }
-TRANSITION_LIST("seven_seg_input[2]")
+
+SIGNAL("seven_seg_input[3]")
 {
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 110.0;
-		LEVEL 1 FOR 130.0;
-		LEVEL 0 FOR 120.0;
-		LEVEL 1 FOR 140.0;
-		LEVEL 0 FOR 500.0;
-	}
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "seven_seg_input";
 }
-TRANSITION_LIST("seven_seg_input[1]")
+
+SIGNAL("seven_seg_input[2]")
 {
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "seven_seg_input";
 }
-TRANSITION_LIST("seven_seg_input[0]")
+
+SIGNAL("seven_seg_input[1]")
 {
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 110.0;
-		LEVEL 0 FOR 250.0;
-		LEVEL 1 FOR 140.0;
-		LEVEL 0 FOR 500.0;
-	}
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "seven_seg_input";
 }
+
+SIGNAL("seven_seg_input[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "seven_seg_input";
+}
+
 TRANSITION_LIST("seven_seg_output[6]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 110.0;
-		LEVEL 1 FOR 250.0;
-		LEVEL 0 FOR 640.0;
+		LEVEL 0 FOR 540.0;
+		LEVEL 1 FOR 460.0;
 	}
 }
 TRANSITION_LIST("seven_seg_output[5]")
@@ -221,9 +179,9 @@ TRANSITION_LIST("seven_seg_output[5]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 360.0;
-		LEVEL 1 FOR 140.0;
-		LEVEL 0 FOR 500.0;
+		LEVEL 0 FOR 300.0;
+		LEVEL 1 FOR 240.0;
+		LEVEL 0 FOR 460.0;
 	}
 }
 TRANSITION_LIST("seven_seg_output[4]")
@@ -231,8 +189,8 @@ TRANSITION_LIST("seven_seg_output[4]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 110.0;
-		LEVEL 0 FOR 890.0;
+		LEVEL 1 FOR 220.0;
+		LEVEL 0 FOR 780.0;
 	}
 }
 TRANSITION_LIST("seven_seg_output[3]")
@@ -240,7 +198,8 @@ TRANSITION_LIST("seven_seg_output[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 300.0;
+		LEVEL 0 FOR 700.0;
 	}
 }
 TRANSITION_LIST("seven_seg_output[2]")
@@ -248,9 +207,9 @@ TRANSITION_LIST("seven_seg_output[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 110.0;
-		LEVEL 1 FOR 130.0;
-		LEVEL 0 FOR 760.0;
+		LEVEL 0 FOR 220.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 700.0;
 	}
 }
 TRANSITION_LIST("seven_seg_output[1]")
@@ -258,9 +217,9 @@ TRANSITION_LIST("seven_seg_output[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 110.0;
-		LEVEL 1 FOR 130.0;
-		LEVEL 0 FOR 760.0;
+		LEVEL 0 FOR 220.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 700.0;
 	}
 }
 TRANSITION_LIST("seven_seg_output[0]")
@@ -268,9 +227,49 @@ TRANSITION_LIST("seven_seg_output[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 360.0;
-		LEVEL 1 FOR 140.0;
-		LEVEL 0 FOR 500.0;
+		LEVEL 1 FOR 220.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 240.0;
+		LEVEL 0 FOR 460.0;
+	}
+}
+TRANSITION_LIST("seven_seg_input[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 220.0;
+		LEVEL 1 FOR 320.0;
+		LEVEL 0 FOR 460.0;
+	}
+}
+TRANSITION_LIST("seven_seg_input[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 540.0;
+		LEVEL 0 FOR 460.0;
+	}
+}
+TRANSITION_LIST("seven_seg_input[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 220.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 700.0;
+	}
+}
+TRANSITION_LIST("seven_seg_input[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 220.0;
+		LEVEL 1 FOR 320.0;
+		LEVEL 0 FOR 460.0;
 	}
 }
 

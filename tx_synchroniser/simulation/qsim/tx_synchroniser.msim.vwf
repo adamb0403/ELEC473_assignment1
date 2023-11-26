@@ -52,16 +52,6 @@ SIGNAL("tx_synchroniser_vlg_vec_tst|key_in")
 	PARENT = "";
 }
 
-SIGNAL("tx_synchroniser_vlg_vec_tst|reset")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
 SIGNAL("tx_synchroniser_vlg_vec_tst|key_out")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -142,16 +132,6 @@ SIGNAL("tx_synchroniser_vlg_vec_tst|i1|devoe")
 	PARENT = "";
 }
 
-SIGNAL("tx_synchroniser_vlg_vec_tst|i1|reset~input_o")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
 SIGNAL("tx_synchroniser_vlg_vec_tst|i1|key_out~output_o")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -192,7 +172,7 @@ SIGNAL("tx_synchroniser_vlg_vec_tst|i1|key_in~input_o")
 	PARENT = "";
 }
 
-SIGNAL("tx_synchroniser_vlg_vec_tst|i1|ff1~feeder_combout")
+SIGNAL("tx_synchroniser_vlg_vec_tst|i1|ff1~0_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -359,22 +339,12 @@ TRANSITION_LIST("tx_synchroniser_vlg_vec_tst|key_in")
 	}
 }
 
-TRANSITION_LIST("tx_synchroniser_vlg_vec_tst|reset")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-
 TRANSITION_LIST("tx_synchroniser_vlg_vec_tst|key_out")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 80.0;
+		LEVEL 1 FOR 110.0;
 		LEVEL 0 FOR 80.0;
 		LEVEL 1 FOR 120.0;
 		LEVEL 0 FOR 40.0;
@@ -550,22 +520,12 @@ TRANSITION_LIST("tx_synchroniser_vlg_vec_tst|i1|devoe")
 	}
 }
 
-TRANSITION_LIST("tx_synchroniser_vlg_vec_tst|i1|reset~input_o")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-
 TRANSITION_LIST("tx_synchroniser_vlg_vec_tst|i1|key_out~output_o")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 80.0;
+		LEVEL 1 FOR 110.0;
 		LEVEL 0 FOR 80.0;
 		LEVEL 1 FOR 120.0;
 		LEVEL 0 FOR 40.0;
@@ -814,22 +774,22 @@ TRANSITION_LIST("tx_synchroniser_vlg_vec_tst|i1|key_in~input_o")
 	}
 }
 
-TRANSITION_LIST("tx_synchroniser_vlg_vec_tst|i1|ff1~feeder_combout")
+TRANSITION_LIST("tx_synchroniser_vlg_vec_tst|i1|ff1~0_combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 80.0;
 		LEVEL 0 FOR 80.0;
-		LEVEL 1 FOR 120.0;
-		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 120.0;
 		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 130.0;
-		LEVEL 0 FOR 70.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 70.0;
-		LEVEL 1 FOR 330.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 130.0;
+		LEVEL 1 FOR 70.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 70.0;
+		LEVEL 0 FOR 330.0;
 	}
 }
 
@@ -838,18 +798,17 @@ TRANSITION_LIST("tx_synchroniser_vlg_vec_tst|i1|ff1~q")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
+		LEVEL 0 FOR 90.0;
 		LEVEL 1 FOR 80.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL 1 FOR 120.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 120.0;
-		LEVEL 0 FOR 80.0;
+		LEVEL 0 FOR 120.0;
 		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL 1 FOR 310.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 120.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 310.0;
 	}
 }
 
@@ -858,18 +817,17 @@ TRANSITION_LIST("tx_synchroniser_vlg_vec_tst|i1|ff2~feeder_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
+		LEVEL 0 FOR 90.0;
 		LEVEL 1 FOR 80.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL 1 FOR 120.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 120.0;
-		LEVEL 0 FOR 80.0;
+		LEVEL 0 FOR 120.0;
 		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL 1 FOR 310.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 120.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 310.0;
 	}
 }
 
@@ -878,18 +836,17 @@ TRANSITION_LIST("tx_synchroniser_vlg_vec_tst|i1|ff2~q")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 30.0;
+		LEVEL 0 FOR 110.0;
 		LEVEL 1 FOR 80.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL 1 FOR 120.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 120.0;
-		LEVEL 0 FOR 80.0;
+		LEVEL 0 FOR 120.0;
 		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL 1 FOR 290.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 120.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 290.0;
 	}
 }
 
@@ -913,7 +870,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_synchroniser_vlg_vec_tst|reset";
+	CHANNEL = "tx_synchroniser_vlg_vec_tst|key_out";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 2;
@@ -922,7 +879,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_synchroniser_vlg_vec_tst|key_out";
+	CHANNEL = "tx_synchroniser_vlg_vec_tst|sampler";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 3;
@@ -931,7 +888,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_synchroniser_vlg_vec_tst|sampler";
+	CHANNEL = "tx_synchroniser_vlg_vec_tst|i1|gnd";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 4;
@@ -940,7 +897,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_synchroniser_vlg_vec_tst|i1|gnd";
+	CHANNEL = "tx_synchroniser_vlg_vec_tst|i1|vcc";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 5;
@@ -949,7 +906,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_synchroniser_vlg_vec_tst|i1|vcc";
+	CHANNEL = "tx_synchroniser_vlg_vec_tst|i1|unknown";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 6;
@@ -958,7 +915,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_synchroniser_vlg_vec_tst|i1|unknown";
+	CHANNEL = "tx_synchroniser_vlg_vec_tst|i1|devclrn";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 7;
@@ -967,7 +924,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_synchroniser_vlg_vec_tst|i1|devclrn";
+	CHANNEL = "tx_synchroniser_vlg_vec_tst|i1|devpor";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 8;
@@ -976,7 +933,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_synchroniser_vlg_vec_tst|i1|devpor";
+	CHANNEL = "tx_synchroniser_vlg_vec_tst|i1|devoe";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 9;
@@ -985,7 +942,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_synchroniser_vlg_vec_tst|i1|devoe";
+	CHANNEL = "tx_synchroniser_vlg_vec_tst|i1|key_out~output_o";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 10;
@@ -994,7 +951,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_synchroniser_vlg_vec_tst|i1|reset~input_o";
+	CHANNEL = "tx_synchroniser_vlg_vec_tst|i1|clk~input_o";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 11;
@@ -1003,7 +960,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_synchroniser_vlg_vec_tst|i1|key_out~output_o";
+	CHANNEL = "tx_synchroniser_vlg_vec_tst|i1|clk~inputclkctrl_outclk";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 12;
@@ -1012,7 +969,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_synchroniser_vlg_vec_tst|i1|clk~input_o";
+	CHANNEL = "tx_synchroniser_vlg_vec_tst|i1|key_in~input_o";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 13;
@@ -1021,7 +978,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_synchroniser_vlg_vec_tst|i1|clk~inputclkctrl_outclk";
+	CHANNEL = "tx_synchroniser_vlg_vec_tst|i1|ff1~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 14;
@@ -1030,7 +987,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_synchroniser_vlg_vec_tst|i1|key_in~input_o";
+	CHANNEL = "tx_synchroniser_vlg_vec_tst|i1|ff1~q";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 15;
@@ -1039,7 +996,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_synchroniser_vlg_vec_tst|i1|ff1~feeder_combout";
+	CHANNEL = "tx_synchroniser_vlg_vec_tst|i1|ff2~feeder_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 16;
@@ -1048,28 +1005,10 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_synchroniser_vlg_vec_tst|i1|ff1~q";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 17;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "tx_synchroniser_vlg_vec_tst|i1|ff2~feeder_combout";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 18;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
 	CHANNEL = "tx_synchroniser_vlg_vec_tst|i1|ff2~q";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 19;
+	TREE_INDEX = 17;
 	TREE_LEVEL = 0;
 }
 ;

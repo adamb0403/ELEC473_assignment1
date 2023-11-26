@@ -1,6 +1,6 @@
 Analysis & Synthesis report for tx_uart
-Fri Nov 24 16:21:12 2023
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+Sun Nov 26 18:13:57 2023
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -43,24 +43,24 @@ applicable agreement for further details.
 
 
 
-+---------------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                          ;
-+------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Nov 24 16:21:12 2023            ;
-; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
-; Revision Name                      ; tx_uart                                          ;
-; Top-level Entity Name              ; tx_uart                                          ;
-; Family                             ; Cyclone II                                       ;
-; Total logic elements               ; 63                                               ;
-;     Total combinational functions  ; 62                                               ;
-;     Dedicated logic registers      ; 31                                               ;
-; Total registers                    ; 31                                               ;
-; Total pins                         ; 29                                               ;
-; Total virtual pins                 ; 0                                                ;
-; Total memory bits                  ; 0                                                ;
-; Embedded Multiplier 9-bit elements ; 0                                                ;
-; Total PLLs                         ; 0                                                ;
-+------------------------------------+--------------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sun Nov 26 18:13:57 2023           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; tx_uart                                         ;
+; Top-level Entity Name              ; tx_uart                                         ;
+; Family                             ; Cyclone II                                      ;
+; Total logic elements               ; 63                                              ;
+;     Total combinational functions  ; 62                                              ;
+;     Dedicated logic registers      ; 31                                              ;
+; Total registers                    ; 31                                              ;
+; Total pins                         ; 29                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -148,38 +148,32 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 8           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-;     Processors 2-16        ;   0.0%      ;
-+----------------------------+-------------+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                        ;
-+------------------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path         ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                  ; Library ;
-+------------------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------+---------+
-; ../tx_synchroniser/tx_synchroniser.v     ; yes             ; User Verilog HDL File  ; M:/ELEC473/projects/ELEC473_assignment1/tx_synchroniser/tx_synchroniser.v     ;         ;
-; ../tx_single_pulser/tx_single_pulser.v   ; yes             ; User Verilog HDL File  ; M:/ELEC473/projects/ELEC473_assignment1/tx_single_pulser/tx_single_pulser.v   ;         ;
-; ../tx_shift_register/tx_shift_register.v ; yes             ; User Verilog HDL File  ; M:/ELEC473/projects/ELEC473_assignment1/tx_shift_register/tx_shift_register.v ;         ;
-; ../tx_parity/tx_parity.v                 ; yes             ; User Verilog HDL File  ; M:/ELEC473/projects/ELEC473_assignment1/tx_parity/tx_parity.v                 ;         ;
-; ../tx_counter/tx_counter.v               ; yes             ; User Verilog HDL File  ; M:/ELEC473/projects/ELEC473_assignment1/tx_counter/tx_counter.v               ;         ;
-; ../tx_controller/tx_controller.v         ; yes             ; User Verilog HDL File  ; M:/ELEC473/projects/ELEC473_assignment1/tx_controller/tx_controller.v         ;         ;
-; ../tx_baud_counter/tx_baud_counter.v     ; yes             ; User Verilog HDL File  ; M:/ELEC473/projects/ELEC473_assignment1/tx_baud_counter/tx_baud_counter.v     ;         ;
-; ../tx_7segdecoder/tx_7segdecoder.v       ; yes             ; User Verilog HDL File  ; M:/ELEC473/projects/ELEC473_assignment1/tx_7segdecoder/tx_7segdecoder.v       ;         ;
-; tx_uart.v                                ; yes             ; User Verilog HDL File  ; M:/ELEC473/projects/ELEC473_assignment1/tx_uart/tx_uart.v                     ;         ;
-+------------------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                      ;
++------------------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path         ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                ; Library ;
++------------------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------------+---------+
+; ../tx_synchroniser/tx_synchroniser.v     ; yes             ; User Verilog HDL File  ; C:/Users/Adam/Documents/git-repos/ELEC473_assignment1/tx_synchroniser/tx_synchroniser.v     ;         ;
+; ../tx_single_pulser/tx_single_pulser.v   ; yes             ; User Verilog HDL File  ; C:/Users/Adam/Documents/git-repos/ELEC473_assignment1/tx_single_pulser/tx_single_pulser.v   ;         ;
+; ../tx_shift_register/tx_shift_register.v ; yes             ; User Verilog HDL File  ; C:/Users/Adam/Documents/git-repos/ELEC473_assignment1/tx_shift_register/tx_shift_register.v ;         ;
+; ../tx_parity/tx_parity.v                 ; yes             ; User Verilog HDL File  ; C:/Users/Adam/Documents/git-repos/ELEC473_assignment1/tx_parity/tx_parity.v                 ;         ;
+; ../tx_counter/tx_counter.v               ; yes             ; User Verilog HDL File  ; C:/Users/Adam/Documents/git-repos/ELEC473_assignment1/tx_counter/tx_counter.v               ;         ;
+; ../tx_controller/tx_controller.v         ; yes             ; User Verilog HDL File  ; C:/Users/Adam/Documents/git-repos/ELEC473_assignment1/tx_controller/tx_controller.v         ;         ;
+; ../tx_baud_counter/tx_baud_counter.v     ; yes             ; User Verilog HDL File  ; C:/Users/Adam/Documents/git-repos/ELEC473_assignment1/tx_baud_counter/tx_baud_counter.v     ;         ;
+; ../tx_7segdecoder/tx_7segdecoder.v       ; yes             ; User Verilog HDL File  ; C:/Users/Adam/Documents/git-repos/ELEC473_assignment1/tx_7segdecoder/tx_7segdecoder.v       ;         ;
+; tx_uart.v                                ; yes             ; User Verilog HDL File  ; C:/Users/Adam/Documents/git-repos/ELEC473_assignment1/tx_uart/tx_uart.v                     ;         ;
++------------------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------+
@@ -272,7 +266,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                   ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
-; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |tx_uart|tx_baud_counter:baud|count[9]       ;
+; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |tx_uart|tx_baud_counter:baud|count[1]       ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |tx_uart|tx_counter:counter|count[1]         ;
 ; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |tx_uart|tx_controller:ctrl|current_state[0] ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |tx_uart|tx_shift_register:sr|tmp_data[0]    ;
@@ -326,25 +320,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
-    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Fri Nov 24 16:21:10 2023
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sun Nov 26 18:13:55 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off tx_uart -c tx_uart
-Info (11104): Parallel Compilation has detected 16 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 8 of the 8 physical processors detected instead.
-Info (12021): Found 1 design units, including 1 entities, in source file /elec473/projects/elec473_assignment1/tx_synchroniser/tx_synchroniser.v
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file /users/adam/documents/git-repos/elec473_assignment1/tx_synchroniser/tx_synchroniser.v
     Info (12023): Found entity 1: tx_synchroniser
-Info (12021): Found 1 design units, including 1 entities, in source file /elec473/projects/elec473_assignment1/tx_single_pulser/tx_single_pulser.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/adam/documents/git-repos/elec473_assignment1/tx_single_pulser/tx_single_pulser.v
     Info (12023): Found entity 1: tx_single_pulser
-Info (12021): Found 1 design units, including 1 entities, in source file /elec473/projects/elec473_assignment1/tx_shift_register/tx_shift_register.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/adam/documents/git-repos/elec473_assignment1/tx_shift_register/tx_shift_register.v
     Info (12023): Found entity 1: tx_shift_register
-Info (12021): Found 1 design units, including 1 entities, in source file /elec473/projects/elec473_assignment1/tx_parity/tx_parity.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/adam/documents/git-repos/elec473_assignment1/tx_parity/tx_parity.v
     Info (12023): Found entity 1: tx_parity
-Info (12021): Found 1 design units, including 1 entities, in source file /elec473/projects/elec473_assignment1/tx_counter/tx_counter.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/adam/documents/git-repos/elec473_assignment1/tx_counter/tx_counter.v
     Info (12023): Found entity 1: tx_counter
-Info (12021): Found 1 design units, including 1 entities, in source file /elec473/projects/elec473_assignment1/tx_controller/tx_controller.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/adam/documents/git-repos/elec473_assignment1/tx_controller/tx_controller.v
     Info (12023): Found entity 1: tx_controller
-Info (12021): Found 1 design units, including 1 entities, in source file /elec473/projects/elec473_assignment1/tx_baud_counter/tx_baud_counter.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/adam/documents/git-repos/elec473_assignment1/tx_baud_counter/tx_baud_counter.v
     Info (12023): Found entity 1: tx_baud_counter
-Info (12021): Found 1 design units, including 1 entities, in source file /elec473/projects/elec473_assignment1/tx_7segdecoder/tx_7segdecoder.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/adam/documents/git-repos/elec473_assignment1/tx_7segdecoder/tx_7segdecoder.v
     Info (12023): Found entity 1: tx_7segdecoder
 Info (12021): Found 1 design units, including 1 entities, in source file tx_uart.v
     Info (12023): Found entity 1: tx_uart
@@ -368,10 +362,10 @@ Info (21057): Implemented 92 device resources after synthesis - the final resour
     Info (21058): Implemented 12 input pins
     Info (21059): Implemented 17 output pins
     Info (21061): Implemented 63 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4610 megabytes
-    Info: Processing ended: Fri Nov 24 16:21:13 2023
-    Info: Elapsed time: 00:00:03
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 4597 megabytes
+    Info: Processing ended: Sun Nov 26 18:13:57 2023
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 

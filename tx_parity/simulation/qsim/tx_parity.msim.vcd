@@ -3,7 +3,7 @@ $comment
 		vcd file tx_parity.msim.vcd -direction
 $end
 $date
-	Tue Nov 21 10:27:12 2023
+	Sun Nov 26 13:06:38 2023
 $end
 $version
 	ModelSim Version 10.1d
@@ -13,64 +13,130 @@ $timescale
 $end
 $scope module tx_parity_vlg_vec_tst $end
 $var reg 7 ! parity_in [6:0] $end
-$var wire 1 " parity_out [9] $end
-$var wire 1 # parity_out [8] $end
-$var wire 1 $ parity_out [7] $end
-$var wire 1 % parity_out [6] $end
-$var wire 1 & parity_out [5] $end
-$var wire 1 ' parity_out [4] $end
-$var wire 1 ( parity_out [3] $end
-$var wire 1 ) parity_out [2] $end
-$var wire 1 * parity_out [1] $end
-$var wire 1 + parity_out [0] $end
-$var wire 1 , sampler $end
+$var wire 1 " parity_out [10] $end
+$var wire 1 # parity_out [9] $end
+$var wire 1 $ parity_out [8] $end
+$var wire 1 % parity_out [7] $end
+$var wire 1 & parity_out [6] $end
+$var wire 1 ' parity_out [5] $end
+$var wire 1 ( parity_out [4] $end
+$var wire 1 ) parity_out [3] $end
+$var wire 1 * parity_out [2] $end
+$var wire 1 + parity_out [1] $end
+$var wire 1 , parity_out [0] $end
+$var wire 1 - sampler $end
 $scope module i1 $end
-$var wire 1 - gnd $end
-$var wire 1 . vcc $end
-$var wire 1 / unknown $end
-$var tri1 1 0 devclrn $end
-$var tri1 1 1 devpor $end
-$var tri1 1 2 devoe $end
-$var wire 1 3 WideXnor0~0_combout $end
-$var wire 1 4 WideXnor0~combout $end
-$var wire 1 5 parity_in~combout [6] $end
-$var wire 1 6 parity_in~combout [5] $end
-$var wire 1 7 parity_in~combout [4] $end
-$var wire 1 8 parity_in~combout [3] $end
-$var wire 1 9 parity_in~combout [2] $end
-$var wire 1 : parity_in~combout [1] $end
-$var wire 1 ; parity_in~combout [0] $end
+$var wire 1 . gnd $end
+$var wire 1 / vcc $end
+$var wire 1 0 unknown $end
+$var tri1 1 1 devclrn $end
+$var tri1 1 2 devpor $end
+$var tri1 1 3 devoe $end
+$var wire 1 4 WideXnor0~0_combout $end
+$var wire 1 5 WideXnor0~combout $end
+$var wire 1 6 parity_in~combout [6] $end
+$var wire 1 7 parity_in~combout [5] $end
+$var wire 1 8 parity_in~combout [4] $end
+$var wire 1 9 parity_in~combout [3] $end
+$var wire 1 : parity_in~combout [2] $end
+$var wire 1 ; parity_in~combout [1] $end
+$var wire 1 < parity_in~combout [0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-b1101001 !
+b1101 !
+1,
 0+
 1*
-1)
-0(
-0'
-1&
+0)
+1(
+1'
+0&
 0%
-1$
-1#
+0$
+0#
 1"
-x,
-0-
-1.
-x/
-10
+x-
+0.
+1/
+x0
 11
 12
-03
-04
-1;
+13
+14
+15
+1<
+0;
+1:
+19
+08
+07
+06
+$end
+#80000
+b1001101 !
+b1000101 !
+b1000001 !
 0:
 09
-18
-07
 16
+0-
+05
+0(
+0'
+1$
+1#
+#260000
+b1000000 !
+b0 !
+0<
+06
+1-
+04
 15
-$end
+0*
+0$
+05
+0#
+1#
+#420000
+b100000 !
+b110000 !
+b110010 !
+b111010 !
+b111110 !
+b111111 !
+b1111111 !
+1<
+1;
+1:
+19
+18
+17
+16
+0-
+15
+1*
+1)
+1(
+1'
+1&
+1%
+1$
+0#
+#560000
+b1101111 !
+b1101101 !
+b1101001 !
+0;
+0:
+08
+1-
+05
+0)
+0(
+0&
+1#
 #1000000

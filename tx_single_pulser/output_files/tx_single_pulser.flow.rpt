@@ -1,5 +1,5 @@
 Flow report for tx_single_pulser
-Thu Nov 23 19:37:23 2023
+Sun Nov 26 13:47:03 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Thu Nov 23 19:37:23 2023           ;
+; Flow Status                        ; Successful - Sun Nov 26 13:47:03 2023           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; tx_single_pulser                                ;
 ; Top-level Entity Name              ; tx_single_pulser                                ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/23/2023 19:36:42 ;
+; Start date & time ; 11/26/2023 13:46:09 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; tx_single_pulser    ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 141734660896995.170076820220416 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 141734660896995.170100636914920 ; --            ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                              ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                     ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)       ; <None>        ; --          ; --             ;
@@ -94,13 +94,13 @@ applicable agreement for further details.
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4584 MB             ; 00:00:01                           ;
-; Fitter                    ; 00:00:06     ; 1.0                     ; 4870 MB             ; 00:00:05                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 4547 MB             ; 00:00:02                           ;
+; Fitter                    ; 00:00:05     ; 1.0                     ; 4870 MB             ; 00:00:05                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 4548 MB             ; 00:00:02                           ;
 ; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4535 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4507 MB             ; 00:00:00                           ;
 ; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4515 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4515 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:11     ; --                      ; --                  ; 00:00:11                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4515 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:09     ; --                      ; --                  ; 00:00:11                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

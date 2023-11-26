@@ -4,22 +4,22 @@ K3
 cModel Technology
 Z0 dC:\Users\Adam\Documents\git-repos\ELEC473_assignment1\tx_controller\simulation\qsim
 vtx_controller
-Z1 !s100 7G3AMjQB]fTheC^AH_cUk1
-Z2 IbjCW=m]@?ojGidk:B3Bze2
-Z3 VIe=<RM339ib[BdeS_5:`l0
-Z4 dC:\Users\Adam\Documents\git-repos\ELEC473_assignment1\tx_controller\simulation\qsim
-Z5 w1700767869
-Z6 8tx_controller.vo
-Z7 Ftx_controller.vo
+Z1 Io=1aUR_`:hSF[?EZO^2CP0
+Z2 VIe=<RM339ib[BdeS_5:`l0
+Z3 dC:\Users\Adam\Documents\git-repos\ELEC473_assignment1\tx_controller\simulation\qsim
+Z4 w1701013560
+Z5 8tx_controller.vo
+Z6 Ftx_controller.vo
 L0 31
-Z8 OV;L;10.1d;51
+Z7 OV;L;10.1d;51
 r1
 31
-Z9 !s90 -work|work|tx_controller.vo|
-Z10 o-work work -O0
+Z8 !s90 -work|work|tx_controller.vo|
+Z9 o-work work -O0
 !i10b 1
+Z10 !s100 4c0C]eRGhQ=fUOEDIVGSU0
 !s85 0
-Z11 !s108 1700767870.107000
+Z11 !s108 1701013560.814000
 Z12 !s107 tx_controller.vo|
 !s101 -O0
 vtx_controller_vlg_check_tst
@@ -27,31 +27,31 @@ vtx_controller_vlg_check_tst
 Z13 !s100 8=3TU_1OzS197EmKjkfEU3
 Z14 IKo`KMQbYJK89b8[2=zQ8f1
 Z15 VKlHS@mch>fhV?Y:Ac^dHc0
-R4
-Z16 w1700767868
+R3
+Z16 w1701013559
 Z17 8tx_controller.vt
 Z18 Ftx_controller.vt
 L0 65
-R8
+R7
 r1
 !s85 0
 31
-Z19 !s108 1700767870.263000
+Z19 !s108 1701013560.901000
 Z20 !s107 tx_controller.vt|
 Z21 !s90 -work|work|tx_controller.vt|
 !s101 -O0
-R10
+R9
 vtx_controller_vlg_sample_tst
 !i10b 1
 Z22 !s100 FMo@b1;0Eh1B`o^heDCJ73
 Z23 I6c^jaUei3Jf_g:lDS>YW13
 Z24 VSb@1T4c8GGmZE[^>KL4jX1
-R4
+R3
 R16
 R17
 R18
 L0 29
-R8
+R7
 r1
 !s85 0
 31
@@ -59,18 +59,18 @@ R19
 R20
 R21
 !s101 -O0
-R10
+R9
 vtx_controller_vlg_vec_tst
 !i10b 1
-Z25 !s100 4]Lk0a6?hmIOda=c13J;;3
-Z26 IYLUbT7`>G^TGjJ>;D3]LJ3
+Z25 !s100 JS?`md?2SQW^k76TzN_Ta0
+Z26 I4HUS=1a0W9HR=dkKZC7GU2
 Z27 VzmM=a35h<=4DGC9b^]X_>2
-R4
+R3
 R16
 R17
 R18
 Z28 L0 231
-R8
+R7
 r1
 !s85 0
 31
@@ -78,4 +78,4 @@ R19
 R20
 R21
 !s101 -O0
-R10
+R9

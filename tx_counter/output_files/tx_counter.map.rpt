@@ -1,6 +1,6 @@
 Analysis & Synthesis report for tx_counter
-Thu Nov 23 13:58:07 2023
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+Sun Nov 26 14:12:51 2023
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -39,24 +39,24 @@ applicable agreement for further details.
 
 
 
-+---------------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                          ;
-+------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov 23 13:58:07 2023            ;
-; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
-; Revision Name                      ; tx_counter                                       ;
-; Top-level Entity Name              ; tx_counter                                       ;
-; Family                             ; Cyclone II                                       ;
-; Total logic elements               ; 8                                                ;
-;     Total combinational functions  ; 8                                                ;
-;     Dedicated logic registers      ; 4                                                ;
-; Total registers                    ; 4                                                ;
-; Total pins                         ; 4                                                ;
-; Total virtual pins                 ; 0                                                ;
-; Total memory bits                  ; 0                                                ;
-; Embedded Multiplier 9-bit elements ; 0                                                ;
-; Total PLLs                         ; 0                                                ;
-+------------------------------------+--------------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sun Nov 26 14:12:51 2023           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; tx_counter                                      ;
+; Top-level Entity Name              ; tx_counter                                      ;
+; Family                             ; Cyclone II                                      ;
+; Total logic elements               ; 8                                               ;
+;     Total combinational functions  ; 8                                               ;
+;     Dedicated logic registers      ; 4                                               ;
+; Total registers                    ; 4                                               ;
+; Total pins                         ; 4                                               ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -144,30 +144,24 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 8           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-;     Processors 2-16        ;   0.0%      ;
-+----------------------------+-------------+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                  ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                    ; Library ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------+---------+
-; tx_counter.v                     ; yes             ; User Verilog HDL File  ; M:/ELEC473/projects/ELEC473_assignment1/tx_counter/tx_counter.v ;         ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                  ; Library ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------+---------+
+; tx_counter.v                     ; yes             ; User Verilog HDL File  ; C:/Users/Adam/Documents/git-repos/ELEC473_assignment1/tx_counter/tx_counter.v ;         ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------+
@@ -179,8 +173,8 @@ applicable agreement for further details.
 ;                                             ;          ;
 ; Total combinational functions               ; 8        ;
 ; Logic element usage by number of LUT inputs ;          ;
-;     -- 4 input functions                    ; 3        ;
-;     -- 3 input functions                    ; 4        ;
+;     -- 4 input functions                    ; 6        ;
+;     -- 3 input functions                    ; 1        ;
 ;     -- <=2 input functions                  ; 1        ;
 ;                                             ;          ;
 ; Logic elements by mode                      ;          ;
@@ -195,8 +189,8 @@ applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0        ;
 ; Maximum fan-out node                        ; count[0] ;
 ; Maximum fan-out                             ; 5        ;
-; Total fan-out                               ; 39       ;
-; Average fan-out                             ; 2.44     ;
+; Total fan-out                               ; 38       ;
+; Average fan-out                             ; 2.38     ;
 +---------------------------------------------+----------+
 
 
@@ -220,7 +214,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 4     ;
+; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -248,24 +242,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
-    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Thu Nov 23 13:58:05 2023
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sun Nov 26 14:12:50 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off tx_counter -c tx_counter
-Info (11104): Parallel Compilation has detected 16 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 8 of the 8 physical processors detected instead.
+Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file tx_counter.v
     Info (12023): Found entity 1: tx_counter
 Info (12127): Elaborating entity "tx_counter" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at tx_counter.v(21): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at tx_counter.v(18): truncated value with size 32 to match size of target (4)
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 12 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 1 output pins
     Info (21061): Implemented 8 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4607 megabytes
-    Info: Processing ended: Thu Nov 23 13:58:07 2023
-    Info: Elapsed time: 00:00:02
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4592 megabytes
+    Info: Processing ended: Sun Nov 26 14:12:51 2023
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

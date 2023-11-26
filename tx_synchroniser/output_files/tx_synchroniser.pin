@@ -95,7 +95,7 @@ GND                          : B4        : gnd    :                   :         
 ~ALTERA_ASDO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : B5        : input  : 2.5 V             :         : 9         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : B6        :        :                   :         : 8         :                
 GND                          : B7        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : B8        :        :                   :         : 7         :                
+key_out                      : B8        : output : 2.5 V             :         : 7         : N              
 GND                          : B9        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : B10       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : B11       :        :                   :         : 7         :                
@@ -108,7 +108,7 @@ nCE                          : C4        :        :                   :         
 ~ALTERA_NCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : C5        : input  : 2.5 V             :         : 9         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : C6        :        :                   :         : 8         :                
 VCCIO8                       : C7        : power  :                   : 2.5V    : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C8        :        :                   :         : 7         :                
+key_in                       : C8        : input  : 2.5 V             :         : 7         : N              
 VCCIO7                       : C9        : power  :                   : 2.5V    : 7         :                
 VCCIO7                       : C10       : power  :                   : 2.5V    : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C11       :        :                   :         : 7         :                
@@ -124,8 +124,8 @@ VCC_CLKIN8A                  : D7        : power  :                   : 2.5V    
 GND                          : D8        : gnd    :                   :         :           :                
 VCCA                         : D9        : power  :                   : 2.5V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D10       :        :                   :         : 6         :                
-key_in                       : D11       : input  : 2.5 V             :         : 6         : N              
-key_out                      : D12       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D11       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D12       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D13       :        :                   :         : 7         :                
 GXB_GND*                     : E1        :        :                   :         : QL0       :                
 GXB_GND*                     : E2        :        :                   :         : QL0       :                
@@ -240,7 +240,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : N6        :        :                   :      
 GND+                         : N7        :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : N8        :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : N9        :        :                   :         : 4         :                
-reset                        : N10       : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : N10       :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : N11       :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : N12       :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : N13       :        :                   :         : 5         :                

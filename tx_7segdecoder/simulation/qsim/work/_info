@@ -4,78 +4,78 @@ K3
 cModel Technology
 Z0 dC:\Users\Adam\Documents\git-repos\ELEC473_assignment1\tx_7segdecoder\simulation\qsim
 vtx_7segdecoder
-Z1 IE[UkU`o<P6o=NL<MEbg8k3
-Z2 VaL>R]VYe8;NN^n75J`Vlj1
-Z3 dM:\ELEC473\projects\ELEC473_assignment1\tx_7segdecoder\simulation\qsim
-Z4 w1700751291
-Z5 8tx_7segdecoder.vo
-Z6 Ftx_7segdecoder.vo
+Z1 !s100 ^Xjh;o<>J`?VGQYG9`6Vo1
+Z2 IE[UkU`o<P6o=NL<MEbg8k3
+Z3 VaL>R]VYe8;NN^n75J`Vlj1
+Z4 dC:\Users\Adam\Documents\git-repos\ELEC473_assignment1\tx_7segdecoder\simulation\qsim
+Z5 w1701005146
+Z6 8tx_7segdecoder.vo
+Z7 Ftx_7segdecoder.vo
 L0 31
-Z7 OV;L;10.1d;51
+Z8 OV;L;10.1d;51
 r1
 31
-Z8 !s90 -work|work|tx_7segdecoder.vo|
-Z9 o-work work -O0
+Z9 !s90 -work|work|tx_7segdecoder.vo|
+Z10 o-work work -O0
 !i10b 1
-Z10 !s100 ^Xjh;o<>J`?VGQYG9`6Vo1
 !s85 0
-Z11 !s108 1700751292.113000
+Z11 !s108 1701005147.713000
 Z12 !s107 tx_7segdecoder.vo|
 !s101 -O0
 vtx_7segdecoder_vlg_check_tst
 !i10b 1
-!s100 0KcbBbGRBUVO9nAk_CzlF2
-InRkASUM_Obhi^Y5H[QfC80
-V38^_nl[VofB8XU[lTgX]h1
-R3
-Z13 w1700751290
-Z14 8tx_7segdecoder.vt
-Z15 Ftx_7segdecoder.vt
+Z13 !s100 0KcbBbGRBUVO9nAk_CzlF2
+Z14 InRkASUM_Obhi^Y5H[QfC80
+Z15 V38^_nl[VofB8XU[lTgX]h1
+R4
+R5
+Z16 8tx_7segdecoder.vt
+Z17 Ftx_7segdecoder.vt
 L0 57
-R7
+R8
 r1
 !s85 0
 31
-Z16 !s108 1700751292.305000
-Z17 !s107 tx_7segdecoder.vt|
-Z18 !s90 -work|work|tx_7segdecoder.vt|
+Z18 !s108 1701005147.824000
+Z19 !s107 tx_7segdecoder.vt|
+Z20 !s90 -work|work|tx_7segdecoder.vt|
 !s101 -O0
-R9
+R10
 vtx_7segdecoder_vlg_sample_tst
 !i10b 1
-!s100 7XOoh7Ifd27d6UdlF?n5K1
-Il2bAWJGEXPzj_Kf;D`Cn>3
-VCZ6^bF8C;OUR_LjJGKMP61
-R3
-R13
-R14
-R15
+Z21 !s100 7XOoh7Ifd27d6UdlF?n5K1
+Z22 Il2bAWJGEXPzj_Kf;D`Cn>3
+Z23 VCZ6^bF8C;OUR_LjJGKMP61
+R4
+R5
+R16
+R17
 L0 29
-R7
+R8
 r1
 !s85 0
 31
-R16
-R17
 R18
+R19
+R20
 !s101 -O0
-R9
+R10
 vtx_7segdecoder_vlg_vec_tst
 !i10b 1
-!s100 b9h[B[Q[`D>1NKlIlW@fN2
-I1<SXO>VX]?Eb?mYLLkK7V0
-Z19 VP[<^HJ7;5QQ18iN<JFzPa3
-R3
-R13
-R14
-R15
-L0 259
-R7
+!s100 4TJiQl0VzeWkzn5@HWnFS0
+IkFEX22<T>j=8C^EjTLFk23
+Z24 VP[<^HJ7;5QQ18iN<JFzPa3
+R4
+R5
+R16
+R17
+Z25 L0 259
+R8
 r1
 !s85 0
 31
-R16
-R17
 R18
+R19
+R20
 !s101 -O0
-R9
+R10

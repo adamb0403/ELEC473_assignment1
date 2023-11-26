@@ -10,7 +10,6 @@ clk => count[7].CLK
 clk => count[8].CLK
 clk => count[9].CLK
 clk => count[10].CLK
-clk => baud_output~reg0.CLK
 reset => count.OUTPUTSELECT
 reset => count.OUTPUTSELECT
 reset => count.OUTPUTSELECT
@@ -22,7 +21,6 @@ reset => count.OUTPUTSELECT
 reset => count.OUTPUTSELECT
 reset => count.OUTPUTSELECT
 reset => count.OUTPUTSELECT
-reset => baud_output.OUTPUTSELECT
-baud_output <= baud_output~reg0.DB_MAX_OUTPUT_PORT_TYPE
+baud_output <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 

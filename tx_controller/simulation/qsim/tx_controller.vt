@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "11/23/2023 19:31:08"
+// Generated on "11/26/2023 15:45:59"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    tx_controller
 // 
@@ -268,6 +268,10 @@ end
 initial
 begin
 	reset = 1'b1;
+	reset = #140000 1'b0;
+	reset = #20000 1'b1;
+	reset = #660000 1'b0;
+	reset = #20000 1'b1;
 end 
 
 // ctrl_pulser
@@ -275,9 +279,11 @@ initial
 begin
 	ctrl_pulser = 1'b0;
 	ctrl_pulser = #20000 1'b1;
-	ctrl_pulser = #20000 1'b0;
-	ctrl_pulser = #540000 1'b1;
-	ctrl_pulser = #20000 1'b0;
+	ctrl_pulser = #10000 1'b0;
+	ctrl_pulser = #550000 1'b1;
+	ctrl_pulser = #10000 1'b0;
+	ctrl_pulser = #230000 1'b1;
+	ctrl_pulser = #10000 1'b0;
 end 
 
 // ctrl_baud
@@ -293,6 +299,8 @@ initial
 begin
 	ctrl_counter = 1'b0;
 	ctrl_counter = #460000 1'b1;
+	ctrl_counter = #20000 1'b0;
+	ctrl_counter = #220000 1'b1;
 	ctrl_counter = #20000 1'b0;
 end 
 

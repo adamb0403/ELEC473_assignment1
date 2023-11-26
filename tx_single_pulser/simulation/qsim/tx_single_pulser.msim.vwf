@@ -320,8 +320,10 @@ TRANSITION_LIST("tx_single_pulser_vlg_vec_tst|pulser_in")
 		LEVEL 1 FOR 80.0;
 		LEVEL 0 FOR 80.0;
 		LEVEL 1 FOR 180.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 480.0;
+		LEVEL 0 FOR 120.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 260.0;
+		LEVEL 1 FOR 60.0;
 	}
 }
 
@@ -351,7 +353,9 @@ TRANSITION_LIST("tx_single_pulser_vlg_vec_tst|pulser_out")
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 490.0;
+		LEVEL 0 FOR 170.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 310.0;
 	}
 }
 
@@ -635,8 +639,10 @@ TRANSITION_LIST("tx_single_pulser_vlg_vec_tst|i1|pulser_in~combout")
 		LEVEL 1 FOR 80.0;
 		LEVEL 0 FOR 80.0;
 		LEVEL 1 FOR 180.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 480.0;
+		LEVEL 0 FOR 120.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 260.0;
+		LEVEL 1 FOR 60.0;
 	}
 }
 
@@ -665,8 +671,10 @@ TRANSITION_LIST("tx_single_pulser_vlg_vec_tst|i1|current_state~0_combout")
 		LEVEL 0 FOR 180.0;
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 480.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 100.0;
+		LEVEL 1 FOR 260.0;
+		LEVEL 0 FOR 60.0;
 	}
 }
 
@@ -682,8 +690,10 @@ TRANSITION_LIST("tx_single_pulser_vlg_vec_tst|i1|current_state~regout")
 		LEVEL 0 FOR 180.0;
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 470.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 100.0;
+		LEVEL 1 FOR 260.0;
+		LEVEL 0 FOR 50.0;
 	}
 }
 
@@ -700,7 +710,9 @@ TRANSITION_LIST("tx_single_pulser_vlg_vec_tst|i1|pulser_out~0_combout")
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 490.0;
+		LEVEL 1 FOR 170.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 310.0;
 	}
 }
 

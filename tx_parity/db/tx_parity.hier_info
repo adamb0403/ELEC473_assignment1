@@ -13,8 +13,8 @@ parity_in[5] => WideXnor0.IN5
 parity_in[5] => parity_out[7].DATAIN
 parity_in[6] => WideXnor0.IN6
 parity_in[6] => parity_out[8].DATAIN
-parity_out[0] <= <GND>
-parity_out[1] <= WideXnor0.DB_MAX_OUTPUT_PORT_TYPE
+parity_out[0] <= <VCC>
+parity_out[1] <= <GND>
 parity_out[2] <= parity_in[0].DB_MAX_OUTPUT_PORT_TYPE
 parity_out[3] <= parity_in[1].DB_MAX_OUTPUT_PORT_TYPE
 parity_out[4] <= parity_in[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -22,6 +22,7 @@ parity_out[5] <= parity_in[3].DB_MAX_OUTPUT_PORT_TYPE
 parity_out[6] <= parity_in[4].DB_MAX_OUTPUT_PORT_TYPE
 parity_out[7] <= parity_in[5].DB_MAX_OUTPUT_PORT_TYPE
 parity_out[8] <= parity_in[6].DB_MAX_OUTPUT_PORT_TYPE
-parity_out[9] <= <VCC>
+parity_out[9] <= WideXnor0.DB_MAX_OUTPUT_PORT_TYPE
+parity_out[10] <= <VCC>
 
 

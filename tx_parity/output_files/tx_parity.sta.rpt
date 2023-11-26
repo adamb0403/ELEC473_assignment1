@@ -1,6 +1,6 @@
 TimeQuest Timing Analyzer report for tx_parity
-Tue Nov 21 10:27:02 2023
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+Sun Nov 26 13:04:47 2023
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -55,34 +55,28 @@ applicable agreement for further details.
 
 
 
-+-----------------------------------------------------------------------------------------+
-; TimeQuest Timing Analyzer Summary                                                       ;
-+--------------------+--------------------------------------------------------------------+
-; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version ;
-; Revision Name      ; tx_parity                                                          ;
-; Device Family      ; Cyclone II                                                         ;
-; Device Name        ; EP2C35F672C6                                                       ;
-; Timing Models      ; Final                                                              ;
-; Delay Model        ; Combined                                                           ;
-; Rise/Fall Delays   ; Unavailable                                                        ;
-+--------------------+--------------------------------------------------------------------+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; tx_parity                                                         ;
+; Device Family      ; Cyclone II                                                        ;
+; Device Name        ; EP2C35F672C6                                                      ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Unavailable                                                       ;
++--------------------+-------------------------------------------------------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 8           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-;     Processors 2-16        ;   0.0%      ;
-+----------------------------+-------------+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
 
 
 ----------
@@ -132,20 +126,20 @@ No paths to report.
 +--------------+---------------+--------+--------+--------+--------+
 ; Input Port   ; Output Port   ; RR     ; RF     ; FR     ; FF     ;
 +--------------+---------------+--------+--------+--------+--------+
-; parity_in[0] ; parity_out[1] ; 6.323  ; 6.323  ; 6.323  ; 6.323  ;
-; parity_in[0] ; parity_out[2] ; 4.760  ;        ;        ; 4.760  ;
-; parity_in[1] ; parity_out[1] ; 5.788  ; 5.788  ; 5.788  ; 5.788  ;
-; parity_in[1] ; parity_out[3] ; 4.951  ;        ;        ; 4.951  ;
-; parity_in[2] ; parity_out[1] ; 10.339 ; 10.339 ; 10.339 ; 10.339 ;
-; parity_in[2] ; parity_out[4] ; 8.852  ;        ;        ; 8.852  ;
-; parity_in[3] ; parity_out[1] ; 10.416 ; 10.416 ; 10.416 ; 10.416 ;
-; parity_in[3] ; parity_out[5] ; 8.788  ;        ;        ; 8.788  ;
-; parity_in[4] ; parity_out[1] ; 9.388  ; 9.388  ; 9.388  ; 9.388  ;
-; parity_in[4] ; parity_out[6] ; 8.920  ;        ;        ; 8.920  ;
-; parity_in[5] ; parity_out[1] ; 9.491  ; 9.491  ; 9.491  ; 9.491  ;
-; parity_in[5] ; parity_out[7] ; 8.594  ;        ;        ; 8.594  ;
-; parity_in[6] ; parity_out[1] ; 9.510  ; 9.510  ; 9.510  ; 9.510  ;
-; parity_in[6] ; parity_out[8] ; 8.783  ;        ;        ; 8.783  ;
+; parity_in[0] ; parity_out[2] ; 4.762  ;        ;        ; 4.762  ;
+; parity_in[0] ; parity_out[9] ; 7.040  ; 7.040  ; 7.040  ; 7.040  ;
+; parity_in[1] ; parity_out[3] ; 5.051  ;        ;        ; 5.051  ;
+; parity_in[1] ; parity_out[9] ; 7.084  ; 7.084  ; 7.084  ; 7.084  ;
+; parity_in[2] ; parity_out[4] ; 8.813  ;        ;        ; 8.813  ;
+; parity_in[2] ; parity_out[9] ; 10.396 ; 10.396 ; 10.396 ; 10.396 ;
+; parity_in[3] ; parity_out[5] ; 8.816  ;        ;        ; 8.816  ;
+; parity_in[3] ; parity_out[9] ; 10.309 ; 10.309 ; 10.309 ; 10.309 ;
+; parity_in[4] ; parity_out[6] ; 8.272  ;        ;        ; 8.272  ;
+; parity_in[4] ; parity_out[9] ; 9.671  ; 9.671  ; 9.671  ; 9.671  ;
+; parity_in[5] ; parity_out[7] ; 8.829  ;        ;        ; 8.829  ;
+; parity_in[5] ; parity_out[9] ; 9.547  ; 9.547  ; 9.547  ; 9.547  ;
+; parity_in[6] ; parity_out[8] ; 8.615  ;        ;        ; 8.615  ;
+; parity_in[6] ; parity_out[9] ; 9.712  ; 9.712  ; 9.712  ; 9.712  ;
 +--------------+---------------+--------+--------+--------+--------+
 
 
@@ -154,20 +148,20 @@ No paths to report.
 +--------------+---------------+--------+--------+--------+--------+
 ; Input Port   ; Output Port   ; RR     ; RF     ; FR     ; FF     ;
 +--------------+---------------+--------+--------+--------+--------+
-; parity_in[0] ; parity_out[1] ; 6.323  ; 6.323  ; 6.323  ; 6.323  ;
-; parity_in[0] ; parity_out[2] ; 4.760  ;        ;        ; 4.760  ;
-; parity_in[1] ; parity_out[1] ; 5.788  ; 5.788  ; 5.788  ; 5.788  ;
-; parity_in[1] ; parity_out[3] ; 4.951  ;        ;        ; 4.951  ;
-; parity_in[2] ; parity_out[1] ; 10.339 ; 10.339 ; 10.339 ; 10.339 ;
-; parity_in[2] ; parity_out[4] ; 8.852  ;        ;        ; 8.852  ;
-; parity_in[3] ; parity_out[1] ; 10.416 ; 10.416 ; 10.416 ; 10.416 ;
-; parity_in[3] ; parity_out[5] ; 8.788  ;        ;        ; 8.788  ;
-; parity_in[4] ; parity_out[1] ; 9.388  ; 9.388  ; 9.388  ; 9.388  ;
-; parity_in[4] ; parity_out[6] ; 8.920  ;        ;        ; 8.920  ;
-; parity_in[5] ; parity_out[1] ; 9.491  ; 9.491  ; 9.491  ; 9.491  ;
-; parity_in[5] ; parity_out[7] ; 8.594  ;        ;        ; 8.594  ;
-; parity_in[6] ; parity_out[1] ; 9.510  ; 9.510  ; 9.510  ; 9.510  ;
-; parity_in[6] ; parity_out[8] ; 8.783  ;        ;        ; 8.783  ;
+; parity_in[0] ; parity_out[2] ; 4.762  ;        ;        ; 4.762  ;
+; parity_in[0] ; parity_out[9] ; 7.040  ; 7.040  ; 7.040  ; 7.040  ;
+; parity_in[1] ; parity_out[3] ; 5.051  ;        ;        ; 5.051  ;
+; parity_in[1] ; parity_out[9] ; 7.084  ; 7.084  ; 7.084  ; 7.084  ;
+; parity_in[2] ; parity_out[4] ; 8.813  ;        ;        ; 8.813  ;
+; parity_in[2] ; parity_out[9] ; 10.396 ; 10.396 ; 10.396 ; 10.396 ;
+; parity_in[3] ; parity_out[5] ; 8.816  ;        ;        ; 8.816  ;
+; parity_in[3] ; parity_out[9] ; 10.309 ; 10.309 ; 10.309 ; 10.309 ;
+; parity_in[4] ; parity_out[6] ; 8.272  ;        ;        ; 8.272  ;
+; parity_in[4] ; parity_out[9] ; 9.671  ; 9.671  ; 9.671  ; 9.671  ;
+; parity_in[5] ; parity_out[7] ; 8.829  ;        ;        ; 8.829  ;
+; parity_in[5] ; parity_out[9] ; 9.547  ; 9.547  ; 9.547  ; 9.547  ;
+; parity_in[6] ; parity_out[8] ; 8.615  ;        ;        ; 8.615  ;
+; parity_in[6] ; parity_out[9] ; 9.712  ; 9.712  ; 9.712  ; 9.712  ;
 +--------------+---------------+--------+--------+--------+--------+
 
 
@@ -206,20 +200,20 @@ No paths to report.
 +--------------+---------------+-------+-------+-------+-------+
 ; Input Port   ; Output Port   ; RR    ; RF    ; FR    ; FF    ;
 +--------------+---------------+-------+-------+-------+-------+
-; parity_in[0] ; parity_out[1] ; 3.202 ; 3.202 ; 3.202 ; 3.202 ;
-; parity_in[0] ; parity_out[2] ; 2.539 ;       ;       ; 2.539 ;
-; parity_in[1] ; parity_out[1] ; 2.969 ; 2.969 ; 2.969 ; 2.969 ;
-; parity_in[1] ; parity_out[3] ; 2.658 ;       ;       ; 2.658 ;
-; parity_in[2] ; parity_out[1] ; 5.672 ; 5.672 ; 5.672 ; 5.672 ;
-; parity_in[2] ; parity_out[4] ; 5.062 ;       ;       ; 5.062 ;
-; parity_in[3] ; parity_out[1] ; 5.689 ; 5.689 ; 5.689 ; 5.689 ;
-; parity_in[3] ; parity_out[5] ; 4.994 ;       ;       ; 4.994 ;
-; parity_in[4] ; parity_out[1] ; 5.251 ; 5.251 ; 5.251 ; 5.251 ;
-; parity_in[4] ; parity_out[6] ; 5.078 ;       ;       ; 5.078 ;
-; parity_in[5] ; parity_out[1] ; 5.299 ; 5.299 ; 5.299 ; 5.299 ;
-; parity_in[5] ; parity_out[7] ; 4.916 ;       ;       ; 4.916 ;
-; parity_in[6] ; parity_out[1] ; 5.307 ; 5.307 ; 5.307 ; 5.307 ;
-; parity_in[6] ; parity_out[8] ; 4.971 ;       ;       ; 4.971 ;
+; parity_in[0] ; parity_out[2] ; 2.536 ;       ;       ; 2.536 ;
+; parity_in[0] ; parity_out[9] ; 3.621 ; 3.621 ; 3.621 ; 3.621 ;
+; parity_in[1] ; parity_out[3] ; 2.713 ;       ;       ; 2.713 ;
+; parity_in[1] ; parity_out[9] ; 3.604 ; 3.604 ; 3.604 ; 3.604 ;
+; parity_in[2] ; parity_out[4] ; 5.013 ;       ;       ; 5.013 ;
+; parity_in[2] ; parity_out[9] ; 5.688 ; 5.688 ; 5.688 ; 5.688 ;
+; parity_in[3] ; parity_out[5] ; 5.026 ;       ;       ; 5.026 ;
+; parity_in[3] ; parity_out[9] ; 5.660 ; 5.660 ; 5.660 ; 5.660 ;
+; parity_in[4] ; parity_out[6] ; 4.760 ;       ;       ; 4.760 ;
+; parity_in[4] ; parity_out[9] ; 5.415 ; 5.415 ; 5.415 ; 5.415 ;
+; parity_in[5] ; parity_out[7] ; 5.025 ;       ;       ; 5.025 ;
+; parity_in[5] ; parity_out[9] ; 5.324 ; 5.324 ; 5.324 ; 5.324 ;
+; parity_in[6] ; parity_out[8] ; 4.936 ;       ;       ; 4.936 ;
+; parity_in[6] ; parity_out[9] ; 5.395 ; 5.395 ; 5.395 ; 5.395 ;
 +--------------+---------------+-------+-------+-------+-------+
 
 
@@ -228,20 +222,20 @@ No paths to report.
 +--------------+---------------+-------+-------+-------+-------+
 ; Input Port   ; Output Port   ; RR    ; RF    ; FR    ; FF    ;
 +--------------+---------------+-------+-------+-------+-------+
-; parity_in[0] ; parity_out[1] ; 3.202 ; 3.202 ; 3.202 ; 3.202 ;
-; parity_in[0] ; parity_out[2] ; 2.539 ;       ;       ; 2.539 ;
-; parity_in[1] ; parity_out[1] ; 2.969 ; 2.969 ; 2.969 ; 2.969 ;
-; parity_in[1] ; parity_out[3] ; 2.658 ;       ;       ; 2.658 ;
-; parity_in[2] ; parity_out[1] ; 5.672 ; 5.672 ; 5.672 ; 5.672 ;
-; parity_in[2] ; parity_out[4] ; 5.062 ;       ;       ; 5.062 ;
-; parity_in[3] ; parity_out[1] ; 5.689 ; 5.689 ; 5.689 ; 5.689 ;
-; parity_in[3] ; parity_out[5] ; 4.994 ;       ;       ; 4.994 ;
-; parity_in[4] ; parity_out[1] ; 5.251 ; 5.251 ; 5.251 ; 5.251 ;
-; parity_in[4] ; parity_out[6] ; 5.078 ;       ;       ; 5.078 ;
-; parity_in[5] ; parity_out[1] ; 5.299 ; 5.299 ; 5.299 ; 5.299 ;
-; parity_in[5] ; parity_out[7] ; 4.916 ;       ;       ; 4.916 ;
-; parity_in[6] ; parity_out[1] ; 5.307 ; 5.307 ; 5.307 ; 5.307 ;
-; parity_in[6] ; parity_out[8] ; 4.971 ;       ;       ; 4.971 ;
+; parity_in[0] ; parity_out[2] ; 2.536 ;       ;       ; 2.536 ;
+; parity_in[0] ; parity_out[9] ; 3.621 ; 3.621 ; 3.621 ; 3.621 ;
+; parity_in[1] ; parity_out[3] ; 2.713 ;       ;       ; 2.713 ;
+; parity_in[1] ; parity_out[9] ; 3.604 ; 3.604 ; 3.604 ; 3.604 ;
+; parity_in[2] ; parity_out[4] ; 5.013 ;       ;       ; 5.013 ;
+; parity_in[2] ; parity_out[9] ; 5.688 ; 5.688 ; 5.688 ; 5.688 ;
+; parity_in[3] ; parity_out[5] ; 5.026 ;       ;       ; 5.026 ;
+; parity_in[3] ; parity_out[9] ; 5.660 ; 5.660 ; 5.660 ; 5.660 ;
+; parity_in[4] ; parity_out[6] ; 4.760 ;       ;       ; 4.760 ;
+; parity_in[4] ; parity_out[9] ; 5.415 ; 5.415 ; 5.415 ; 5.415 ;
+; parity_in[5] ; parity_out[7] ; 5.025 ;       ;       ; 5.025 ;
+; parity_in[5] ; parity_out[9] ; 5.324 ; 5.324 ; 5.324 ; 5.324 ;
+; parity_in[6] ; parity_out[8] ; 4.936 ;       ;       ; 4.936 ;
+; parity_in[6] ; parity_out[9] ; 5.395 ; 5.395 ; 5.395 ; 5.395 ;
 +--------------+---------------+-------+-------+-------+-------+
 
 
@@ -260,20 +254,20 @@ No paths to report.
 +--------------+---------------+--------+--------+--------+--------+
 ; Input Port   ; Output Port   ; RR     ; RF     ; FR     ; FF     ;
 +--------------+---------------+--------+--------+--------+--------+
-; parity_in[0] ; parity_out[1] ; 6.323  ; 6.323  ; 6.323  ; 6.323  ;
-; parity_in[0] ; parity_out[2] ; 4.760  ;        ;        ; 4.760  ;
-; parity_in[1] ; parity_out[1] ; 5.788  ; 5.788  ; 5.788  ; 5.788  ;
-; parity_in[1] ; parity_out[3] ; 4.951  ;        ;        ; 4.951  ;
-; parity_in[2] ; parity_out[1] ; 10.339 ; 10.339 ; 10.339 ; 10.339 ;
-; parity_in[2] ; parity_out[4] ; 8.852  ;        ;        ; 8.852  ;
-; parity_in[3] ; parity_out[1] ; 10.416 ; 10.416 ; 10.416 ; 10.416 ;
-; parity_in[3] ; parity_out[5] ; 8.788  ;        ;        ; 8.788  ;
-; parity_in[4] ; parity_out[1] ; 9.388  ; 9.388  ; 9.388  ; 9.388  ;
-; parity_in[4] ; parity_out[6] ; 8.920  ;        ;        ; 8.920  ;
-; parity_in[5] ; parity_out[1] ; 9.491  ; 9.491  ; 9.491  ; 9.491  ;
-; parity_in[5] ; parity_out[7] ; 8.594  ;        ;        ; 8.594  ;
-; parity_in[6] ; parity_out[1] ; 9.510  ; 9.510  ; 9.510  ; 9.510  ;
-; parity_in[6] ; parity_out[8] ; 8.783  ;        ;        ; 8.783  ;
+; parity_in[0] ; parity_out[2] ; 4.762  ;        ;        ; 4.762  ;
+; parity_in[0] ; parity_out[9] ; 7.040  ; 7.040  ; 7.040  ; 7.040  ;
+; parity_in[1] ; parity_out[3] ; 5.051  ;        ;        ; 5.051  ;
+; parity_in[1] ; parity_out[9] ; 7.084  ; 7.084  ; 7.084  ; 7.084  ;
+; parity_in[2] ; parity_out[4] ; 8.813  ;        ;        ; 8.813  ;
+; parity_in[2] ; parity_out[9] ; 10.396 ; 10.396 ; 10.396 ; 10.396 ;
+; parity_in[3] ; parity_out[5] ; 8.816  ;        ;        ; 8.816  ;
+; parity_in[3] ; parity_out[9] ; 10.309 ; 10.309 ; 10.309 ; 10.309 ;
+; parity_in[4] ; parity_out[6] ; 8.272  ;        ;        ; 8.272  ;
+; parity_in[4] ; parity_out[9] ; 9.671  ; 9.671  ; 9.671  ; 9.671  ;
+; parity_in[5] ; parity_out[7] ; 8.829  ;        ;        ; 8.829  ;
+; parity_in[5] ; parity_out[9] ; 9.547  ; 9.547  ; 9.547  ; 9.547  ;
+; parity_in[6] ; parity_out[8] ; 8.615  ;        ;        ; 8.615  ;
+; parity_in[6] ; parity_out[9] ; 9.712  ; 9.712  ; 9.712  ; 9.712  ;
 +--------------+---------------+--------+--------+--------+--------+
 
 
@@ -282,20 +276,20 @@ No paths to report.
 +--------------+---------------+-------+-------+-------+-------+
 ; Input Port   ; Output Port   ; RR    ; RF    ; FR    ; FF    ;
 +--------------+---------------+-------+-------+-------+-------+
-; parity_in[0] ; parity_out[1] ; 3.202 ; 3.202 ; 3.202 ; 3.202 ;
-; parity_in[0] ; parity_out[2] ; 2.539 ;       ;       ; 2.539 ;
-; parity_in[1] ; parity_out[1] ; 2.969 ; 2.969 ; 2.969 ; 2.969 ;
-; parity_in[1] ; parity_out[3] ; 2.658 ;       ;       ; 2.658 ;
-; parity_in[2] ; parity_out[1] ; 5.672 ; 5.672 ; 5.672 ; 5.672 ;
-; parity_in[2] ; parity_out[4] ; 5.062 ;       ;       ; 5.062 ;
-; parity_in[3] ; parity_out[1] ; 5.689 ; 5.689 ; 5.689 ; 5.689 ;
-; parity_in[3] ; parity_out[5] ; 4.994 ;       ;       ; 4.994 ;
-; parity_in[4] ; parity_out[1] ; 5.251 ; 5.251 ; 5.251 ; 5.251 ;
-; parity_in[4] ; parity_out[6] ; 5.078 ;       ;       ; 5.078 ;
-; parity_in[5] ; parity_out[1] ; 5.299 ; 5.299 ; 5.299 ; 5.299 ;
-; parity_in[5] ; parity_out[7] ; 4.916 ;       ;       ; 4.916 ;
-; parity_in[6] ; parity_out[1] ; 5.307 ; 5.307 ; 5.307 ; 5.307 ;
-; parity_in[6] ; parity_out[8] ; 4.971 ;       ;       ; 4.971 ;
+; parity_in[0] ; parity_out[2] ; 2.536 ;       ;       ; 2.536 ;
+; parity_in[0] ; parity_out[9] ; 3.621 ; 3.621 ; 3.621 ; 3.621 ;
+; parity_in[1] ; parity_out[3] ; 2.713 ;       ;       ; 2.713 ;
+; parity_in[1] ; parity_out[9] ; 3.604 ; 3.604 ; 3.604 ; 3.604 ;
+; parity_in[2] ; parity_out[4] ; 5.013 ;       ;       ; 5.013 ;
+; parity_in[2] ; parity_out[9] ; 5.688 ; 5.688 ; 5.688 ; 5.688 ;
+; parity_in[3] ; parity_out[5] ; 5.026 ;       ;       ; 5.026 ;
+; parity_in[3] ; parity_out[9] ; 5.660 ; 5.660 ; 5.660 ; 5.660 ;
+; parity_in[4] ; parity_out[6] ; 4.760 ;       ;       ; 4.760 ;
+; parity_in[4] ; parity_out[9] ; 5.415 ; 5.415 ; 5.415 ; 5.415 ;
+; parity_in[5] ; parity_out[7] ; 5.025 ;       ;       ; 5.025 ;
+; parity_in[5] ; parity_out[9] ; 5.324 ; 5.324 ; 5.324 ; 5.324 ;
+; parity_in[6] ; parity_out[8] ; 4.936 ;       ;       ; 4.936 ;
+; parity_in[6] ; parity_out[9] ; 5.395 ; 5.395 ; 5.395 ; 5.395 ;
 +--------------+---------------+-------+-------+-------+-------+
 
 
@@ -336,11 +330,11 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 +------------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
-    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Tue Nov 21 10:27:01 2023
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sun Nov 26 13:04:46 2023
 Info: Command: quartus_sta tx_parity -c tx_parity
 Info: qsta_default_script.tcl version: #1
-Info (11104): Parallel Compilation has detected 16 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 8 of the 8 physical processors detected instead.
+Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'tx_parity.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
@@ -369,10 +363,10 @@ Info (332140): No Minimum Pulse Width paths to report
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4571 megabytes
-    Info: Processing ended: Tue Nov 21 10:27:02 2023
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4535 megabytes
+    Info: Processing ended: Sun Nov 26 13:04:47 2023
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
 
 

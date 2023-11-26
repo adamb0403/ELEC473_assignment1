@@ -1,6 +1,6 @@
 Fitter report for tx_baud_counter
-Tue Nov 21 10:24:02 2023
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+Sun Nov 26 14:06:39 2023
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -59,26 +59,26 @@ applicable agreement for further details.
 
 
 
-+---------------------------------------------------------------------------------------+
-; Fitter Summary                                                                        ;
-+------------------------------------+--------------------------------------------------+
-; Fitter Status                      ; Successful - Tue Nov 21 10:24:02 2023            ;
-; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
-; Revision Name                      ; tx_baud_counter                                  ;
-; Top-level Entity Name              ; tx_baud_counter                                  ;
-; Family                             ; Cyclone II                                       ;
-; Device                             ; EP2C35F672C6                                     ;
-; Timing Models                      ; Final                                            ;
-; Total logic elements               ; 16 / 33,216 ( < 1 % )                            ;
-;     Total combinational functions  ; 16 / 33,216 ( < 1 % )                            ;
-;     Dedicated logic registers      ; 12 / 33,216 ( < 1 % )                            ;
-; Total registers                    ; 12                                               ;
-; Total pins                         ; 3 / 475 ( < 1 % )                                ;
-; Total virtual pins                 ; 0                                                ;
-; Total memory bits                  ; 0 / 483,840 ( 0 % )                              ;
-; Embedded Multiplier 9-bit elements ; 0 / 70 ( 0 % )                                   ;
-; Total PLLs                         ; 0 / 4 ( 0 % )                                    ;
-+------------------------------------+--------------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Fitter Summary                                                                       ;
++------------------------------------+-------------------------------------------------+
+; Fitter Status                      ; Successful - Sun Nov 26 14:06:39 2023           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; tx_baud_counter                                 ;
+; Top-level Entity Name              ; tx_baud_counter                                 ;
+; Family                             ; Cyclone II                                      ;
+; Device                             ; EP2C35F672C6                                    ;
+; Timing Models                      ; Final                                           ;
+; Total logic elements               ; 16 / 33,216 ( < 1 % )                           ;
+;     Total combinational functions  ; 16 / 33,216 ( < 1 % )                           ;
+;     Dedicated logic registers      ; 11 / 33,216 ( < 1 % )                           ;
+; Total registers                    ; 11                                              ;
+; Total pins                         ; 3 / 475 ( < 1 % )                               ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0 / 483,840 ( 0 % )                             ;
+; Embedded Multiplier 9-bit elements ; 0 / 70 ( 0 % )                                  ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                                   ;
++------------------------------------+-------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------+
@@ -131,22 +131,15 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------------------+--------------------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 8           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 8           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-;     Processors 2-8         ; < 0.1%      ;
-;     Processors 9-16        ;   0.0%      ;
-+----------------------------+-------------+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
 
 
 +----------------------------------------------+
@@ -155,8 +148,8 @@ applicable agreement for further details.
 ; Type                ; Value                  ;
 +---------------------+------------------------+
 ; Placement (by node) ;                        ;
-;     -- Requested    ; 0 / 36 ( 0.00 % )      ;
-;     -- Achieved     ; 0 / 36 ( 0.00 % )      ;
+;     -- Requested    ; 0 / 35 ( 0.00 % )      ;
+;     -- Achieved     ; 0 / 35 ( 0.00 % )      ;
 ;                     ;                        ;
 ; Routing (by net)    ;                        ;
 ;     -- Requested    ; 0 / 0 ( 0.00 % )       ;
@@ -179,7 +172,7 @@ applicable agreement for further details.
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name                 ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
-; Top                            ; 33      ; 0                 ; N/A                     ; Source File       ;
+; Top                            ; 32      ; 0                 ; N/A                     ; Source File       ;
 ; hard_block:auto_generated_inst ; 3       ; 0                 ; N/A                     ; Source File       ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 
@@ -187,7 +180,7 @@ applicable agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in M:/ELEC473/projects/ELEC473_assignment1/tx_baud_counter/output_files/tx_baud_counter.pin.
+The pin-out file can be found in C:/Users/Adam/Documents/git-repos/ELEC473_assignment1/tx_baud_counter/output_files/tx_baud_counter.pin.
 
 
 +---------------------------------------------------------------------+
@@ -196,13 +189,13 @@ The pin-out file can be found in M:/ELEC473/projects/ELEC473_assignment1/tx_baud
 ; Resource                                    ; Usage                 ;
 +---------------------------------------------+-----------------------+
 ; Total logic elements                        ; 16 / 33,216 ( < 1 % ) ;
-;     -- Combinational with no register       ; 4                     ;
+;     -- Combinational with no register       ; 5                     ;
 ;     -- Register only                        ; 0                     ;
-;     -- Combinational with a register        ; 12                    ;
+;     -- Combinational with a register        ; 11                    ;
 ;                                             ;                       ;
 ; Logic element usage by number of LUT inputs ;                       ;
-;     -- 4 input functions                    ; 4                     ;
-;     -- 3 input functions                    ; 1                     ;
+;     -- 4 input functions                    ; 3                     ;
+;     -- 3 input functions                    ; 2                     ;
 ;     -- <=2 input functions                  ; 11                    ;
 ;     -- Register only                        ; 0                     ;
 ;                                             ;                       ;
@@ -210,8 +203,8 @@ The pin-out file can be found in M:/ELEC473/projects/ELEC473_assignment1/tx_baud
 ;     -- normal mode                          ; 6                     ;
 ;     -- arithmetic mode                      ; 10                    ;
 ;                                             ;                       ;
-; Total registers*                            ; 12 / 34,593 ( < 1 % ) ;
-;     -- Dedicated logic registers            ; 12 / 33,216 ( < 1 % ) ;
+; Total registers*                            ; 11 / 34,593 ( < 1 % ) ;
+;     -- Dedicated logic registers            ; 11 / 33,216 ( < 1 % ) ;
 ;     -- I/O registers                        ; 0 / 1,377 ( 0 % )     ;
 ;                                             ;                       ;
 ; Total LABs:  partially or completely used   ; 1 / 2,076 ( < 1 % )   ;
@@ -231,10 +224,10 @@ The pin-out file can be found in M:/ELEC473/projects/ELEC473_assignment1/tx_baud
 ; CRC blocks                                  ; 0 / 1 ( 0 % )         ;
 ; Average interconnect usage (total/H/V)      ; 0% / 0% / 0%          ;
 ; Peak interconnect usage (total/H/V)         ; 0% / 0% / 0%          ;
-; Maximum fan-out                             ; 12                    ;
+; Maximum fan-out                             ; 11                    ;
 ; Highest non-global fan-out                  ; 11                    ;
-; Total fan-out                               ; 77                    ;
-; Average fan-out                             ; 2.20                  ;
+; Total fan-out                               ; 74                    ;
+; Average fan-out                             ; 2.18                  ;
 +---------------------------------------------+-----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -248,13 +241,13 @@ The pin-out file can be found in M:/ELEC473/projects/ELEC473_assignment1/tx_baud
 ; Difficulty Clustering Region                ; Low                  ; Low                            ;
 ;                                             ;                      ;                                ;
 ; Total logic elements                        ; 16 / 33216 ( < 1 % ) ; 0 / 33216 ( 0 % )              ;
-;     -- Combinational with no register       ; 4                    ; 0                              ;
+;     -- Combinational with no register       ; 5                    ; 0                              ;
 ;     -- Register only                        ; 0                    ; 0                              ;
-;     -- Combinational with a register        ; 12                   ; 0                              ;
+;     -- Combinational with a register        ; 11                   ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic element usage by number of LUT inputs ;                      ;                                ;
-;     -- 4 input functions                    ; 4                    ; 0                              ;
-;     -- 3 input functions                    ; 1                    ; 0                              ;
+;     -- 4 input functions                    ; 3                    ; 0                              ;
+;     -- 3 input functions                    ; 2                    ; 0                              ;
 ;     -- <=2 input functions                  ; 11                   ; 0                              ;
 ;     -- Register only                        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
@@ -262,8 +255,8 @@ The pin-out file can be found in M:/ELEC473/projects/ELEC473_assignment1/tx_baud
 ;     -- normal mode                          ; 6                    ; 0                              ;
 ;     -- arithmetic mode                      ; 10                   ; 0                              ;
 ;                                             ;                      ;                                ;
-; Total registers                             ; 12                   ; 0                              ;
-;     -- Dedicated logic registers            ; 12 / 33216 ( < 1 % ) ; 0 / 33216 ( 0 % )              ;
+; Total registers                             ; 11                   ; 0                              ;
+;     -- Dedicated logic registers            ; 11 / 33216 ( < 1 % ) ; 0 / 33216 ( 0 % )              ;
 ;                                             ;                      ;                                ;
 ; Total LABs:  partially or completely used   ; 1 / 2076 ( < 1 % )   ; 0 / 2076 ( 0 % )               ;
 ;                                             ;                      ;                                ;
@@ -281,8 +274,8 @@ The pin-out file can be found in M:/ELEC473/projects/ELEC473_assignment1/tx_baud
 ;     -- Registered Output Connections        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Internal Connections                        ;                      ;                                ;
-;     -- Total Connections                    ; 77                   ; 0                              ;
-;     -- Registered Connections               ; 23                   ; 0                              ;
+;     -- Total Connections                    ; 74                   ; 0                              ;
+;     -- Registered Connections               ; 22                   ; 0                              ;
 ;                                             ;                      ;                                ;
 ; External Connections                        ;                      ;                                ;
 ;     -- Top                                  ; 0                    ; 0                              ;
@@ -315,7 +308,7 @@ The pin-out file can be found in M:/ELEC473/projects/ELEC473_assignment1/tx_baud
 ; Name  ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Location assigned by ;
 +-------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 ; clk   ; P2    ; 1        ; 0            ; 18           ; 2           ; 1                     ; 0                  ; yes    ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; reset ; C13   ; 3        ; 31           ; 36           ; 2           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; reset ; C13   ; 3        ; 31           ; 36           ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
 +-------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 
 
@@ -1067,7 +1060,7 @@ Note: User assignments will override these defaults. The user specified values a
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M4Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+--------------+
-; |tx_baud_counter           ; 16 (16)     ; 12 (12)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 3    ; 0            ; 4 (4)        ; 0 (0)             ; 12 (12)          ; |tx_baud_counter    ; work         ;
+; |tx_baud_counter           ; 16 (16)     ; 11 (11)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 3    ; 0            ; 5 (5)        ; 0 (0)             ; 11 (11)          ; |tx_baud_counter    ; work         ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1078,8 +1071,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name        ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO ;
 +-------------+----------+---------------+---------------+-----------------------+-----+
 ; baud_output ; Output   ; --            ; --            ; --                    ; --  ;
-; reset       ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
 ; clk         ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
+; reset       ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
 +-------------+----------+---------------+---------------+-----------------------+-----+
 
 
@@ -1088,8 +1081,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------+-------------------+---------+
 ; Source Pin / Fanout ; Pad To Core Index ; Setting ;
 +---------------------+-------------------+---------+
-; reset               ;                   ;         ;
 ; clk                 ;                   ;         ;
+; reset               ;                   ;         ;
 +---------------------+-------------------+---------+
 
 
@@ -1098,8 +1091,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------+--------------------+---------+-------------+--------+----------------------+------------------+---------------------------+
 ; Name        ; Location           ; Fan-Out ; Usage       ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +-------------+--------------------+---------+-------------+--------+----------------------+------------------+---------------------------+
-; clk         ; PIN_P2             ; 12      ; Clock       ; yes    ; Global Clock         ; GCLK3            ; --                        ;
-; count[0]~13 ; LCCOMB_X30_Y35_N30 ; 11      ; Sync. clear ; no     ; --                   ; --               ; --                        ;
+; clk         ; PIN_P2             ; 11      ; Clock       ; yes    ; Global Clock         ; GCLK3            ; --                        ;
+; count[3]~15 ; LCCOMB_X30_Y35_N30 ; 11      ; Sync. clear ; no     ; --                   ; --               ; --                        ;
 +-------------+--------------------+---------+-------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -1108,55 +1101,54 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+----------+---------+----------------------+------------------+---------------------------+
 ; Name ; Location ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------+----------+---------+----------------------+------------------+---------------------------+
-; clk  ; PIN_P2   ; 12      ; Global Clock         ; GCLK3            ; --                        ;
+; clk  ; PIN_P2   ; 11      ; Global Clock         ; GCLK3            ; --                        ;
 +------+----------+---------+----------------------+------------------+---------------------------+
 
 
 +---------------------------------+
 ; Non-Global High Fan-Out Signals ;
-+------------------+--------------+
-; Name             ; Fan-Out      ;
-+------------------+--------------+
-; count[0]~13      ; 11           ;
-; reset            ; 2            ;
-; Equal0~2         ; 2            ;
-; Equal0~1         ; 2            ;
-; Equal0~0         ; 2            ;
-; count[10]        ; 2            ;
-; count[9]         ; 2            ;
-; count[8]         ; 2            ;
-; count[7]         ; 2            ;
-; count[6]         ; 2            ;
-; count[5]         ; 2            ;
-; count[4]         ; 2            ;
-; count[3]         ; 2            ;
-; count[2]         ; 2            ;
-; count[1]         ; 2            ;
-; count[0]         ; 2            ;
-; baud_output~0    ; 1            ;
-; baud_output~reg0 ; 1            ;
-; count[10]~32     ; 1            ;
-; count[9]~31      ; 1            ;
-; count[9]~30      ; 1            ;
-; count[8]~29      ; 1            ;
-; count[8]~28      ; 1            ;
-; count[7]~27      ; 1            ;
-; count[7]~26      ; 1            ;
-; count[6]~25      ; 1            ;
-; count[6]~24      ; 1            ;
-; count[5]~23      ; 1            ;
-; count[5]~22      ; 1            ;
-; count[4]~21      ; 1            ;
-; count[4]~20      ; 1            ;
-; count[3]~19      ; 1            ;
-; count[3]~18      ; 1            ;
-; count[2]~17      ; 1            ;
-; count[2]~16      ; 1            ;
-; count[1]~15      ; 1            ;
-; count[1]~14      ; 1            ;
-; count[0]~12      ; 1            ;
-; count[0]~11      ; 1            ;
-+------------------+--------------+
++--------------+------------------+
+; Name         ; Fan-Out          ;
++--------------+------------------+
+; count[3]~15  ; 11               ;
+; Equal0~2     ; 2                ;
+; Equal0~1     ; 2                ;
+; Equal0~0     ; 2                ;
+; count[10]    ; 2                ;
+; count[9]     ; 2                ;
+; count[8]     ; 2                ;
+; count[7]     ; 2                ;
+; count[6]     ; 2                ;
+; count[5]     ; 2                ;
+; count[4]     ; 2                ;
+; count[2]     ; 2                ;
+; count[0]     ; 2                ;
+; count[3]     ; 2                ;
+; count[1]     ; 2                ;
+; reset        ; 1                ;
+; Equal0~3     ; 1                ;
+; count[10]~32 ; 1                ;
+; count[9]~31  ; 1                ;
+; count[9]~30  ; 1                ;
+; count[8]~29  ; 1                ;
+; count[8]~28  ; 1                ;
+; count[7]~27  ; 1                ;
+; count[7]~26  ; 1                ;
+; count[6]~25  ; 1                ;
+; count[6]~24  ; 1                ;
+; count[5]~23  ; 1                ;
+; count[5]~22  ; 1                ;
+; count[4]~21  ; 1                ;
+; count[4]~20  ; 1                ;
+; count[3]~19  ; 1                ;
+; count[3]~18  ; 1                ;
+; count[2]~17  ; 1                ;
+; count[2]~16  ; 1                ;
+; count[1]~14  ; 1                ;
+; count[1]~13  ; 1                ;
+; count[0]~12  ; 1                ;
+; count[0]~11  ; 1                ;
++--------------+------------------+
 
 
 +-----------------------------------------------------+
@@ -1164,10 +1156,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------+-----------------------+
 ; Other Routing Resource Type ; Usage                 ;
 +-----------------------------+-----------------------+
-; Block interconnects         ; 4 / 94,460 ( < 1 % )  ;
+; Block interconnects         ; 5 / 94,460 ( < 1 % )  ;
 ; C16 interconnects           ; 0 / 3,315 ( 0 % )     ;
-; C4 interconnects            ; 3 / 60,840 ( < 1 % )  ;
-; Direct links                ; 1 / 94,460 ( < 1 % )  ;
+; C4 interconnects            ; 2 / 60,840 ( < 1 % )  ;
+; Direct links                ; 3 / 94,460 ( < 1 % )  ;
 ; Global clocks               ; 1 / 16 ( 6 % )        ;
 ; Local interconnects         ; 15 / 33,216 ( < 1 % ) ;
 ; R24 interconnects           ; 0 / 3,091 ( 0 % )     ;
@@ -1211,7 +1203,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                        ;
 +----------------------------------------------+-----------------------------+
-; Number of Signals Sourced  (Average = 28.00) ; Number of LABs  (Total = 1) ;
+; Number of Signals Sourced  (Average = 27.00) ; Number of LABs  (Total = 1) ;
 +----------------------------------------------+-----------------------------+
 ; 0                                            ; 0                           ;
 ; 1                                            ; 0                           ;
@@ -1240,8 +1232,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 24                                           ; 0                           ;
 ; 25                                           ; 0                           ;
 ; 26                                           ; 0                           ;
-; 27                                           ; 0                           ;
-; 28                                           ; 1                           ;
+; 27                                           ; 1                           ;
 +----------------------------------------------+-----------------------------+
 
 
@@ -1298,11 +1289,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------+
 ; Fitter Messages ;
 +-----------------+
-Info (11104): Parallel Compilation has detected 16 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 8 of the 8 physical processors detected instead.
+Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (119006): Selected device EP2C35F672C6 for design "tx_baud_counter"
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Info (171003): Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
+Warning (292013): Feature LogicLock is only available with a valid subscription license. You can purchase a software subscription to gain full access to this feature.
 Info (176444): Device migration not selected. If you intend to use device migration later, you may need to change the pin assignments as they may be incompatible with other devices
     Info (176445): Device EP2C50F672C6 is compatible
     Info (176445): Device EP2C70F672C6 is compatible
@@ -1312,8 +1304,8 @@ Info (169124): Fitter converted 3 user pins into dedicated programming pins
     Info (169125): Pin ~LVDS150p/nCEO~ is reserved at location AE24
 Critical Warning (169085): No exact pin location assignment(s) for 3 pins of 3 total pins
     Info (169086): Pin baud_output not assigned to an exact location on the device
-    Info (169086): Pin reset not assigned to an exact location on the device
     Info (169086): Pin clk not assigned to an exact location on the device
+    Info (169086): Pin reset not assigned to an exact location on the device
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'tx_baud_counter.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
@@ -1335,7 +1327,7 @@ Info (176215): I/O bank details before I/O pin placement
         Info (176213): I/O bank number 6 does not use VREF pins and has undetermined VCCIO pins. 1 total pin(s) used --  58 pins available
         Info (176213): I/O bank number 7 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  58 pins available
         Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  56 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
@@ -1347,7 +1339,7 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.27 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.11 seconds.
 Info (306004): Started post-fitting delay annotation
 Warning (306006): Found 1 output pins without output pin load capacitance assignment
     Info (306007): Pin "baud_output" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
@@ -1356,17 +1348,17 @@ Info (306004): Started post-fitting delay annotation
 Info (306005): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
-Info (144001): Generated suppressed messages file M:/ELEC473/projects/ELEC473_assignment1/tx_baud_counter/output_files/tx_baud_counter.fit.smsg
-Info: Quartus II 64-Bit Fitter was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 5617 megabytes
-    Info: Processing ended: Tue Nov 21 10:24:02 2023
-    Info: Elapsed time: 00:00:03
+Info (144001): Generated suppressed messages file C:/Users/Adam/Documents/git-repos/ELEC473_assignment1/tx_baud_counter/output_files/tx_baud_counter.fit.smsg
+Info: Quartus II 64-Bit Fitter was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 4876 megabytes
+    Info: Processing ended: Sun Nov 26 14:06:39 2023
+    Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:06
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in M:/ELEC473/projects/ELEC473_assignment1/tx_baud_counter/output_files/tx_baud_counter.fit.smsg.
+The suppressed messages can be found in C:/Users/Adam/Documents/git-repos/ELEC473_assignment1/tx_baud_counter/output_files/tx_baud_counter.fit.smsg.
 
 

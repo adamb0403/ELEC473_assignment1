@@ -1,5 +1,5 @@
 EDA Netlist Writer report for tx_single_pulser
-Thu Nov 23 19:37:23 2023
+Sun Nov 26 13:47:03 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Nov 23 19:37:23 2023 ;
+; EDA Netlist Writer Status ; Successful - Sun Nov 26 13:47:03 2023 ;
 ; Revision Name             ; tx_single_pulser                      ;
 ; Top-level Entity Name     ; tx_single_pulser                      ;
 ; Family                    ; Cyclone II                            ;
@@ -80,13 +80,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Nov 23 19:37:22 2023
+    Info: Processing started: Sun Nov 26 13:47:03 2023
 Info: Command: quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog tx_single_pulser -c tx_single_pulser
 Info (204019): Generated file tx_single_pulser.vo in folder "C:/Users/Adam/Documents/git-repos/ELEC473_assignment1/tx_single_pulser/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4515 megabytes
-    Info: Processing ended: Thu Nov 23 19:37:23 2023
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Sun Nov 26 13:47:03 2023
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
 

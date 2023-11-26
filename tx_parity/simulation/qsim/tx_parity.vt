@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "11/21/2023 10:27:09"
+// Generated on "11/26/2023 13:06:35"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    tx_parity
 // 
@@ -58,16 +58,16 @@ module tx_parity_vlg_check_tst (
 	parity_out,
 	sampler_rx
 );
-input [9:0] parity_out;
+input [10:0] parity_out;
 input sampler_rx;
 
-reg [9:0] parity_out_expected;
+reg [10:0] parity_out_expected;
 
-reg [9:0] parity_out_prev;
+reg [10:0] parity_out_prev;
 
-reg [9:0] parity_out_expected_prev;
+reg [10:0] parity_out_expected_prev;
 
-reg [9:0] last_parity_out_exp;
+reg [10:0] last_parity_out_exp;
 
 reg trigger;
 
@@ -100,6 +100,11 @@ begin
 end
 
 
+// expected parity_out[ 10 ]
+initial
+begin
+	parity_out_expected[10] = 1'bX;
+end 
 // expected parity_out[ 9 ]
 initial
 begin
@@ -294,6 +299,19 @@ begin
 		on_first_change[1] = 1'b0;
 		last_parity_out_exp[9] = parity_out_expected_prev[9];
 	end
+	if (
+		( parity_out_expected_prev[10] !== 1'bx ) && ( parity_out_prev[10] !== parity_out_expected_prev[10] )
+		&& ((parity_out_expected_prev[10] !== last_parity_out_exp[10]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port parity_out[10] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", parity_out_expected_prev);
+		$display ("     Real value = %b", parity_out_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_parity_out_exp[10] = parity_out_expected_prev[10];
+	end
 
 	trigger <= ~trigger;
 end
@@ -315,7 +333,7 @@ module tx_parity_vlg_vec_tst();
 // general purpose registers
 reg [6:0] parity_in;
 // wires                                               
-wire [9:0] parity_out;
+wire [10:0] parity_out;
 
 wire sampler;                             
 
@@ -328,37 +346,52 @@ tx_parity i1 (
 // parity_in[ 6 ]
 initial
 begin
-	parity_in[6] = 1'b1;
+	parity_in[6] = 1'b0;
+	parity_in[6] = #80000 1'b1;
+	parity_in[6] = #180000 1'b0;
+	parity_in[6] = #160000 1'b1;
 end 
 // parity_in[ 5 ]
 initial
 begin
-	parity_in[5] = 1'b1;
+	parity_in[5] = 1'b0;
+	parity_in[5] = #420000 1'b1;
 end 
 // parity_in[ 4 ]
 initial
 begin
 	parity_in[4] = 1'b0;
+	parity_in[4] = #420000 1'b1;
+	parity_in[4] = #140000 1'b0;
 end 
 // parity_in[ 3 ]
 initial
 begin
 	parity_in[3] = 1'b1;
+	parity_in[3] = #80000 1'b0;
+	parity_in[3] = #340000 1'b1;
 end 
 // parity_in[ 2 ]
 initial
 begin
-	parity_in[2] = 1'b0;
+	parity_in[2] = 1'b1;
+	parity_in[2] = #80000 1'b0;
+	parity_in[2] = #340000 1'b1;
+	parity_in[2] = #140000 1'b0;
 end 
 // parity_in[ 1 ]
 initial
 begin
 	parity_in[1] = 1'b0;
+	parity_in[1] = #420000 1'b1;
+	parity_in[1] = #140000 1'b0;
 end 
 // parity_in[ 0 ]
 initial
 begin
 	parity_in[0] = 1'b1;
+	parity_in[0] = #260000 1'b0;
+	parity_in[0] = #160000 1'b1;
 end 
 
 tx_parity_vlg_sample_tst tb_sample (

@@ -27,7 +27,13 @@
 # Loading cycloneii_ver.cycloneii_lcell_ff
 # Loading work.tx_controller_vlg_sample_tst
 # Loading work.tx_controller_vlg_check_tst
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
+# 
+# Loading instances from tx_controller_v.sdo
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
+# Loading timing data from tx_controller_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /tx_controller_vlg_vec_tst File: tx_controller.vt
 # Simulation passed !
 # ** Note: $finish    : tx_controller.vt(227)
 #    Time: 1 us  Iteration: 0  Instance: /tx_controller_vlg_vec_tst/tb_out

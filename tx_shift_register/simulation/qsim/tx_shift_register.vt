@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "11/23/2023 13:50:03"
+// Generated on "11/26/2023 14:42:23"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    tx_shift_register
 // 
@@ -113,7 +113,7 @@ end
 initial
 begin
 	tx_sr_out_expected = 1'bX;
-	tx_sr_out_expected = #399000 1'b0;
+	tx_sr_out_expected = #999000 1'b0;
 end 
 // generate trigger
 always @(tx_sr_out_expected or tx_sr_out)
@@ -149,7 +149,7 @@ initial
 
 begin 
 $timeformat(-12,3," ps",6);
-#400000;
+#1200000;
 if (nummismatches > 0)
 	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
 else
@@ -194,13 +194,17 @@ end
 initial
 begin
 	reset = 1'b1;
+	reset = #740000 1'b0;
+	reset = #20000 1'b1;
 end 
 
 // tx_sr_load
 initial
 begin
 	tx_sr_load = 1'b0;
-	tx_sr_load = #60000 1'b1;
+	tx_sr_load = #20000 1'b1;
+	tx_sr_load = #20000 1'b0;
+	tx_sr_load = #440000 1'b1;
 	tx_sr_load = #20000 1'b0;
 end 
 
@@ -208,20 +212,30 @@ end
 initial
 begin
 	tx_sr_shift = 1'b0;
-	tx_sr_shift = #100000 1'b1;
-	tx_sr_shift = #20000 1'b0;
-	tx_sr_shift = #20000 1'b1;
-	tx_sr_shift = #20000 1'b0;
-	tx_sr_shift = #20000 1'b1;
-	tx_sr_shift = #20000 1'b0;
-	tx_sr_shift = #20000 1'b1;
-	tx_sr_shift = #20000 1'b0;
-	tx_sr_shift = #20000 1'b1;
-	tx_sr_shift = #20000 1'b0;
-	tx_sr_shift = #20000 1'b1;
-	tx_sr_shift = #20000 1'b0;
-	tx_sr_shift = #20000 1'b1;
-	tx_sr_shift = #20000 1'b0;
+	tx_sr_shift = #80000 1'b1;
+	# 20000;
+	repeat(4)
+	begin
+		tx_sr_shift = 1'b0;
+		tx_sr_shift = #20000 1'b1;
+		# 20000;
+	end
+	repeat(5)
+	begin
+		tx_sr_shift = 1'b0;
+		tx_sr_shift = #20000 1'b1;
+		# 20000;
+	end
+	tx_sr_shift = 1'b0;
+	tx_sr_shift = #120000 1'b1;
+	# 20000;
+	repeat(11)
+	begin
+		tx_sr_shift = 1'b0;
+		tx_sr_shift = #20000 1'b1;
+		# 20000;
+	end
+	tx_sr_shift = 1'b0;
 end 
 // tx_sr_in[ 10 ]
 initial
@@ -232,6 +246,7 @@ end
 initial
 begin
 	tx_sr_in[9] = 1'b0;
+	tx_sr_in[9] = #460000 1'b1;
 end 
 // tx_sr_in[ 8 ]
 initial
@@ -241,12 +256,14 @@ end
 // tx_sr_in[ 7 ]
 initial
 begin
-	tx_sr_in[7] = 1'b0;
+	tx_sr_in[7] = 1'b1;
+	tx_sr_in[7] = #460000 1'b0;
 end 
 // tx_sr_in[ 6 ]
 initial
 begin
-	tx_sr_in[6] = 1'b1;
+	tx_sr_in[6] = 1'b0;
+	tx_sr_in[6] = #460000 1'b1;
 end 
 // tx_sr_in[ 5 ]
 initial
@@ -267,16 +284,17 @@ end
 initial
 begin
 	tx_sr_in[2] = 1'b0;
+	tx_sr_in[2] = #460000 1'b1;
 end 
 // tx_sr_in[ 1 ]
 initial
 begin
-	tx_sr_in[1] = 1'b1;
+	tx_sr_in[1] = 1'b0;
 end 
 // tx_sr_in[ 0 ]
 initial
 begin
-	tx_sr_in[0] = 1'b0;
+	tx_sr_in[0] = 1'b1;
 end 
 
 tx_shift_register_vlg_sample_tst tb_sample (

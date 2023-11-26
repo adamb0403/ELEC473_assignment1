@@ -7,6 +7,5 @@ instance = comp, \key_out~output , key_out~output, tx_synchroniser, 1
 instance = comp, \clk~input , clk~input, tx_synchroniser, 1
 instance = comp, \clk~inputclkctrl , clk~inputclkctrl, tx_synchroniser, 1
 instance = comp, \key_in~input , key_in~input, tx_synchroniser, 1
-instance = comp, \ff1~feeder , ff1~feeder, tx_synchroniser, 1
+instance = comp, \ff1~0 , ff1~0, tx_synchroniser, 1
 instance = comp, \ff2~feeder , ff2~feeder, tx_synchroniser, 1
-instance = comp, \reset~input , reset~input, tx_synchroniser, 1
